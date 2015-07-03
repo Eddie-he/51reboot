@@ -796,6 +796,16 @@ html .page_index article#feature .row .phppeixunban .img {
 	margin-right: auto;
 	margin-top: -10px
 }
+html .page_index article#feature .row .fepeixunban .img {
+	background: url(../images/print.png) no-repeat;
+	background-position: 0 0;
+	width: 140px;
+	height: 130px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -10px
+}
 html .page_index article.container {
 	padding-top: 80px;
 	padding-bottom: 80px;
