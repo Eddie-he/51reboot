@@ -4,15 +4,125 @@ html .page_index article.container {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.BMapLib_nav_tab_content table td:first-child{
+  width: 40px !important;
+}
+.BMapLib_nav_tab_content table td:last-child{
+  width: 120px !important;
+}
 </style>
+ <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=clR7lmWlaguV9WUYKM7OGMbj"></script>
+  <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+  <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
   <body class='page_index'>
 <link rel="import" href="../__navbar.html?__inline">
 
+<div class="container">
+<div class="panel panel-default" style='margin-top: 20px;'>
+        <div class="panel-heading">
+           reboot介绍
+        </div>
+        <div class="panel-body">
+            <p>Reboot教育，兼具研发、运维自动化、分布式、前端等教学内容，以Python为工具，立志打造国内顶尖的高端培训。通过一流的师资、深入浅出的教学大纲，以结果为导向，以实战为特色，结合流行的开源系统和BAT实际经验，把学员锻炼成真正的架构师，迈进一流互联网公司的大门。</p>
+        </div>
+        
+
+</div>
+<div class="panel panel-default" style='margin-top: 20px;'>
+        <div class="panel-heading">
+           讲师介绍
+        </div>
+        <div class="panel-body">
+            <p><strong> 蜗牛老湿</strong>非典型程序员，毕业之后接触了编程，从零基础成长至BAT高级工程师，为 部门从零组建开发团队，带领完成多个大、中型项目，项目开发经验丰富并且深 悉初学者学编程的方法，为人热情，乐于分析，现任Reboot的Python实战班讲 师</p>
+        </div>
+        
+        <div class="panel-body">
+            <p><strong> PC老师</strong> 大学时期就负责学校官方网站的运维工作，实习期间加入豆瓣，有幸成为豆 瓣Top20员工，从事Python开发及运维工作，后在BAT从事自动化运维，见证BAT运 维自动化从无到有。擅长系统底层、分布式系统开发，热衷于开源运动，给 memcached、SETI@Home等多个开源项目贡献过代码</p>
+        </div>
+        
+
+</div>
+<div class="panel panel-default" style='margin-top: 20px;'>
+        <div class="panel-heading">
+           reboot地址
+        </div>
+        <div class="panel-body">
+          <div id="map" style='height:600px'>
+            
+          </div>
+
+        </div>
+        
+
+        
+
+</div>
+
+</div>
 
 
-<script type="text/javascript">
-// $($('.navbar-nav').find('li').get(0)).addClass('active')
+  <script type="text/javascript">
+  // 百度地图API功能
+ //  var map = new BMap.Map("map");
 
-</script>
+ // map.centerAndZoom(new BMap.Point(116.36619,40.078977),18);
+  // var point = new BMap.Point(116.404, 39.915);
+  // map.centerAndZoom(point, 15);
+  
+  //创建小狐狸
+  // var pt = new BMap.Point(116.367489,40.078734);
+  // var point = new BMap.Point(116.366189,40.079034);
+  // var myIcon = new BMap.Icon("http://7xjoq9.com1.z0.glb.clouddn.com/icon.jpg", new BMap.Size(300,157));
+  // var marker2 = new BMap.Marker(pt);  // 创建标注
+  // map.addOverlay(marker2);              // 将标注添加到地图中
+
+  // var opts = {
+  //   width : 200,     // 信息窗口宽度
+  //   height: 100,     // 信息窗口高度
+  //   title : "reboot培训" , // 信息窗口标题
+  //   enableMessage:true,//设置允许信息窗发送短息
+  //   message:""
+  // }
+  // var infoWindow = new BMap.InfoWindow("地址：", opts);  // 创建信息窗口对象 
+  //   map.openInfoWindow(infoWindow,point); //开启信息窗口
+
+  // marker2.addEventListener("click", function(){          
+  // });
+
+    var map = new BMap.Map('map');
+    var poi = new BMap.Point(116.36619,40.078977);
+    map.centerAndZoom(poi, 14);
+    // map.enableScrollWheelZoom();
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+
+    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+                    '<img src="http://7xjoq9.com1.z0.glb.clouddn.com/icon.jpg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+                    '地址：北京市昌平区回龙观东国风美唐6号楼709室(霍营地铁E口100米)<br/>QQ：827890446<br/>' +
+                  '</div>';
+
+    var searchInfoWindow = null;
+  searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+      title  : "Reboot培训",      //标题
+      width  : 380,             //宽度
+      height : 105,              //高度
+      panel  : "panel",         //检索结果面板
+      enableAutoPan : true,     //自动平移
+      searchTypes   :[
+        BMAPLIB_TAB_TO_HERE,  //到这里去
+      ]
+    });
+    var marker = new BMap.Marker(poi); //创建marker对象
+    marker.enableDragging(); //marker可拖拽
+     searchInfoWindow.open(marker);
+    // marker.addEventListener("click", function(e){
+     
+    // })
+    map.addOverlay(marker); //在地图中添加marker
+  //样式1
+
+  </script>
 <link rel="import" href="../__footer.html?__inline">
 
