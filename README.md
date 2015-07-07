@@ -12,6 +12,7 @@
 安装node
 
 > npm install -g fis-pure
+
 > npm install -g fis-postpackager-html-minifier
-> 
+
 即可
