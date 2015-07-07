@@ -7,7 +7,7 @@
 > pure release -cod ../
 
 
-如果没有安装fis-pure，请先安装
+如果没有安装fis-pure，请先安装 或者联系我修改
 
 安装node
 
