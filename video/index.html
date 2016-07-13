@@ -1,0 +1,37 @@
+<link rel="import" href="/__head.html?__inline">
+
+<style type="text/css">
+	
+	.video{
+		display: inline-block;
+	}
+</style>
+
+  <body class='page_index'>
+<link rel="import" href="/__navbar.html?__inline">
+
+
+<div class="container">
+
+
+
+{% for video in video_list %}
+
+<div class="panel panel-success" style='margin-top: 20px;'>
+        <div class="panel-heading">
+           {{video.name}}
+        </div>
+        <div class="panel-body">
+
+<embed wmode="direct" flashvars="vid={{video.id}}&amp;tpid=0&amp;showend=1&amp;showcfg=1&amp;searchbar=1&amp;skin=http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf&amp;shownext=1&amp;list=2&amp;autoplay=0" src="http://imgcache.qq.com/tencentvideo_v1/player/TPout.swf?max_age=86400&amp;v=20140714" quality="high" name="tenvideo_flash_player_1462438730449" id="tenvideo_flash_player_1462438730449" bgcolor="#000000" width="100%" height="502px" align="middle" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" pluginspage="http://get.adobe.com/cn/flashplayer/">
+        </div>
+        
+
+</div>
+
+
+{% endfor %}
+</div>
+
+
+<link rel="import" href="/__footer.html?__inline">
