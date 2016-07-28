@@ -45,9 +45,9 @@ fis.match('**.html',{
 
     	return nunjucks.renderString(content,{
     		// 开班时间
-    		actual_time:'07-02',
-    		ops_time:'05-08',
-    		arch_time:'08-13',
+    		actual_time:'08-28',
+    		ops_time:'09-11',
+    		arch_time:'08-27',
 
     		// 课程价格,网络价格减1000
     		price:{
