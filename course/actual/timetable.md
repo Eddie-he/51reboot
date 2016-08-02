@@ -23,18 +23,18 @@
 * 用Python处理Nginx日志文件，进行多维度数据统计分析
 * 根据ip、访问地址和访问状态等数据统计，统计结果保存数据库
 * Highcharts等流行前端技术多维度将分析结果可视化展示
-![](../../images/log2.gif)
-![](../../images/log5.gif)
-![](../../images/log6.gif)
-
+![](http://7xjoq9.com1.z0.glb.clouddn.com/log2.gif)
+![](http://7xjoq9.com1.z0.glb.clouddn.com/log5.gif)
+![](http://7xjoq9.com1.z0.glb.clouddn.com/log6.gif)
+<!-- log2.gif -->
 ###实战项目之三（[快速构建实用监控系统](http://blog.51reboot.com/python36-falcon-mon-video/)）
 * Python读取机器的实时使用数据，通过http请求将数据入库
 * 设计数据入库的api，可以收集不同机器的数据
 * 前端将内存数据读出，可视化展示折线图
 * 独立完成此项目，对Python常用的time等模块有很好的掌握
 <!-- ![](./02.png) -->
-![](../../images/datatable_4.png)
-![](../../images/blog3.gif)
+![](http://7xjoq9.com1.z0.glb.clouddn.com/datatable_4.png)
+![](http://7xjoq9.com1.z0.glb.clouddn.com/blog3.gif)
 
 
 
