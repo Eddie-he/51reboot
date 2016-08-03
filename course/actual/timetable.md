@@ -211,11 +211,11 @@ index、count）
 - 超过阀值，通过调用api，实现创建或者关闭虚拟机的操作
 
 
-## （赠送）Flask扩展
+<!-- ## （赠送）Flask扩展
 * Flask大型应用的代码组织结构
     * 用包来组织代码介绍。 适用场景分析demo实现，
     * 用蓝图来组织代码介绍。分区结构 VS 功能结构，适用场景分析。demo实现
-
+ -->
 * Flask-script扩展。应用场景分析， demo实现
 * Flask-SQLAlchemy扩展（ORM）应用场景分析，简单demo实现
 * Flask-Migrate扩展,应用场景分析，简单demo实现
