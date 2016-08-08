@@ -8,23 +8,26 @@
 * ajax异步请求操作
 * 常见数据库设计原则、CMDB表结构实战、mysql实操
 * 独立完成此项目，会对整体的web(LAMP)架构有很好的了解
+![](../../images/xxx_2.png)
 ![](./01.png)
-
 ###实战项目之二（[Nginx日志统计分析与多维可视化](https://github.com/shengxinjing/my_blog/issues/2)）
 * 用Python处理Nginx日志文件，进行多维度数据统计分析
 * 根据ip、访问地址和访问状态等数据统计，统计结果保存数据库
 * Highcharts等流行前端技术多维度将分析结果可视化展示
-![](./02.png)
+<!-- ![](./02.png) -->
 
-
+![](http://7xjoq9.com1.z0.glb.clouddn.com/log2.gif)
+![](http://7xjoq9.com1.z0.glb.clouddn.com/log5.gif)
+![](http://7xjoq9.com1.z0.glb.clouddn.com/log6.gif)
 
 ###实战项目之三（[快速构建实用监控系统](http://blog.51reboot.com/python36-falcon-mon-video/)）
 * Python读取机器的实时使用数据，通过http请求将数据入库
 * 设计数据入库的api，可以收集不同机器的数据
 * 前端将内存数据读出，可视化展示折线图
 * 独立完成此项目，对Python常用的time等模块有很好的掌握
-![](./03.png)
-
+<!-- ![](./03.png) -->
+![](http://7xjoq9.com1.z0.glb.clouddn.com/datatable_4.png)
+![](http://7xjoq9.com1.z0.glb.clouddn.com/blog3.gif)
 
 <!-- ### 实战项目之四（主机弹性伸缩）
 - 根据日志分析结果设置阀值
