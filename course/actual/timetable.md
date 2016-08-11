@@ -7,7 +7,7 @@
 * 每天一个大战面试官系列，毕业找工作更自信
 * 每天打鸡血，鼓励大家坚持到底
 * 更新基础的练习和作业，更加贴近实战
-* 
+
 
 ###实战项目之一：精简版CMDB
 
@@ -22,37 +22,25 @@
 * 用Python处理Nginx日志文件，进行多维度数据统计分析
 * 根据ip、访问地址和访问状态等数据统计，统计结果保存数据库
 * Highcharts等流行前端技术多维度将分析结果可视化展示
-<<<<<<< HEAD
+
 <!-- ![](./02.png) -->
 
 ![](http://7xjoq9.com1.z0.glb.clouddn.com/log2.gif)
 ![](http://7xjoq9.com1.z0.glb.clouddn.com/log5.gif)
 ![](http://7xjoq9.com1.z0.glb.clouddn.com/log6.gif)
 
-=======
-![](http://7xjoq9.com1.z0.glb.clouddn.com/log2.gif)
-![](http://7xjoq9.com1.z0.glb.clouddn.com/log5.gif)
-![](http://7xjoq9.com1.z0.glb.clouddn.com/log6.gif)
-<!-- log2.gif -->
->>>>>>> parent of 91a5354... 1
+
 ###实战项目之三（[快速构建实用监控系统](http://blog.51reboot.com/python36-falcon-mon-video/)）
 * Python读取机器的实时使用数据，通过http请求将数据入库
 * 设计数据入库的api，可以收集不同机器的数据
 * 前端将内存数据读出，可视化展示折线图
 * 独立完成此项目，对Python常用的time等模块有很好的掌握
-<<<<<<< HEAD
+
 <!-- ![](./03.png) -->
 ![](http://7xjoq9.com1.z0.glb.clouddn.com/datatable_4.png)
 ![](http://7xjoq9.com1.z0.glb.clouddn.com/blog3.gif)
 
-=======
-<!-- ![](./02.png) -->
-![](http://7xjoq9.com1.z0.glb.clouddn.com/datatable_4.png)
-![](http://7xjoq9.com1.z0.glb.clouddn.com/blog3.gif)
 
-
-
->>>>>>> parent of 91a5354... 1
 <!-- ### 实战项目之四（主机弹性伸缩）
 - 根据日志分析结果设置阀值
 - 超过阀值，通过调用api，实现创建或者关闭虚拟机的操作 -->
