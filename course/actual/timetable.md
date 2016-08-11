@@ -41,6 +41,9 @@
 ![](http://7xjoq9.com1.z0.glb.clouddn.com/blog3.gif)
 
 
+### 课程结构图
+
+![](http://7xjoq9.com1.z0.glb.clouddn.com/1.pic.jpg)
 <!-- ### 实战项目之四（主机弹性伸缩）
 - 根据日志分析结果设置阀值
 - 超过阀值，通过调用api，实现创建或者关闭虚拟机的操作 -->
