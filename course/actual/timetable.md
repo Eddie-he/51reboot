@@ -128,30 +128,49 @@ index、count）
 ##（六）数据库基础
 
 
-* 简单的sql语句学习（增添改查）、数据库建表
+* 简单的sql语句学习
+    - 新建数据库
+    - 新建表格
+    - 插入数据
+    - 修改数据
+    - 删除数据
+    - 查询数据(条件查询)
 * Python执行sql，控制数据库
 * 项目1：用Flask实现数据库的增添改查
-* 实现目标（可以简单的实现web增添改查功能）
-* 项目目的（对Flask、MySQLdb的学习）  
-* 将第六天的作业，存储改为mysql
+    * 实现目标（可以简单的实现web增添改查功能）
+    * 项目目的（对Flask、MySQLdb的学习）  
+* 作业：将第六天的作业，存储改为mysql
 
 ##（七）前端基础
 
 * 前端基础
+    - html
     - css
     - javascript基础
 * 前端学习之jquery
-* Ajax调用Python接口
+    - 查找一个元素（选择器）
+    - 操作元素内容
+    - 修改元素属性
+* Ajax异步调用Python接口
+    - json是什么
 * Bootstrap框架学习
+    - 栅格系统
+    - 按钮组
+    - 表格样式
+    - 表单样式
 * 作业：对第7天的Flask增删改查提供前端页面，通过web页面对数据库增删改查
 * 要求：异步加载数据，不刷新页面
 
 ##（八）前端应用实战
 + jquery简介和使用
+    * jquery核心概念
 + jquery核心模块使用
 + jquery发送异步请求和flask交互
 + 常见jquery插件，实现前端效果
-+ datatable，jquery-ui使用
+    * 模态弹窗
+    * sweetalert弹出信息
+    * jquery-ui丰富的组件
+    * datatable美化表格
 + ajax异步请求操作
 
 ##（九）实战项目之一cmdb
@@ -180,6 +199,7 @@ index、count）
 
 * 常用内置模块（sys、os、commands）
 * 脚本参数处理（sys.argv）
+* 系统性能（psutil）
 * 时间的控制(time)
 * 发邮件模块
 * 网络请求requests库
@@ -210,17 +230,3 @@ index、count）
 * 存储的内存数据可视化
 * 项目扩展介绍
  
-## （十四）实战项目之四（主机弹性伸缩）
-- 根据日志分析结果设置阀值
-- 超过阀值，通过调用api，实现创建或者关闭虚拟机的操作
-
-
-<!-- ## （赠送）Flask扩展
-* Flask大型应用的代码组织结构
-    * 用包来组织代码介绍。 适用场景分析demo实现，
-    * 用蓝图来组织代码介绍。分区结构 VS 功能结构，适用场景分析。demo实现
- -->
-* Flask-script扩展。应用场景分析， demo实现
-* Flask-SQLAlchemy扩展（ORM）应用场景分析，简单demo实现
-* Flask-Migrate扩展,应用场景分析，简单demo实现
-* restful api分析及Flask-restful扩展介绍，应用场景分析 ，简单demo实现
