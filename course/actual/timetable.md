@@ -9,6 +9,11 @@
 * 更新基础的练习和作业，更加贴近实战
 
 
+### 课程结构图
+
+![](http://7xjoq9.com1.z0.glb.clouddn.com/1.pic.jpg)
+
+
 ###实战项目之一：精简版CMDB
 
 * html+css+js多种前端技术结合
@@ -41,9 +46,7 @@
 ![](http://7xjoq9.com1.z0.glb.clouddn.com/blog3.gif)
 
 
-### 课程结构图
 
-![](http://7xjoq9.com1.z0.glb.clouddn.com/1.pic.jpg)
 
 
 ----
