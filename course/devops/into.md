@@ -1,13 +1,14 @@
 ### 入学测试题
-#### 题1：Flask Web增删改查？
-备：实现用户登录、退出、用户列表，修改密码等功能（需要写Web前端页面）
+#### 题1：用Python实现wc
+调⽤用⽅方式:wc.py ⽂文件名 - 例如:wc.py novel.txt
+输出novel.txt中的英文单词的数目,只用考虑英文情况
 
 
 <br>
 
 #### 题2：注释如下代码
 https://github.com/51reboot/rebootMon-4/blob/master/collector/moniItems.py
-注释完后发邮件到  rock@51reboot.com,panda@51reboot.com
+注释完后发邮件到  pc@51reboot.com,panda@51reboot.com
 <br>
 
 #### 题3:熟悉常见的flask扩展
