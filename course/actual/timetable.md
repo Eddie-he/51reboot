@@ -207,10 +207,8 @@ index、count）
 * 发邮件模块
 * 网络请求requests库
     - 实现爬虫和调用其他http接口
-
-
-
-
+* pyquery
+    - 解析html，写爬虫必备
 
 ## （十二）实战项目之二（[Python写一个简单的监控系统](http://blog.51reboot.com/python36-falcon-mon-video/)）
 
