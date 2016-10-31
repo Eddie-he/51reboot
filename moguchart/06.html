@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.min.js"></script>
+    <script src="lodash.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 1000px;height:600px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+// myChart.showLoading();
+
+// $.get('data/asset/data/disk.tree.json', function (diskData) {
+    // myChart.hideLoading();
+    // 
+      // {"source": "Chance", "target": "REB", "value": 5.4},
+      // {"source": "Chance", "target": "LOST", "value": 3.8},
+      // {"source": "REB", "target": "OREB", "value": 0.9},
+      // {"source": "REB", "target": "DREB", "value": 4.5},
+
+      // {"source": "OREB", "target": "Contested DREB", "value": 0.3},
+      // {"source": "OREB", "target": "Uncontested DREB", "value": 0.6},
+      // {"source": "DREB", "target": "Contested DREB", "value": 0.7},
+      // {"source": "DREB", "target": "Uncontested DREB", "value": 3.8},
+      // {"source": "LOST", "target": "OLOST", "value": 0.7},
+      // {"source": "LOST", "target": "DLOST", "value": 3.1},
+
+    diskData =[
+    {
+        "value": 9.2,
+        "name": "Chance",
+    },
+    {
+        "value": 5.4,
+        "name": "REB",
+    },
+    {
+        "value": 0.9,
+        "name": "OREB",
+    },
+    {
+        "value": 4.5,
+        "name": "DREB",
+    },
+    {
+        "value": 1.0,
+        "name": "Contested DREB",
+    },
+    {
+        "value": 4.4,
+        "name": "Uncontested DREB",
+    },
+    // {
+    //     "value": 180,
+    //     "name": "Accounts",
+    //     "path": "Accounts",
+    //     "children": [
+    //         {
+    //             "value": 76,
+    //             "name": "Access",
+    //             "path": "Accounts/Access",
+    //             "children": [
+    //                 {
+    //                     "value": 12,
+    //                     "name": "DefaultAccessPlugin.bundle",
+    //                     "path": "Accounts/Access/DefaultAccessPlugin.bundle"
+    //                 },
+    //                 {
+    //                     "value": 28,
+    //                     "name": "FacebookAccessPlugin.bundle",
+    //                     "path": "Accounts/Access/FacebookAccessPlugin.bundle"
+    //                 },
+    //                 {
+    //                     "value": 20,
+    //                     "name": "LinkedInAccessPlugin.bundle",
+    //                     "path": "Accounts/Access/LinkedInAccessPlugin.bundle"
+    //                 },
+    //                 {
+    //                     "value": 16,
+    //                     "name": "TencentWeiboAccessPlugin.bundle",
+    //                     "path": "Accounts/Access/TencentWeiboAccessPlugin.bundle"
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             "value": 92,
+    //             "name": "Authentication",
+    //             "path": "Accounts/Authentication",
+    //             "children": [
+    //                 {
+    //                     "value": 24,
+    //                     "name": "FacebookAuthenticationPlugin.bundle",
+    //                     "path": "Accounts/Authentication/FacebookAuthenticationPlugin.bundle"
+    //                 },
+    //                 {
+    //                     "value": 16,
+    //                     "name": "LinkedInAuthenticationPlugin.bundle",
+    //                     "path": "Accounts/Authentication/LinkedInAuthenticationPlugin.bundle"
+    //                 },
+    //                 {
+    //                     "value": 20,
+    //                     "name": "TencentWeiboAuthenticationPlugin.bundle",
+    //                     "path": "Accounts/Authentication/TencentWeiboAuthenticationPlugin.bundle"
+    //                 },
+    //                 {
+    //                     "value": 16,
+    //                     "name": "TwitterAuthenticationPlugin.bundle",
+    //                     "path": "Accounts/Authentication/TwitterAuthenticationPlugin.bundle"
+    //                 },
+    //                 {
+    //                     "value": 16,
+    //                     "name": "WeiboAuthenticationPlugin.bundle",
+    //                     "path": "Accounts/Authentication/WeiboAuthenticationPlugin.bundle"
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             "value": 12,
+    //             "name": "Notification",
+    //             "path": "Accounts/Notification",
+    //             "children": [
+    //                 {
+    //                     "value": 12,
+    //                     "name": "SPAAccountsNotificationPlugin.bundle",
+    //                     "path": "Accounts/Notification/SPAAccountsNotificationPlugin.bundle"
+    //                 }
+    //             ]
+    //         }
+    //     ]
+    // },
+
+    ]
+
+    function colorMappingChange(value) {
+        var levelOption = getLevelOption(value);
+        console.log(levelOption)
+        chart.setOption({
+            series: [{
+                levels: levelOption
+            }]
+        });
+        console.log(levelOption)
+    }
+
+    var formatUtil = echarts.format;
+
+    function getLevelOption() {
+        return [
+            {
+                itemStyle: {
+                    normal: {
+                        borderWidth: 0,
+                        gapWidth: 5
+                    }
+                }
+            },
+            {
+                itemStyle: {
+                    normal: {
+                        gapWidth: 1
+                    }
+                }
+            },
+            {
+                colorSaturation: [0.35, 0.5],
+                itemStyle: {
+                    normal: {
+                        gapWidth: 1,
+                        borderColorSaturation: 0.6
+                    }
+                }
+            }
+        ];
+    }
+
+    myChart.setOption(option = {
+
+        title: {
+            text: 'Disk Usage',
+            left: 'center'
+        },
+
+        // tooltip: {
+        //     formatter: function (info) {
+        //         var value = info.value;
+        //         var treePathInfo = info.treePathInfo;
+        //         var treePath = [];
+
+        //         for (var i = 1; i < treePathInfo.length; i++) {
+        //             treePath.push(treePathInfo[i].name);
+        //         }
+
+        //         return [
+        //             '<div class="tooltip-title">' + formatUtil.encodeHTML(treePath.join('/')) + '</div>',
+        //             'Disk Usage: ' + formatUtil.addCommas(value) + ' KB',
+        //         ].join('');
+        //     }
+        // },
+
+        series: [
+            {
+                name:'Disk Usage',
+                type:'treemap',
+                visibleMin: 300,
+                label: {
+                    show: true,
+                    formatter: '{b}'
+                },
+                itemStyle: {
+                    normal: {
+                        borderColor: '#fff'
+                    }
+                },
+                //levels: getLevelOption(),
+                data: diskData
+            }
+        ]
+    });
+// });
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.min.js"></script>
+    <script src="lodash.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 500px;height:300px;margin-top:50px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['AST','FT AST','Secondary AST','Potential AST']
+    },
+    xAxis:  {
+        type: 'category',
+        boundaryGap: false,
+        data: ['2016-17','2015-16','2014-15','2013-14']
+    },
+    yAxis: {
+        type: 'value',
+        axisLabel: {
+            formatter: '{value} '
+        }
+    },
+    series: [
+        {
+            name:'AST',
+            type:'line',
+            smooth:true,
+            data:[5.5,6.7,7.7,8.5]
+        },
+        {
+            name:'FT AST',
+            type:'line',
+            smooth:true,
+            data:[0.5,0.7,0.7,0.6]
+        },
+        {
+            name:'Secondary AST',
+            type:'line',
+            smooth:true,
+            data:[3.0,2.5,1.8,1.7]
+        },
+        {
+            name:'Potential AST',
+            type:'line',
+            smooth:true,
+            data:[11.5,12.3,13.7,15.4]
+        }
+    ]
+};
+
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>
