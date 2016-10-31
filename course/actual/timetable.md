@@ -142,6 +142,7 @@ index、count）
 * 项目1：用Flask实现数据库的增添改查
     * 实现目标（可以简单的实现web增添改查功能）
     * 项目目的（对Flask、MySQLdb的学习）  
+* ORM，利用orm实现对数据库更优雅的管理
 * 作业：将第六天的作业，存储改为mysql
 
 ##（七）前端基础
@@ -189,17 +190,13 @@ index、count）
 * 项目扩展介绍
 
 
-##（十）Python抽象
+##（十）Python抽象和常用模块
 
 + 类的基本概念与详解
 + 变量与方法
 + 作用域与命名空间
 + 继承
 + 类的抽象、封装、方法与实例化实践
-+ 操作数据库封装成类
-
-##（十一）Python常用模块
-
 * 常用内置模块（sys、os、commands）
 * 脚本参数处理（sys.argv）
 * 系统性能（psutil）
@@ -210,14 +207,20 @@ index、count）
 * pyquery
     - 解析html，写爬虫必备
 
+## (十一) 项目一增强实战
+
+* 什么项目是拿得出手的
+* restful API 和 jsonrpc api使用场景的介绍及demo实现，并完成基于restful API规范实现token的demo
+* 讲解运维工单系统的思路及demo实现
+* 重点对MVC思想和基于API开发思想进行深入的引导
+* nginx+uwsgi+flask部署实战
+
 ## （十二）实战项目之二（[Python写一个简单的监控系统](http://blog.51reboot.com/python36-falcon-mon-video/)）
 
 * Python读取机器的实时使用数据，通过http请求将数据入库
 * 设计数据入库的api，可以收集不同机器的数据
 * 前端将内存数据读出，可视化展示折线图
 * 独立完成此项目，对Python常用的time等模块有很好的掌握
-
-
 
 
 ##（十三）实战项目之三（[Nginx日志统计分析与多维可视化](https://github.com/shengxinjing/my_blog/issues/2)）
@@ -230,4 +233,21 @@ index、count）
     - 折线图等等
 * 存储的内存数据可视化
 * 项目扩展介绍
- 
+
+
+## （十四）ansible二次开发和面试实战
+
+* ansible介绍
+* ansible二次开发数字韩
+* 资深面试官面对面，模拟面试
+* 点评简历
+* 模拟面试
+* 技术面试的技巧
+* 面试中的软技能
+    - 如何谈薪资
+    - 日常工作中，如果积累，让你的面试更有料
+* 点评意见和面试经验分享
+* 经验综合和事业生涯规划
+
+
+
