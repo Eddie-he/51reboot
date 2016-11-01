@@ -15,17 +15,28 @@ body{
   border: 2px #dedede solid;
 }
 .container .header{
-  background: #dedede;
+  background-color: #dedede;
   font-size:25px;
   padding-left:10px;
   line-height:40px;
+  /*text-align: */
 }
+/*p.center{
+  text-align: center;
+  margin-top: 0 !important;
+}
+.header strong{
+  display: inline-block;
+  text-align: center;
+}*/
 .container .content{
   /*height:400px;*/
 }
 .container .content iframe{
+/*  display: block;
+  float: left;*/
   border:0;
-  width:400px;
+  width:410px;
   height:400px;
   margin-left: 20px;
 }
@@ -44,7 +55,12 @@ select.pull-right{
   padding:3px 5px;
 }
 
-
+.pull-right{
+  float: right;
+}
+.pull-left{
+  float: left;
+}
 .footer{
   height:100px;
 }
