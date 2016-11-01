@@ -331,8 +331,18 @@ function renderTimeChart(ele_id, team_name,player_ids,player_names,shoufa_ids) {
       trigger: 'axis',
       axisPointer: { // 坐标轴指示器，坐标轴触发有效
         type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
-      }
+      },
+    formatter: function(params, ticket, callback) {
+      console.log(params)
+      debugger
+      
+      var data = params[0]
+      return parseInt(data.dataIndex / 60) + '分' + data.dataIndex % 60 + '秒<br><span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:' + data.color + '"></span>分数差值：' + data.value
+    }
+
+
     },
+
     legend: {
       // show:false,
       // data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
