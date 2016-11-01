@@ -332,11 +332,12 @@ function renderTimeChart(ele_id, team_name,player_ids,player_names,shoufa_ids) {
         type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
       },
     formatter: function(params, ticket, callback) {
-      console.log(params)
+      // console.log(params)
       // debugger
       if (params.color!='white') {
         if (typeof params.name=='object') {
-                return params.name.name
+          let i = params.data.coord[1]
+                return home_names[i]+ params.name.name
 
         }else{
                 return params.name
