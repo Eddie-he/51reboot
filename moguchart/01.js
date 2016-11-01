@@ -134,7 +134,6 @@ var score = 0
 _.forEach(all_data, (v, i) => {
   if (item_obj[v[3]] && item_obj[v[3]].val) {
     if (v[1] == home_team_name) {
-      console.log(v[1])
       score += item_obj[v[3]].val
     } else {
       score -= item_obj[v[3]].val
@@ -327,17 +326,26 @@ function renderTimeChart(ele_id, team_name,player_ids,player_names,shoufa_ids) {
         }
     },
     tooltip: {
-      show: false,
-      trigger: 'axis',
+      show: true,
+      trigger: 'item',
       axisPointer: { // 坐标轴指示器，坐标轴触发有效
         type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
       },
     formatter: function(params, ticket, callback) {
       console.log(params)
-      debugger
-      
-      var data = params[0]
-      return parseInt(data.dataIndex / 60) + '分' + data.dataIndex % 60 + '秒<br><span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:' + data.color + '"></span>分数差值：' + data.value
+      // debugger
+      if (params.color!='white') {
+        if (typeof params.name=='object') {
+                return params.name.name
+
+        }else{
+                return params.name
+
+        }
+
+      }
+      // var data = params[0]
+      // return parseInt(data.dataIndex / 60) + '分' + data.dataIndex % 60 + '秒<br><span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:' + data.color + '"></span>分数差值：' + data.value
     }
 
 
