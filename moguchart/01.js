@@ -209,6 +209,7 @@ renderTimeChart('home', home_team_name,home_player,home_names,home_gs)
 renderTimeChart('away', away_team_name,away_player,away_names,away_gs)
 
 function renderTimeChart(ele_id, team_name,player_ids,player_names,shoufa_ids) {
+  
   var myChartHome = echarts.init(document.getElementById(ele_id));
 
   var homeData = []
@@ -337,7 +338,7 @@ function renderTimeChart(ele_id, team_name,player_ids,player_names,shoufa_ids) {
       if (params.color!='white') {
         if (typeof params.name=='object') {
           let i = params.data.coord[1]
-                return home_names[i]+ params.name.name
+                return player_names[i]+ params.name.name
 
         }else{
                 return params.name
