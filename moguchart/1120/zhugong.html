@@ -1,4 +1,24 @@
-// 球队赛事球员贡献概况
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #main{
+      padding-left:70px;
+    }
+  </style>
+</head>
+<body >
+    <!-- <div id="home" style="width: 900px;height:300px;"></div> -->
+
+    <div id="main" style="width: 1030px;height:1750px;"></div>
+
+
+<script src='../echarts.min.js'></script>
+<script src='../lodash.min.js'></script>
+<script >
+  // 球队赛事球员贡献概况
 
 
 
@@ -31,13 +51,9 @@ var team = new Array('BOS', 'LAL', 'LAL', 'BOS', 'BOS', 'BOS', 'BOS', 'BOS', 'LA
       // var team = new Array('LAL','LAL','LAL','LAL','LAL','POR','LAL','LAL','POR','POR','LAL','POR','LAL','LAL','LAL','POR','POR','LAL','POR','LAL','LAL','LAL','POR','POR','POR','POR','LAL','POR','LAL','POR','LAL','POR','POR','LAL','POR','LAL','POR','LAL','LAL','POR','POR','POR','POR','POR','POR','LAL','LAL','LAL','POR','LAL','POR','LAL','LAL','POR','POR','LAL','LAL','POR','POR','POR','LAL','POR','POR','LAL','LAL','POR','LAL','LAL','POR','LAL','POR','LAL','LAL','LAL','POR','POR','POR','LAL','POR','POR','LAL','LAL','POR','LAL','LAL','LAL','LAL','LAL','LAL','LAL','LAL','LAL','LAL','POR','POR','POR','LAL','POR','LAL','LAL','LAL','POR','POR','LAL','LAL','POR','POR','LAL','POR','POR','POR','POR','POR','LAL','LAL','POR','POR','LAL','POR','LAL','LAL','LAL','LAL','POR','POR','LAL','POR','POR','POR','LAL','POR','LAL','LAL','POR','LAL','POR','POR','LAL','LAL','LAL','POR','LAL','LAL','POR','POR','POR','POR','POR','POR','LAL','POR','POR','LAL','LAL','POR','POR','LAL','LAL','LAL','LAL','POR','POR','LAL','LAL','LAL','POR','POR','LAL','LAL','POR','POR','POR','POR','LAL','POR','POR','LAL','LAL','LAL','POR','LAL','LAL','POR','LAL','POR','POR','POR','LAL','LAL','LAL','LAL','LAL','LAL','LAL','LAL','POR','POR','LAL','POR','POR','LAL','LAL','LAL','LAL','LAL','POR','LAL','POR','LAL','POR','LAL','LAL','POR','POR','LAL','POR','LAL','LAL','POR','LAL','LAL','POR','LAL','POR','LAL','POR','POR','LAL','POR','POR','LAL','POR','LAL','LAL','POR','POR','LAL','POR','POR','POR','POR','LAL','POR','POR','POR','POR','POR','LAL','POR','LAL','POR','POR','POR','LAL','POR','POR','LAL','LAL','LAL','POR','POR','LAL','LAL','POR','POR','POR','LAL','POR','POR','POR','LAL','LAL','POR','LAL','LAL','POR','LAL','POR','POR','LAL','LAL','LAL','POR','LAL','POR','POR','LAL','POR','LAL','LAL','LAL','LAL','POR','LAL','POR','LAL','LAL','POR','LAL','LAL','POR','LAL','POR','LAL','LAL','LAL','POR','POR','POR','POR','POR','POR','POR','LAL','LAL','POR','LAL','LAL','LAL','POR','LAL','LAL','POR','POR','LAL','LAL','LAL','LAL','LAL','POR','POR','POR','LAL','POR','POR','POR','POR','LAL','LAL','LAL','LAL','POR','LAL','POR','LAL','LAL','POR','LAL','LAL','POR','LAL','POR','POR','POR','LAL','POR','LAL','POR','LAL','LAL','POR','LAL','LAL','LAL','POR','LAL','LAL','POR','LAL','POR','POR','LAL','LAL','POR','LAL','POR','POR','POR','LAL','POR','POR','LAL','POR','POR','POR','LAL','LAL','POR','POR','POR','LAL','POR','LAL','LAL','POR','LAL','POR','POR','LAL','LAL','POR','LAL','LAL','LAL','POR','LAL','POR','LAL','POR','POR','POR','LAL','LAL','LAL','POR','POR','LAL','LAL','POR','LAL','POR','LAL','POR','POR','LAL','LAL','LAL','LAL','LAL','POR','POR','POR','POR','LAL','LAL','POR','LAL','LAL','POR','POR','LAL','LAL','POR','POR','LAL','LAL','POR','POR','POR','POR','LAL','POR','POR','LAL','POR','LAL','LAL','LAL','LAL','LAL','POR','POR','POR','LAL','POR','POR','LAL','POR','LAL','POR','POR','LAL','LAL','LAL','POR','POR','LAL','POR','POR','LAL','POR','LAL','LAL','LAL');
 
 
-
-
-
-
 time = _.map(time, (v, i) => parseInt(v / 10))
 var home_team_name='LAL'
-var away_team_name="POR"
+var away_team_name="BOS"
 var play_obj = {}
 _.forEach(away_player, (v, i) => {
   play_obj[v] = away_player_name_out[i]
@@ -65,7 +81,6 @@ function getAllTime(num) {
 }
 var xAxis = _.range(total_time)
 
-
 // 'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow'
 var item_obj = {
     m2p: {
@@ -80,17 +95,17 @@ var item_obj = {
     "2p": {
       name: "命中两分",
       val: 2,
-      symbol: 'image://img/2.png'
+      symbol: 'image://../img/2.png'
     },
     "3p": {
       name: "命中三分",
       val: 3,
-      symbol: 'image://img/3.png'
+      symbol: 'image://../img/3.png'
     },
     ft: {
       name: "罚球命中",
       val: 1,
-      symbol: 'image://img/1.png'
+      symbol: 'image://../img/1.png'
 
     },
     orb: {
@@ -106,32 +121,140 @@ var item_obj = {
       name: "盖帽对方"
     },
     stl: {
-      name: "抢断对手"
+      name: "抢断对手",
+      val:1
     },
     tov: {
-      name: "失误"
+      name: "失误",
+      val:1
     },
     in : {
       name: "上场",
-      symbol: 'image://img/up.png'
+      symbol: 'image://../img/up.png'
     },
     out: {
       name: "被换下",
-      symbol: 'image://img/down.png'
+      symbol: 'image://../img/down.png'
     },
     tf: {
       name: "技术犯规"
     },
     pf: {
       name: "犯规"
+    },
+    pause:{
+      name:'暂停',
+      symbol:'image://jiaolian.jpg'
     }
   }
   // 时间毫秒，队伍，队员id，操作
   // 
 var all_data = _.zip(time, team, player_id, item)
+let player_score = {}
+  console.log(all_data[0])
+
+_.forEach(all_data,function(v,i){
+  // player_score[]
+  if (!player_score[v[2]]) {
+    player_score[v[2]] = 0
+  }
+  if (v[3]=='2p'||v[3]=='3p'||v[3]=='ft') {
+    player_score[v[2]] = player_score[v[2]]+item_obj[v[3]].val
+  }
+})
+// console.log(player_score)
 var score_data = _.fill(new Array(time[0]), 0)
 var score = 0
+var circleData = {
+  nodes:[],
+  links:[]
+}
+let temp = {}
+let uuid = 0
+// let 
 _.forEach(all_data, (v, i) => {
+      if (!temp[v[2]]) {
+      circleData.nodes.push({
+        // id:uuid+'',
+        value:player_score[v[2]],
+        symbolSize:player_score[v[2]]*2,
+        name:play_obj[v[2]],
+        category:['BOS','LAL'].indexOf(v[1]),
+        draggable:true,
+        label:{
+          normal:{
+            show:true
+          }
+        }
+      })
+      temp[v[2]] = true
+      uuid = uuid+1
+      }
+
+    if (v[3]=='ast') {
+
+      for(data of [all_data[i-1],all_data[i+1]]){
+        if (data[0]==v[0]&&item_obj[data[3]].val) {
+          circleData.links.push({
+            time:v[0],
+            extra:'助攻队友',
+            source:play_obj[v[2]],
+            target:play_obj[data[2]],
+            label:{
+              normal:{
+                // show:true,
+              }
+            },
+            lineStyle:{
+              normal:{color:'blue',width:1}
+            }
+          })
+          // return false
+        }        
+      }
+    }
+    if (v[3]=='tov') {
+
+      for(data of [all_data[i-1],all_data[i+1]]){
+      if (data[0]==v[0]&&item_obj[data[3]].val) {
+        circleData.links.push({
+          extra:'抢断',
+            time:v[0],
+
+          target:play_obj[v[2]],
+          source:play_obj[data[2]],
+          lineStyle:{
+            normal:{color:'red',width:1}
+          }
+        })
+        // return false
+      }       
+      }
+    }
+    if (v[3]=='pf') {
+      // console.log(v[0])
+
+
+      for(data of [all_data[i-1],all_data[i+1]]){
+      if (data&&data[0]==v[0]&&_.indexOf(['mft','ft'],data[3])>-1) {
+        circleData.links.push({
+          extra:'犯规导致',
+            time:v[0],
+
+          extraaction:'罚球',
+          source:play_obj[v[2]],
+          target:play_obj[data[2]],
+          lineStyle:{
+            normal:{color:'green',width:1}
+          }
+        })
+      }     
+      }
+    }
+
+  // if (v[3]=='ast') {
+  //   return
+  // }
   if (item_obj[v[3]] && item_obj[v[3]].val) {
     if (v[1] == home_team_name) {
       score += item_obj[v[3]].val
@@ -141,76 +264,143 @@ _.forEach(all_data, (v, i) => {
     score_data = score_data.concat(_.fill(new Array(v[0] - score_data.length), score))
   }
 })
+
+// console.log(circleData.nodes)
+// console.log(circleData.nodes.map(v=>v.name))
+// console.log(circleData.links)
+// 
+function formatTime(num){
+  let n = Number(num)
+  return parseInt(num/60)+'分'+num%60+'秒'
+}
+    optionCircle = {
+        title: {
+            text: 'Les Miserables',
+            subtext: 'Default layout',
+            top: 'bottom',
+            left: 'right'
+        },
+        tooltip: {
+          formatter:function(params){
+            if (params.data.draggable) {
+              let temp = []
+              _.forEach(circleData.links,(v)=>{
+
+                if (v.source==params.name||v.target==params.name) {
+                console.log(v)
+                temp.push(formatTime(v.time)+v.source+v.extra+v.target+(v.extraaction||''))
+
+                }
+              })
+              // debugger
+              return params.name+'<br>'+temp.join('<br>')
+            }else{
+              // console.log(params)
+              return params.name.replace('>',params.data.extra)+(params.data.extraaction||'')
+            }
+            // console.log(params)
+          }
+        },
+        legend: [{
+            // selectedMode: 'single',
+            data:['BOS','LAL']
+            // data: circleData.nodes.map(v=>v.name)
+        }],
+        animationDuration: 1500,
+        animationEasingUpdate: 'quinticInOut',
+        series : [
+            {
+                name: 'Les Miserables',
+                type: 'graph',
+                layout: 'force',
+                force:{
+                  repulsion:1000,
+                  edgeLength:400
+                },
+                focusNodeAdjacency:true,
+                edgeSymbol: ['circle', 'arrow'],
+                edgeSymbolSize: [8, 8],
+
+                data: circleData.nodes,
+                links: circleData.links,
+                categories: ['BOS','LAL'],
+                roam: true,
+                label: {
+                    normal: {
+                        position: 'right',
+                        formatter: '{b}'
+                    }
+                },
+                lineStyle: {
+                    normal: {
+                        color: 'source',
+                        curveness: 0.3
+                    }
+                }
+            }
+        ]
+    };
+    optionCircle1 = {
+        title: {
+            text: 'Les ',
+            subtext: 'Circular layout',
+            top: 'bottom',
+            left: 'right'
+        },
+        tooltip: {},
+        legend: [{
+            // selectedMode: 'single',
+            data: circleData.nodes.map(v=>v.name)
+        }],
+        animationDurationUpdate: 1500,
+        animationEasingUpdate: 'quinticInOut',
+        series : [
+            {
+                name: 'Les ',
+                type: 'graph',
+                layout: 'none',
+                circular: {
+                    rotateLabel: true
+                },
+                data: circleData.nodes,
+                links: circleData.links,
+                categories: ['POR','LAL'],
+                roam: true,
+                label: {
+                    normal: {
+                        position: 'right',
+                        formatter: '{b}'
+                    }
+                },
+                lineStyle: {
+                    normal: {
+                        color: 'source',
+                        curveness: 0.3
+                    }
+                }
+            }
+        ]
+    };
+
+
 score_data = score_data.concat(_.fill(new Array(total_time - score_data.length), score))
 
 // score_data = score_data.concat(_.fill(new Array(v[0] - score_data.length), score))
 
 var myChart = echarts.init(document.getElementById('main'));
+myChart.setOption(optionCircle);
 
-// 指定图表的配置项和数据
-var option = {
-  title: {
-    text: '得分差'
-  },
-      toolbox:{
-                    top:15,
-        feature:{
-            dataView:{
-                show:true
-            }
-        }
-    },
-  tooltip: {
-    trigger: 'axis',
-    formatter: function(params, ticket, callback) {
-      var data = params[0]
-      return parseInt(data.dataIndex / 60) + '分' + data.dataIndex % 60 + '秒<br><span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:' + data.color + '"></span>分数差值：' + data.value
-    }
-  },
-  legend: {
-    data: ['Step Start', 'Step Middle', 'Step End']
-  },
-  grid: {
-    left: '3.8%',
-    right: '4%',
-    bottom: '3%',
-    containLabel: true
-  },
-  // toolbox: {
-  //   feature: {
-  //     saveAsImage: {}
-  //   }
-  // },
-  xAxis: {
-    type: 'category',
-    data: xAxis,
-    // offset: 100,
-    axisLabel: {
-      formatter: function() {}
-    }
-  },
-  yAxis: {
-    type: 'value'
-  },
-  series: [
-    {
-      name: 'Step End',
-      type: 'line',
-      step: 'end',
-      data: score_data
-    }
-  ]
-};
-
+// var homeEle = echarts.init(document.getElementById('home'));
+// var awayEle = echarts.init(document.getElementById('away'));
 
 // 使用刚指定的配置项和数据显示图表。
-myChart.setOption(option);
-renderTimeChart('home', home_team_name,home_player,home_names,home_gs)
-renderTimeChart('away', away_team_name,away_player,away_names,away_gs)
 
-function renderTimeChart(ele_id, team_name,player_ids,player_names,shoufa_ids) {
+// renderTimeChart(homeEle, home_team_name,home_player,home_names,home_gs)
+// renderTimeChart(awayEle, away_team_name,away_player,away_names,away_gs)
+
+function renderTimeChart(ele, team_name,player_ids,player_names,shoufa_ids) {
   
-  var myChartHome = echarts.init(document.getElementById(ele_id));
+  var myChartHome = ele
 
   var homeData = []
   player_ids.forEach((v, i) => {
@@ -221,10 +411,6 @@ function renderTimeChart(ele_id, team_name,player_ids,player_names,shoufa_ids) {
 
     }
   })
-  // console.log(homeData)
-  // return 
-  // homeData[0].push(2)
-  // all_data=[]
   _.forEach(all_data, (v, i) => {
     if (v[1] == team_name) {
       var play_index = _.indexOf(player_ids, v[2])
@@ -314,6 +500,7 @@ function renderTimeChart(ele_id, team_name,player_ids,player_names,shoufa_ids) {
   homeSeries[0].markPoint = {
     data: markPointData
   }
+  console.log(markPointData)
   var homeOption = {
     title: {
       text: team_name + '上场情况'
@@ -333,8 +520,6 @@ function renderTimeChart(ele_id, team_name,player_ids,player_names,shoufa_ids) {
         type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
       },
     formatter: function(params, ticket, callback) {
-      // console.log(params)
-      // debugger
       if (params.color!='white') {
         if (typeof params.name=='object') {
           let i = params.data.coord[1]
@@ -354,7 +539,7 @@ function renderTimeChart(ele_id, team_name,player_ids,player_names,shoufa_ids) {
     },
 
     legend: {
-      // show:false,
+      show:false,
       // data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
     },
 
@@ -393,3 +578,7 @@ function renderTimeChart(ele_id, team_name,player_ids,player_names,shoufa_ids) {
   };
   myChartHome.setOption(homeOption);
 }
+
+</script>
+</body>
+</html>

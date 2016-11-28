@@ -1,0 +1,230 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="../echarts.min.js"></script>
+    <script src="../lodash.min.js"></script>
+    <style>
+      
+      .chart{
+        width: 800px;height:400px;float:left;margin-right:20px
+      }
+    </style>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <!-- 综合能力 -->
+    <div id="main1" class='chart'></div>
+    <script type="text/javascript">
+
+
+function rebuild(arr){
+    let newArr=[]
+    newArr.push(arr[3])
+    newArr.push(arr[4])
+    newArr.push(arr[2])
+    newArr.push(arr[5])
+    newArr.push(arr[1])
+    newArr.push(arr[0])
+    return newArr
+}
+option = {
+    tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    legend: {
+        data:[ '支出', '收入']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+                    axisLabel:{
+          formatter:function(value){
+            if (value<0) {
+              return -value
+            }
+            return value
+          }
+        },
+            type : 'value',
+            position: 'top',
+        }
+    ],
+    // color:['red','black','yellow'],
+    yAxis : [
+        {
+            // offset:-20,
+            type : 'category',
+            axisTick : {show: false},
+            // data : ['REB','AST','STL','BLK','TO','PF','PTS']
+            data : rebuild(['REB','AST','STL','BLK','TO','PF'])
+
+        }
+    ],
+// var away_player_name_out = new Array('科比-布莱恩特', '拉玛尔-奥多姆', '保罗-加索尔', '德里克-费舍尔', '弗拉迪米尔-拉德马诺维奇', '乔丹-法玛尔', '卢克-沃顿', '萨沙-武贾西奇', '特雷沃-阿里扎', '罗尼-图里亚夫');
+// var home_player_name_out = new Array('凯文-加内特', '雷-阿伦', '拉简-朗多', '保罗-皮尔斯', '肯德里克-帕金斯', '詹姆斯-波西', '埃迪-豪斯', '里昂-鲍威', 'P.J.-布朗', '格伦-戴维斯', '托尼-阿伦');
+
+    series : [
+        {
+            name:'科比-布莱恩特',
+            type:'bar',
+            stack: 'one',
+            label: {
+                normal: {
+                    show: false
+                }
+            },
+            data:rebuild([3,1,1,0,4,1].map(v=>-v))
+        },
+        {
+            name:'拉玛尔-奥多姆',
+            type:'bar',
+            stack: 'one',
+            label: {
+                normal: {
+                    show: false
+                }
+            },
+            data:rebuild([10,5,0,0,3,4].map(v=>-v))
+        },
+        {
+            name:'保罗-加索尔',
+            type:'bar',
+            stack: 'one',
+            label: {
+                normal: {
+                    show: false
+                }
+            },
+            data:rebuild([8,2,0,0,5,3].map(v=>-v))
+        },
+        {
+            name:'德里克-费舍尔',
+            type:'bar',
+            stack: 'one',
+            label: {
+                normal: {
+                    show: false
+                }
+            },
+            data:rebuild([0,4,0,0,1,5].map(v=>-v))
+        },
+        {
+            name:'弗拉迪米尔-拉德马诺维奇',
+            type:'bar',
+            stack: 'one',
+            label: {
+                normal: {
+                    show: false
+                }
+            },
+            data:rebuild([3,0,0,0,0,5].map(v=>-v))
+        },
+        {
+            name:'其他',
+            type:'bar',
+            stack: 'one',
+            label: {
+                normal: {
+                    show: false
+                }
+            },
+            data:rebuild([5,4,3,0,6,7].map(v=>-v))
+        },
+        {
+            name:'凯文-加内特',
+            type:'bar',
+            stack: 'one',
+            label: {
+                normal: {
+                    show: false
+                }
+            },
+            data:rebuild([14,4,3,1,0,2])
+        },
+        {
+            name:'雷-阿伦',
+            type:'bar',
+            stack: 'one',
+            label: {
+                normal: {
+                    show: false
+                }
+            },
+            data:rebuild([4,2,3,0,1,0])
+        },
+        {
+            name:'拉简-朗多',
+            type:'bar',
+            stack: 'one',
+            label: {
+                normal: {
+                    show: false
+                }
+            },
+            data:rebuild([7,8,6,0,1,3])
+        },
+        {
+            name:'保罗-皮尔斯',
+            type:'bar',
+            stack: 'one',
+            label: {
+                normal: {
+                    show: false
+                }
+            },
+            data:rebuild([3,10,2,0,2,2])
+        },
+        {
+            name:'肯德里克-帕金斯',
+            type:'bar',
+            stack: 'one',
+            label: {
+                normal: {
+                    show: false
+                }
+            },
+            data:rebuild([4,0,0,1,2,5])
+        },
+        {
+            name:'其他',
+            type:'bar',
+            stack: 'one',
+            label: {
+                normal: {
+                    show: false
+                }
+            },
+            data:rebuild([16,9,4,2,1,13])
+        },
+    ]
+};
+// var home_player_name_out = new Array('凯文-加内特', '雷-阿伦', '拉简-朗多', '保罗-皮尔斯', '肯德里克-帕金斯', '詹姆斯-波西', '埃迪-豪斯', '里昂-鲍威', 'P.J.-布朗', '格伦-戴维斯', '托尼-阿伦');
+
+
+echarts.init(document.getElementById('main1')).setOption(option)
+
+
+
+
+
+
+
+
+
+
+
+
+// echarts.init(document.getElementById('main3')).setOption(option3)
+    </script>
+</body>
+</html>

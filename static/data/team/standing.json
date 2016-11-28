@@ -1,0 +1,40 @@
+{
+    "context": {
+        "user": {
+            "countryCode": "CN",
+            "countryName": "China",
+            "locale": "zh_CN",
+            "timeZone": "+08:00",
+            "timeZoneCity": "Australia/Perth"
+        },
+        "device": {
+            "clazz": null
+        }
+    },
+    "error": {
+        "detail": null,
+        "isError": "false",
+        "message": null
+    },
+    "payload": {
+        "league": {
+            "id": "14",
+            "name": "Orlando"
+        },
+        "season": {
+            "isCurrent": "true",
+            "rosterSeasonType": 2,
+            "rosterSeasonYear": "2016",
+            "rosterSeasonYearDisplay": "2016",
+            "scheduleSeasonType": 2,
+            "scheduleSeasonYear": "2016",
+            "scheduleYearDisplay": "2016",
+            "statsSeasonType": 2,
+            "statsSeasonYear": "2016",
+            "statsSeasonYearDisplay": "2016",
+            "year": "2016",
+            "yearDisplay": "2016"
+        }
+    },
+    "timestamp": "1468401084496"
+}

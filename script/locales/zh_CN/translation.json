@@ -1,0 +1,1124 @@
+{
+    "_siteName": "NBA中国官方网站",
+    "_placeholder": {
+        "ad": {
+            "top": "Ad Top 728x90",
+            "topMobile": "Ad Top Mobile 320x50",
+            "right": "Ad Right 300x250",
+            "nbaRight": "NBA 5 Right",
+            "licenseeContent": "Licensee Homepage Content"
+        }
+    },
+    "_seasonType": {
+        "preseason": "季前赛",
+        "regularSeason": "常规赛",
+        "playoffSeason": "季后赛"
+    },
+    "_round": {
+        "round_00_1": "第一轮",
+        "round_00_2": "东西部半决赛",
+        "round_00_3": "东西部决赛",
+        "round_00_4": "总决赛"
+    },
+    "_stats": {
+        "3P%": "三分%",
+        "3PM": "三分命中",
+        "3PA": "三分出手",
+        "APG": "场均助攻",
+        "FT%": "罚球%",
+        "PPG": "场均得分",
+        "RPG": "场均篮板",
+        "PTS": "得分",
+        "REB": "篮板",
+        "AST": "助攻",
+        "FG%": "%",
+        "TP%": "三分%",
+        "PF": "犯规",
+        "POS": "位置",
+        "MIN": "分钟",
+        "FGMA": "命中",
+        "3PMA": "三分命中",
+        "FTMA": "罚球命中",
+        "plusMinus": "+/-",
+        "OFF": "进攻",
+        "DEF": "防守",
+        "AVG": "平均",
+        "TOT": "总数",
+        "ST": "抢断",
+        "TO": "失误",
+        "BS": "盖帽",
+        "BA": "被盖帽",
+        "W": "胜",
+        "L": "负",
+        "PCT": "胜率",
+        "GB": "胜场差",
+        "CONF": "联盟",
+        "DIV": "分区",
+        "PA": "场均失分",
+        "DIFF": "差距",
+        "BLK": "盖帽",
+        "FBP": "快攻得分",
+        "PITP": "禁区得分",
+        "POT": "对方失误得分",
+        "G": "场数",
+        "GS": "先发",
+        "MPG": "分钟",
+        "FG": "投篮命中",
+        "OREB": "进攻篮板",
+        "DREB": "防守篮板",
+        "SPG": "场均抢断",
+        "BPG": "场均盖帽",
+        "STL": "抢断",
+        "TPMA": "三分命中",
+        "name": "姓名",
+        "rank": "排名",
+        "easternConf": "东部联盟",
+        "westernConf": "西部联盟",
+        "TPM": "三分命中",
+        "TPA": "三分出手",
+        "FGM": "命中",
+        "FGA": "出手",
+        "FTM": "罚球命中",
+        "FTA": "罚球出手",
+        "OPPG": "对手得分",
+        "EFF": "效率",
+        "GAMES": "比赛",
+        "POSSESSION": "控球",
+        "BL": "最多领先分数",
+        "pointsFor": "得分/场"
+    },
+    "_page": {
+        "home": "首页",
+        "boxscore": "技术统计",
+        "standings": "排名",
+        "allTeams": "球队",
+        "teamIndex": "球队列表",
+        "teamComparison": "球队对比",
+        "teamProfile": "球队资料",
+        "teamSchedule": "球队赛程",
+        "teamStats": "球队数据",
+        "teamLeaders": "球队数据王",
+        "teamRoster": "球队阵容",
+        "teamHotZones": "球队热区",
+        "playerIndex": "球员",
+        "playerComparison": "球员对比",
+        "playerProfile": "球员资料",
+        "playerShotchart": "球员投篮分布图",
+        "playerStats": "球员数据",
+        "playerHotZones": "球员热区",
+        "playoffPicture": "季后赛对阵预测",
+        "playoffs": "季后赛",
+        "playoffGame": "季后赛: ",
+        "playoffSeries": "季后赛系列赛",
+        "playoffMatchup": "季后赛对阵",
+        "gamePreview": "比赛前瞻",
+        "schedule": "赛程",
+        "broadcasterSchedule": "转播表",
+        "scores": "比分",
+        "stats": "数据",
+        "leagueLeaders": "联盟数据王",
+        "article": "文章",
+        "individualStats": "联盟球员数据排名",
+        "photos": "图片",
+        "slideshow": "图集",
+        "headlines": "头条",
+        "news": "新闻",
+        "game": "比赛",
+        "preview": "前瞻",
+        "split": "分类",
+        "apps": "Download Gametime Apps",
+        "draft": "选秀大会",
+        "historicalPlayerIndex": "退役球员",
+        "historicalPlayerStats": "退役",
+        "playersSnapshot": "球员",
+        "historicalTeamList": "往季球队索引",
+        "historicalTeamStats": "往季球队数据",
+        "advancedTeamStats": "高级球队数据",
+        "playerNews": "球员新闻",
+        "teamNews": "球队新闻",
+        "recap": "比赛回顾",
+        "games": "比赛",
+        "store": "Store",
+        "watchGames": "Watch Games",
+        "video": "Video",
+        "nbaVideos": "NBA Videos",
+        "videoVault": "Video Vault",
+        "nbaTv": "NBA TV",
+        "leaguePass": "League Pass",
+        "platforms": "Platforms",
+        "packages": "Packages",
+        "support": "Support",
+        "nbaApps": "NBA Apps",
+        "nbaNews": "NBA News",
+        "gifs": "GIFs",
+        "keyDates": "Key Dates",
+        "teams": "Teams",
+        "players": "Players",
+        "advancedLeaders": "Advanced Leaders",
+        "playerTracking": "Player Tracking",
+        "playType": "Play Type",
+        "allStar": "All-Star",
+        "events": "Events",
+        "watchAllStar": "Watch All-Star",
+        "tvSchedule": "TV Schedule",
+        "roster": "Roster"
+    },
+    "_status": {
+        "TBD": "待定 ",
+        "PPD": "比赛延期",
+        "CNCL": "比赛取消"
+    },
+    "_team": {
+        "name": {
+            "hornets": "黄蜂"
+        }
+    },
+    "_ordinals": {
+        "th": "th",
+        "rd": "rd",
+        "nd": "nd",
+        "st": "st"
+    },
+    "schedulePage": {
+        "date": "日期",
+        "time": "时间",
+        "matchup": "对阵",
+        "score": "比分",
+        "timeScore": "时间/比分",
+        "location": "地点",
+        "broadcast": "转播",
+        "links": "链接"
+    },
+    "broadcasterSchedulePage": {
+        "date": "日期",
+        "time": "时间",
+        "matchup": "对阵",
+        "score": "比分",
+        "timeScore": "时间/比分",
+        "location": "地点",
+        "broadcast": "观看直播",
+        "links": "连接",
+        "national": "全国电视台",
+        "local": "地方电视台",
+        "internet": "网络",
+        "allTeams": "全部球队",
+        "allChannels": "全部转播商"
+    },
+    "allStar": {
+        "socialIconTitle": {
+            "socialSpotlight": "All-Star 2014 Social Spotlight",
+            "event": "NBA All-Star 2014",
+            "saturday": "State Farm All-Star Saturday Night 2014"
+        }
+    },
+    "allTeams": {
+        "socialIconTitle": "NBA每支球队的数据、阵容、得分王及赛程:",
+        "title": "全部球队",
+        "conferenceTitle": "联盟",
+        "eastern": "东部",
+        "western": "西部",
+        "summer": "拉斯维加斯夏季",
+        "orlando": "奥兰多夏季",
+        "utah": "犹他夏季",
+        "links": {
+            "stats": "数据",
+            "leaders": "数据王",
+            "roster": "阵容",
+            "schedule": "赛程"
+        }
+    },
+    "article": {
+        "socialIconTitle": "新闻文章"
+    },
+    "boxScorePage": {
+        "socialIconTitle": "从数字上看: {{ game.awayTeam.profile.displayAbbr }} @ {{ game.homeTeam.profile.displayAbbr }}",
+        "title": "技术统计:",
+        "chart": "分布图",
+        "table": "表格",
+        "playByPlay": "文字直播",
+        "all": "全部",
+        "qLabel": "第{{i}}节",
+        "otLabel": "加时{{ i - 4 }}",
+        "links": {
+            "playerStats": "技术统计",
+            "playByPlay": "文字直播",
+            "teamComparison": "球队对比",
+            "boxScore": "技术统计",
+            "gameStream": "Second Screen",
+            "recap": "比赛回顾"
+        },
+        "period": "第__periodNo__节"
+    },
+    "currentLineup": {
+        "homeTitle": "场上阵容 - {{ game.homeTeam.profile.displayAbbr }}",
+        "awayTitle": "场上阵容 - {{ game.awayTeam.profile.displayAbbr }}",
+        "player": "球员"
+    },
+    "errorPage": {
+        "fetchFeedError": "页面在试图获取资料时出错，导致无法正确显示。请尝试刷新页面。",
+        "okButton": "OK",
+        "errorFetching": "抓取错误"
+    },
+    "expandedGameSnapshot": {
+        "boxScore": "技术统计",
+        "status": {
+            "live": "直播"
+        },
+        "conferenceRankHome": "在 <a data-ng-href=\"/standings/#!/{{game.homeTeam.profile.conference.toLowerCase()}}\"><span data-ng-bind-html='game.homeTeam.profile.displayConference'></span>联盟</a>中排名#{{ game.homeTeam.standing.confRank }}",
+        "conferenceRankAway": "在 <a data-ng-href=\"/standings/#!/{{game.awayTeam.profile.conference.toLowerCase()}}\"><span data-ng-bind-html='game.awayTeam.profile.displayConference'></span>联盟</a>中排名#{{ game.awayTeam.standing.confRank }}",
+        "home": "主场",
+        "away": "客场",
+        "versus": "vs",
+        "teamRecord": "球队战绩",
+        "last10Games": "过去10场",
+        "location": "地点:",
+        "localBroadcast": "观看直播:",
+        "attendance": "观众",
+        "quarter": "节",
+        "overtime": "加时",
+        "quarterPeriod": "第__period__节",
+        "overTimePeriod": "加时__overtime__",
+        "internet": "网络:",
+        "timeouts": "暂停"
+    },
+    "fullPlayerStats": {
+        "playerStats": "赛季数据",
+        "rank": "排名",
+        "player": "球员",
+        "team": "球队",
+        "tableFilters": "筛选表格",
+        "avg": "平均",
+        "tot": "总计",
+        "go": "提交",
+        "pagination": "Page {{ playerPage }} of {{ playerMaxPages }}"
+    },
+    "fullTeamStats": {
+        "title": "数据",
+        "shortTitle": "数据",
+        "rank": "排名",
+        "team": "球队",
+        "tableFilters": "筛选表格",
+        "noMatch": "没有匹配的球队。",
+        "seePastStats": "查看过去的数据",
+        "go": "提交"
+    },
+    "gamePreviewPage": {
+        "socialIconTitle": "查看以下对阵的比赛前瞻 {{ game.awayTeam.profile.displayAbbr }} @ {{ game.homeTeam.profile.displayAbbr }}",
+        "title": "比赛前瞻",
+        "previewRotoWire": "前瞻"
+    },
+    "gameSnapshot": {
+        "status": {
+            "live": "直播"
+        },
+        "quarter": "第__period__节",
+        "period": {
+            "ot": "加时__overtime__"
+        },
+        "versus": "vs",
+        "link": {
+            "boxScore": "技术统计",
+            "highlights": "比赛集锦",
+            "licenseeContent": "Licensee Content",
+            "watchLive": "观看直播",
+            "preview": "前瞻",
+            "gameTracker": "赛程追踪",
+            "archive": "比赛回放"
+        }
+    },
+    "gameStatsPlayer": {
+        "title": "技术统计",
+        "name": "姓名"
+    },
+    "gameStream": {
+        "title": "Second Screen",
+        "socialFiltersLabel": "Social",
+        "playsFiltersLabel": "Plays"
+    },
+    "gamesRemaining": {
+        "title": "剩余比赛",
+        "conferences": {
+            "eastern": "东部联盟",
+            "western": "西部联盟"
+        }
+    },
+    "homepageScoreboard": {
+        "q": "第__period__节",
+        "ot": "加时__overtime__",
+        "noGamesToday": "今日无比赛",
+        "seeFullScoreboard": "查看完整赛果",
+        "nextGame": "下一场比赛 {{ msb.next.games[0].profile.utcMillis | date:'shortDate' }}"
+    },
+    "hotZoneComparison": {
+        "title": "投篮表现",
+        "performance": {
+            "aboveAverage": "> 联盟平均",
+            "average": "= 联盟平均",
+            "belowAverage": "< 联盟平均"
+        },
+        "regions": {
+            "total": "总计",
+            "2pt": "两分",
+            "3pt": "三分"
+        },
+        "seeAllHotZones": "更多",
+        "seeFullChart": "查看完整分布图",
+        "seeAll": "查看全部",
+        "hotZones": "热区"
+    },
+    "navbar": {
+        "productName": "NBA中国官方网站",
+        "global": "全球",
+        "languages": "语言",
+        "video": "视频",
+        "scores": "比分",
+        "boxScore": "技术统计",
+        "schedule": "赛程",
+        "broadcasterSchedule": "比赛直播表",
+        "standings": "排名",
+        "stats": "统计",
+        "teams": "球队",
+        "players": "球员",
+        "nbaPlayoffs": "季后赛",
+        "news": "新闻",
+        "photos": "图片",
+        "gamePreview": "比赛前瞻",
+        "playerStats": "单个球员数据",
+        "fullTeamStats": "球队数据",
+        "fullPlayerStats": "球员数据",
+        "leagueLeaders": "联盟数据王",
+        "allTeams": "球队列表",
+        "teamComparison": "球队对比",
+        "teamProfile": "单支球队资料",
+        "teamSchedule": "单支球队赛程",
+        "teamStats": "单支球队数据",
+        "teamLeaders": "单支球队得分王",
+        "teamRoster": "单支球队阵容",
+        "teamHotZones": "单支球队热区",
+        "playerIndex": "球员列表",
+        "playerComparison": "球员对比",
+        "playerProfile": "单个球员资料",
+        "playerHotZones": "单个球员热区",
+        "playoffPicture": "季后赛对阵预测",
+        "playoffs": "季后赛",
+        "playoffSeries": "单个季后赛系列赛",
+        "article": "文章",
+        "games": "场比赛",
+        "explore": "Explore",
+        "more": "More",
+        "historicalPlayers": "退役球员",
+        "advancedTeamStats": "高级球队数据",
+        "logIn": "Log In",
+        "logOut": "Log Out",
+        "vault": "Vault",
+        "nbaTv": "NBA TV",
+        "leaguePass": "League Pass",
+        "platforms": "Platforms",
+        "packages": "Packages",
+        "support": "Support"
+    },
+    "leagueLeadersPage": {
+        "title": "联盟数据王"
+    },
+    "leagueLeaders": {
+        "socialIconTitle": "点击查看NBA联盟数据王",
+        "title": "联盟球员数据王",
+        "playoffTitle": "季后赛数据王",
+        "shortTitle": "数据王",
+        "lastGameDay": "上个比赛日",
+        "daily": "每日",
+        "season": "赛季",
+        "seasonLeaders": "赛季数据王",
+        "rank": "排名",
+        "player": "球员",
+        "team": "球队",
+        "APG": "助攻",
+        "PPG": "得分",
+        "RPG": "篮板",
+        "SPG": "抢断",
+        "BPG": "盖帽"
+    },
+    "leagueLeadingTeams": {
+        "title": "联盟球队数据",
+        "shortTitle": "球队",
+        "lastGameDay": "上个比赛日",
+        "season": "赛季",
+        "seasonLeaders": "赛季数据王",
+        "rank": "排名",
+        "team": "球队",
+        "link": "更多",
+        "seeAllPlayerStats": "更多",
+        "conference": "联盟"
+    },
+    "leaguePass": {
+        "watchEveryGameWith": "Watch on"
+    },
+    "leagueStandings": {
+        "socialIconTitle": "查看及时的NBA球队排名",
+        "title": "联盟排名",
+        "conference": "联盟",
+        "division": "分区",
+        "standings": "排名",
+        "streaksLast10": "最近10场&连续成绩",
+        "marginStatistics": "分差 & 统计",
+        "aheadBehind": "领先 & 落后",
+        "home": "主场",
+        "road": "客场",
+        "last10": "最近10场",
+        "streak": "连续成绩",
+        "rank": "排名",
+        "team": "球队",
+        "eastern": "东部",
+        "western": "西部",
+        "summer": "拉斯维加斯夏季",
+        "orlando": "奥兰多夏季",
+        "utah": "犹他夏季",
+        "stats": {
+            "streak": "连续",
+            "homeStreak": "主场",
+            "roadStreak": "客场",
+            "winStreak": "连胜",
+            "lossStreak": "连败",
+            "last10": "最近10场",
+            "last10Home": "最近10个主场",
+            "last10Road": "最近10个客场",
+            "threePtsOrLess": "< 3分",
+            "tenPtsOrMore": "> 10分",
+            "score100Plus": "得分100+",
+            "oppscore100Plus": "对手得分100+",
+            "oppover500": "对手胜率.500+",
+            "leadInFgpct": "命中率领先",
+            "leadInReb": "篮板领先",
+            "fewerTo": "更少失误",
+            "aheadAtHalf": "半场领先",
+            "behindAtHalf": "半场落后",
+            "tiedAtHalf": "半场打平",
+            "aheadAtThird": "第三节领先",
+            "behindAtThird": "第三节落后",
+            "tiedAtThird": "第三节打平"
+        }
+    },
+    "miniGameSnapshot": {
+        "status": {
+            "live": "直播"
+        },
+        "versus": "vs",
+        "link": {
+            "boxScore": "技术统计",
+            "highlights": "比赛集锦",
+            "licenseeContent": "Licensee Content",
+            "watchLive": "观看直播",
+            "additionalPLACEHOLDER": "Additional Link",
+            "previewGame": "比赛前瞻",
+            "archive": "比赛回放",
+            "gameTracker": "赛程追踪",
+            "gameStream": "Second Screen"
+        }
+    },
+    "news": {
+        "socialIconTitle": "NBA头条"
+    },
+    "photoGallery": {
+        "socialIconTitle": "NBA图集"
+    },
+    "playByPlay": {
+        "time": "时间",
+        "score": "比分",
+        "team": "球队",
+        "whosInvolved": "参与球员",
+        "play": "文字直播"
+    },
+    "playerProfile": {
+        "socialIconTitle": "了解更多 {{ player.playerProfile.displayName }} 在他的球员资料页面！ ",
+        "title": "球员资料",
+        "born": "生日",
+        "drafted": "选秀",
+        "experience": "经历",
+        "priorToNBA": "加入NBA之前",
+        "years": "年",
+        "links": {
+            "profile": "资料",
+            "stats": "数据",
+            "hotZones": "热区",
+            "compare": "对比",
+            "news": "新闻"
+        },
+        "leagueComparison": {
+            "title": "联盟对比",
+            "link": "更多",
+            "leagueLeader": "联盟数据王",
+            "player": "球员",
+            "leagueAvg": "联盟平均值",
+            "seasonComparison": "{{ currentSeasonStats.season }} 赛季对比",
+            "season": "{{ currentSeasonStats.season }} 常规赛"
+        },
+        "stats": {
+            "season": "{{ currentSeasonStats.season }} 赛季数据",
+            "last5": "最近5场比赛",
+            "currentSeasonAvg": "赛季平均",
+            "currentSeasonTot": "赛季总计",
+            "seasonSplits": "分类数据",
+            "careerStats": "职业生涯数据",
+            "playoffStats": "季后赛数据",
+            "allStarStats": "全明星数据",
+            "allStarCurrent": "全明星 (当前赛季)",
+            "allStarTotal": "全明星总计",
+            "avg": "平均",
+            "tot": "总计",
+            "gameLog": "比赛日志",
+            "headers": {
+                "year": "年度",
+                "team": "球队",
+                "date": "日期",
+                "opp": "对手"
+            }
+        },
+        "playerAwards": {
+            "title": "球员荣誉",
+            "link": "查看所有荣誉"
+        }
+    },
+    "playerComparisonChart": {
+        "headToHead": "一对一对比",
+        "playerComparison": "球员对比",
+        "vs": "VS",
+        "last5Games": "过去5场比赛",
+        "seasonStatistics": "赛季数据",
+        "nbaLeagueAvg": "NBA联盟平均数据",
+        "leagueAvg": "联盟平均数据",
+        "seasonAvg": "赛季平均数据",
+        "player": "球员",
+        "comparison": "对比",
+        "searchPlayers": "查找球员"
+    },
+    "playerHotZone": {
+        "socialIconTitle": " {{ player.playerProfile.displayName }} 从哪里完成投篮最多？查看他的热区数据： ",
+        "title": "热区数据",
+        "comparison": "对比",
+        "performance": "表现",
+        "distribution": "分布",
+        "perf": "表现",
+        "dist": "分布",
+        "seasonTab": "{{ seasonYears }} 赛季",
+        "playoffTab": "{{ playoffYears }} 季后赛",
+        "shootingArea": "投篮区域",
+        "shootingAreaKeys": {
+            "zone": "-",
+            "zoneempty": "—",
+            "zonec08": "8英尺以内",
+            "zonec816": "中间8-16英尺",
+            "zonec1624": "中间16-24英尺",
+            "zonec24Plus": "中间24英尺以外",
+            "zonel816": "左侧8-16英尺",
+            "zonel1624": "左侧16-24英尺",
+            "zonel24Plus": "左侧24英尺以外",
+            "zonelc1624": "左侧居中16-24英尺",
+            "zonelc24Plus": "左侧居中24英尺以外",
+            "zoner816": "右侧8-16英尺",
+            "zoner1624": "右侧16-24英尺",
+            "zoner24Plus": "右侧24英尺以外",
+            "zonerc1624": "右侧居中16-24英尺",
+            "zonerc24Plus": "右侧居中24英尺以外"
+        },
+        "seasonPerformance": "赛季表现",
+        "last5Performance": "过去5场表现",
+        "fullLink": "查看完整球员热区"
+    },
+    "playerIndex": {
+        "socialIconTitle": "NBA球员完整列表：",
+        "title": "球员",
+        "filterByName": "根据球员姓查找",
+        "searchByName": "根据球员姓名查找",
+        "byCountry": "以国籍筛选",
+        "byTeam": "根据球队查找",
+        "player": "球员",
+        "team": "球队",
+        "pos": "位置",
+        "ht": "身高",
+        "wt": "体重",
+        "exp": "经验",
+        "country": "国籍",
+        "seeHistorical": "查看所有NBA球员"
+    },
+    "historicalPlayerIndex": {
+        "go": "提交",
+        "searchByName": "根据球员姓名查找",
+        "filterByDecade": "Filter By Decade"
+    },
+    "playoffMatchups": {
+        "vs": "vs",
+        "title": "季后赛对阵",
+        "ifStartedToday": "(如果季后赛今天开打)",
+        "TBD": "待定 ",
+        "conferences": {
+            "eastern": "东部",
+            "western": "西部"
+        },
+        "firstRound": "第一轮",
+        "confSemiFinals": "东西部半决赛",
+        "confFinals": "东西部决赛",
+        "finals": "总决赛"
+    },
+    "playoffPicture": {
+        "socialIconTitle": "查看最新的NBA季后赛对阵图: ",
+        "title": "季后赛对阵预测",
+        "tabs": {
+            "desktop": {
+                "matchups": "季后赛对阵预测",
+                "standings": "联盟排名",
+                "remaining": "剩余比赛"
+            },
+            "mobile": {
+                "matchups": "对阵",
+                "standings": "排名",
+                "remaining": "剩余场次"
+            }
+        }
+    },
+    "playoffSeries": {
+        "socialIconTitle": {
+            "singlePlayoffSeries": "这是季后赛的对阵: {{ seriesData.group.round.series.teamOne.profile.displayAbbr }} @ {{ seriesData.group.round.series.teamTwo.profile.displayAbbr }}。在此查看所有数据: ",
+            "playoffs": "NBA季后赛信息，一网打尽！"
+        },
+        "champion": "冠军",
+        "vs": "vs",
+        "quarter": "节",
+        "game": "比赛",
+        "date": "日期",
+        "teamLeaders": "球队数据王",
+        "period": {
+            "ot": "加时"
+        },
+        "link": {
+            "boxScore": "技术统计",
+            "preview": "比赛前瞻"
+        },
+        "quarterPeriod": "第__period__节",
+        "overTimePeriod": "加时__overtime__",
+        "headers": {
+            "date": "日期",
+            "time": "时间",
+            "matchup": "对阵",
+            "broadcaster": "转播",
+            "links": "比赛链接"
+        },
+        "more": "更多...",
+        "round_00_1": "第一轮",
+        "round_00_2": "半决赛",
+        "round_00_3": "决赛",
+        "round_00_4": "总决赛"
+    },
+    "previewSnapshot": {
+        "homeConferenceRank": " <a data-ng-href=\"/standings/#!/{{ game.homeTeam.profile.conferenceAnchor }}\">__conf__联盟</a>中排名#__rank__",
+        "awayConferenceRank": " <a data-ng-href=\"/standings/#!/{{ game.awayTeam.profile.conferenceAnchor }}\">__conf__联盟</a>中排名#__rank__",
+        "versus": "vs",
+        "last10Games": "最近10场：",
+        "location": "地点：",
+        "localBroadcast": "观看直播：",
+        "hotStreak": "连胜战绩",
+        "streak": "连续战绩",
+        "date": "时间: ",
+        "inThe": "在",
+        "conference": "联盟",
+        "coach": "教练",
+        "rankInTheConference": "<a data-ng-href=\"/standings/#!/{{ team.profile.conference.toLowerCase() }}\">__conf__联盟</a>中排名 #__rank__"
+    },
+    "schedule": {
+        "socialIconTitle": "接下来的NBA赛程是什么: ",
+        "title": "赛程",
+        "selectTeam": "选择球队",
+        "calendar": "日历",
+        "options": "选择",
+        "easternConference": "东部联盟",
+        "westernConference": "西部联盟",
+        "noGames": "今日无比赛",
+        "nextGame": "下一场比赛2013年3月10日星期五"
+    },
+    "scoreboardPage": {
+        "socialIconTitle": "获取NBA及时的比分更新",
+        "title": "比分",
+        "showCalendar": "显示日历"
+    },
+    "seasonSeriesMatchups": {
+        "at": "@",
+        "title": "赛季对阵",
+        "game": "比赛",
+        "date": "日期",
+        "ot": "加时",
+        "previousGames": "过往比赛",
+        "seeSeriesMatchup": "查看系列赛对阵",
+        "seeAllSeriesMatchup": "系列赛对阵",
+        "easternConference": "东部联盟",
+        "westernConference": "西部联盟",
+        "easternConfMobile": "东部联盟",
+        "westernConfMobile": "西部联盟",
+        "showTeamLeaders": "显示球队数据王",
+        "hideTeamLeaders": "隐藏球队数据王",
+        "showGameLeaders": "显示比赛数据王",
+        "hideGameLeaders": "隐藏比赛数据王",
+        "gameSchedule": "赛程",
+        "link": {
+            "boxScore": "技术统计",
+            "preview": "比赛前瞻",
+            "highlights": "比赛集锦"
+        },
+        "quarterPeriod": "第__periodNo__节",
+        "overTimePeriod": "加时__overtime__"
+    },
+    "teamScheduleSnapshot": {
+        "w": "胜",
+        "l": "负",
+        "at": "@",
+        "vs": "vs ",
+        "title": "球队赛程",
+        "pastGamesSubTitle": "上一场",
+        "nextGameSubTitle": "下一场",
+        "link": {
+            "boxScore": "技术统计",
+            "highlights": "比赛集锦",
+            "preview": "比赛前瞻",
+            "watch": "观看",
+            "broadcast": "转播"
+        }
+    },
+    "singlePlayerComparisonPage": {
+        "socialIconTitle": "{{ playerComparisonChartData.playerOne.playerProfile.displayName }} 以及 {{ playerComparisonChartData.playerTwo.playerProfile.displayName }} 一对一对比",
+        "shareThisComparison": "分享这个对比:",
+        "shareThisComparisonMobile": "分享这个:"
+    },
+    "singlePlayerStatsPage": {
+        "title": "单个球员数据",
+        "stats": "职业生涯数据",
+        "splits": "赛季数据",
+        "gameLog": "当场数据",
+        "moreCareerStats": "更多",
+        "socialIconTitle": " {{ player.playerProfile.displayName }}职业生涯全部数据: "
+    },
+    "singleTeamComparisonPage": {
+        "socialIconTitle": "我比较了{{ teamComparisonChartData.awayTeam.profile.name }} 和 {{ teamComparisonChartData.homeTeam.profile.name }}。点击查看结果！",
+        "shareThisComparison": "分享这个比较:",
+        "shareThisComparisonMobile": "分享这个:"
+    },
+    "slideshow": {
+        "socialIconTitle": "NBA图集",
+        "pagination": "Page {{ currentPage }} of {{ maxPages }}"
+    },
+    "statsPage": {
+        "socialIconTitle": "查看你喜欢的球员今日排名如何",
+        "title": "联盟球员数据排名"
+    },
+    "teamHotZone": {
+        "socialIconTitle": "查找 {{ team.profile.name }}手感最热的得分区域：",
+        "title": "热区数据",
+        "comparison": "对比",
+        "performance": "表现",
+        "distribution": "分布",
+        "perf": "表现",
+        "dist": "分布",
+        "seasonTab": "{{ seasonYears }} 赛季",
+        "playoffTab": "{{ playoffYears }} 季后赛",
+        "shootingArea": "投篮区域",
+        "seasonPerformance": "赛季表现",
+        "last5Performance": "最近5场表现",
+        "fullLink": "查看完整球队热区",
+        "shootingAreaKeys": {
+            "zone": "-",
+            "zoneempty": "—",
+            "zonec08": "8英尺以内",
+            "zonec816": "中间8-16英尺",
+            "zonec1624": "中间16-24英尺",
+            "zonec24Plus": "中间24英尺以外",
+            "zonel816": "左侧8-16英尺",
+            "zonel1624": "左侧16-24英尺",
+            "zonel24Plus": "左侧24英尺以外",
+            "zonelc1624": "左侧居中16-24英尺",
+            "zonelc24Plus": "左侧居中24英尺以外",
+            "zoner816": "右侧8-16英尺",
+            "zoner1624": "右侧16-24英尺",
+            "zoner24Plus": "右侧24英尺以外",
+            "zonerc1624": "右侧居中16-24英尺",
+            "zonerc24Plus": "右侧居中24英尺以外"
+        },
+        "total": "__season__ 总计",
+        "totalPreseason": "季前赛总计",
+        "totalRegularSeason": "常规赛总计"
+    },
+    "teamSnapshot": {
+        "links": {
+            "profile": "资料",
+            "schedule": "赛程",
+            "stats": "数据",
+            "leaders": "数据王",
+            "roster": "阵容",
+            "hotZones": "热区",
+            "comparison": "对比",
+            "news": "新闻"
+        }
+    },
+    "teamComparisonChart": {
+        "seasonStatistics": "赛季数据",
+        "teamComparison": "球队对比"
+    },
+    "teamComparisonHeader": {
+        "currentSeason": "本赛季",
+        "nbaLeagueAvg": "NBA联盟平均",
+        "conferenceRankHome": " <a data-ng-href=\"/standings/#!/{{ teamComparisonChartData.homeTeam.profile.conference.toLowerCase() }}\">__conf__联盟</a>中排名#__rank__",
+        "conferenceRankAway": " <a data-ng-href=\"/standings/#!/{{ teamComparisonChartData.awayTeam.profile.conference.toLowerCase() }}\">__conf__联盟</a>中排名#__rank__",
+        "last10Games": "最近10场比赛",
+        "headToHead": "&nbsp;",
+        "teamComparison": "球队对比",
+        "teamComparisonSplit": "球队<br/> 对比",
+        "versus": "VS",
+        "searchTeams": "查找球队"
+    },
+    "teamLeaders": {
+        "homeTeamTitle": "<span data-ng-bind-html='game.homeTeam.profile.name'></span> 数据王",
+        "awayTeamTitle": "<span data-ng-bind-html='game.awayTeam.profile.name'></span> 数据王",
+        "title": "数据王",
+        "rebounds": "篮板",
+        "points": "得分",
+        "assists": "助攻",
+        "headers": {
+            "rank": "排名",
+            "player": "球员"
+        }
+    },
+    "teamStatsPage": {
+        "socialIconTitle": "每一支NBA球队最及时的数据",
+        "title": "数据",
+        "season": "赛季",
+        "toggles": {
+            "avg": "平均",
+            "total": "总计"
+        },
+        "headers": {
+            "year": "年度"
+        }
+    },
+    "teamProfile": {
+        "socialIconTitle": {
+            "stats": "查看全部{{ team.profile.name }}数据: ",
+            "profile": "更多了解{{ team.profile.name }} 球队资料:"
+        },
+        "title": "球队资料",
+        "leagueRankingsLink": "排名",
+        "topLineup": {
+            "title": "球队热门阵容",
+            "seeFull": "更多"
+        },
+        "teamLeaders": {
+            "socialIconTitle": "查看{{ team.profile.name }}数据王: ",
+            "title": "球队数据王",
+            "rebounds": "篮板",
+            "points": "得分",
+            "assists": "助攻"
+        },
+        "teamScheduleSnapshot": {
+            "title": "球队赛程",
+            "pastGames": "最近比赛",
+            "nextGame": "下一场",
+            "link": "查看完整赛程"
+        },
+        "teamAwards": {
+            "title": "球队荣誉",
+            "link": "查看完整荣誉"
+        },
+        "teamTweets": {
+            "title": "Latest Tweets"
+        }
+    },
+    "teamSchedule": {
+        "socialIconTitle": "查看 {{ team.profile.name }}完整赛程: ",
+        "w": "胜",
+        "l": "负",
+        "title": "球队赛程",
+        "headers": {
+            "date": "日期",
+            "time": "时间",
+            "opponent": "对手",
+            "result": "结果",
+            "score": "比分",
+            "location": "地点",
+            "broadcast": "转播",
+            "links": "比赛链接"
+        }
+    },
+    "teamRoster": {
+        "bio": "信息",
+        "stats": "数据",
+        "socialIconTitle": "完整的 {{ team.profile.name }} 阵容: ",
+        "title": "阵容",
+        "headers": {
+            "dob": "生日",
+            "name": "姓名",
+            "pos": "位置",
+            "number": "球号",
+            "height": "身高",
+            "weight": "体重",
+            "age": "年龄",
+            "exp": "经验",
+            "prior": "进入NBA之前",
+            "country": "国籍"
+        },
+        "preseason": "季前赛",
+        "regularSeason": "",
+        "playoffSeason": "季后赛"
+    },
+    "whosHot": {
+        "title": "热门球员",
+        "last5": "最近5场",
+        "pctChg": "提升率",
+        "rank": "排名",
+        "player": "球队"
+    },
+    "standingsGlossary": {
+        "clinchedPlayoffsBerth": "取得季后赛资格",
+        "clinchedEasternConference": "取得东部季后赛资格",
+        "clinchedAtlanticDivision": "取得大西洋赛区冠军",
+        "clinchedCentralDivision": "取得中部赛区季后赛资格",
+        "clinchedSoutheastDivision": "取得东南赛区季后赛资格",
+        "clinchedWesternConference": "取得西部季后赛资格",
+        "clinchedSouthwestDivision": "取得西南赛区季后赛资格",
+        "clinchedNorthwestDivision": "取得西北赛区季后赛资格",
+        "clinchedPacificDivision": "取得太平洋赛区季后赛资格",
+        "eliminatedFromPlayoffs": "退出季后赛争夺",
+        "tiebreakerBasis": {
+            "headerOne": "排位规则详解",
+            "lineOne": "不需使用排位规则（拥有更高胜率的球队排位靠前）",
+            "lineTwo": "分赛区冠军球队与分赛区排名靠后球队胜率相同",
+            "lineThree": "两支之间的胜负关系",
+            "lineFour": "对阵相同赛区球队的胜负率",
+            "lineFive": "对阵相同联盟球队的胜负率",
+            "lineSix": "对相同赛区有资格进入季后赛球队的成绩",
+            "lineSeven": "对不同赛区有资格进入季后赛球队的成绩",
+            "lineEight": "所有比赛的净胜分",
+            "headerTwo": "季后赛最终排名决定程序",
+            "paragraphOne": "东西部的前四名将由3个分赛区的冠军和成绩最好的分区第2名组成，而这4支球队的排名将由各自的战绩决定，成绩最好的球队排在第1位，以此类推。东西部的5-8名则将由剩下球队中成绩最好的4支球队按照战绩进行排名（如果出现战绩相同的情况，请见下面的排名方法）",
+            "paragraphTwo": "常规赛成绩相同致使季后赛排位相同（包括分赛区冠军），会根据以下条件确定排名：若两支球队战绩相同，根据a的排名原则确定排名；若超过两支球队， 则使用b排名原则。判断球队季后赛排名方法细则详见",
+            "headerThree": "a. 当两支球队出现战绩相同的情况时",
+            "lineNine": "两支之间的胜负关系",
+            "lineTen": "对阵相同赛区球队的成绩",
+            "lineEleven": "对阵相同联盟球队的成绩",
+            "lineTwelve": "对阵相同赛区有资格进入季后赛球队的成绩（包括常规赛成绩与进入季后赛球队战绩相同的球队）",
+            "lineThirteen": "对阵不同赛区有资格进入季后赛球队的成绩（包括常规赛成绩与进入季后赛球队战绩相同的球队）",
+            "lineFourteen": "所有比赛的净胜分",
+            "headerFour": "b. 当多支球队（超过两支）出现战绩相同的情况时",
+            "lineFifteen": "多支球队之间的胜负关系",
+            "lineSixteen": "对阵相同赛区球队的成绩",
+            "lineSeventeen": "对阵相同联盟球队的成绩",
+            "lineEighteen": "对阵相同赛区有资格进入季后赛球队的成绩 （包括常规赛成绩与进入季后赛球队战绩相同的球队）",
+            "lineNineteen": "所有比赛的净胜分",
+            "headerFive": "c. 判断球队季后赛排名方法细则",
+            "lineTwenty": "a. 由于三个分区的冠军自动进入季后赛排位的前4名，所以在进行其它球队间排位顺序的判断前，必须先完成对于分区冠军的判断b. 当两支球队间出现战绩相同的情况时，排名规则只能用来决定分区冠军的归属以及其在季后赛中的排位，并不能决定另一支球队的排名",
+            "lineTwentyOne": "当有超过两支球队出现战绩相同的情况时，将使用适用于多支球队的排名规则由上之下进行判断直到出现:",
+            "lineTwentyTwo": "a. 每一支球队的成绩都不相同（比如多支球队对分区球队的成绩还相同时，将继续比较对各自赛区球队的成绩，直到分出不同）。这时，成绩最好的（或是净胜分最高的）球队将获得多支球队中最好的季后赛排名。成绩第2好（或是净胜分第2高的）球队将获得第2好的季后赛排名，依此类推",
+            "lineTwentyThree": "或者",
+            "lineTwentyFour": "b. 当出现有一支或者多于一支球队的成绩好于其它球队时（与a的判断标准相同，但不用是所有球队都分出成绩好坏），这些球队将按照成绩的好坏分出排名的先后。剩余仍未分出成绩好坏的球队将再按照两支或者多支球队的排位规则由上之下进行判断，直至所有球队都分出排名先后c",
+            "lineTwentyFive": "如果(a)和(b)两项还不足以判断球队间的排名先后时，最终的排名结果将由随机的方法决定",
+            "headerSix": "d. 主场优势:",
+            "paragraphThree": "对于两支球队间主场优势的归属问题，将按照两支球队出现战绩相同情况时，季后赛排位顺序的决定方法进行判断"
+        }
+    },
+    "delimiter": {
+        "initialLastName": "-",
+        "firstNameLastName": "-",
+        "lastNameFirstName": ", "
+    },
+    "footer": "Copyright {{copyrightYear}} NBA Media Ventures, LLC | NBA Media Ventures, LLC. All rights reserved. No portion of this site may be duplicated, redistributed or manipulated in any form.<br />By accessing any information on this site, you agree to abide by the NBA.com Network Privacy Policy and Terms of Use.",
+    "draft": {
+        "draftBoard": "选秀板",
+        "draftStream": "Draft Stream",
+        "firstRound": "第一轮",
+        "secondRound": "第二轮",
+        "toggleInstructions": "Toggle to follow Draft picks on the Draft Board or get up-to-date event coverage on Draft Stream"
+    },
+    "playersSnapshot": {
+        "title": "球员",
+        "shortTitle": "球员",
+        "position": "位置",
+        "team": "球队"
+    },
+    "playersCareer": {
+        "title": "职业生涯",
+        "shortTitle": "职业生涯",
+        "position": "位置",
+        "team": "球队",
+        "country": "国籍"
+    },
+    "historicalTeamStats": {
+        "team": "球队",
+        "opponent": "对手",
+        "regular": "常规赛",
+        "playoffs": "季终赛",
+        "season": "赛季",
+        "vs": "vs"
+    },
+    "editionWrapper": {
+        "chooseEdition": "Please select your default edition",
+        "editionMessage": "Your default site has been set for 7 days",
+        "editionLabel": "Set Default Edition",
+        "go": "GO",
+        "setDefault": "Set Default"
+    },
+    "advancedTeamStats": {
+        "title": "数据",
+        "legend": "球队数据解释",
+        "advancedStats": "比率",
+        "columnLabel": {
+            "opponent": "对手",
+            "opp": "对手",
+            "assistRatio": "助攻%",
+            "defRtg": "防守%",
+            "DREB%": "防守",
+            "disqualifications": "失格",
+            "EFG%": "有效命%",
+            "offRtg": "进攻%",
+            "OREB%": "进攻",
+            "Pace": "步伐",
+            "tpmAssistedPct": "三分命中%-助攻",
+            "tpmUnassistedPct": "三分命中%-非助攻",
+            "fgaBy2PtPct": "二分出手%",
+            "fgaBy3PtPct": "三分出手%",
+            "fgmAssistedPct": "命中%-助攻",
+            "fgmUnassistedPct": "命中%-非助攻",
+            "pointsBy2PtPct": "二分得分%",
+            "pointsBy2PtMidPct": "中距离得分%",
+            "pointsByTpPct": "三分得分率",
+            "pointsByFtPct": "罚球得分%",
+            "pointsInpaintPct": "篮下得分%",
+            "Possessions": "控球",
+            "trueShootingPct": "真实投篮%",
+            "turnoverRatio": "失误%",
+            "usagePct": "球员使用%",
+            "ftaRate": "罚球出手%",
+            "ftmRate": "罚球命中%",
+            "REB%": "篮板%"
+        },
+        "description": {
+            "EFG%": "( ( 投篮命中 + ( 0.5 * 三分命中 ) ) / 投篮出手",
+            "defRtg": "(对手得分 / 控球 ) * 100",
+            "DREB%": " 防守篮板/ (对手投篮出手  –  对手投篮命中 + 对手罚球出手 –对手罚球命中 ) ",
+            "usagePct": " ( ( 投篮出手 + ( 0.44 * 罚球出手 ) + 失误 + .33 * 助攻 ) ) * ( 40 / 分钟 ) * 调整步伐因素 ) / 100",
+            "ftaRate": " 罚球出手 / 投篮出手 ",
+            "ftmRate": " 罚球命中 / 投篮出手 ",
+            "REB%": " 篮板 / ( 全部投篮出手 – 全部投篮命中 + 全部罚球出手 – 全部罚球命中 )",
+            "offRtg": "( 得分 / 控球 ) * 100",
+            "Pace": "( 控球 / 分钟 ) * 48",
+            "Possessions": " 投篮出手 + (罚球出手 * 0.44) + 失误 - 进攻篮板",
+            "turnoverRatio": " ( 失误 * 100 ) / ( 投篮出手 + (罚球出手 * 0.44 ) + 助攻 + 失误 )",
+            "trueShootingPct": "得分 / ( 2 * ( 投篮出手 + 0.44 * 罚球出手 ) )",
+            "fgaBy2PtPct": "二分出手 / 投篮出手",
+            "fgaBy3PtPct": "三分出手 / 投篮出手",
+            "pointsBy2PtPct": "二分得分 / 得分",
+            "pointsBy2PtMidPct": "中距离得分 / 得分",
+            "pointsByTpPct": "三分得分 / 得分",
+            "pointsByFtPct": "罚球得分 / 得分",
+            "pointsInpaintPct": "篮下得分 / 得分",
+            "tpmAssistedPct": "助攻的三分得分 / 三分得分",
+            "tpmUnassistedPct": "非助攻的三分得分 / 三分得分",
+            "fgmAssistedPct": "助攻的得分 / 得分",
+            "fgmUnassistedPct": "非助攻的得分 / 得分",
+            "OREB%": " 进攻篮板/ ( 投篮出手  –  投篮命中 + 罚球出手 – 罚球命中 )"
+        }
+    }
+}

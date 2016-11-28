@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style >
+    
+    #test{
+      height:800px;
+    }
+    #show-html{
+      position: absolute;
+      z-index:20;
+      display: none;
+      color:white;
+      background-color: rgba(1,1,1,0.5);
+      padding: 0 15px;
+      /*opacity:0.2;*/
+    }
+    body{
+      padding:0;
+      margin: 0;
+    }
+  </style>
+</head>
+<body data-ng-app="sib" id="ng:app" class="ng-app:sib sib3">
+<div data-sib-hotzone-container>
+  
+<div data-ng-controller="SingleTeamHotZoneCtrl">
+<!-- <p>
+  我擦哦
+  {{selectedZone}}
+  
+</p>
+ -->  <!-- <pre> -->
+  <div id="show-html">
+
+<div class="col col-sm-5">
+        <dl>
+          <div class="col-12 col-lg-12">
+            <dt data-ng-i18next="teamHotZone.shootingArea"></dt>
+            <dd>
+            
+              <div class="medium" data-ng-show="selectedZone=='empty'"><span data-ng-i18next="[i18next]({season: '{{selectSeasonDes}}'})teamHotZone.total"></span></div>
+            </dd>
+          </div>
+
+          <div class="col-6 col-sm-12">
+            <dt data-ng-i18next="teamHotZone.seasonPerformance">赛季表现</dt>
+            <dd>
+              <div class="large visible-lg">
+                <span data-ng-show="chartTabbed=='full'" class="">
+                  <span data-ng-bind-html="hotZoneDataTotal.full[ selectedZone + 'Pct' ] || hotZoneDataTotal.statTotal.fgm / hotZoneDataTotal.statTotal.fga * 100 | number:1" class="ng-binding">44.9</span>%
+                </span>
+                <span data-ng-show="chartTabbed=='distribution'" class="ng-hide">
+                  <span data-ng-bind-html="hotZoneDataTotal.distribution[ selectedZone + 'DisPct' ] || hotZoneDataTotal.statTotal.fgm / hotZoneDataTotal.statTotal.fga * 100 | number:1" class="ng-binding">44.9</span>%
+                </span>
+              </div>
+              <div class="medium hidden-lg">
+                <span data-ng-show="chartTabbed=='full'" class="">
+                  <span data-ng-bind-html="hotZoneDataTotal.full[ selectedZone + 'Pct' ] || hotZoneDataTotal.statTotal.fgm / hotZoneDataTotal.statTotal.fga * 100 | number:1" class="ng-binding">44.9</span>%
+                </span>
+                <span data-ng-show="chartTabbed=='distribution'" class="ng-hide">
+                  <span data-ng-bind-html="hotZoneDataTotal.distribution[ selectedZone + 'DisPct' ] || hotZoneDataTotal.statTotal.fgm / hotZoneDataTotal.statTotal.fga * 100 | number:1" class="ng-binding">44.9</span>%
+                </span>
+              </div>
+              <div class="small ng-binding">
+                <span data-ng-show="chartTabbed=='full'" class="ng-binding">460/</span>1024<span data-ng-show="chartTabbed=='distribution'" class="ng-binding ng-hide">/1024</span>
+              </div>
+            </dd>
+          </div>
+          
+
+          <div class="col-6 col-sm-12">
+            <dt data-ng-i18next="teamHotZone.last5Performance">最近5场表现</dt>
+            <dd>
+              <div class="medium">
+                <span data-ng-show="chartTabbed=='full'" class="">
+                  <span data-ng-bind-html="hotZoneDataLast5.full[ selectedZone + 'Pct' ] || hotZoneDataLast5.statTotal.fgm / hotZoneDataLast5.statTotal.fga * 100 | number:1" class="ng-binding">40.6</span>%
+                </span>
+                <span data-ng-show="chartTabbed=='distribution'" class="ng-hide">
+                  <span data-ng-bind-html="hotZoneDataLast5.distribution[ selectedZone + 'DisPct' ] || hotZoneDataLast5.statTotal.fgm / hotZoneDataLast5.statTotal.fga * 100 | number:1" class="ng-binding">40.6</span>%
+                </span>
+              </div>
+              <div class="small ng-binding">
+                <span data-ng-show="chartTabbed=='full'" class="ng-binding">172/</span>424<span data-ng-show="chartTabbed=='distribution'" class="ng-binding ng-hide">/424</span>
+              </div>
+            </dd>
+          </div>
+
+        </dl>
+      </div>
+    
+  </div>
+  <!-- {{hotZoneDataTotal}} -->
+  <!-- </pre> -->
+  <sib-hotzone-chart id='test' template="full" team-abbr="player.teamProfile.abbr" team-data="hotZoneDataTotal[chartTabbed]" average-data="leagueHotzoneData[chartTabbed]" selected-zone="selectedZone"></sib-hotzone-chart>
+</div>
+</div>
+
+<script src='libs.min.js'></script>
+  <script src='lanqiung.js'></script>
+
+</body>
+</html>

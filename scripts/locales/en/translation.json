@@ -1,0 +1,1092 @@
+{
+    "_siteName": "NBA Official Site",
+    "_placeholder": {
+        "ad": {
+            "top": "Ad Top 728x90",
+            "topMobile": "Ad Top Mobile 320x50",
+            "right": "Ad Right 300x250",
+            "nbaRight": "NBA 5 Right",
+            "licenseeContent": "Licensee Homepage Content"
+        }
+    },
+    "_seasonType": {
+        "preseason": "Preseason",
+        "regularSeason": "Season",
+        "playoffSeason": "Playoffs"
+    },
+    "_round": {
+        "round_00_1": "First Round",
+        "round_00_2": "Conf. Semi-Finals",
+        "round_00_3": "Conf. Finals",
+        "round_00_4": "Finals"
+    },
+    "_stats": {
+        "3P%": "3P%",
+        "3PM": "3PM",
+        "3PA": "3PA",
+        "APG": "APG",
+        "FT%": "FT%",
+        "PPG": "PPG",
+        "RPG": "RPG",
+        "PTS": "PTS",
+        "REB": "REB",
+        "AST": "AST",
+        "FG%": "FG%",
+        "TP%": "TP%",
+        "PF": "PF",
+        "POS": "POS",
+        "MIN": "MIN",
+        "FGMA": "FGMA",
+        "3PMA": "3PMA",
+        "FTMA": "FTMA",
+        "plusMinus": "+/-",
+        "OFF": "OFF",
+        "DEF": "DEF",
+        "AVG": "AVG",
+        "TOT": "TOT",
+        "ST": "ST",
+        "TO": "TO",
+        "BS": "BS",
+        "BA": "BA",
+        "W": "W",
+        "L": "L",
+        "PCT": "PCT",
+        "GB": "GB",
+        "CONF": "CONF",
+        "DIV": "DIV",
+        "PA": "PA",
+        "DIFF": "DIFF",
+        "BLK": "BLK",
+        "FBP": "FBP",
+        "PITP": "PITP",
+        "POT": "POT",
+        "G": "G",
+        "GS": "GS",
+        "MPG": "MPG",
+        "FG": "FG",
+        "OREB": "OREB",
+        "DREB": "DREB",
+        "SPG": "SPG",
+        "BPG": "BPG",
+        "STL": "STL",
+        "TPMA": "TPMA",
+        "name": "Name",
+        "rank": "Rank",
+        "easternConf": "Eastern Conference",
+        "westernConf": "Western Conference",
+        "TPM": "TPM",
+        "TPA": "TPA",
+        "FGM": "FGM",
+        "FGA": "FGA",
+        "FTM": "FTM",
+        "FTA": "FTA",
+        "OPPG": "OPPG",
+        "EFF": "EFF",
+        "GAMES": "GAMES",
+        "POSSESSION": "POSS",
+        "BL": "BL",
+        "pointsFor": "PF"
+    },
+    "_page": {
+        "home": "Home",
+        "boxscore": "Box Score",
+        "standings": "Standings",
+        "allTeams": "All Teams",
+        "teamIndex": "Team Index",
+        "teamComparison": "Team Comparison",
+        "teamProfile": "Team Profile",
+        "teamSchedule": "Team Schedule",
+        "teamStats": "Team Stats",
+        "teamLeaders": "Team Leaders",
+        "teamRoster": "Team Roster",
+        "teamHotZones": "Team Hot Zones",
+        "playerIndex": "Player Index",
+        "playerComparison": "Player Comparison",
+        "playerProfile": "Player Profile",
+        "playerShotchart": "Player Shotchart",
+        "playerStats": "Player Stats",
+        "playerHotZones": "Player Hot Zones",
+        "playoffPicture": "Playoff Picture",
+        "playoffs": "Playoffs",
+        "playoffGame": "Playoff: ",
+        "playoffSeries": "Playoff Series",
+        "playoffMatchup": "Playoff Matchups",
+        "gamePreview": "Game Preview",
+        "schedule": "Schedule",
+        "broadcasterSchedule": "Broadcaster Schedule",
+        "scores": "Scores",
+        "stats": "Stats",
+        "leagueLeaders": "League Leaders",
+        "article": "Article",
+        "individualStats": "Individual Stats",
+        "photos": "Photos",
+        "slideshow": "Gallery",
+        "headlines": "Headlines",
+        "news": "News",
+        "game": "Game",
+        "preview": "Preview",
+        "split": "Split",
+        "apps": "Download Gametime Apps",
+        "draft": "Draft",
+        "historicalPlayerIndex": "Historical Players",
+        "historicalPlayerStats": "Historical",
+        "playersSnapshot": "Players Snapshot",
+        "historicalTeamList": "Historical Team List",
+        "historicalTeamStats": "Historical Team Stats",
+        "advancedTeamStats": "Advanced Team Stats",
+        "playerNews": "Player News",
+        "teamNews": "Team News",
+        "recap": "Recap"
+    },
+    "_status": {
+        "TBD": "TBD",
+        "PPD": "PPD",
+        "CNCL": "CNCL"
+    },
+    "_team": {
+        "name": {
+            "hornets": "Hornets"
+        }
+    },
+    "_ordinals": {
+        "th": "th",
+        "rd": "rd",
+        "nd": "nd",
+        "st": "st"
+    },
+    "schedulePage": {
+        "date": "Date",
+        "time": "Time",
+        "matchup": "Matchup",
+        "score": "Score",
+        "timeScore": "Time/Score",
+        "location": "Location",
+        "broadcast": "Broadcast",
+        "links": "Links"
+    },
+    "broadcasterSchedulePage": {
+        "date": "Date",
+        "time": "Time",
+        "matchup": "Matchup",
+        "score": "Score",
+        "timeScore": "Time/Score",
+        "location": "Location",
+        "broadcast": "Broadcast",
+        "links": "Links",
+        "national": "National",
+        "local": "Local",
+        "internet": "Internet",
+        "allTeams": "All Teams",
+        "allChannels": "All Channels"
+    },
+    "allStar": {
+        "socialIconTitle": {
+            "socialSpotlight": "All-Star 2014 Social Spotlight",
+            "event": "NBA All-Star 2014",
+            "saturday": "State Farm All-Star Saturday Night 2014"
+        }
+    },
+    "allTeams": {
+        "socialIconTitle": "Stats, Rosters, Leaders and Schedules for every NBA team:",
+        "title": "All Teams",
+        "conferenceTitle": "Conference",
+        "eastern": "EASTERN",
+        "western": "WESTERN",
+        "summer": "SUMMER",
+        "orlando": "orlando",
+        "utah": "utah",
+        "links": {
+            "stats": "Stats",
+            "leaders": "Leaders",
+            "roster": "Roster",
+            "schedule": "Schedule"
+        }
+    },
+    "article": {
+        "socialIconTitle": "News Article"
+    },
+    "boxScorePage": {
+        "socialIconTitle": "By the numbers: {{ game.awayTeam.profile.displayAbbr }} @ {{ game.homeTeam.profile.displayAbbr }}",
+        "title": "Box Score:",
+        "chart": "Chart",
+        "table": "Table",
+        "playByPlay": "Play by Play",
+        "all": "All",
+        "qLabel": "Q{{i}}",
+        "otLabel": "OT{{ i - 4 }}",
+        "links": {
+            "playerStats": "Player Stats",
+            "playByPlay": "Play by Play",
+            "teamComparison": "Team Comparison",
+            "boxScore": "Box Score",
+            "gameStream": "Second Screen",
+            "recap": "Recap"
+        },
+        "period": "__periodNo__"
+    },
+    "currentLineup": {
+        "homeTitle": "Current Lineup - {{ game.homeTeam.profile.displayAbbr }}",
+        "awayTitle": "Current Lineup - {{ game.awayTeam.profile.displayAbbr }}",
+        "player": "Player"
+    },
+    "errorPage": {
+        "fetchFeedError": "Errors were returned when attempting to fetch feeds. The page may not function correctly. Please refresh the page and try again.",
+        "okButton": "OK",
+        "errorFetching": "Error fetching"
+    },
+    "expandedGameSnapshot": {
+        "boxScore": "Box Score",
+        "status": {
+            "live": "Live"
+        },
+        "conferenceRankHome": "#{{ game.homeTeam.standing.confRank }} In The <a data-ng-href=\"/standings/#!/{{game.homeTeam.profile.conference.toLowerCase()}}\"><span data-ng-bind-html='game.homeTeam.profile.displayConference'></span> Conference</a>",
+        "conferenceRankAway": "#{{ game.awayTeam.standing.confRank }} In The <a data-ng-href=\"/standings/#!/{{game.awayTeam.profile.conference.toLowerCase()}}\"><span data-ng-bind-html='game.awayTeam.profile.displayConference'></span> Conference</a>",
+        "home": "Home",
+        "away": "Away",
+        "versus": "vs",
+        "teamRecord": "Team Record",
+        "last10Games": "Last 10 Games",
+        "location": "Location:",
+        "localBroadcast": "Broadcast:",
+        "attendance": "Attendance",
+        "quarter": "Q",
+        "overtime": "OT",
+        "quarterPeriod": "Q__period__",
+        "overTimePeriod": "OT__overtime__",
+        "internet": "Internet",
+        "timeouts": "Timeouts"
+    },
+    "fullPlayerStats": {
+        "playerStats": "Season Stats",
+        "rank": "Rank",
+        "player": "Player",
+        "team": "Team",
+        "tableFilters": "Table Filters",
+        "avg": "AVG",
+        "tot": "TOT",
+        "go": "Go",
+        "pagination": "Page {{ playerPage }} of {{ playerMaxPages }}"
+    },
+    "fullTeamStats": {
+        "title": "Stats",
+        "shortTitle": "Stats",
+        "rank": "Rank",
+        "team": "Team",
+        "tableFilters": "Table Filters",
+        "noMatch": "No matching teams.",
+        "seePastStats": "See Past Stats",
+        "go": "Go"
+    },
+    "gamePreviewPage": {
+        "socialIconTitle": "Check out the Game Preview for {{ game.awayTeam.profile.displayAbbr }} @ {{ game.homeTeam.profile.displayAbbr }}",
+        "title": "Game Preview",
+        "previewRotoWire": "Preview"
+    },
+    "gameSnapshot": {
+        "status": {
+            "live": "Live"
+        },
+        "quarter": "Q__period__",
+        "period": {
+            "ot": "OT__overtime__"
+        },
+        "versus": "vs",
+        "link": {
+            "boxScore": "Box Score",
+            "highlights": "Highlights",
+            "licenseeContent": "Licensee Content",
+            "watchLive": "Watch Live",
+            "preview": "Preview",
+            "gameTracker": "Game Tracker",
+            "archive": "Archive"
+        }
+    },
+    "gameStatsPlayer": {
+        "title": "Box Score",
+        "name": "Name"
+    },
+    "gameStream": {
+        "title": "Second Screen",
+        "socialFiltersLabel": "Social",
+        "playsFiltersLabel": "Plays"
+    },
+    "gamesRemaining": {
+        "title": "Games Remaining",
+        "conferences": {
+            "eastern": "Eastern Conference",
+            "western": "Western Conference"
+        }
+    },
+    "homepageScoreboard": {
+        "q": "Q__period__",
+        "ot": "OT__overtime__",
+        "noGamesToday": "No Games Today",
+        "seeFullScoreboard": "See Full Scoreboard",
+        "nextGame": "Next game {{ msb.next.games[0].profile.utcMillis | date:'shortDate' }}"
+    },
+    "hotZoneComparison": {
+        "title": "Shooting Performance",
+        "performance": {
+            "aboveAverage": "> NBA Avg.",
+            "average": "= NBA Avg.",
+            "belowAverage": "< NBA Avg."
+        },
+        "regions": {
+            "total": "Total",
+            "2pt": "2pt",
+            "3pt": "3pt"
+        },
+        "seeAllHotZones": "More...",
+        "seeFullChart": "See Full Chart",
+        "seeAll": "See All",
+        "hotZones": "Hot Zones"
+    },
+    "navbar": {
+        "productName": "NBA",
+        "global": "Global",
+        "languages": "Languages",
+        "video": "Videos",
+        "scores": "Scores",
+        "boxScore": "Box Score",
+        "schedule": "Schedule",
+        "broadcasterSchedule": "Broadcaster Schedule",
+        "standings": "Standings",
+        "stats": "Stats",
+        "teams": "Teams",
+        "players": "Players",
+        "nbaPlayoffs": "NBA Playoffs",
+        "news": "News",
+        "photos": "Photos",
+        "gamePreview": "Game Preview",
+        "playerStats": "Single Player Stats",
+        "fullTeamStats": "Team Stats",
+        "fullPlayerStats": "Individual Stats",
+        "leagueLeaders": "League Leaders",
+        "allTeams": "Team Index",
+        "teamComparison": "Team Comparison",
+        "teamProfile": "Single Team Profile",
+        "teamSchedule": "Single Team Schedule",
+        "teamStats": "Single Team Stats",
+        "teamLeaders": "Single Team Leaders",
+        "teamRoster": "Single Team Roster",
+        "teamHotZones": "Single Team Hot Zones",
+        "playerIndex": "Player Index",
+        "playerComparison": "Player Comparison",
+        "playerProfile": "Single Player Profile",
+        "playerHotZones": "Single Player Hot Zones",
+        "playoffPicture": "Playoff Picture",
+        "playoffs": "Playoffs",
+        "playoffSeries": "Single Playoff Series",
+        "article": "Article",
+        "games": "Games",
+        "explore": "Explore",
+        "more": "More",
+        "historicalPlayers": "Historical Players",
+        "advancedTeamStats": "Advanced Team Stats"
+    },
+    "leagueLeadersPage": {
+        "title": "League Leaders"
+    },
+    "leagueLeaders": {
+        "socialIconTitle": "Click here to see the NBA's Stats leaders",
+        "title": "Player Leaders",
+        "playoffTitle": "Playoff Leaders",
+        "shortTitle": "Players",
+        "lastGameDay": "Last Game Day",
+        "daily": "Daily",
+        "season": "Season",
+        "seasonLeaders": "Season Leaders",
+        "rank": "Rank",
+        "player": "Player",
+        "team": "Team",
+        "APG": "APG",
+        "PPG": "PPG",
+        "RPG": "RPG",
+        "SPG": "SPG",
+        "BPG": "BPG"
+    },
+    "leagueLeadingTeams": {
+        "title": "Team Leaders",
+        "shortTitle": "Teams",
+        "lastGameDay": "Last Game Day",
+        "season": "Season",
+        "seasonLeaders": "Season Leaders",
+        "rank": "Rank",
+        "team": "Team",
+        "link": "More...",
+        "seeAllPlayerStats": "More...",
+        "conference": "Conference"
+    },
+    "leaguePass": {
+        "watchEveryGameWith": "Watch on"
+    },
+    "leagueStandings": {
+        "socialIconTitle": "Take a look at the current NBA League Standings",
+        "title": "League Standings",
+        "conference": "conference",
+        "division": "Division",
+        "standings": "Standings",
+        "streaksLast10": "Streaks & Last 10",
+        "marginStatistics": "Margin & Statistics",
+        "aheadBehind": "Ahead & Behind",
+        "home": "Home",
+        "road": "Road",
+        "last10": "Last 10",
+        "streak": "Streak",
+        "rank": "Rank",
+        "team": "Team",
+        "eastern": "EASTERN",
+        "western": "WESTERN",
+        "summer": "SUMMER",
+        "orlando": "orlando",
+        "utah": "utah",
+        "stats": {
+            "streak": "Streak",
+            "homeStreak": "Home",
+            "roadStreak": "Road",
+            "winStreak": "Win",
+            "lossStreak": "Loss",
+            "last10": "L10",
+            "last10Home": "L10 Home",
+            "last10Road": "L10 Road",
+            "threePtsOrLess": "< 3pts",
+            "tenPtsOrMore": "> 10pts",
+            "score100Plus": "100+",
+            "oppscore100Plus": "OPP 100+",
+            "oppover500": ".500+",
+            "leadInFgpct": "FG% Lead",
+            "leadInReb": "REB Lead",
+            "fewerTo": "Fewer TO",
+            "aheadAtHalf": "Ahead at Half",
+            "behindAtHalf": "Behind at Half",
+            "tiedAtHalf": "Tied at Half",
+            "aheadAtThird": "Ahead at Third",
+            "behindAtThird": "Behind at Third",
+            "tiedAtThird": "Tied at Third"
+        }
+    },
+    "miniGameSnapshot": {
+        "status": {
+            "live": "Live"
+        },
+        "versus": "vs",
+        "link": {
+            "boxScore": "Box Score",
+            "highlights": "Highlights",
+            "licenseeContent": "Licensee Content",
+            "watchLive": "Watch Live",
+            "additionalPLACEHOLDER": "Additional Link",
+            "previewGame": "Preview",
+            "archive": "Archive",
+            "gameTracker": "Game Tracker",
+            "gameStream": "Second Screen"
+        }
+    },
+    "news": {
+        "socialIconTitle": "NBA Headlines"
+    },
+    "photoGallery": {
+        "socialIconTitle": "NBA Photo Gallery"
+    },
+    "playByPlay": {
+        "time": "Time",
+        "score": "Score",
+        "team": "Team",
+        "whosInvolved": "Who's Involved",
+        "play": "Play"
+    },
+    "playerProfile": {
+        "socialIconTitle": "Learn more about {{ player.playerProfile.displayName }} at his Player Profile! ",
+        "title": "Player Profile",
+        "born": "Born",
+        "drafted": "Drafted",
+        "experience": "Experience",
+        "priorToNBA": "Prior to NBA",
+        "years": "years",
+        "links": {
+            "profile": "Profile",
+            "stats": "Stats",
+            "hotZones": "Hot Zones",
+            "compare": "Compare Players",
+            "news": "News"
+        },
+        "leagueComparison": {
+            "title": "League Comparison",
+            "link": "More...",
+            "leagueLeader": "League Leader",
+            "player": "Player",
+            "leagueAvg": "League Avg.",
+            "seasonComparison": "{{ currentSeasonStats.season }} Season Comparison",
+            "season": "{{ currentSeasonStats.season }} Regular Season"
+        },
+        "stats": {
+            "season": "{{ currentSeasonStats.season }} Season Stats",
+            "last5": "Last Five Games",
+            "currentSeasonAvg": "Season Averages",
+            "currentSeasonTot": "Season Totals",
+            "seasonSplits": "Season Splits",
+            "careerStats": "Career Stats",
+            "playoffStats": "Playoff Stats",
+            "allStarStats": "All-Star Stats",
+            "allStarCurrent": "All-Star (Current Season)",
+            "allStarTotal": "All-Star Totals",
+            "avg": "Average",
+            "tot": "Total",
+            "gameLog": "Game Log",
+            "headers": {
+                "year": "Year",
+                "team": "Team",
+                "date": "Date",
+                "opp": "Opp"
+            }
+        },
+        "playerAwards": {
+            "title": "Player Awards",
+            "link": "See All Awards"
+        }
+    },
+    "playerComparisonChart": {
+        "headToHead": "Head-to-Head",
+        "playerComparison": "Player Comparison",
+        "vs": "VS",
+        "last5Games": "Last 5 Games",
+        "seasonStatistics": "Season Statistics",
+        "nbaLeagueAvg": "NBA League Avg",
+        "leagueAvg": "League Avg",
+        "seasonAvg": "Season Avg",
+        "player": "player",
+        "comparison": "Comparison",
+        "searchPlayers": "Search Players"
+    },
+    "playerHotZone": {
+        "socialIconTitle": "Where does {{ player.playerProfile.displayName }} make the most shots?  Check his Hot Zones: ",
+        "title": "Hot Zones",
+        "comparison": "Comparison",
+        "performance": "Performance",
+        "distribution": "Distribution",
+        "perf": "Perf",
+        "dist": "Dist",
+        "seasonTab": "{{ seasonYears }} Season",
+        "playoffTab": "{{ playoffYears }} Playoffs",
+        "shootingArea": "Shooting Area",
+        "shootingAreaKeys": {
+            "zone": "-",
+            "zoneempty": "—",
+            "zonec08": "Center 8ft",
+            "zonec816": "Center 8-16ft",
+            "zonec1624": "Center 16-24ft",
+            "zonec24Plus": "Center 24ft+",
+            "zonel816": "Left Side 8-16ft",
+            "zonel1624": "Left Side 16-24ft",
+            "zonel24Plus": "Left Side 24ft+",
+            "zonelc1624": "Left Center 16-24ft",
+            "zonelc24Plus": "Left Center 24ft+",
+            "zoner816": "Right Side 8-16ft",
+            "zoner1624": "Right Side 16-24ft",
+            "zoner24Plus": "Right Side 24ft+",
+            "zonerc1624": "Right Center 16-24ft",
+            "zonerc24Plus": "Right Center 24ft+"
+        },
+        "seasonPerformance": "Season Performance",
+        "last5Performance": "Last 5 Performance",
+        "fullLink": "See Full Player Hot Zones"
+    },
+    "playerIndex": {
+        "socialIconTitle": "The full list of NBA Players: ",
+        "title": "Players",
+        "filterByName": "Filter By Last Name",
+        "searchByName": "Search By Name",
+        "byCountry": "Filter By Country",
+        "byTeam": "Filter By Team",
+        "player": "Player",
+        "team": "Team",
+        "pos": "POS",
+        "ht": "HT",
+        "wt": "WT",
+        "exp": "EXP",
+        "country": "Country",
+        "seeHistorical": "See All NBA Players"
+    },
+    "historicalPlayerIndex": {
+        "go": "go",
+        "searchByName": "Search By Name",
+        "filterByDecade": "Filter By Decade"
+    },
+    "playoffMatchups": {
+        "vs": "vs",
+        "title": "Playoff Matchups",
+        "fulltitle": "Playoff Series Matchups",
+        "ifStartedToday": "(if started today)",
+        "TBD": "TBD",
+        "conferences": {
+            "eastern": "Eastern Conference",
+            "western": "Western Conference"
+        },
+        "firstRound": "First Round",
+        "confSemiFinals": "Conf. Semis",
+        "confFinals": "Conf. Finals",
+        "finals": "Finals"
+    },
+    "playoffPicture": {
+        "socialIconTitle": "Check out the latest NBA Playoff Picture: ",
+        "title": "Playoff Matchups",
+        "tabs": {
+            "desktop": {
+                "matchups": "Playoff Matchups",
+                "standings": "League Standings",
+                "remaining": "Games Remaining"
+            },
+            "mobile": {
+                "matchups": "Matchups",
+                "standings": "Standings",
+                "remaining": "Remaining"
+            }
+        }
+    },
+    "playoffSeries": {
+        "socialIconTitle": {
+            "singlePlayoffSeries": "It’s a Playoff Matchup: {{ seriesData.group.round.series.teamOne.profile.displayAbbr }} @ {{ seriesData.group.round.series.teamTwo.profile.displayAbbr }}.  Get all the stats here: ",
+            "playoffs": "All the info you need to follow the NBA Playoffs!"
+        },
+        "champion": "champions",
+        "vs": "vs",
+        "quarter": "Q",
+        "game": "Game",
+        "date": "Date",
+        "teamLeaders": "Team Leaders",
+        "period": {
+            "ot": "OT"
+        },
+        "link": {
+            "boxScore": "Box Score",
+            "preview": "Preview"
+        },
+        "quarterPeriod": "Q__period__",
+        "overTimePeriod": "OT__overtime__",
+        "headers": {
+            "date": "Date",
+            "time": "Time",
+            "matchup": "Matchup",
+            "broadcaster": "Broadcaster",
+            "links": "Links"
+        },
+        "more": "More...",
+        "round_00_1": "First Round",
+        "round_00_2": "Conf.Semi-Finals",
+        "round_00_3": "Conf. Finals",
+        "round_00_4": "Finals"
+    },
+    "previewSnapshot": {
+        "homeConferenceRank": "#__rank__ In The <a data-ng-href=\"/standings/#!/{{ game.homeTeam.profile.conferenceAnchor }}\">__conf__ Conference</a>",
+        "awayConferenceRank": "#__rank__ In The <a data-ng-href=\"/standings/#!/{{ game.awayTeam.profile.conferenceAnchor }}\">__conf__ Conference</a>",
+        "versus": "vs",
+        "last10Games": "Last 10: ",
+        "location": "Location: ",
+        "localBroadcast": "Broadcast:",
+        "hotStreak": "Hot Streak",
+        "streak": "Streak",
+        "date": "Date: ",
+        "inThe": "In The",
+        "conference": "Conference",
+        "coach": "Coach",
+        "rankInTheConference": "#__rank__ in The <a data-ng-href=\"/standings/#!/{{ team.profile.conference.toLowerCase() }}\">__conf__ Conference</a> "
+    },
+    "schedule": {
+        "socialIconTitle": "What's ahead on the NBA schedule: ",
+        "title": "Schedule",
+        "selectTeam": "Select Team",
+        "calendar": "Calendar",
+        "options": "Options",
+        "easternConference": "Eastern Conference",
+        "westernConference": "Western Conference",
+        "noGames": "No Games Today",
+        "nextGame": "Next game Fri 10 Mar, 2013"
+    },
+    "scoreboardPage": {
+        "socialIconTitle": "Get real-time scores from around the NBA",
+        "title": "Scoreboard",
+        "showCalendar": "Show Calendar"
+    },
+    "seasonSeriesMatchups": {
+        "at": "@",
+        "title": "Season Series",
+        "game": "Game",
+        "date": "Date",
+        "ot": "OT",
+        "previousGames": "Previous Games",
+        "seeSeriesMatchup": "See Series Matchup",
+        "seeAllSeriesMatchup": "All Series Matchups",
+        "easternConference": "Eastern Conference",
+        "westernConference": "Western Conference",
+        "easternConfMobile": "Eastern Conf",
+        "westernConfMobile": "Western Conf",
+        "showTeamLeaders": "Show Team Leaders",
+        "hideTeamLeaders": "Hide Team Leaders",
+        "showGameLeaders": "Show Game Leaders",
+        "hideGameLeaders": "Hide Game Leaders",
+        "gameSchedule": "Game Schedule",
+        "link": {
+            "boxScore": "Box Score",
+            "preview": "Preview",
+            "highlights": "Highlights"
+        },
+        "quarterPeriod": "Q__periodNo__",
+        "overTimePeriod": "OT__overtime__"
+    },
+    "teamScheduleSnapshot": {
+        "w": "W",
+        "l": "L",
+        "at": "@",
+        "vs": "vs ",
+        "title": "Team Schedule",
+        "pastGamesSubTitle": "Post Games",
+        "nextGameSubTitle": "Next Game",
+        "link": {
+            "boxScore": "Box Score",
+            "highlights": "Highlights",
+            "preview": "Preview",
+            "watch": "Watch",
+            "broadcast": "Broadcast"
+        }
+    },
+    "singlePlayerComparisonPage": {
+        "socialIconTitle": "{{ playerComparisonChartData.playerOne.playerProfile.displayName }} and {{ playerComparisonChartData.playerTwo.playerProfile.displayName }} head-to-head",
+        "shareThisComparison": "Share this Comparison:",
+        "shareThisComparisonMobile": "Share this:"
+    },
+    "singlePlayerStatsPage": {
+        "title": "Single Player Stats",
+        "stats": "Career Stats",
+        "splits": "Season Splits",
+        "gameLog": "Gamelog",
+        "moreCareerStats": "More Career Stats",
+        "socialIconTitle": "Get all {{ player.playerProfile.displayName }}'s Stats right here: "
+    },
+    "singleTeamComparisonPage": {
+        "socialIconTitle": "I compared {{ teamComparisonChartData.awayTeam.profile.name }} to {{ teamComparisonChartData.homeTeam.profile.name }}. Check out the results!",
+        "shareThisComparison": "Share this Comparison:",
+        "shareThisComparisonMobile": "Share this:"
+    },
+    "slideshow": {
+        "socialIconTitle": "NBA Photo Gallery",
+        "pagination": "Page {{ currentPage }} of {{ maxPages }}"
+    },
+    "statsPage": {
+        "socialIconTitle": "Find out where your favorite player ranks today",
+        "title": "Individual Stats"
+    },
+    "teamHotZone": {
+        "socialIconTitle": "Find out {{ team.profile.name }}'s hottest shooting zones: ",
+        "title": "Hot Zones",
+        "comparison": "Comparison",
+        "performance": "Performance",
+        "distribution": "Distribution",
+        "perf": "Perf",
+        "dist": "Dist",
+        "seasonTab": "{{ seasonYears }} Season",
+        "playoffTab": "{{ playoffYears }} Playoffs",
+        "shootingArea": "Shooting Area",
+        "seasonPerformance": "Season Performance",
+        "last5Performance": "Last 5 Performance",
+        "fullLink": "See Full Team Hot Zones",
+        "shootingAreaKeys": {
+            "zone": "-",
+            "zoneempty": "—",
+            "zonec08": "Center 8ft",
+            "zonec816": "Center 8-16ft",
+            "zonec1624": "Center 16-24ft",
+            "zonec24Plus": "Center 24ft+",
+            "zonel816": "Left Side 8-16ft",
+            "zonel1624": "Left Side 16-24ft",
+            "zonel24Plus": "Left Side 24ft+",
+            "zonelc1624": "Left Center 16-24ft",
+            "zonelc24Plus": "Left Center 24ft+",
+            "zoner816": "Right Side 8-16ft",
+            "zoner1624": "Right Side 16-24ft",
+            "zoner24Plus": "Right Side 24ft+",
+            "zonerc1624": "Right Center 16-24ft",
+            "zonerc24Plus": "Right Center 24ft+"
+        },
+        "total": "Total __season__",
+        "totalPreseason": "Total Preseason",
+        "totalRegularSeason": "Total Regular Season"
+    },
+    "teamSnapshot": {
+        "links": {
+            "profile": "Profile",
+            "schedule": "Schedule",
+            "stats": "Stats",
+            "leaders": "Leaders",
+            "roster": "Roster",
+            "hotZones": "Hot Zones",
+            "comparison": "Comparison",
+            "news": "News"
+        }
+    },
+    "teamComparisonChart": {
+        "seasonStatistics": "Season Statistics",
+        "teamComparison": "Team Comparison"
+    },
+    "teamComparisonHeader": {
+        "currentSeason": "Current Season",
+        "nbaLeagueAvg": "NBA League Avg",
+        "conferenceRankHome": "#__rank__ In The <a data-ng-href=\"/standings/#!/{{ teamComparisonChartData.homeTeam.profile.conference.toLowerCase() }}\">__conf__ Conference</a>",
+        "conferenceRankAway": "#__rank__ In The <a data-ng-href=\"/standings/#!/{{ teamComparisonChartData.awayTeam.profile.conference.toLowerCase() }}\">__conf__ Conference</a>",
+        "last10Games": "Last 10 Games",
+        "headToHead": "Head-to-Head",
+        "teamComparison": "Team Comparison",
+        "teamComparisonSplit": "Team<br/> Comparison",
+        "versus": "VS",
+        "searchTeams": "Search Teams"
+    },
+    "teamLeaders": {
+        "homeTeamTitle": "<span data-ng-bind-html='game.homeTeam.profile.name'></span> Leaders",
+        "awayTeamTitle": "<span data-ng-bind-html='game.awayTeam.profile.name'></span> Leaders",
+        "title": "Leaders",
+        "rebounds": "Rebounds",
+        "points": "Points",
+        "assists": "Assists",
+        "headers": {
+            "rank": "Rank",
+            "player": "Player"
+        }
+    },
+    "teamStatsPage": {
+        "socialIconTitle": "Real-time stats for every NBA team",
+        "title": "Stats",
+        "season": "Season",
+        "toggles": {
+            "avg": "AVG",
+            "total": "TOT"
+        },
+        "headers": {
+            "year": "Year"
+        }
+    },
+    "teamProfile": {
+        "socialIconTitle": {
+            "stats": "Check out all {{ team.profile.name }}'s stats here: ",
+            "profile": "Get a look inside the {{ team.profile.name }} with their Team Profile:"
+        },
+        "title": "Team Profile",
+        "leagueRankingsLink": "Rankings",
+        "topLineup": {
+            "title": "Top Team Lineup",
+            "seeFull": "See Full Roster"
+        },
+        "teamLeaders": {
+            "socialIconTitle": "See the stat leaders for {{ team.profile.name }}: ",
+            "title": "Team Leaders",
+            "rebounds": "Rebounds",
+            "points": "Points",
+            "assists": "Assists"
+        },
+        "teamScheduleSnapshot": {
+            "title": "Team Schedule",
+            "pastGames": "Past Games",
+            "nextGame": "Next Game",
+            "link": "See Full Schedule"
+        },
+        "teamAwards": {
+            "title": "Team Awards",
+            "link": "See All Awards"
+        },
+        "teamTweets": {
+            "title": "Latest Tweets"
+        }
+    },
+    "teamSchedule": {
+        "socialIconTitle": "Check {{ team.profile.name }}'s schedule here: ",
+        "w": "W",
+        "l": "L",
+        "title": "Team Schedule",
+        "headers": {
+            "date": "Date",
+            "time": "Time",
+            "opponent": "Opp",
+            "result": "Result",
+            "score": "Score",
+            "location": "Location",
+            "broadcast": "Broadcast",
+            "links": "Game Links"
+        }
+    },
+    "teamRoster": {
+        "bio": "Bio",
+        "stats": "Stats",
+        "socialIconTitle": "The complete {{ team.profile.name }} roster: ",
+        "title": "Roster",
+        "headers": {
+            "dob": "DOB",
+            "name": "Name",
+            "pos": "Pos",
+            "number": "Number",
+            "height": "Height",
+            "weight": "Weight",
+            "age": "Age",
+            "exp": "Exp",
+            "prior": "Prior to NBA",
+            "country": "Country"
+        },
+        "preseason": "Preseason",
+        "regularSeason": "",
+        "playoffSeason": "Playoffs"
+    },
+    "whosHot": {
+        "title": "Who's Hot",
+        "last5": "Last 5",
+        "pctChg": "% Chg",
+        "rank": "Rank",
+        "player": "Player"
+    },
+    "standingsGlossary": {
+        "clinchedPlayoffsBerth": "Clinched Playoffs Berth",
+        "clinchedEasternConference": "Clinched Eastern Conference",
+        "clinchedAtlanticDivision": "Clinched Atlantic Division",
+        "clinchedCentralDivision": "Clinched Central Division",
+        "clinchedSoutheastDivision": "Clinched Southeast Division",
+        "clinchedWesternConference": "Clinched Western Conference",
+        "clinchedSouthwestDivision": "Clinched Southwest Division",
+        "clinchedNorthwestDivision": "Clinched Northwest Division",
+        "clinchedPacificDivision": "Clinched Pacific Division",
+        "eliminatedFromPlayoffs": "Eliminated From Playoffs contention",
+        "tiebreakerBasis": {
+            "headerOne": "Tiebreaker Basis",
+            "lineOne": "Tie breaker not needed (better overall winning percentage).",
+            "lineTwo": "Division leader wins tie from team not leading a division.",
+            "lineThree": "Head-to-head won-lost percentage.",
+            "lineFour": "Division won-lost percentage.",
+            "lineFive": "Conference won-lost percentage.",
+            "lineSix": "W-L Percentage vs. Playoff teams, own conference.",
+            "lineSeven": "W-L Percentage vs. Playoff teams, other conference.",
+            "lineEight": "Net Points, all games.",
+            "headerTwo": "Playoff Tie-Break Procedures",
+            "paragraphOne": "Teams 1 to 4 in each conference are the three division winners and the team with the next best regular-season record, with the seeding of these four teams determined by regular-season record. The playoffs seedings of Teams 5 to 8 are based upon regular-season record. Ties are broken pursuant to the rules set forth below.",
+            "paragraphTwo": "Ties for playoff positions (including division winners) will be broken utilizing the criteria set forth in subparagraph a. below (in the case of ties involving two teams) and subparagraph b. below (in the case of ties involving more than two teams), and the guidelines set forth in subparagraph c. below.",
+            "headerThree": "a. Two Teams Tied",
+            "lineNine": "Better winning percentage in games against each other.",
+            "lineTen": "Better winning percentage against teams in own division (only if tied teams are in same division).",
+            "lineEleven": "Better winning percentage against teams in own conference.",
+            "lineTwelve": "Better winning percentage against teams eligible for playoffs in own conference (including teams that finished the regular season tied for a playoff position).",
+            "lineThirteen": "Better winning percentage against teams eligible for playoffs in opposite conference (including teams that finished the regular season tied for a playoff position).",
+            "lineFourteen": "Better net result of total points scored less total points allowed against all opponents ('point differential').",
+            "headerFour": "b. More Than Two Teams Tied",
+            "lineFifteen": "Better winning percentage in all games among the tied teams.",
+            "lineSixteen": "Better winning percentage against teams in own division (only if all tied teams are in the same division).",
+            "lineSeventeen": "Better winning percentage against teams in own conference.",
+            "lineEighteen": "Better winning percentage against teams eligible for playoffs in own conference (including teams that finished the regular season tied for a playoff position).",
+            "lineNineteen": "Better net result of total points scored less total points allowed against all opponents ('point differential').",
+            "headerFive": "c. Guidelines For Applying Tie-Break Criteria",
+            "lineTwenty": "a. Since the three division winners are guaranteed a spot in the top four, ties to determine the division winners must be broken before any other ties. b. When a tie must be broken to determine a division winner, the results of the tie-break shall be used to determine only the division winner and its playoff position, not any other playoff position(s).",
+            "lineTwentyOne": "If a tie involves more than two teams, the tie-break criteria in subparagraph b. shall be applied in the order set forth therein until the first to occur of the following:",
+            "lineTwentyTwo": "a. Each of the tied teams has a different winning percentage or point differential under the applicable tiebreak criterion (a 'complete' breaking of the tie). In this circumstance, the team with the best winning percentage or point differential under the criterion will be awarded the best playoff position, the team with the next-best winning percentage or point differential will be awarded the next-best playoff position, and so on, and no further application of the tie-break criteria will be required.",
+            "lineTwentyThree": "or",
+            "lineTwentyFour": "b. One or more (but not all) of the tied teams has a different winning percentage or point differential under the applicable tie-break criterion (a 'partial' breaking of the tie). In this circumstance: (x) any team(s) that performed better under the applicable criterion than any other team(s) will be awarded a higher playoff position than such other team(s); and (y) teams that had equivalent performance under the applicable criterion will remain tied, and such remaining tie(s) will be broken by applying, from the beginning, the criteria in subparagraph a.1-6 above (for any remaining tie involving only two teams) or subparagraph b.1-5 above (for any remaining tie involving more than two teams) and the guidelines set forth in this subparagraph c.",
+            "lineTwentyFive": "If application of the criteria in subparagraph a. or b. does not result in the breaking of a tie, the playoff positions of the tied teams will be determined by a random drawing.",
+            "headerSix": "d. Home Court Advantage:",
+            "paragraphThree": "For purposes of home court advantage, ties will be broken pursuant to the procedures used for breaking two-team ties for playoff position."
+        }
+    },
+    "delimiter": {
+        "initialLastName": ". ",
+        "firstNameLastName": " ",
+        "lastNameFirstName": ", "
+    },
+    "footer": "Copyright 2014 NBA Media Ventures, LLC | NBA Media Ventures, LLC. All rights reserved. No portion of this site may be duplicated, redistributed or manipulated in any form.<br />By accessing any information on this site, you agree to abide by the NBA.com Network <a href='/articles/privacy_policy.html'>Privacy Policy</a> and <a href='/articles/termsofuse.html'>Terms of Use</a>.",
+    "draft": {
+        "draftBoard": "Draft Board",
+        "draftStream": "Draft Stream",
+        "firstRound": "First Round",
+        "secondRound": "Second Round",
+        "toggleInstructions": "Toggle to follow Draft picks on the Draft Board or get up-to-date event coverage on Draft Stream"
+    },
+    "playersSnapshot": {
+        "title": "Players Snapshot",
+        "shortTitle": "Snapshot",
+        "position": "Pos",
+        "team": "Team"
+    },
+    "playersCareer": {
+        "title": "Players Career",
+        "shortTitle": "Career",
+        "position": "Pos",
+        "team": "Team",
+        "country": "Country"
+    },
+    "historicalTeamStats": {
+        "team": "Team",
+        "opponent": "Opponent",
+        "regular": "Regular Season",
+        "playoffs": "Playoff Season",
+        "season": "Season",
+        "vs": "vs"
+    },
+    "editionWrapper": {
+        "chooseEdition": "Please select your default edition",
+        "editionMessage": "Your default site has been set for 7 days",
+        "editionLabel": "Set Default Edition",
+        "go": "GO",
+        "setDefault": "Set Default"
+    },
+    "advancedTeamStats": {
+        "title": "Stats",
+        "legend": "TeamStats-Legend",
+        "advancedStats": "Ratio/Rating",
+        "columnLabel": {
+            "opponent": "Opponent",
+            "opp": "Opp",
+            "assistRatio": "ASTRATIO",
+            "defRtg": "DEFRTG",
+            "DREB%": "DREB%",
+            "disqualifications": "DQ",
+            "EFG%": "EFG%",
+            "offRtg": "OFFRTG",
+            "OREB%": "OREB%",
+            "Pace": "PACE",
+            "tpmAssistedPct": "%FG3M AST",
+            "tpmUnassistedPct": "%FG3M UAST",
+            "fgaBy2PtPct": "%FGA 2PT",
+            "fgaBy3PtPct": "%FGA 3PT",
+            "fgmAssistedPct": "%FGM AST",
+            "fgmUnassistedPct": "%FGM UAST",
+            "pointsBy2PtPct": "%PTS 2PT",
+            "pointsBy2PtMidPct": "%PTS 2PT MR",
+            "pointsByTpPct": "%PTS 3PT",
+            "pointsByFtPct": "%PTS FT",
+            "pointsInpaintPct": "%PTS PITP",
+            "Possessions": "POSS",
+            "trueShootingPct": "TS%",
+            "turnoverRatio": "TO%",
+            "usagePct": "USG%",
+            "ftaRate": "FTA%",
+            "ftmRate": "FTM%",
+            "REB%": "REB%"
+        },
+        "description": {
+            "EFG%": "Effective Field Goal Percentage.  This statistic adjusts for value of a 3-point field goal relative to a 2-point field goal.  = ((FGM + (0.5 * 3PM)) / FGA",
+            "defRtg": "Team Points allowed per 100 possessions.  On Player Level this statistic is Team Points allowed per 100 possessions while he is on court.  This statistic is also more exact than typical Player \"possession based\" calculations, because we calculate rather than estimate players' possessions on the court. = (OppPTS / POSS) * 100",
+            "DREB%": " DREB / (OppFGA - OppFGM + OppFTA - OppFTM) ",
+            "usagePct": " Usage Percentage is the percentage of team plays used by a player when he is on the floor.  Typically, Usg% calculations are merely estimates.  However, our Usg% calculations are exact, because we calculate all stats solely when a player is on the floor.  = ((FGA + (0.44 * FTA) + TO + .33 *AST)) * (40 / MIN) * Pace Adj. Factor) / 100   ",
+            "ftaRate": " Free Throws attempted relative to Field Goals Attempted by Player or Team.  = FTA / FGA ",
+            "ftmRate": " Free Throws made relative to Field Goals Attempted by Player or Team.  = FTM / FGA ",
+            "REB%": " Percentage of available rebounds (Offensive, Defensive, or Total) a player or team grabbed while on the floor.  Typically, Player REB% calculations are merely estimates.  However, our NBA REB% calculations are exact, because we calculate misses when a player is on the floor.  Also referred to as Rebound Rate.  = REB / (TotalFGA - TotalFGM + TotalFTA - TotalFTM)",
+            "offRtg": "Team Points scored per 100 possessions.  On Player Level this statistic is Team Points scored per 100 possessions while he is on court.  This statistic is also more exact than typical Player \"possession based\" calculations, because we calculate rather than estimate players' possessions on the court.  = (PTS / POSS) * 100",
+            "Pace": "Pace represents the number of possessions per 48 minutes for a team or player.  = (POSS / MIN) * 48",
+            "Possessions": " Number of possessions for a team.  = FGA + (FTA * 0.44) + TO - OREB",
+            "turnoverRatio": " TORatio is the number of turnovers a player averages per 100 possessions used.  Highlights good scorers who infrequently pass the ball (i.e. Players who typically catch and shoot.)  = (TO * 100) / (FGA + (FTA * 0.44) + AST + TO)",
+            "trueShootingPct": "True Shooting Percentage calculates shooting percentage adjusting for the value of free throws and 3-point field goals.  = PTS / (2 * (FGA + 0.44 * FTA))",
+            "fgaBy2PtPct": "%FGA(2PT) is the percentage of player or team FGAs that were 2-point attempts.  = 2PT Attempts / FGA",
+            "fgaBy3PtPct": "%FGA(3PT) is the percentage of player or team FGAs that were 3-point attempts.  = 3PT Attempts / FGA",
+            "pointsBy2PtPct": "%PTS(2PT) is the percentage of player or team points that were 2-point field goals.  = PTS from 2PT / PTS",
+            "pointsBy2PtMidPct": "%PTS(2PT-MR) is the percentage of player or team points that were mid-range field goals (i.e. outside the paint, yet inside the 3-point line).  = PTS from 2PT-MR / PTS",
+            "pointsByTpPct": "%PTS(3PT) is the percentage of player or team points that were 3-point field goals.  = PTS from 3PT / PTS",
+            "pointsByFtPct": "%PTS(FT) is the percentage of player or team points that were free throws.  = FTM / PTS",
+            "pointsInpaintPct": "%PTS(PITP) is the percentage of player or team points that were Points in the Paint.  = PTS from PITP / PTS",
+            "tpmAssistedPct": "3PM (%AST) is the percentage of player or team 3PM that were assisted.  = Assisted 3PM / 3PM",
+            "tpmUnassistedPct": "3PM (%UAST) is the percentage of player or team 3PM that were unassisted.  = Unassisted 3PM / 3PM",
+            "fgmAssistedPct": "FGM (%AST) is the percentage of player or team FGM that were assisted.  = Assisted FGM / FGM",
+            "fgmUnassistedPct": "FGM (%UAST) is the percentage of player or team FGM that were unassisted.  = Unassisted FGM / FGM",
+            "OREB%": " OREB / (FGA - FGM + FTA -FTM)"
+        }
+    }
+}
