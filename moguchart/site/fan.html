@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>球迷</title>
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <style>
+    /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+.navbar{
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.col-md-12{
+  height: 200px;
+}
+
+.col-md-6{
+height:500px;
+}
+.col-md-6{
+  margin-left: 0;
+}
+.col-md-3{
+  height:250px;
+}
+.chart{
+  margin-left: -30px;
+}
+
+h2{
+  margin-left: 40px;
+}
+h2 span.pull-right{
+  margin-right: 100px;
+}
+.divider{
+  height: 2px;
+  background-color: #eee;
+  margin-bottom: 10px;
+}
+iframe{
+  overflow: none;
+}
+
+h3{
+  margin-top: 10px !important;
+}
+
+  </style>
+<script src='../echarts.min.js'></script>
+<script src='../lodash.min.js'></script>
+<script src='../jquery.min.js'></script>
+<script src='../moment.js'></script>
+<script src='http://gallery.echartsjs.com/dep/echarts/map/js/china.js'></script>
+
+    <script src='http://gallery.echartsjs.com/dep/echarts/latest/extension/dataTool.min.js'></script>
+
+</head>
+<body>
+  
+
+
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+
+          <a class="navbar-brand" href="index.html">篮球可视化</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li ><a href="man.html">球队经理</a></li>
+            <li><a href="player.html">球员</a></li>
+            <li class='active'><a href="fan.html">球迷</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  <img src="img/fan.png" style='width:100%' alt="">
+    
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-6">
+          <img src="img/fan1.png" alt="">
+      </div>
+      <div class="col-md-6 chart" style='width:600px' id='map1'>
+        
+      </div>
+      <script src='fan/map.js'></script>
+
+
+    <div class="col-md-12" style='height:850px' >
+    <iframe src="../01_slider.html" scrolling="no"  height='100%' width='100%' frameborder="0"></iframe>
+    <!-- <h3 class="text-center">科比布莱恩特命中率</h3> -->
+    </div>
+    <!-- <script src='fan/bifen1.js'></script> -->
+
+
+
+      <h2>球员配合防守</h2>
+
+
+      <div class="col-md-12" style='height:900px' id='force1'>
+        
+      </div>
+      <script src='fan/force1.js'></script>
+      
+    </div>
+  <img src="img/player.png" style='width:100%' alt="">
+    <div class="row">
+
+      <h2>洛杉矶湖人
+        <span class="pull-right">波士顿凯尔特人</span>
+      </h2>
+      <div class="col-md-3" id='radar1'></div>
+      <script src='man/rador1.js'></script>
+      <div class="col-md-3" id='radar2'></div>
+      <script src='man/radar2.js'></script>
+      <div class="col-md-3" id='radar3'></div>
+      <script src='man/radar3.js'></script>
+      <div class="col-md-3" id='radar4'></div>
+      <script src='man/radar4.js'></script>
+      <div class="col-md-3" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">综合能力</h3>
+      </div>
+      <div class="col-md-3" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">进攻能力</h3>
+      </div>
+      <div class="col-md-3" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">防守能力</h3>
+      </div>
+      <div class="col-md-3" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">命中率</h3>
+      </div>
+
+
+    </div>
+<div class="divider"></div>
+<div class="row">
+  <div class="col-md-6" >
+    <iframe src="../lanqiung.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
+    <h3 class="text-center">科比布莱恩特命中率</h3>
+  </div>
+  <div class="col-md-6">
+  <iframe src="../lanqiung1.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
+    <h3 class="text-center">凯文加内特命中率</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6" id='pie1'></div>
+  <script src='man/pie1.js'></script>
+  <div class="col-md-6" id='pie2'></div>
+  <script src='man/pie2.js'></script>
+      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">科比投篮分析</h3>
+      </div>
+      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">加内特投篮分析</h3>
+      </div>
+
+<div class="col-md-6" style='height:200px;' id='sangji1'></div>
+<script src='man/sangji1.js'></script>
+<div class="col-md-6" style='height:200px;' id='sangji2'></div>
+<script src='man/sangji2.js'></script>
+      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">科比篮板分析</h3>
+      </div>
+      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">加内特篮板分析</h3>
+      </div>
+
+<div class="col-md-6" style='height:400px;' id='pie3'></div>
+<script src='man/pie3.js'></script>
+<div class="col-md-6" style='height:400px;' id='pie4'></div>
+<script src='man/pie4.js'></script>
+      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">科比助攻分析</h3>
+      </div>
+      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">加内特助攻分析</h3>
+      </div>
+
+
+</div>
+<!-- <hr class="featurette-divider"> -->
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016 Mushbroom</p>
+      </footer>
+
+
+
+
+<script src='../../js/jquery.min.js'></script>
+<script src='../../js/bootstrap.min.js'></script>
+</body>
+</html>
