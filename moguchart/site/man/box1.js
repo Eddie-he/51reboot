@@ -810,6 +810,15 @@ optionbox1 = {
         //     top: '90%'
         // }
     ],
+
+    toolbox: {
+      right:'50',
+        feature: {
+            dataView: {},
+            saveAsImage: {}
+        }
+    },
+
     tooltip: {
         trigger: 'item',
         axisPointer: {

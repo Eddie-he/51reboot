@@ -42,6 +42,13 @@ let all_data = [
     //         }
     //     }
     // },
+    // 
+    toolbox: {
+        feature: {
+            dataView: {},
+            saveAsImage: {}
+        }
+    },
      tooltip: {},
     legend: {
       // data:['库里','保罗']

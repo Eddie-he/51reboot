@@ -151,18 +151,16 @@ option = {
     grid:[{
       left:0
     }],
-    brush: {
-        show:false,
-        toolbox: ['rect', 'polygon', 'lineX', 'lineY', 'keep', 'clear'],
-        xAxisIndex: 0
-    },
+    // brush: {
+    //     show:false,
+    //     toolbox: ['rect', 'polygon', 'lineX', 'lineY', 'keep', 'clear'],
+    //     xAxisIndex: 0
+    // },
     toolbox: {
-      show:false,
+        right:'65',
         feature: {
-            magicType: {
-                type: ['stack', 'tiled']
-            },
-            dataView: {}
+            dataView: {},
+            saveAsImage: {}
         }
     },
     tooltip: {

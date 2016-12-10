@@ -55,6 +55,13 @@ let all_data = [
     // },
     legend: {
     },
+    toolbox: {
+        feature: {
+            dataView: {},
+            saveAsImage: {}
+        }
+    },
+    
     radar: [
         {
             indicator: [

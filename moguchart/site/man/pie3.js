@@ -12,6 +12,14 @@ let option = {
         trigger: 'item',
         formatter: "{a} <br/>{b}: {c} ({d}%)"
     },
+
+    toolbox: {
+        feature: {
+            dataView: {},
+            saveAsImage: {}
+        }
+    },
+    
     // legend: {
     //     // orient: 'vertical',
     //     x: 'center',
@@ -30,7 +38,7 @@ let option = {
             name:'Curry AST Ability',
             type:'pie',
             selectedMode: 'single',
-            radius: [0, '30%'],
+            radius: [0, '40%'],
 
             label: {
                 normal: {
@@ -51,7 +59,7 @@ let option = {
         {
             name:'Curry AST Ability',
             type:'pie',
-            radius: ['40%', '55%'],
+            radius: ['50%', '75%'],
 
             data:[
                 {value:6.7, name:'AST'},

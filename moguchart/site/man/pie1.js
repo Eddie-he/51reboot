@@ -28,6 +28,13 @@ let data_2016 = 'GSW  79  71  8 34.2  30.1  5.2 56.5  7.2 48.3  10.6  44.3  1.3 
         trigger: 'item',
         formatter: "{a} <br/>{b} : {c} ({d}%)"
     },
+    toolbox: {
+        feature: {
+            dataView: {},
+            saveAsImage: {}
+        }
+    },
+    
     legend: {
         x : 'center',
         y : 'bottom',

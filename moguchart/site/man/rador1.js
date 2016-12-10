@@ -20,7 +20,12 @@ let all_data = [
         text: '2015-2016 综合能力'
     },
 
-
+    toolbox: {
+        feature: {
+            dataView: {},
+            saveAsImage: {}
+        }
+    },
      tooltip: {},
     legend: {
       show:false,

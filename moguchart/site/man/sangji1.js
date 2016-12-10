@@ -96,6 +96,13 @@ GSW 79  71  8   34.2    4.6 0.7 3.9 15.2    7.5 60.8    1.7 78.5    8.5
         //     }
         // }
     // },
+    // 
+        toolbox: {
+        feature: {
+            dataView: {},
+            saveAsImage: {}
+        }
+    },
         tooltip: {
             trigger: 'item',
             triggerOn: 'mousemove'
@@ -103,6 +110,8 @@ GSW 79  71  8   34.2    4.6 0.7 3.9 15.2    7.5 60.8    1.7 78.5    8.5
         },
         series: [
             {
+                        top:'25',
+
                 type: 'sankey',
                 layout:'none',
                 data: data.nodes,
