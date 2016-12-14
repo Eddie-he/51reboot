@@ -168,7 +168,7 @@ trigger:'axis',
 formatter:function(param){
   let qishi = param[0]
   let huo = param[1]
-  return '火箭'+huo.data.value+qishi.data.value+'骑士<br>'+huo.data.name
+  return '湖人'+huo.data.value+qishi.data.value+'凯尔特人<br>'+huo.data.name
 }
     },
     xAxis: {

@@ -112,7 +112,7 @@ let all_data = [
 
                 {   
                     value: [2.1, 4.6,0.9,4.2],
-                    name: '库里',
+                    name: '湖人队',
                     areaStyle: {
                         normal: {
                             opacity: 0.5,
@@ -131,7 +131,7 @@ let all_data = [
                 },
                 {   
                     value: [3.5, 3.6,0.9,3.2],
-                    name: '保罗',
+                    name: '凯尔特人队',
                     areaStyle: {
                         normal: {
                             opacity: 0.5,

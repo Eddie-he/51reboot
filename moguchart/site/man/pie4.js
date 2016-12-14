@@ -35,7 +35,7 @@ let option = {
     // },
     series: [
         {
-            name:'Curry AST Ability',
+            name:'加内特助攻分析',
             type:'pie',
             selectedMode: 'single',
             radius: [0, '40%'],
@@ -56,7 +56,7 @@ let option = {
             ]
         },
         {
-            name:'Curry AST Ability',
+            name:'加内特助攻分析',
             type:'pie',
             radius: ['50%', '75%'],
 

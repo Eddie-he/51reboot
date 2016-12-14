@@ -874,7 +874,7 @@ optionbox1 = {
             }
         },
         {
-            name: 'outlier',
+            name: '湖人队',
             type: 'scatter',
             symbolSize:10,
             data: outers

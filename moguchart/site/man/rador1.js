@@ -84,32 +84,32 @@ let all_data = [
                         // center: ['75%', '50%'],
 
             data: [
-                {
-                    value: [3.1,11.0,1.3,0.2,2.1],
-                    name: 'NBA球员平均水平',
-                    lineStyle:{
-                      normal:{
-                        color:'#010101',
-                        opacity:0.3,
-                        width:0.4
-                      }
-                    },
-                    itemStyle:{
-                      normal:{
-                        opacity:0
-                      }
-                    }
-                },
+                // {
+                //     value: [3.1,11.0,1.3,0.2,2.1],
+                //     name: 'NBA球员平均水平',
+                //     lineStyle:{
+                //       normal:{
+                //         color:'#010101',
+                //         opacity:0.3,
+                //         width:0.4
+                //       }
+                //     },
+                //     itemStyle:{
+                //       normal:{
+                //         opacity:0
+                //       }
+                //     }
+                // },
                 {
 
                     value: [all_data[0][1][14],all_data[0][1][15],all_data[0][1][16],all_data[0][1][17],all_data[0][1][18]],
-                    name: '库里',
+                    name: '湖人队',
 
                 },
                 {
 
                     value: [all_data[2][1][14],all_data[2][1][15],all_data[2][1][16],all_data[2][1][17],all_data[2][1][18]],
-                    name: '保罗',
+                    name: '凯尔特人队',
 
                 }
             ]

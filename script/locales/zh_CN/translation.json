@@ -601,7 +601,7 @@
         "dist": "分布",
         "seasonTab": "{{ seasonYears }} 赛季",
         "playoffTab": "{{ playoffYears }} 季后赛",
-        "shootingArea": "投篮区域",
+        "shootingArea": "111投篮区域",
         "shootingAreaKeys": {
             "zone": "-",
             "zoneempty": "—",
@@ -817,7 +817,7 @@
         "dist": "分布",
         "seasonTab": "{{ seasonYears }} 赛季",
         "playoffTab": "{{ playoffYears }} 季后赛",
-        "shootingArea": "投篮区域",
+        "shootingArea": "222投篮区域",
         "seasonPerformance": "赛季表现",
         "last5Performance": "最近5场表现",
         "fullLink": "查看完整球队热区",

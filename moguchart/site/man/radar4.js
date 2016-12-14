@@ -112,7 +112,7 @@ let all_data = [
     series: [
         
         {
-            name: '成绩单',
+            name: '湖人队',
             type: 'radar',
             radarIndex: 1,
                         // center: ['75%', '50%'],
@@ -125,7 +125,7 @@ let all_data = [
                 {
 
                     value: [all_data[3][1][5],all_data[3][1][8],all_data[3][1][11],all_data[3][1][20]],
-                    name: '李四',
+                    name: '凯尔特人队',
                     areaStyle: {
                         normal: {
                             opacity: 0.9,

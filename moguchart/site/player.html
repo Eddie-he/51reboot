@@ -40,9 +40,30 @@
     </nav>
 
 
-  <img src="img/player.png" style='width:100%' alt="">
+  <img src="img/player01.png" style='width:100%' alt="">
+  <div class="container" >
+    <div class="row" style='background-color: #ddd;padding:20px 0'>
+      <div class="col-md-2">
+        <select class="pull-left form-control">
+            <option value="">库里 史蒂芬</option>
+        </select>
+      </div>
+      <div class="col-md-8 text-center">
+        <span class="player-btn active">球员能力对比</span>
+        <span class="player-btn" id='contest'>赛事表现</span>
+      </div>
+      <div class="col-md-2">
+        <select name="" id="" class="pull-right form-control">
+          <option value="">保罗 克里斯</option>
+        </select>
+      </div>
+    </div>
+    <img  id='player2' src="img/player2.png" style='width:100%' alt="">
+  </div>
+  <!-- <img src="img/player.png" style='width:100%' alt=""> -->
+
     
-  <div class="container">
+  <div class="container" >
     <div class="row">
   
 
@@ -69,16 +90,27 @@
       <div class="col-md-3" style='height:60px;margin-top:-10px'>
         <h3 class="text-center">命中率</h3>
       </div>
-
-
     </div>
-<div class="divider"></div>
-<div class="row">
-  <div class="col-md-6" >
+    <div class="divider"></div>
+</div>
+
+<!-- <div class="container" style='display: none' id='camp-content'>
+  <div class="col-md-12">
     <iframe src="../lanqiung.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
     <h3 class="text-center">科比布莱恩特命中率</h3>
   </div>
-  <div class="col-md-6">
+</div> -->
+
+
+
+<div class="container" id='player-content'>
+  
+<div class="row">
+  <div class="col-md-6" id='svgkebi'>
+    <iframe src="../lanqiung.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
+    <h3 class="text-center">科比布莱恩特命中率</h3>
+  </div>
+  <div class="col-md-6" id='svgjia'>
   <iframe src="../lanqiung1.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
     <h3 class="text-center">凯文加内特命中率</h3>
   </div>
@@ -89,10 +121,10 @@
   <script src='man/pie1.js'></script>
   <div class="col-md-6" id='pie2'></div>
   <script src='man/pie2.js'></script>
-      <div class="col-md-6" style='height:60px;margin-top:-10px'>
-        <h3 class="text-center">科比投篮分析</h3>
+      <div class="col-md-6" id='pietitle1' style='height:60px;margin-top:-10px'>
+        <h3 class="text-center" >科比投篮分析</h3>
       </div>
-      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+      <div class="col-md-6" id='pietitle2' style='height:60px;margin-top:-10px'>
         <h3 class="text-center">加内特投篮分析</h3>
       </div>
 
@@ -100,10 +132,10 @@
 <script src='man/sangji1.js'></script>
 <div class="col-md-6" style='height:200px;' id='sangji2'></div>
 <script src='man/sangji2.js'></script>
-      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+      <div class="col-md-6" id='sangjititle1' style='height:60px;margin-top:-10px'>
         <h3 class="text-center">科比篮板分析</h3>
       </div>
-      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+      <div class="col-md-6" id='sangjititle2' style='height:60px;margin-top:-10px'>
         <h3 class="text-center">加内特篮板分析</h3>
       </div>
 
@@ -111,14 +143,15 @@
 <script src='man/pie3.js'></script>
 <div class="col-md-6" style='height:400px;' id='pie4'></div>
 <script src='man/pie4.js'></script>
-      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+      <div class="col-md-6" id='pietitle3' style='height:60px;margin-top:-10px'>
         <h3 class="text-center">科比助攻分析</h3>
       </div>
-      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+      <div class="col-md-6" id='pietitle4' style='height:60px;margin-top:-10px'>
         <h3 class="text-center">加内特助攻分析</h3>
       </div>
 
 
+</div>
 </div>
 <!-- <hr class="featurette-divider"> -->
       <!-- FOOTER -->
@@ -126,11 +159,47 @@
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2016 Mushbroom</p>
       </footer>
-
-
-
-
 <script src='../../js/jquery.min.js'></script>
 <script src='../../js/bootstrap.min.js'></script>
+
+<script>
+$(function(){
+
+  let preBtnIndex
+  $('.player-btn').click(function(){
+    var $this = $(this)
+
+    if ($this.index()==preBtnIndex) {
+      return false
+    }
+    preBtnIndex = $this.index()
+    $('img#player2').toggle()
+     $('#svgjia').toggle()
+     $('#svgkebi').toggleClass('col-md-offset-3')
+
+     $('#pie2').toggle()
+     $('#pie1').toggleClass('col-md-offset-3')
+     $('#pietitle2').toggle()
+     $('#pietitle1').toggleClass('col-md-offset-3')
+
+     $('#sangji2').toggle()
+     $('#sangji1').toggleClass('col-md-offset-3')
+     $('#sangjititle2').toggle()
+     $('#sangjititle1').toggleClass('col-md-offset-3')
+
+     $('#pie4').toggle()
+     $('#pie3').toggleClass('col-md-offset-3')
+     $('#pietitle4').toggle()
+     $('#pietitle3').toggleClass('col-md-offset-3')
+
+
+    $('.player-btn').removeClass('active')
+    $(this).addClass('active')
+
+  })
+
+})
+
+</script>
 </body>
 </html>

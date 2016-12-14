@@ -601,7 +601,7 @@
         "dist": "分布",
         "seasonTab": "{{ seasonYears }} 赛季",
         "playoffTab": "{{ playoffYears }} 季后赛",
-        "shootingArea": "投篮区域",
+        "shootingArea": "xxx投篮区域",
         "shootingAreaKeys": {
             "zone": "-",
             "zoneempty": "—",
