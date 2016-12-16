@@ -2,6 +2,14 @@
   background-color: #006cb1;
   border-color: #006cb1;
 }
+.header-title{
+  background-color: #ddd;
+  text-align:center;
+  padding:5px;
+  font-size: 18px;
+  margin: 5px auto;
+  width:580px;
+}
 .btn-group-justified .btn{
   border-radius: 0 !important;
 }
