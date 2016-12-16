@@ -22,7 +22,8 @@
 <body>
   
 
-
+<div class="container">
+  
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -39,12 +40,20 @@
       </div>
     </nav>
 
+</div>
 
+<div class="container">
+  
   <img src="img/man.png" style='width:100%' alt="">
     
-  <div class="container">
-    <div class="row">
-      
+<div class="btn-group btn-group-justified">
+  <a type="button" class="btn btn-primary head-btn"  style='border-radius: 0'>球队基本信息</a>
+  <a type="button" class="btn btn-default head-btn">赛事信息</a>
+</div>
+</div>
+
+<div class="container contentDiv" id='firstDiv'>
+  <div class="row">
       <div class="col-md-6">
           <img src="img/man01.png" alt="">
       </div>
@@ -52,100 +61,508 @@
         
       </div>
       <script src='man/box1.js'></script>
-      
-      <h2>历史交手记录</h2>
+<h2>历史交手记录</h2>
 
-      <div class="col-md-12" id='bar1'>
 
+
+  </div>
+    <div class="row" style='background-color: #ddd;padding:20px 0'>
+      <div class="col-md-2">
+        <select class="pull-left form-control">
+            <option value="">库里 史蒂芬</option>
+        </select>
       </div>
-      <script src='man/bar.js'></script>
-
-      <h2>洛杉矶湖人
-        <span class="pull-right">波士顿凯尔特人</span>
-      </h2>
-            <hr class="featurette-divider" style='top: -60px'>
-
-      <div class="col-md-3" id='radar1'></div>
-      <script src='man/rador1.js'></script>
-      <div class="col-md-3" id='radar2'></div>
-      <script src='man/radar2.js'></script>
-      <div class="col-md-3" id='radar3'></div>
-      <script src='man/radar3.js'></script>
-      <div class="col-md-3" id='radar4'></div>
-      <script src='man/radar4.js'></script>
-      <div class="col-md-3" style='height:60px;margin-top:-10px'>
-        <h3 class="text-center">综合能力</h3>
+      <div class="col-md-8 text-center">
+        <span class="player-btn active">球员能力对比</span>
+        <span class="player-btn" id='contest'>赛事表现</span>
       </div>
-      <div class="col-md-3" style='height:60px;margin-top:-10px'>
-        <h3 class="text-center">进攻能力</h3>
+      <div class="col-md-2">
+        <select name="" id="" class="pull-right form-control">
+          <option value="">保罗 克里斯</option>
+        </select>
       </div>
-      <div class="col-md-3" style='height:60px;margin-top:-10px'>
-        <h3 class="text-center">防守能力</h3>
-      </div>
-      <div class="col-md-3" style='height:60px;margin-top:-10px'>
-        <h3 class="text-center">命中率</h3>
-      </div>
-
-
     </div>
 
-<div class="divider"></div>
-<div class="row">
-  <div class="col-md-6" >
-    <iframe src="../lanqiung.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
-    <h3 class="text-center">科比命中率</h3>
+
+
+
+<div class="content1" id='man1_1'>
+  <div class="row">
+        <div class="col-md-12" id='bar1'>
+
+        </div>
+        <script src='man/bar.js'></script>
+
+        <h2>洛杉矶湖人
+          <span class="pull-right">波士顿凯尔特人</span>
+        </h2>
+
   </div>
-  <div class="col-md-6">
-  <iframe src="../lanqiung1.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
-    <h3 class="text-center">加内特命中率</h3>
+  <div class="row">
+    
+        <div class="col-md-3" id='radar1'></div>
+        <script src='man/rador1.js'></script>
+        <div class="col-md-3" id='radar2'></div>
+        <script src='man/radar2.js'></script>
+        <div class="col-md-3" id='radar3'></div>
+        <script src='man/radar3.js'></script>
+        <div class="col-md-3" id='radar4'></div>
+        <script src='man/radar4.js'></script>
+        <div class="col-md-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">综合能力</h3>
+        </div>
+        <div class="col-md-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">进攻能力</h3>
+        </div>
+        <div class="col-md-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">防守能力</h3>
+        </div>
+        <div class="col-md-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">命中率</h3>
+        </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6" >
+      <iframe src="../lanqiung.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
+      <h3 class="text-center">科比命中率</h3>
+    </div>
+    <div class="col-md-6">
+    <iframe src="../lanqiung1.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
+      <h3 class="text-center">加内特命中率</h3>
+    </div>
+
+  </div>
+  <div class="divider"></div>
+
+  <div class="row">
+    <div class="col-md-6" id='pie1'></div>
+    <script src='man/pie1.js'></script>
+    <div class="col-md-6" id='pie2'></div>
+    <script src='man/pie2.js'></script>
+        <div class="col-md-6" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">科比投篮分析</h3>
+        </div>
+        <div class="col-md-6" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">加内特投篮分析</h3>
+        </div>
+
+  </div>
+  <div class="divider"></div>
+
+  <div class="row">
+
+  <div class="col-md-6" style='height:200px;' id='sangji1'></div>
+  <script src='man/sangji1.js'></script>
+  <div class="col-md-6" style='height:200px;' id='sangji2'></div>
+  <script src='man/sangji2.js'></script>
+        <div class="col-md-6" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">科比篮板分析</h3>
+        </div>
+        <div class="col-md-6" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">加内特篮板分析</h3>
+        </div>
+  </div>
+  <div class="divider"></div>
+
+  <div class="row">
+  <div class="col-md-6" style='height:400px;' id='pie3'></div>
+  <script src='man/pie3.js'></script>
+  <div class="col-md-6" style='height:400px;' id='pie4'></div>
+  <script src='man/pie4.js'></script>
+        <div class="col-md-6" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">科比助攻分析</h3>
+        </div>
+        <div class="col-md-6" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">加内特助攻分析</h3>
+        </div>
+
+  </div>
+  <div class="divider"></div>
+
+
+
+
+</div>
+
+<div class="content1" id='secDiv'>
+  
+  <div class="row">
+    
+        <div class="col-md-3" id='radar5'></div>
+        <script src='man/rador5.js'></script>
+        <div class="col-md-3" id='radar6'></div>
+        <script src='man/radar6.js'></script>
+        <div class="col-md-3" id='radar7'></div>
+        <script src='man/radar7.js'></script>
+        <div class="col-md-3" id='radar8'></div>
+        <script src='man/radar8.js'></script>
+        <div class="col-md-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">综合能力</h3>
+        </div>
+        <div class="col-md-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">进攻能力</h3>
+        </div>
+        <div class="col-md-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">防守能力</h3>
+        </div>
+        <div class="col-md-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">命中率</h3>
+        </div>
+  </div>
+
+
+  <div class="row">
+    
+    <div class="col-md-offset-3 col-md-6" >
+      <iframe src="../lanqiung.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
+      <h3 class="text-center">科比命中率</h3>
+    </div>
+
+
+
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3" id='pie1_1'></div>
+    <script src='man/pie1_1.js'></script>
+
+        <div class="col-md-6 col-md-offset-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">加内特投篮分析</h3>
+        </div>
+
+  </div>
+  <div class="divider"></div>
+
+  <div class="row">
+
+  <div class="col-md-6 col-md-offset-3" style='height:200px;' id='sangji1_1'></div>
+  <script src='man/sangji1_1.js'></script>
+
+        <div class="col-md-6 col-md-offset-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">加内特篮板分析</h3>
+        </div>
+  </div>
+  <div class="divider"></div>
+
+  <div class="row">
+  <div class="col-md-6 col-md-offset-3" style='height:400px;' id='pie3_1'></div>
+  <script src='man/pie3_1.js'></script>
+
+        <div class="col-md-6 col-md-offset-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">科比助攻分析</h3>
+        </div>
+
+  </div>
+  <div class="divider"></div>
+
+
   </div>
 
 </div>
-<div class="divider"></div>
-
-<div class="row">
-  <div class="col-md-6" id='pie1'></div>
-  <script src='man/pie1.js'></script>
-  <div class="col-md-6" id='pie2'></div>
-  <script src='man/pie2.js'></script>
-      <div class="col-md-6" style='height:60px;margin-top:-10px'>
-        <h3 class="text-center">科比投篮分析</h3>
-      </div>
-      <div class="col-md-6" style='height:60px;margin-top:-10px'>
-        <h3 class="text-center">加内特投篮分析</h3>
-      </div>
 
 </div>
-<div class="divider"></div>
 
-<div class="row">
-<div class="col-md-6" style='height:200px;' id='sangji1'></div>
-<script src='man/sangji1.js'></script>
-<div class="col-md-6" style='height:200px;' id='sangji2'></div>
-<script src='man/sangji2.js'></script>
-      <div class="col-md-6" style='height:60px;margin-top:-10px'>
-        <h3 class="text-center">科比篮板分析</h3>
+
+
+<div class="container contentDiv" id='secondDiv' style='display: none'>
+  <div class="row">
+    
+    <div class="col-md-12" style='height:850px' >
+    <iframe src="../01_slider.html" scrolling="no"  height='100%' width='100%' frameborder="0"></iframe>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-6" style='width:555px;height:555px' id='force1_1'>
+    
+    </div>
+    <script src='man/force1_1.js'></script>
+  <div class="col-md-6" style='width:555px;height:555px' id='sangji3'>
+    
+  </div>
+    <script src='man/sangji3.js' ></script>
+
+
+    <div class="col-md-6" style='height:60px;margin-top:-10px'>
+      <h2>球员配合防守</h2>
+      
+    </div>
+
+    <div class="col-md-6" style='height:60px;margin-top:-10px'>
+      <h2>得分流向</h2>
+      
+    </div>
+
+
+  </div>
+
+
+    <div class="row" style='background-color: #ddd;padding:20px 0'>
+      <div class="col-md-2">
+        <select class="pull-left form-control">
+            <option value="">库里 史蒂芬</option>
+        </select>
       </div>
-      <div class="col-md-6" style='height:60px;margin-top:-10px'>
-        <h3 class="text-center">加内特篮板分析</h3>
+      <div class="col-md-8 text-center">
+        <span class="player-btn active">球员能力对比</span>
+        <span class="player-btn" id='contest'>赛事表现</span>
       </div>
+      <div class="col-md-2">
+        <select name="" id="" class="pull-right form-control">
+          <option value="">保罗 克里斯</option>
+        </select>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- xxxxxxxxx -->
+
+
+
+<div class="content2" id=''>
+  <div class="row">
+        <div class="col-md-12" style='width:1200px' id='bar1_2'>
+
+        </div>
+        <script src='man/bar_2.js'></script>
+
+        <h2>洛杉矶湖人
+          <span class="pull-right">波士顿凯尔特人</span>
+        </h2>
+
+  </div>
+  <div class="row">
+    
+        <div class="col-md-3" style='width:280px' id='radar1_2'></div>
+        <script src='man/rador1_2.js'></script>
+        <div class="col-md-3" style='width:280px' id='radar2_2'></div>
+        <script src='man/radar2_2.js'></script>
+        <div class="col-md-3" style='width:280px' id='radar3_2'></div>
+        <script src='man/radar3_2.js'></script>
+        <div class="col-md-3" style='width:280px' id='radar4_2'></div>
+        <script src='man/radar4_2.js'></script>
+        <div class="col-md-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">综合能力</h3>
+        </div>
+        <div class="col-md-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">进攻能力</h3>
+        </div>
+        <div class="col-md-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">防守能力</h3>
+        </div>
+        <div class="col-md-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">命中率</h3>
+        </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6" >
+      <iframe src="../lanqiung.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
+      <h3 class="text-center">科比命中率</h3>
+    </div>
+    <div class="col-md-6">
+    <iframe src="../lanqiung1.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
+      <h3 class="text-center">加内特命中率</h3>
+    </div>
+
+  </div>
+  <div class="divider"></div>
+
+  <div class="row">
+    <div class="col-md-6" style='width:580px' id='pie1_2'></div>
+    <script src='man/pie1_2.js'></script>
+    <div class="col-md-6" style='width:580px' id='pie2_2'></div>
+    <script src='man/pie2_2.js'></script>
+        <div class="col-md-6" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">科比投篮分析</h3>
+        </div>
+        <div class="col-md-6" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">加内特投篮分析</h3>
+        </div>
+
+  </div>
+  <div class="divider"></div>
+
+  <div class="row">
+
+  <div class="col-md-6" style='height:200px;width:580px' id='sangji1_2'></div>
+  <script src='man/sangji1_2.js'></script>
+  <div class="col-md-6" style='height:200px;width:580px' id='sangji2_2'></div>
+  <script src='man/sangji2_2.js'></script>
+        <div class="col-md-6" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">科比篮板分析</h3>
+        </div>
+        <div class="col-md-6" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">加内特篮板分析</h3>
+        </div>
+  </div>
+  <div class="divider"></div>
+
+  <div class="row">
+  <div class="col-md-6" style='height:400px;width:580px' id='pie3_2'></div>
+  <script src='man/pie3_2.js'></script>
+  <div class="col-md-6" style='height:400px;width:580px' id='pie4_2'></div>
+  <script src='man/pie4_2.js'></script>
+        <div class="col-md-6" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">科比助攻分析</h3>
+        </div>
+        <div class="col-md-6" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">加内特助攻分析</h3>
+        </div>
+
+  </div>
+  <div class="divider"></div>
 </div>
-<div class="divider"></div>
 
-<div class="row">
-<div class="col-md-6" style='height:400px;' id='pie3'></div>
-<script src='man/pie3.js'></script>
-<div class="col-md-6" style='height:400px;' id='pie4'></div>
-<script src='man/pie4.js'></script>
-      <div class="col-md-6" style='height:60px;margin-top:-10px'>
-        <h3 class="text-center">科比助攻分析</h3>
-      </div>
-      <div class="col-md-6" style='height:60px;margin-top:-10px'>
-        <h3 class="text-center">加内特助攻分析</h3>
-      </div>
+<div class="content2" id='' style='display: none'>
+  
+  <div class="row">
+    
+        <div class="col-md-3" style='width:280px' id='radar1_3'></div>
+        <script src='man/rador1_3.js'></script>
+        <div class="col-md-3" style='width:280px' id='radar2_3'></div>
+        <script src='man/radar2_3.js'></script>
+        <div class="col-md-3" style='width:280px' id='radar3_3'></div>
+        <script src='man/radar3_3.js'></script>
+        <div class="col-md-3" style='width:280px' id='radar4_3'></div>
+        <script src='man/radar4_3.js'></script>
+        <div class="col-md-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">综合能力</h3>
+        </div>
+        <div class="col-md-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">进攻能力</h3>
+        </div>
+        <div class="col-md-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">防守能力</h3>
+        </div>
+        <div class="col-md-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">命中率</h3>
+        </div>
+  </div>
+
+
+  <div class="row">
+    
+    <div class="col-md-offset-3 col-md-6" >
+      <iframe src="../lanqiung.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
+      <h3 class="text-center">科比命中率</h3>
+    </div>
+
+
+
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3" style='width:580px' id='pie1_3'></div>
+    <script src='man/pie1_3.js'></script>
+
+        <div class="col-md-6 col-md-offset-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">加内特投篮分析</h3>
+        </div>
+
+  </div>
+  <div class="divider"></div>
+
+  <div class="row">
+
+  <div class="col-md-6 col-md-offset-3" style='height:200px;width:580px' id='sangji1_3'></div>
+  <script src='man/sangji1_3.js'></script>
+
+        <div class="col-md-6 col-md-offset-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">加内特篮板分析</h3>
+        </div>
+  </div>
+  <div class="divider"></div>
+
+  <div class="row">
+  <div class="col-md-6 col-md-offset-3" style='height:400px;width:580px' id='pie3_3'></div>
+  <script src='man/pie3_3.js'></script>
+
+        <div class="col-md-6 col-md-offset-3" style='height:60px;margin-top:-10px'>
+          <h3 class="text-center">科比助攻分析</h3>
+        </div>
+
+  </div>
+  <div class="divider"></div>
+
+
+  </div>
 
 </div>
-<div class="divider"></div>
+
+
+
+</div>
+
+
+<script>
+// function toggleClass
+$(function(){
+
+  $('.head-btn').click(function(){
+    var $this = $(this)
+    var $index = $this.index()
+    if ($this.hasClass('btn-primary')) {
+      return false
+    }
+    if ($index==1) {
+
+    // $('#secondDiv ').find('.col-md-3,.col-md-6,.col-md-12').each(function(i,v){
+    //   if(echarts.getInstanceByDom(v)){
+    //     echarts.getInstanceByDom(v).resize()
+    //   }
+    // })
+
+    }
+    $('.head-btn').removeClass('btn-primary').addClass('btn-default')
+    $this.addClass('btn-primary').removeClass('btn-default')
+
+    $('.contentDiv').hide()
+    $('.contentDiv').eq($index).show()
+
+  })
+
+
+  $('#firstDiv .player-btn').click(function(){
+    var $this = $(this)
+    var $index = $this.index()
+    if ($this.hasClass('active')) {
+      return false
+    }
+    $('#firstDiv .player-btn').removeClass('active')
+    $this.addClass('active')
+    $('.content1').hide()
+    $('.content1').eq($index).show()
+  })
+
+  $('#secondDiv .player-btn').click(function(){
+    var $this = $(this)
+    var $index = $this.index()
+    if ($this.hasClass('active')) {
+      return false
+    }
+
+    $('#secondDiv .player-btn').removeClass('active')
+    $this.addClass('active')
+    $('.content2').hide()
+    $('.content2').eq($index).show()
+  })
+
+})
+</script>
+
+  <div class="container">
+
+
 
 
 <!-- <hr class="featurette-divider"> -->

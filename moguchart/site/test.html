@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>球队经理</title>
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+
+  <style>
+    /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+  </style>
+  <link rel="stylesheet" href="page.css">
+<script src='../echarts.min.js'></script>
+<script src='../lodash.min.js'></script>
+<script src='../jquery.min.js'></script>
+<script src='../moment.js'></script>
+    <script src='http://gallery.echartsjs.com/dep/echarts/latest/extension/dataTool.min.js'></script>
+
+</head>
+<body>
+  
+
+
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+
+          <a class="navbar-brand" href="index.html">篮球可视化</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class='active'><a href="man.html">球队经理</a></li>
+            <li><a href="player.html">球员</a></li>
+            <li><a href="fan.html">球迷</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  <img src="img/man.png" style='width:100%' alt="">
+    
+<div class="btn-group btn-group-justified">
+  <a type="button" class="btn btn-primary"  style='border-radius: 0'>Left</a>
+  <a type="button" class="btn btn-default">Right</a>
+</div>
+
+
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-6">
+          <img src="img/man01.png" alt="">
+      </div>
+      <div class="col-md-6 chart" style='width:600px' id='man-box1'>
+        
+      </div>
+      <script src='man/box1.js'></script>
+      
+      <h2>历史交手记录</h2>
+
+      <div class="col-md-12" id='bar1'>
+
+      </div>
+      <script src='man/bar.js'></script>
+
+      <h2>洛杉矶湖人
+        <span class="pull-right">波士顿凯尔特人</span>
+      </h2>
+            <hr class="featurette-divider" style='top: -60px'>
+
+      <div class="col-md-3" id='radar1'></div>
+      <script src='man/rador1.js'></script>
+      <div class="col-md-3" id='radar2'></div>
+      <script src='man/radar2.js'></script>
+      <div class="col-md-3" id='radar3'></div>
+      <script src='man/radar3.js'></script>
+      <div class="col-md-3" id='radar4'></div>
+      <script src='man/radar4.js'></script>
+      <div class="col-md-3" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">综合能力</h3>
+      </div>
+      <div class="col-md-3" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">进攻能力</h3>
+      </div>
+      <div class="col-md-3" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">防守能力</h3>
+      </div>
+      <div class="col-md-3" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">命中率</h3>
+      </div>
+
+
+    </div>
+
+<div class="divider"></div>
+<div class="row">
+  <div class="col-md-6" >
+    <iframe src="../lanqiung.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
+    <h3 class="text-center">科比命中率</h3>
+  </div>
+  <div class="col-md-6">
+  <iframe src="../lanqiung1.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
+    <h3 class="text-center">加内特命中率</h3>
+  </div>
+
+</div>
+<div class="divider"></div>
+
+<div class="row">
+  <div class="col-md-6" id='pie1'></div>
+  <script src='man/pie1.js'></script>
+  <div class="col-md-6" id='pie2'></div>
+  <script src='man/pie2.js'></script>
+      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">科比投篮分析</h3>
+      </div>
+      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">加内特投篮分析</h3>
+      </div>
+
+</div>
+<div class="divider"></div>
+
+<div class="row">
+<div class="col-md-6" style='height:200px;' id='sangji1'></div>
+<script src='man/sangji1.js'></script>
+<div class="col-md-6" style='height:200px;' id='sangji2'></div>
+<script src='man/sangji2.js'></script>
+      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">科比篮板分析</h3>
+      </div>
+      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">加内特篮板分析</h3>
+      </div>
+</div>
+<div class="divider"></div>
+
+<div class="row">
+<div class="col-md-6" style='height:400px;' id='pie3'></div>
+<script src='man/pie3.js'></script>
+<div class="col-md-6" style='height:400px;' id='pie4'></div>
+<script src='man/pie4.js'></script>
+      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">科比助攻分析</h3>
+      </div>
+      <div class="col-md-6" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">加内特助攻分析</h3>
+      </div>
+
+</div>
+<div class="divider"></div>
+
+
+<!-- <hr class="featurette-divider"> -->
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016 Mushbroom</p>
+      </footer>
+
+
+
+
+<script src='../../js/jquery.min.js'></script>
+<script src='../../js/bootstrap.min.js'></script>
+
+</body>
+</html>

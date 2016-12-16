@@ -2,7 +2,9 @@
   background-color: #006cb1;
   border-color: #006cb1;
 }
-
+.btn-group-justified .btn{
+  border-radius: 0 !important;
+}
 .navbar-inverse .navbar-nav>li>a {
     color: white;
 }
