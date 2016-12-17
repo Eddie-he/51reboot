@@ -35,7 +35,7 @@ let option = {
     // },
     series: [
         {
-            name:'科比助攻分析',
+            name:'湖人队助攻分析',
             type:'pie',
             selectedMode: 'single',
             radius: [0, '40%'],
@@ -57,7 +57,7 @@ let option = {
             ]
         },
         {
-            name:'科比助攻分析',
+            name:'湖人队助攻分析',
             type:'pie',
             radius: ['50%', '75%'],
 

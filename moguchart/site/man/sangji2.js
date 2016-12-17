@@ -53,7 +53,7 @@ GSW 79  71  8   34.2    4.6 0.7 3.9 15.2    7.5 60.8    1.7 78.5    8.5
 // $.get('data/asset/data/product.json', function (data) {
     // myChart.hideLoading();
     let data = {"nodes": [
-      {"name": "Chance"},
+      {"name": "凯尔特人Chance"},
       {"name": "REB"},
       {"name": "LOST"},
 
@@ -66,18 +66,18 @@ GSW 79  71  8   34.2    4.6 0.7 3.9 15.2    7.5 60.8    1.7 78.5    8.5
 
    ],
    "links": [
-      {"source": "Chance", "target": "LOST", "value": 3.8},
+      {"source": "凯尔特人Chance", "target": "LOST", "value": 2.8},
       {"source": "LOST", "target": "OLOST", "value": 0.7},
-      {"source": "LOST", "target": "DLOST", "value": 3.1},
+      {"source": "LOST", "target": "DLOST", "value": 2.1},
 
-      {"source": "Chance", "target": "REB", "value": 5.4},
+      {"source": "凯尔特人Chance", "target": "REB", "value": 6.4},
 
-      {"source": "REB", "target": "OREB", "value": 0.9},
-      {"source": "REB", "target": "DREB", "value": 4.5},
+      {"source": "REB", "target": "OREB", "value": 2.9},
+      {"source": "REB", "target": "DREB", "value": 3.5},
 
       {"source": "OREB", "target": "Contested DREB", "value": 0.3},
       {"source": "OREB", "target": "Uncontested DREB", "value": 0.6},
-      {"source": "DREB", "target": "Contested DREB", "value": 0.7},
+      {"source": "DREB", "target": "Contested DREB", "value": 1.7},
       {"source": "DREB", "target": "Uncontested DREB", "value": 3.8},
 
 

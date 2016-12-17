@@ -104,13 +104,41 @@ let all_data = [
 
                     value: [all_data[0][1][14],all_data[0][1][15],all_data[0][1][16],all_data[0][1][17],all_data[0][1][18]],
                     name: '湖人队',
-
+                    areaStyle: {
+                        normal: {
+                            opacity: 0.5,
+                            color: new echarts.graphic.RadialGradient(0.5, 0.5, 1, [
+                                {
+                                    color: '#B8D3E4',
+                                    offset: 0
+                                },
+                                {
+                                    color: '#72ACD1',
+                                    offset: 1
+                                }
+                            ])
+                        }
+                    }
                 },
                 {
 
                     value: [all_data[2][1][14],all_data[2][1][15],all_data[2][1][16],all_data[2][1][17],all_data[2][1][18]],
                     name: '凯尔特人队',
-
+                    areaStyle: {
+                        normal: {
+                            opacity: 0.5,
+                            color: new echarts.graphic.RadialGradient(0.5, 0.5, 1, [
+                                {
+                                    color: '#B8D3E4',
+                                    offset: 0
+                                },
+                                {
+                                    color: '#72ACD1',
+                                    offset: 1
+                                }
+                            ])
+                        }
+                    }
                 }
             ]
         }

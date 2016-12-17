@@ -6,9 +6,11 @@
   background-color: #ddd;
   text-align:center;
   padding:5px;
-  font-size: 18px;
+  font-size: 14px;
   margin: 5px auto;
   width:580px;
+  /*float: left;*/
+  /*display: inline-block;*/
 }
 .btn-group-justified .btn{
   border-radius: 0 !important;

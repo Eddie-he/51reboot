@@ -120,7 +120,7 @@ let all_data = [
             data: [
                 {
                     value: [40,20,90,50],
-                    name: '平均'
+                    name: '湖人队'
                 },
                 {
 
