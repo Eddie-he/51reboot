@@ -27,14 +27,25 @@ let all_data = [
       
 
         // 指定图表的配置项和数据
-        var option0 = {
-    title: {
-        // show:false,
-        // text: '2015-2016 命中率',
-        // left:'center'
-    },
 
-    // toolbox:{
+
+
+
+
+
+
+
+
+
+
+
+        // 指定图表的配置项和数据
+        var option3 = {
+    title: {
+        show:false,
+        text: '2015-2016 命中率'
+    },
+    //     toolbox:{
     //                 top:15,
     //     feature:{
     //         dataView:{
@@ -42,17 +53,15 @@ let all_data = [
     //         }
     //     }
     // },
-    // 
+    legend: {
+    },
     toolbox: {
         feature: {
             dataView: {},
             saveAsImage: {}
         }
     },
-     tooltip: {},
-    legend: {
-      // data:['库里','保罗']
-    },
+    
     radar: [
         {
             indicator: [
@@ -92,10 +101,10 @@ let all_data = [
           // 2014-2015: 4.3  7.7 2.0 0.2 3.1
           // 2013-2014: 4.3  8.5 1.6 0.2 3.8
             indicator: [
-                { text: 'STL', max: 5 },
-                { text: 'DREB', max: 5 },
-                { text: 'DFGM', max: 1 },
-                { text: 'BLK', max: 5 }
+                { text: 'FG%', max: 100 },
+                { text: '3P%', max: 100 },
+                { text: 'FT%', max: 100 },
+                { text: 'eFG%', max: 100 },
             ],
             radius: 90
         }
@@ -103,19 +112,23 @@ let all_data = [
     series: [
         
         {
-            name: '',
+            name: '湖人队',
             type: 'radar',
             radarIndex: 1,
                         // center: ['75%', '50%'],
 
             data: [
+                {
+                    value: [40,20,90,50],
+                    name: '湖人队'
+                },
+                {
 
-                {   
-                    value: [2.1, 4.6,0.9,4.2],
-                    name: '加内特',
+                    value: [all_data[3][1][5],all_data[3][1][8],all_data[3][1][11],all_data[3][1][20]],
+                    name: '凯尔特人队',
                     areaStyle: {
                         normal: {
-                            opacity: 0.5,
+                            opacity: 0.9,
                             color: new echarts.graphic.RadialGradient(0.5, 0.5, 1, [
                                 {
                                     color: '#B8D3E4',
@@ -128,31 +141,12 @@ let all_data = [
                             ])
                         }
                     }
-                },
-                {   
-                    value: [3.5, 3.6,0.9,3.2],
-                    name: 'MVP平均水平',
-                    areaStyle: {
-                        normal: {
-                            opacity: 0.5,
-                            color: new echarts.graphic.RadialGradient(0.5, 0.5, 1, [
-                                {
-                                    color: '#B8D3E4',
-                                    offset: 0
-                                },
-                                {
-                                    color: '#72ACD1',
-                                    offset: 1
-                                }
-                            ])
-                        }
-                    }
-                },
+                }
             ]
         }
     ]
 }
 
-echarts.init(document.getElementById('radar3_3')).setOption(option0)
+echarts.init(document.getElementById('radar4_5')).setOption(option3)
 
 }()

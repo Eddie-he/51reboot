@@ -27,6 +27,7 @@
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
+          <img src="./logo.png" style="height:27px;float:left;margin-top:10px;margin-right:3px;" alt="">
 
           <a class="navbar-brand" href="index.html">篮球可视化</a>
         </div>
@@ -230,7 +231,129 @@
 </div>
 
 <div class="content1" id='secDiv' style='display: none'>
-  <div class="header-title" style='width:100%'>
+
+    <img  id='player2' src="img/player2.png" style='width:100%' alt="">
+
+    <div class="row">
+  
+
+      <h2>科比
+        <span class="pull-right">加内特</span>
+      </h2>
+      <div class="col-md-3" style='width:280px' id='radar5'></div>
+      <script src='man/rador5.js'></script>
+      <div class="col-md-3" style='width:280px' id='radar6'></div>
+      <script src='man/radar6.js'></script>
+      <div class="col-md-3" style='width:280px' id='radar7'></div>
+      <script src='man/radar7.js'></script>
+      <div class="col-md-3" style='width:280px' id='radar8'></div>
+      <script src='man/radar8.js'></script>
+      <div class="col-md-3" style='width:280px;height:60px;margin-top:-10px'>
+        <h3 class="text-center">综合能力</h3>
+      </div>
+      <div class="col-md-3" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">进攻能力</h3>
+      </div>
+      <div class="col-md-3" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">防守能力</h3>
+      </div>
+      <div class="col-md-3" style='height:60px;margin-top:-10px'>
+        <h3 class="text-center">命中率</h3>
+      </div>
+    </div>
+    <div class="divider"></div>
+
+
+
+  <div class="row">
+            <div class="header-title" style='margin-left: 20px;width:555px;float: left;'>
+            科比投篮热力图
+          </div>
+      <div class="header-title" style='margin-left: 20px;width:555px;float: left;'>
+          加内特投篮热力图
+      </div>
+</div>
+<div class="row">
+  <div class="col-md-6" id='svgkebi'>
+    <iframe src="../lanqiung.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
+    <!-- <h3 class="text-center">科比布莱恩特命中率</h3> -->
+  </div>
+  <div class="col-md-6" id='svgjia'>
+  <iframe src="../lanqiung1.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
+    <!-- <h3 class="text-center">凯文加内特命中率</h3> -->
+  </div>
+</div>
+<div class="divider"></div>
+<div class="row">
+            <div class="header-title" style='margin-left: 20px;width:555px;float: left;'>
+            科比投篮分析
+          </div>
+      <div class="header-title" style='margin-left: 20px;width:555px;float: left;'>
+          加内特投篮分析
+      </div>
+</div>
+<div class="row">
+  <div class="col-md-6" style='width:580px' id='pie1_4'></div>
+  <script src='man/pie1_4.js'></script>
+  <div class="col-md-6" style='width:580px' id='pie2_4'></div>
+  <script src='man/pie2_4.js'></script>
+      <div class="col-md-6" id='pietitle1' style='height:60px;margin-top:-10px'>
+        <!-- <h3 class="text-center" >科比投篮分析</h3> -->
+      </div>
+      <div class="col-md-6" id='pietitle2' style='height:60px;margin-top:-10px'>
+        <!-- <h3 class="text-center">加内特投篮分析</h3> -->
+      </div>
+
+</div>
+<div class="divider"></div>
+<div class="row">
+            <div class="header-title" style='margin-left: 20px;width:555px;float: left;'>
+            科比篮板分析
+          </div>
+      <div class="header-title" style='margin-left: 20px;width:555px;float: left;'>
+          加内特篮板分析
+      </div>
+</div>
+<div class="row">
+  
+
+<div class="col-md-6" style='height:200px;width:580px' id='sangji1_4'></div>
+<script src='man/sangji1_4.js'></script>
+<div class="col-md-6" style='height:200px;width:580px' id='sangji2_4'></div>
+<script src='man/sangji2_4.js'></script>
+      <div class="col-md-6" id='sangjititle1' style='height:60px;margin-top:-10px'>
+        <!-- <h3 class="text-center">科比篮板分析</h3> -->
+      </div>
+      <div class="col-md-6" id='sangjititle2' style='height:60px;margin-top:-10px'>
+        <!-- <h3 class="text-center">加内特篮板分析</h3> -->
+      </div>
+</div>
+<div class="divider"></div>
+<div class="row">
+            <div class="header-title" style='margin-left: 20px;width:555px;float: left;'>
+            科比助攻分析
+          </div>
+      <div class="header-title" style='margin-left: 20px;width:555px;float: left;'>
+          加内特助攻分析
+      </div>
+</div>
+<div class="row">
+<div class="col-md-6" style='height:400px;width:580px' id='pie3_4'></div>
+<script src='man/pie3_4.js'></script>
+<div class="col-md-6" style='height:400px;width:580px' id='pie4_4'></div>
+<script src='man/pie4_4.js'></script>
+      <div class="col-md-6" id='pietitle3' style='height:60px;margin-top:-10px'>
+        <!-- <h3 class="text-center">科比助攻分析</h3> -->
+      </div>
+      <div class="col-md-6" id='pietitle4' style='height:60px;margin-top:-10px'>
+        <!-- <h3 class="text-center">加内特助攻分析</h3> -->
+      </div>
+
+
+</div>
+
+
+<!--   <div class="header-title" style='width:100%'>
     综合能力&nbsp;进攻能力&nbsp;防守能力&nbsp;命中率
   </div>
 
@@ -255,8 +378,8 @@
         <div class="col-md-3" style='height:60px;margin-top:-10px'>
           <h3 class="text-center">命中率</h3>
         </div>
-  </div>
-<div class="divider"></div>
+  </div> -->
+<!-- <div class="divider"></div>
     <div class="header-title" style='margin-left: 280px' >
       加内特命中率
     </div>  
@@ -265,9 +388,9 @@
     <div class="col-md-offset-3 col-md-6" >
       <iframe src="../lanqiung.html" scrolling="no"  height='90%' width='100%' frameborder="0"></iframe>
       <!-- <h3 class="text-center">科比命中率</h3> -->
-    </div>
-</div>
-
+<!--     </div>
+</div> -->
+<!-- 
 <div class="divider"></div>
       <div class="header-title" style='margin-left: 280px'>
       加内特投篮分析
@@ -275,13 +398,13 @@
 
   <div class="row">
     <div class="col-md-6 col-md-offset-3" style='width:580px' id='pie1_1'></div>
-    <script src='man/pie1_1.js'></script>
+    <script src='man/pie1_1.js'></script> -->
 
 <!--         <div class="col-md-6 col-md-offset-3" style='height:60px;margin-top:-10px'>
           <h3 class="text-center">加内特投篮分析</h3>
         </div>
  -->
-  </div>
+<!--   </div>
 <div class="divider"></div>
       <div class="header-title" style='margin-left: 280px'>
       加内特篮板分析
@@ -291,29 +414,22 @@
 
   <div class="col-md-6 col-md-offset-3" style='width:580px;height:200px;' id='sangji1_1'></div>
   <script src='man/sangji1_1.js'></script>
-
-<!--         <div class="col-md-6 col-md-offset-3" style='height:60px;margin-top:-10px'>
-          <h3 class="text-center">加内特篮板分析</h3>
-        </div>
- -->  </div>
-<div class="divider"></div>
+ </div> -->
+<!-- <div class="divider"></div>
       <div class="header-title" style='margin-left: 280px'>
       加内特助攻分析
     </div>
 
   <div class="row">
   <div class="col-md-6 col-md-offset-3" style='height:400px;width:580px' id='pie3_1'></div>
-  <script src='man/pie3_1.js'></script>
+  <script src='man/pie3_1.js'></script> -->
 
 <!--         <div class="col-md-6 col-md-offset-3" style='height:60px;margin-top:-10px'>
           <h3 class="text-center">科比助攻分析</h3>
         </div>
  -->
-  </div>
-  <div class="divider"></div>
+  <!-- </div> -->
 
-
-  </div>
 
 </div>
 
@@ -419,14 +535,14 @@
     <div class="header-title" style='width:100%'>
     综合能力&nbsp;进攻能力&nbsp;防守能力&nbsp;命中率
   </div>  
-        <div class="col-md-3" style='width:280px' id='radar1_2'></div>
-        <script src='man/rador1_2.js'></script>
-        <div class="col-md-3" style='width:280px' id='radar2_2'></div>
-        <script src='man/radar2_2.js'></script>
-        <div class="col-md-3" style='width:280px' id='radar3_2'></div>
-        <script src='man/radar3_2.js'></script>
-        <div class="col-md-3" style='width:280px' id='radar4_2'></div>
-        <script src='man/radar4_2.js'></script>
+        <div class="col-md-3" style='width:280px' id='radar1_5'></div>
+        <script src='man/rador1_5.js'></script>
+        <div class="col-md-3" style='width:280px' id='radar2_5'></div>
+        <script src='man/radar2_5.js'></script>
+        <div class="col-md-3" style='width:280px' id='radar3_5'></div>
+        <script src='man/radar3_5.js'></script>
+        <div class="col-md-3" style='width:280px' id='radar4_5'></div>
+        <script src='man/radar4_5.js'></script>
         <div class="col-md-3" style='height:60px;margin-top:-10px'>
           <h3 class="text-center">综合能力</h3>
         </div>

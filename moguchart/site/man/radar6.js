@@ -102,7 +102,7 @@ let all_data = [
     series: [
         
         {
-            name: '湖人队',
+            name: '科比',
             type: 'radar',
             radarIndex: 1,
                         // center: ['75%', '50%'],
@@ -111,7 +111,7 @@ let all_data = [
 
                 {
                     value: [2.0, 0.9, 0.4, 0.5, 1.7],
-                    name: '库里',
+                    name: '科比',
                     areaStyle: {
                         normal: {
                             opacity: 0.5,
@@ -130,7 +130,7 @@ let all_data = [
                 },
                 {
                     value: [2.1, 0.8, 0.5, 0.7, 1.2],
-                    name: '凯尔特人队',
+                    name: '加内特',
                     areaStyle: {
                         normal: {
                             opacity: 0.5,

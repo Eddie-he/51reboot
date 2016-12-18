@@ -33,7 +33,6 @@ let all_data = [
         // text: '2015-2016 命中率',
         // left:'center'
     },
-
     // toolbox:{
     //                 top:15,
     //     feature:{
@@ -42,7 +41,6 @@ let all_data = [
     //         }
     //     }
     // },
-    // 
     toolbox: {
         feature: {
             dataView: {},
@@ -92,10 +90,11 @@ let all_data = [
           // 2014-2015: 4.3  7.7 2.0 0.2 3.1
           // 2013-2014: 4.3  8.5 1.6 0.2 3.8
             indicator: [
-                { text: 'STL', max: 5 },
-                { text: 'DREB', max: 5 },
-                { text: 'DFGM', max: 1 },
-                { text: 'BLK', max: 5 }
+                { text: 'FGM', max: 2.5 },
+                { text: 'PF', max: 1.0 },
+                { text: 'TO', max: 1.0 },
+                { text: 'AST', max: 1.0 },
+                { text: 'PASS', max: 2.0 },
             ],
             radius: 90
         }
@@ -103,16 +102,16 @@ let all_data = [
     series: [
         
         {
-            name: '',
+            name: '湖人队',
             type: 'radar',
             radarIndex: 1,
                         // center: ['75%', '50%'],
 
             data: [
 
-                {   
-                    value: [2.1, 4.6,0.9,4.2],
-                    name: '加内特',
+                {
+                    value: [2.0, 0.9, 0.4, 0.5, 1.7],
+                    name: '湖人队',
                     areaStyle: {
                         normal: {
                             opacity: 0.5,
@@ -129,9 +128,9 @@ let all_data = [
                         }
                     }
                 },
-                {   
-                    value: [3.5, 3.6,0.9,3.2],
-                    name: 'MVP平均水平',
+                {
+                    value: [2.1, 0.8, 0.5, 0.7, 1.2],
+                    name: '凯尔特人队',
                     areaStyle: {
                         normal: {
                             opacity: 0.5,
@@ -153,6 +152,6 @@ let all_data = [
     ]
 }
 
-echarts.init(document.getElementById('radar3_3')).setOption(option0)
+echarts.init(document.getElementById('radar2_5')).setOption(option0)
 
 }()

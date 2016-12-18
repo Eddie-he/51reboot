@@ -103,7 +103,7 @@ let all_data = [
                 {
 
                     value: [all_data[0][1][14],all_data[0][1][15],all_data[0][1][16],all_data[0][1][17],all_data[0][1][18]],
-                    name: '湖人队',
+                    name: '科比',
                     areaStyle: {
                         normal: {
                             opacity: 0.5,
@@ -123,7 +123,7 @@ let all_data = [
                 {
 
                     value: [all_data[2][1][14],all_data[2][1][15],all_data[2][1][16],all_data[2][1][17],all_data[2][1][18]],
-                    name: '凯尔特人队',
+                    name: '加内特',
                     areaStyle: {
                         normal: {
                             opacity: 0.5,

@@ -120,12 +120,12 @@ let all_data = [
             data: [
                 {
                     value: [40,20,90,50],
-                    name: '平均'
+                    name: '科比'
                 },
                 {
 
                     value: [all_data[3][1][5],all_data[3][1][8],all_data[3][1][11],all_data[3][1][20]],
-                    name: '凯尔特人队',
+                    name: '加内特',
                     areaStyle: {
                         normal: {
                             opacity: 0.9,

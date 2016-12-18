@@ -1,5 +1,6 @@
 !function(){
 
+
 let play_name = 'Curry'
 let data_index = [['命中率','5,8,11,20'],['综合能力',14,15,16,17,18]]
 let label = 'GP  MIN PTS FGM FGA FG% 3PM 3PA 3P% FTM FTA FT% OREB  DREB  REB AST STL BLK TOV EFF eFG%'.split(' ').filter(v=>v)
@@ -13,36 +14,12 @@ let all_data = [
   return [temp[0],temp[1].split(' ').filter(v=>v)]
 })
 
-// let 
-// 命中率
-
-// let data_score = data.map(val=>{
-//   console.log(val[0])
-//   console.log(val[1].filter((v,i)=>{
-//    return  _.indexOf('5,8,11,20'.split(','),i)>-1
-//   }))
-// })
-// console.log(data_score)
-        // 基于准备好的dom，初始化echarts实例
-      
-
-        // 指定图表的配置项和数据
-        var option0 = {
+        var option1 = {
     title: {
-        // show:false,
-        // text: '2015-2016 命中率',
-        // left:'center'
+        show:false,
+        text: '2015-2016 综合能力'
     },
 
-    // toolbox:{
-    //                 top:15,
-    //     feature:{
-    //         dataView:{
-    //             show:true
-    //         }
-    //     }
-    // },
-    // 
     toolbox: {
         feature: {
             dataView: {},
@@ -51,7 +28,8 @@ let all_data = [
     },
      tooltip: {},
     legend: {
-      // data:['库里','保罗']
+      show:false,
+      data:['库里','保罗']
     },
     radar: [
         {
@@ -85,17 +63,14 @@ let all_data = [
 
         },
         {
-          // 篮板，助攻，断球，盖帽，失误
-          // REB AST STL BLK TOV
-          // 
-          // 2015-2016: 5.4  6.7 2.1 0.2 3.3
-          // 2014-2015: 4.3  7.7 2.0 0.2 3.1
-          // 2013-2014: 4.3  8.5 1.6 0.2 3.8
+//14,15,16,17,18
+//REB AST STL BLK TOV
             indicator: [
-                { text: 'STL', max: 5 },
-                { text: 'DREB', max: 5 },
-                { text: 'DFGM', max: 1 },
-                { text: 'BLK', max: 5 }
+                { text: 'REB', max: 12 },
+                { text: 'AST', max: 13 },
+                { text: 'STL', max: 3 },
+                { text: 'BLK', max: 1 },
+                { text: 'TOV', max: 5 },
             ],
             radius: 90
         }
@@ -103,16 +78,32 @@ let all_data = [
     series: [
         
         {
-            name: '',
+            name: '成绩单',
             type: 'radar',
             radarIndex: 1,
                         // center: ['75%', '50%'],
 
             data: [
+                // {
+                //     value: [3.1,11.0,1.3,0.2,2.1],
+                //     name: 'NBA球员平均水平',
+                //     lineStyle:{
+                //       normal:{
+                //         color:'#010101',
+                //         opacity:0.3,
+                //         width:0.4
+                //       }
+                //     },
+                //     itemStyle:{
+                //       normal:{
+                //         opacity:0
+                //       }
+                //     }
+                // },
+                {
 
-                {   
-                    value: [2.1, 4.6,0.9,4.2],
-                    name: '加内特',
+                    value: [all_data[0][1][14],all_data[0][1][15],all_data[0][1][16],all_data[0][1][17],all_data[0][1][18]],
+                    name: '湖人队',
                     areaStyle: {
                         normal: {
                             opacity: 0.5,
@@ -129,9 +120,10 @@ let all_data = [
                         }
                     }
                 },
-                {   
-                    value: [3.5, 3.6,0.9,3.2],
-                    name: 'MVP平均水平',
+                {
+
+                    value: [all_data[2][1][14],all_data[2][1][15],all_data[2][1][16],all_data[2][1][17],all_data[2][1][18]],
+                    name: '凯尔特人队',
                     areaStyle: {
                         normal: {
                             opacity: 0.5,
@@ -147,12 +139,13 @@ let all_data = [
                             ])
                         }
                     }
-                },
+                }
             ]
         }
     ]
 }
 
-echarts.init(document.getElementById('radar3_3')).setOption(option0)
+
+echarts.init(document.getElementById('radar1_5')).setOption(option1)
 
 }()

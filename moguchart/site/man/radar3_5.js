@@ -112,7 +112,7 @@ let all_data = [
 
                 {   
                     value: [2.1, 4.6,0.9,4.2],
-                    name: '加内特',
+                    name: '湖人队',
                     areaStyle: {
                         normal: {
                             opacity: 0.5,
@@ -131,7 +131,7 @@ let all_data = [
                 },
                 {   
                     value: [3.5, 3.6,0.9,3.2],
-                    name: 'MVP平均水平',
+                    name: '凯尔特人队',
                     areaStyle: {
                         normal: {
                             opacity: 0.5,
@@ -153,6 +153,6 @@ let all_data = [
     ]
 }
 
-echarts.init(document.getElementById('radar3_3')).setOption(option0)
+echarts.init(document.getElementById('radar3_5')).setOption(option0)
 
 }()

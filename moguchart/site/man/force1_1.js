@@ -254,6 +254,7 @@ function formatTime(num){
 }
     optionCircle = {
         title: {
+            show:false,
             text: 'Les Miserables',
             subtext: 'Default layout',
             top: 'bottom',
