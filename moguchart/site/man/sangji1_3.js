@@ -9,7 +9,7 @@ Player
 5REB  总篮板
 6Contested REB 有对手篮板
 7Uncontested REB 无对手篮板
-9REB Chances  篮板机会
+9REB 加内特Chances  篮板机会
 
 
 Stephen Curry
@@ -53,7 +53,7 @@ GSW 79  71  8   34.2    4.6 0.7 3.9 15.2    7.5 60.8    1.7 78.5    8.5
 // $.get('data/asset/data/product.json', function (data) {
     // myChart.hideLoading();
     let data = {"nodes": [
-      {"name": "Chance"},
+      {"name": "加内特Chance"},
       {"name": "REB"},
       {"name": "LOST"},
 
@@ -66,11 +66,11 @@ GSW 79  71  8   34.2    4.6 0.7 3.9 15.2    7.5 60.8    1.7 78.5    8.5
 
    ],
    "links": [
-      {"source": "Chance", "target": "LOST", "value": 3.8},
+      {"source": "加内特Chance", "target": "LOST", "value": 3.8},
       {"source": "LOST", "target": "OLOST", "value": 0.7},
       {"source": "LOST", "target": "DLOST", "value": 3.1},
 
-      {"source": "Chance", "target": "REB", "value": 5.4},
+      {"source": "加内特Chance", "target": "REB", "value": 5.4},
 
       {"source": "REB", "target": "OREB", "value": 0.9},
       {"source": "REB", "target": "DREB", "value": 4.5},

@@ -111,7 +111,7 @@ let all_data = [
 
                 {
                     value: [2.0, 0.9, 0.4, 0.5, 1.7],
-                    name: '库里',
+                    name: '湖人队',
                     areaStyle: {
                         normal: {
                             opacity: 0.5,

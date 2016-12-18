@@ -45,7 +45,7 @@ let data_2016 = 'GSW  79  71  8 34.2  30.1  5.2 56.5  7.2 48.3  10.6  44.3  1.3 
 
 
         {
-            name:'科比投篮次数',
+            name:'湖人队投篮次数',
             type:'pie',
             radius : [20, 90],
             center : ['50%', '20%'],
@@ -76,16 +76,16 @@ let data_2016 = 'GSW  79  71  8 34.2  30.1  5.2 56.5  7.2 48.3  10.6  44.3  1.3 
 //
 // 2.0 2.5 0.5 0.5 0.6 0.1
 
-                {value:2.0, name:'Drive FGM'},
-                {value:2.5, name:'Catch FGM'},
-                {value:0.5, name:'Pull Up FGM'},
+                {value:0.7, name:'Drive FGM'},
+                {value:1.5, name:'Catch FGM'},
+                {value:0.8, name:'Pull Up FGM'},
                 {value:0.5, name:'Paint Touch FGM'},
                 {value:0.6, name:'Post Touch FGM'},
                 {value:0.1, name:'Elbow Touch FGM'},
             ]
         },
         {
-            name:'科比投篮得分',
+            name:'湖人队投篮得分',
             type:'pie',
             radius : [30, 90],
             center : ['50%', '75%'],

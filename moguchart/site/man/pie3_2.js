@@ -51,9 +51,9 @@ let option = {
                 }
             },
             data:[
-                {value:9.9, name:'AST Adj'},
-                {value:12.3, name:'Potential AST'},
-                {value:41.9, name:'others'}
+                {value:13.9, name:'AST Adj'},
+                {value:9.3, name:'Potential AST'},
+                {value:21.9, name:'others'}
             ]
         },
         {
@@ -63,10 +63,10 @@ let option = {
 
             data:[
                 {value:6.7, name:'AST'},
-                {value:0.7, name:'FT AST'},
-                {value:2.5, name:'Secondary AST'},
-                {value:12.3, name:'Potential AST'},
-                {value:41.9, name:'others'}
+                {value:1.7, name:'FT AST'},
+                {value:3.5, name:'Secondary AST'},
+                {value:9.3, name:'Potential AST'},
+                {value:21.9, name:'others'}
             ]
         }
     ]
