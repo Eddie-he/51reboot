@@ -53,7 +53,7 @@ GSW 79  71  8   34.2    4.6 0.7 3.9 15.2    7.5 60.8    1.7 78.5    8.5
 // $.get('data/asset/data/product.json', function (data) {
     // myChart.hideLoading();
     let data = {"nodes": [
-      {"name": "凯尔特人Chance"},
+      {"name": "Chance"},
       {"name": "REB"},
       {"name": "LOST"},
 
@@ -66,11 +66,11 @@ GSW 79  71  8   34.2    4.6 0.7 3.9 15.2    7.5 60.8    1.7 78.5    8.5
 
    ],
    "links": [
-      {"source": "凯尔特人Chance", "target": "LOST", "value": 3.8},
+      {"source": "Chance", "target": "LOST", "value": 3.8},
       {"source": "LOST", "target": "OLOST", "value": 1.7},
       {"source": "LOST", "target": "DLOST", "value": 2.1},
 
-      {"source": "凯尔特人Chance", "target": "REB", "value": 5.4},
+      {"source": "Chance", "target": "REB", "value": 5.4},
 
       {"source": "REB", "target": "OREB", "value": 1.9},
       {"source": "REB", "target": "DREB", "value": 3.5},
@@ -106,8 +106,15 @@ GSW 79  71  8   34.2    4.6 0.7 3.9 15.2    7.5 60.8    1.7 78.5    8.5
     },
         tooltip: {
             trigger: 'item',
-            triggerOn: 'mousemove'
+            triggerOn: 'mousemove',
+            formatter:function(v){
+              var name='凯尔特人队'
+              if (v.value) {
+                return `${name}<br>${v.name}:${v.value}`
 
+              }
+              return `${name}<br>${v.name}`
+            }
         },
         series: [
             {
