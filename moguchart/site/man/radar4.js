@@ -61,7 +61,8 @@ let all_data = [
             saveAsImage: {}
         }
     },
-    
+         tooltip: {},
+
     radar: [
         {
             indicator: [
@@ -119,8 +120,24 @@ let all_data = [
 
             data: [
                 {
-                    value: [40,20,90,50],
-                    name: '湖人队'
+                    value: [40,40,80,70],
+                    name: '湖人队',
+                    areaStyle: {
+                        normal: {
+                            opacity: 0.5,
+                            color: new echarts.graphic.RadialGradient(0.5, 0.5, 1, [
+                                {
+                                    color: '#B8D3E4',
+                                    offset: 0
+                                },
+                                {
+                                    color: '#72ACD1',
+                                    offset: 1
+                                }
+                            ])
+                        }
+                    }
+
                 },
                 {
 
