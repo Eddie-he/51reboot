@@ -294,8 +294,8 @@ function formatTime(num){
                 type: 'graph',
                 layout: 'force',
                 force:{
-                  repulsion:1000,
-                  edgeLength:400
+                  repulsion:100,
+                  edgeLength:300
                 },
                 focusNodeAdjacency:true,
                 edgeSymbol: ['circle', 'arrow'],
