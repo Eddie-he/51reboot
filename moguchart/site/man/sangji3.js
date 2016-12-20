@@ -138,14 +138,14 @@
         title: {
             // text: 'PTS--POR'
         },
-            toolbox:{
-                    top:15,
-        feature:{
-            dataView:{
-                show:true
-            }
-        }
-    },
+    //         toolbox:{
+    //                 top:15,
+    //     feature:{
+    //         dataView:{
+    //             show:true
+    //         }
+    //     }
+    // },
         tooltip: {
           // formatter:function(params){
           //   console.log(params)
