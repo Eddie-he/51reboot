@@ -38,10 +38,14 @@ $(function(){
         document.getElementById('slider_iframe').contentWindow.document.body.style.zoom='100%'  
   })
   $('#xxx2').click(function(){
-    fullScreen('force1_1')
-    // document.getElementById('force1_1').
-    $('#force1_1').addClass('fullScreen')
-    echarts.getInstanceByDom($('#force1_1')[0])
+
+            fullScreen('slider_iframe')
+        document.getElementById('slider_iframe').contentWindow.document.body.style.zoom='120%'  
+
+    // fullScreen('force1_1')
+    // // document.getElementById('force1_1').
+    // $('#force1_1').addClass('fullScreen')
+    // echarts.getInstanceByDom($('#force1_1')[0])
   })
 
 
@@ -52,8 +56,8 @@ $(function(){
 
 </head>
 <body>
-  <button id='xxx'>test</button>
-  <button id='xxx2'>test2</button>
+  <button id='xxx'>全屏</button>
+  <button id='xxx2'>全屏放大到120%</button>
 
   <div class="container">
     
