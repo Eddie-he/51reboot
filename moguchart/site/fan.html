@@ -18,9 +18,42 @@
 <script src='../moment.js'></script>
     <script src='http://gallery.echartsjs.com/dep/echarts/latest/extension/dataTool.min.js'></script>
 
+    <script>
+      function fullScreen(id) {
+    var element = document.getElementById(id);
+    if (element.requestFullScreen)
+        return element.requestFullScreen();
+    if (element.webkitRequestFullScreen)
+        return element.webkitRequestFullScreen();
+    if (element.mozRequestFullScreen)
+        return element.mozRequestFullScreen();
+    if (element.msRequestFullScreen)
+        return element.msRequestFullScreen();
+    if (element.oRequestFullScreen)
+        return element.oRequestFullScreen();
+}
+$(function(){
+  $('#xxx').click(function(){
+        fullScreen('slider_iframe')
+        document.getElementById('slider_iframe').contentWindow.document.body.style.zoom='100%'  
+  })
+  $('#xxx2').click(function(){
+    fullScreen('force1_1')
+    // document.getElementById('force1_1').
+    $('#force1_1').addClass('fullScreen')
+    echarts.getInstanceByDom($('#force1_1')[0])
+  })
+
+
+
+})
+
+    </script>
+
 </head>
 <body>
-  
+  <button id='xxx'>test</button>
+  <button id='xxx2'>test2</button>
 
   <div class="container">
     
@@ -63,7 +96,7 @@
   <div class="row">
     
     <div class="col-md-12" style='height:850px;margin-left: 120px;' >
-    <iframe src="../01_slider.html" scrolling="no"  height='100%' width='100%' frameborder="0"></iframe>
+    <iframe name='slider_iframe' id='slider_iframe' src="../01_slider.html" scrolling="no"  height='100%' width='100%' frameborder="0"></iframe>
     </div>
 
   </div>

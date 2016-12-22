@@ -372,10 +372,6 @@ function renderTimeChart(ele_id, team_name,player_ids,player_names,shoufa_ids) {
 
     }
   })
-  // console.log(homeData)
-  // return 
-  // homeData[0].push(2)
-  // all_data=[]
   _.forEach(all_data, (v, i) => {
     if (v[1] == team_name) {
       var play_index = _.indexOf(player_ids, v[2])
@@ -476,9 +472,10 @@ function renderTimeChart(ele_id, team_name,player_ids,player_names,shoufa_ids) {
   homeSeries[0].markPoint = {
     data: markPointData
   }
-  console.log(homeSeries)
+  // console.log(homeSeries)
   var homeOption = {
     title: {
+      show:false,
       text: team_name + '上场情况'
     },
     //     toolbox:{
