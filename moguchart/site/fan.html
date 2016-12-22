@@ -35,7 +35,10 @@
 $(function(){
   $('#xxx').click(function(){
         fullScreen('slider_iframe')
-        document.getElementById('slider_iframe').contentWindow.document.body.style.zoom='100%'  
+        var temp = document.getElementById('slider_iframe').contentWindow.document.body
+
+        temp.style.zoom='100%'  
+        temp.style.paddingLeft='200px'
   })
   $('#xxx2').click(function(){
 
@@ -56,9 +59,9 @@ $(function(){
 
 </head>
 <body>
-  <button id='xxx'>全屏</button>
+<!--   <button id='xxx'>全屏</button>
   <button id='xxx2'>全屏放大到120%</button>
-
+ -->
   <div class="container">
     
     <nav class="navbar navbar-inverse" role="navigation">
