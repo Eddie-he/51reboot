@@ -81,8 +81,6 @@
 * 字符串处理（find、join、split、strip、format、replace、index、count ...）
 * 大战面试官1：实现简单的队列和栈
 * 大战面试官2：冒泡排序讲解
-* 作业1：
-* 作业2：
 
 
 ####（第三天）字典与文件处理
@@ -94,8 +92,8 @@
     * 打开文件
     * 文件操作（write、read、readlines、writelines、seek、flush、close ...）
 
-作业1：IP 维度统计 Nginx 日志
-作业2：工作中遇到日志分析问题，怎么全方面多维度的来统计日志
+* 作业1：IP 维度统计 Nginx 日志
+* 作业2：工作中遇到日志分析问题，怎么全方面多维度的来统计日志
 
 
 ### Python 进阶部分     
