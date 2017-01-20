@@ -51,101 +51,88 @@
 
 ----
 
-##（一）Python基础
-+ Python历史和特点
-+ python环境搭建
-+ 第一个Python程序
-+ Python数字运算
-+ Python字符串
-+ 变量及变量赋值
-+ Python的四则运算、运算符（in、not in、is、and、or）
-+ 获取用户输入（input、raw_input）
-+ 流程控制
+####（第一天）基础语法
+* Python 发展历史和语言特性
+* Python 环境搭建及虚拟环境管理
+* 第一个 Python 程序
+* Python 四则运算
+* Python 数据结构
+* Python 元算符（in、not in、is、and、or）
+* 用户输入 （input、raw_input）
+* 流程控制
     * 缩进
-    * if..else条件语句
-    * for while循环语句
-    * break continue中断语句
-+ 作业1：统计最大的两个值
-+ 作业2：统计字符出现次数
+    * if..else 条件语句
+    * for、while 循环语句
+    * break continue 中断语句
 
-##（二）Python列表和元组
-              
+* 作业1：统计最大的两个值
+* 作业2：统计字符出现次数
+
+####（第二天）元祖与列表
 * 列表的定义
-* 列表的循环
-* 常见操作（分片、步长、方法）
-* 常用内置函数（max、min、range）
-* list内置方法(append,pop,count等)
-* 列表生成式
-* 元组和列表的关系与区别
-* 字符串方法（find、join、split、strip、format、replace、
-index、count）
+* 列表的遍历
+* 列表的切片
+* 常用内置函数（max、min、range、len）
+* list 方法（append、pop、count ...）
+* 列表表达式
+* 元祖的定义
+* tuple 方法（count、index）
+* 元组与列表的关系与区别
+* 字符串处理（find、join、split、strip、format、replace、index、count ...）
+* 大战面试官1：实现简单的队列和栈
+* 大战面试官2：冒泡排序讲解
+* 作业1：
+* 作业2：
 
-* 大战面试官：实现简单的队列和栈
-* 大战面试官：冒泡排序讲解
 
-
-##（三）Python字典和文件处理
-
-                
-- 字典的定义和特点
-- 字典的增删改查
-- 字典的常用内置函数
-- 大战面试官：列表的字典的区别和关系，分别适用于什么场景
-
+####（第三天）字典与文件处理
+* 字典的定义和特点
+* 字典的遍历
+* dict 方法（get、iteritems、update、keys、values ...）
+* 大战面试官：列表的字典的区别和关系，分别适用于什么场景
 * 文件IO操作
-    - 打开文件
-    - 读取文件内容
-    - 写文件
-* 文件指针的概念
-* 作业：编写Nginx日志分析程序
-    - （对Nginx日志ip维度进行数据统计）
-* 项目目的（日常工作中遇到日志分析应该怎么样全方位的统计）
-    - 作业扩展，实际工作中多维度怎么分析
+    * 打开文件
+    * 文件操作（write、read、readlines、writelines、seek、flush、close ...）
+
+作业1：IP 维度统计 Nginx 日志
+作业2：工作中遇到日志分析问题，怎么全方面多维度的来统计日志
 
 
-##（四）Python函数编程
+### Python 进阶部分     
+####（第四天）函数式编程
+* 函数在干什么的
 * 函数的定义
 * 函数的返回值
 * 位置参数和关键字参数
 * 全局变量和局部变量
 * 深入函数定义（可变参数列表、参数列表的分拆、Lambda 形式）
 * 理解函数式编程
-* Lambda匿名函数
-* Sorted排序函数
-* 作业：命令行中基于文件存储的登录注册系统
+* Lambda 匿名函数
+* Sorted 排序函数
+* 作业1：基于文件存储的交互式用户登录注册系统
 
-##（五）Web Flask框架
+####（第五天）Flask Web 框架
+* Web 框架之争，囧：PHP是最好的语音
+* 主流框架Flask、Django、Bottle、Tornado 介绍
+* 为什么选择 Flask 作为我们第一个学习的框架
+* Falsk 项目监听、启动、路由
+* 模板渲染
+* 项目的目录结构
+* HTML（table、表单）学习
+* 作业1：基于文件存储的 WEB 用户登录注册系统（支持增删查）
 
-* web框架之争
-    - Flask VS Django VS bottle VS tornado
-* Python的模块
-* web框架Flask介绍
-    - 启动app
-    - 监听路由
-    - 渲染模板
-    - 获取网络请求参数
-* 简单的html（table、表单）学习
-* 作业：基于文件存储的WEB用户登录注册系统（支持增删查）
+### Web 项目实战部分
+####（第六天）Python 数据库操作
+* SQL 语句学习
+    * 数据的创建、删除
+    * 表结构创建、删除、修改
+    * 数据的增添改查
+* Python 操作 Mysql
+* 项目1：用 Flask 实现数据库的增添改查
+    * 基础功能（可以简单的实现web增添改查功能）        * 项目目标（巩固Flask、Mysqldb基础知识，把前面的内容融会贯通）
+* 作业1：基于 MySQL 存储的 WEB 用户登录注册系统（支持增删查）
 
-
-##（六）数据库基础
-
-
-* 简单的sql语句学习
-    - 新建数据库
-    - 新建表格
-    - 插入数据
-    - 修改数据
-    - 删除数据
-    - 查询数据(条件查询)
-* Python执行sql，控制数据库
-* 项目1：用Flask实现数据库的增添改查
-    * 实现目标（可以简单的实现web增添改查功能）
-    * 项目目的（对Flask、MySQLdb的学习）  
-* ORM，利用orm实现对数据库更优雅的管理
-* 作业：将第六天的作业，存储改为mysql
-
-##（七）前端基础
+####（七）前端基础
 
 * 前端基础
     - html
@@ -165,7 +152,7 @@ index、count）
 * 作业：对第7天的Flask增删改查提供前端页面，通过web页面对数据库增删改查
 * 要求：异步加载数据，不刷新页面
 
-##（八）前端应用实战
+####（八）前端应用实战
 + jquery简介和使用
     * jquery核心概念
 + jquery核心模块使用
@@ -177,7 +164,7 @@ index、count）
     * datatable美化表格
 + ajax异步请求操作
 
-##（九）实战项目之一cmdb
+####（九）实战项目之一cmdb
 
 * Python+Flask+Mysql+Jquery+Bootstrap(打通前后端完整流程)
 * Flask用户登入
@@ -190,7 +177,7 @@ index、count）
 * 项目扩展介绍
 
 
-##（十）Python抽象和常用模块
+####（十）Python抽象和常用模块
 
 + 类的基本概念与详解
 + 变量与方法
@@ -207,7 +194,7 @@ index、count）
 * pyquery
     - 解析html，写爬虫必备
 
-## (十一) 项目一增强实战
+#### (十一) 项目一增强实战
 
 * 什么项目是拿得出手的
 * restful API 和 jsonrpc api使用场景的介绍及demo实现，并完成基于restful API规范实现token的demo
@@ -215,7 +202,7 @@ index、count）
 * 重点对MVC思想和基于API开发思想进行深入的引导
 * nginx+uwsgi+flask部署实战
 
-## （十二）实战项目之二（[Python写一个简单的监控系统](http://blog.51reboot.com/python36-falcon-mon-video/)）
+#### （十二）实战项目之二（[Python写一个简单的监控系统](http://blog.51reboot.com/python36-falcon-mon-video/)）
 
 * Python读取机器的实时使用数据，通过http请求将数据入库
 * 设计数据入库的api，可以收集不同机器的数据
@@ -223,7 +210,7 @@ index、count）
 * 独立完成此项目，对Python常用的time等模块有很好的掌握
 
 
-##（十三）实战项目之三（[Nginx日志统计分析与多维可视化](https://github.com/shengxinjing/my_blog/issues/2)）
+####（十三）实战项目之三（[Nginx日志统计分析与多维可视化](https://github.com/shengxinjing/my_blog/issues/2)）
 
 * 将Nginx日志处理结果入库
 * Flask模板系统，多页面继承
@@ -234,20 +221,21 @@ index、count）
 * 存储的内存数据可视化
 * 项目扩展介绍
 
-
-## （十四）ansible二次开发和面试实战
-
-* ansible介绍
-* ansible二次开发数字韩
+### 总结与梳理
+####（第十四天）
+* 前面13天内容的梳理
 * 资深面试官面对面，模拟面试
-* 点评简历
-* 模拟面试
-* 技术面试的技巧
+* 如何写一个简洁、突出的简历
 * 面试中的软技能
-    - 如何谈薪资
-    - 日常工作中，如果积累，让你的面试更有料
-* 点评意见和面试经验分享
-* 经验综合和事业生涯规划
+    * 留个面试官一个好印象
+    * 如何和 HR 沟通薪资
+* 点评学员面试及面试经验的分享
+* 职业生涯的指导，做人与做事
+#### 赠送
+* Ansible 介绍
+* Ansible 常用模块介绍（shell、copy、file、cron...）
+* Playbook 介绍及应用
+* Ansible 二次开发入门
 
 
 
