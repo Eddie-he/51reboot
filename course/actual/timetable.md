@@ -91,7 +91,7 @@
 * 文件IO操作
     * 打开文件
     * 文件操作（write、read、readlines、writelines、seek、flush、close ...）
-
+* 练习:python实现tail -f
 * 作业1：IP 维度统计 Nginx 日志
 * 作业2：工作中遇到日志分析问题，怎么全方面多维度的来统计日志
 
@@ -117,10 +117,13 @@
 * 模板渲染
 * 项目的目录结构
 * HTML（table、表单）学习
+* jinjia2模板渲染数据
+* http协议入门
 * 作业1：基于文件存储的 WEB 用户登录注册系统（支持增删查）
 
-### Web 项目实战部分
+
 ####（第六天）Python 数据库操作
+* 流行数据库介绍
 * SQL 语句学习
     * 数据的创建、删除
     * 表结构创建、删除、修改
@@ -134,38 +137,42 @@
 
 * 前端基础
     - html
-    - css
-    - javascript基础
-* 前端学习之jquery
-    - 查找一个元素（选择器）
-    - 操作元素内容
-    - 修改元素属性
-* Ajax异步调用Python接口
-    - json是什么
+    - css简介
 * Bootstrap框架学习
     - 栅格系统
     - 按钮组
     - 表格样式
     - 表单样式
+* 前端学习之jquery
+    - 查找一个元素（选择器）
+    - 操作元素内容
+    - 修改元素属性
+    - 操作输入框
+* 练习:聊天窗效果模拟
 * 作业：对第7天的Flask增删改查提供前端页面，通过web页面对数据库增删改查
-* 要求：异步加载数据，不刷新页面
+    - 要求使用bootstrap样式展现登录和列表
 
 ####（八）前端应用实战
 + jquery简介和使用
     * jquery核心概念
 + jquery核心模块使用
 + jquery发送异步请求和flask交互
+    - ajax是什么
+    - json是什么
 + 常见jquery插件，实现前端效果
     * 模态弹窗
     * sweetalert弹出信息
-    * jquery-ui丰富的组件
+    * jquery-ui丰富的组件，日期选择、小滑块等
     * datatable美化表格
-+ ajax异步请求操作
++ 作业:使用异步ajax+jquery，优化第一天的作业
+    - 要求异步，不刷新页面的增删改查
 
+### Web 项目实战部分
 ####（九）实战项目之一cmdb
 
 * Python+Flask+Mysql+Jquery+Bootstrap(打通前后端完整流程)
 * Flask用户登入
+    - 登录功能的完善
 * 项目CMDB系统
 * CMDB系统基础信息分析
 * CMDB系统资产表设计
@@ -195,6 +202,9 @@
 #### (十一) 项目一增强实战
 
 * 什么项目是拿得出手的
+    - 代码规范
+    - 架构设计
+    - flask拆分文件
 * restful API 和 jsonrpc api使用场景的介绍及demo实现，并完成基于restful API规范实现token的demo
 * 讲解运维工单系统的思路及demo实现
 * 重点对MVC思想和基于API开发思想进行深入的引导
@@ -203,9 +213,12 @@
 #### （十二）实战项目之二（[Python写一个简单的监控系统](http://blog.51reboot.com/python36-falcon-mon-video/)）
 
 * Python读取机器的实时使用数据，通过http请求将数据入库
+    - 原始获取内存信息方法
+    - 使用psutil获取的方法
 * 设计数据入库的api，可以收集不同机器的数据
 * 前端将内存数据读出，可视化展示折线图
-* 独立完成此项目，对Python常用的time等模块有很好的掌握
+    - 学习可视化神奇Echarts的使用
+* 作业：实现简单的监控页面，实时显示监控数据
 
 
 ####（十三）实战项目之三（[Nginx日志统计分析与多维可视化](https://github.com/shengxinjing/my_blog/issues/2)）
@@ -213,11 +226,14 @@
 * 将Nginx日志处理结果入库
 * Flask模板系统，多页面继承
 * 前端可视化库的使用
+    - echarts深入学习
 * 常见可视化图形
     - 饼图
     - 折线图等等
+    - 地理可视化
 * 存储的内存数据可视化
 * 项目扩展介绍
+* 作业：实现对访问路径的可视化功能
 
 ### 总结与梳理
 ####（第十四天）
