@@ -53,92 +53,90 @@
 
 ## 课程概述
 ### 面向学员
-    * 熟练使用计算机，对Windows、Linux 有一点了解从业职或在校学生
-    * 对目前从事互联网运维，想往运维自动化发展的学员，有庞大的开源库 Ansible、Fabric、psutil ... 掌握Python开发非常有利于把运维工作更自动化    * 对目前从事互联网测试，想往自动化测试发展的学员，Python有很多自动化测试的库 Pyunit、doctest、unittest 等等，对自动化测试有很大帮助
+* 熟练使用计算机，对Windows、Linux 有一点了解从业职或在校学生
+* 对目前从事互联网运维，想往运维自动化发展的学员，有庞大的开源库 Ansible、Fabric、psutil ... 掌握Python开发非常有利于把运维工作更自动化    * 对目前从事互联网测试，想往自动化测试发展的学员，Python有很多自动化测试的库 Pyunit、doctest、unittest 等等，对自动化测试有很大帮助
 
 
 
 ## 课程表
 ### Python 基础部分
 ####（第一天）基础语法
-    * Python 发展历史和语言特性
-    * Python 环境搭建及虚拟环境管理
-    * 第一个 Python 程序
-    * Python 四则运算
-    * Python 数据结构
-    * Python 元算符（in、not in、is、and、or）
-    * 用户输入 （input、raw_input）
-    * 流程控制
-        * 缩进
-        * if..else 条件语句
-        * for、while 循环语句
-        * break continue 中断语句
+* Python 发展历史和语言特性
+* Python 环境搭建及虚拟环境管理
+* 第一个 Python 程序
+* Python 四则运算
+* Python 数据结构
+* Python 元算符（in、not in、is、and、or）
+* 用户输入 （input、raw_input）
+* 流程控制
+    * 缩进
+    * if..else 条件语句
+    * for、while 循环语句
+    * break continue 中断语句
 
-    * 作业1：统计最大的两个值
-    * 作业2：统计字符出现次数
+* 作业1：统计最大的两个值
+* 作业2：统计字符出现次数
 
 ####（第二天）元祖与列表
-    * 列表的定义
-    * 列表的遍历
-    * 列表的切片
-    * 常用内置函数（max、min、range、len）
-    * list 方法（append、pop、count ...）
-    * 列表表达式
-    * 元祖的定义
-    * tuple 方法（count、index）
-    * 元组与列表的关系与区别
-    * 字符串处理（find、join、split、strip、format、replace、index、count ...）
-    * 大战面试官1：实现简单的队列和栈
-    * 大战面试官2：冒泡排序讲解
-    * 作业1：
-    * 作业2：
+* 列表的定义
+* 列表的遍历
+* 列表的切片
+* 常用内置函数（max、min、range、len）
+* list 方法（append、pop、count ...）
+* 列表表达式
+* 元祖的定义
+* tuple 方法（count、index）
+* 元组与列表的关系与区别
+* 字符串处理（find、join、split、strip、format、replace、index、count ...）
+* 大战面试官1：实现简单的队列和栈
+* 大战面试官2：冒泡排序讲解
 
 ####（第三天）字典与文件处理
-    * 字典的定义和特点
-    * 字典的遍历
-    * dict 方法（get、iteritems、update、keys、values ...）
-    * 大战面试官：列表的字典的区别和关系，分别适用于什么场景
-    * 文件IO操作
-        * 打开文件
-        * 文件操作（write、read、readlines、writelines、seek、flush、close ...）
+* 字典的定义和特点
+* 字典的遍历
+* dict 方法（get、iteritems、update、keys、values ...）
+* 大战面试官：列表的字典的区别和关系，分别适用于什么场景
+* 文件IO操作
+    * 打开文件
+    * 文件操作（write、read、readlines、writelines、seek、flush、close ...）
 
-    作业1：IP 维度统计 Nginx 日志
-    作业2：工作中遇到日志分析问题，怎么全方面多维度的来统计日志
+作业1：IP 维度统计 Nginx 日志
+作业2：工作中遇到日志分析问题，怎么全方面多维度的来统计日志
 
 ### Python 进阶部分     
 ####（第四天）函数式编程
-    * 函数在干什么的
-    * 函数的定义
-    * 函数的返回值
-    * 位置参数和关键字参数
-    * 全局变量和局部变量
-    * 深入函数定义（可变参数列表、参数列表的分拆、Lambda 形式）
-    * 理解函数式编程
-    * Lambda 匿名函数
-    * Sorted 排序函数
-    * 作业1：基于文件存储的交互式用户登录注册系统
+* 函数在干什么的
+* 函数的定义
+* 函数的返回值
+* 位置参数和关键字参数
+* 全局变量和局部变量
+* 深入函数定义（可变参数列表、参数列表的分拆、Lambda 形式）
+* 理解函数式编程
+* Lambda 匿名函数
+* Sorted 排序函数
+* 作业1：基于文件存储的交互式用户登录注册系统
 
 ####（第五天）Flask Web 框架
-    * Web 框架之争，囧：PHP是最好的语音
-    * 主流框架Flask、Django、Bottle、Tornado 介绍
-    * 为什么选择 Flask 作为我们第一个学习的框架
-    * Falsk 项目监听、启动、路由
-    * 模板渲染
-    * 项目的目录结构
-    * HTML（table、表单）学习
-    * 作业1：基于文件存储的 WEB 用户登录注册系统（支持增删查）
+* Web 框架之争，囧：PHP是最好的语音
+* 主流框架Flask、Django、Bottle、Tornado 介绍
+* 为什么选择 Flask 作为我们第一个学习的框架
+* Falsk 项目监听、启动、路由
+* 模板渲染
+* 项目的目录结构
+* HTML（table、表单）学习
+* 作业1：基于文件存储的 WEB 用户登录注册系统（支持增删查）
 
 ### Python Web 项目开发部分
 ####（第六天）Python 数据库操作
-    * SQL 语句学习
-        * 数据的创建、删除
-        * 表结构创建、删除、修改
-        * 数据的增添改查
-    * Python 操作 Mysql
-    * 项目1：用 Flask 实现数据库的增添改查
-        * 基础功能（可以简单的实现web增添改查功能）
-        * 项目目标（巩固Flask、Mysqldb基础知识，把前面的内容融会贯通）
-    * 作业1：基于 MySQL 存储的 WEB 用户登录注册系统（支持增删查）
+* SQL 语句学习
+    * 数据的创建、删除
+    * 表结构创建、删除、修改
+    * 数据的增添改查
+* Python 操作 Mysql
+* 项目1：用 Flask 实现数据库的增添改查
+    * 基础功能（可以简单的实现web增添改查功能）
+    * 项目目标（巩固Flask、Mysqldb基础知识，把前面的内容融会贯通）
+* 作业1：基于 MySQL 存储的 WEB 用户登录注册系统（支持增删查）
 
 ####（八）前端应用实战
 + jquery简介和使用
