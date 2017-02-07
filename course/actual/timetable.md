@@ -138,7 +138,26 @@
     * 项目目标（巩固Flask、Mysqldb基础知识，把前面的内容融会贯通）
 * 作业1：基于 MySQL 存储的 WEB 用户登录注册系统（支持增删查）
 
-####（八）前端应用实战
+#### (第七天)前端基础
+
+* HTML 学习（table、表单、列表 ... 等）
+* CSS 简介（盒模型）
+* Bootstrap 框架学习
+    * 栅格系统
+    * 按钮组
+    * 表格样式
+    * 表单样式
+* 前端学习JQuery
+    * 查找一个元素（选择器）
+    * 操作元素内容（html）
+    * 修改元素属性（attr、css）
+    * 操作输入框（val）
+* 练习：聊天窗效果模拟
+* 作业1：基于 MySQL 存储的 WEB 用户登录注册系统
+    * 支持增删查
+    * 要求使用Bootstrap 样式展现登录和列表
+
+####（第八天）前端应用实战
 + jquery简介和使用
     * jquery核心概念
 + jquery核心模块使用
@@ -154,7 +173,7 @@
     - 要求异步，不刷新页面的增删改查
 
 ### Web 项目实战部分
-####（九）实战项目之一cmdb
+####（第九天）实战项目之一cmdb
 
 * Python+Flask+Mysql+Jquery+Bootstrap(打通前后端完整流程)
 * Flask用户登入
@@ -168,7 +187,7 @@
 * 项目扩展介绍
 
 
-####（十）Python抽象和常用模块
+####（第十天）Python抽象和常用模块
 
 + 类的基本概念与详解
 + 变量与方法
@@ -185,7 +204,7 @@
 * pyquery
     - 解析html，写爬虫必备
 
-#### (十一) 项目一增强实战
+#### (第十一天) 项目一增强实战
 
 * 什么项目是拿得出手的
     - 代码规范
@@ -196,7 +215,7 @@
 * 重点对MVC思想和基于API开发思想进行深入的引导
 * nginx+uwsgi+flask部署实战
 
-#### （十二）实战项目之二（[Python写一个简单的监控系统](http://blog.51reboot.com/python36-falcon-mon-video/)）
+#### （第十二天）实战项目之二（[Python写一个简单的监控系统](http://blog.51reboot.com/python36-falcon-mon-video/)）
 
 * Python读取机器的实时使用数据，通过http请求将数据入库
     - 原始获取内存信息方法
@@ -207,7 +226,7 @@
 * 作业：实现简单的监控页面，实时显示监控数据
 
 
-####（十三）实战项目之三（[Nginx日志统计分析与多维可视化](https://github.com/shengxinjing/my_blog/issues/2)）
+####（第十三天）实战项目之三（[Nginx日志统计分析与多维可视化](https://github.com/shengxinjing/my_blog/issues/2)）
 
 * 将Nginx日志处理结果入库
 * Flask模板系统，多页面继承
