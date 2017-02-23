@@ -1,4 +1,104 @@
 # Reboot自动化班课表
+## 第一天:Django入门
+* 搭建开发环境
+* 第一个django应用: hello world
+* Django如何处理一个请求
+* 模版引擎
+* GET与POST请求
+* django shell：
+  * 同步django数据库
+  * 创建用户
+  * User 对象
+* 实战：用户登陆与退出
+
+## 第二天:Django进阶（一）
+* Django url配置
+* 基于类的视图
+* 用户管理：用户状态, 修改个人信息
+* 模板标签
+* 模版过滤器
+* 分页功能
+* ListView
+* 实战：用户分页管理、用户信息修改
+
+## 第三天: django进阶（二）
+* 模型基础：字段，元选项
+* 模型关系：一对一，多对一，多对多
+* 模型操作：增、删、改、查
+* 模型管理器
+* 实战：
+  * 扩展User模型（一对一关系）
+  * 用户搜索分页
+
+第四天：django实战
+* Django日志
+* 权限管理
+  * Django 权限机制
+  * User Permission 管理
+  * Group Permission 管理
+  * Django 权限应用
+* 实战：
+  * 创建用户组
+  * 用户组添加与删除用户
+  * 用户组权限分配
+  * view 验证用户权限
+  * 模板按需展示
+## 第五天/第六天：django开发cmdb(实战)
+* django 表单验证
+* 服务器管理：服务器信息收集与自动上报
+* IDC管理：（多对一）
+* 状态管理：服务器的生命周期
+* 业务线管理
+
+## 第七天：zabbix(实战)
+* zabbix 基础
+* zabbix API 介绍
+* CMDB同步主机到zabbix
+* zabbix模板批量操作
+
+## 第八天：graphite(实战)
+* graphite基础
+* graphite基本组件介绍
+* graphite API 介绍
+* 运维平台通过API调用，整合graphite实现多维度的性能展示
+
+## 第九天：Ansible实战
+* Ansible 介绍
+* Ansible 常用模块介绍（shell、copy、file、cron...）
+* Playbook 介绍及应用
+* Ansible API介绍及应用
+* ansible-playbook 常用API介绍
+* 实战：通过ansible API实现web端对服务器的批量操作
+* 实战：结合git+ansible实现对线上配置文件的迭代管理
+
+## 第十/十一天：git工作流
+* 基于Git的代码管理系统
+  * 实现通过web端对项目的添加，更新
+  * 实现对项目人员的权限管理
+* 代码发布系统
+  * 发布流程设计思路
+  * 发布状态管理（类工单系统）
+  * 基于用户权限实现不同角色用户对项目发布的功能区分
+  * 发布系统的实现（测试->灰度->正式）
+
+## 第十二天：ELK实战
+* ELK基本概念部署安装，常?用插件实战，ELK使?用场景介绍
+* RESTful API简介，利用RESTful API实现对ElasticSearch初始化及增删改查
+* 常用ElasticSearch的基本查询，filter查询，组合查询实战
+* ElasticSearch集群管理
+* Logstash配置语法及插件使用
+* Logstash常?用input输入，filter过滤，output输出配置
+* Kibana连接索引展示日志，并通过数据分析生产图表
+* 综合实例：ELK收集，分析，展示Nginx?日志
+* 综合实例：elastalrt插件实现es的监控报警
+
+
+
+
+
+
+
+<!-- 
 
 ## 企业代码管理和开发规范技巧
 * 代码规范讲解（变量、函数、类命名、日志、异常处理）
@@ -98,3 +198,4 @@
 * 混合云方案介绍
   * 混合云时代如何做主机管理Terraform
   * 混合云所需要的基础服务
+ -->
