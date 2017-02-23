@@ -84,14 +84,14 @@ Reboot自动化班课表
   * 发布系统的实现（测试->灰度->正式）
 
 ### 第十二天：ELK实战
-* ELK基本概念部署安装，常?用插件实战，ELK使?用场景介绍
+* ELK基本概念部署安装，常用插件实战，ELK使用场景介绍
 * RESTful API简介，利用RESTful API实现对ElasticSearch初始化及增删改查
 * 常用ElasticSearch的基本查询，filter查询，组合查询实战
 * ElasticSearch集群管理
 * Logstash配置语法及插件使用
-* Logstash常?用input输入，filter过滤，output输出配置
+* Logstash常用input输入，filter过滤，output输出配置
 * Kibana连接索引展示日志，并通过数据分析生产图表
-* 综合实例：ELK收集，分析，展示Nginx?日志
+* 综合实例：ELK收集，分析，展示Nginx日志
 * 综合实例：elastalrt插件实现es的监控报警
 
 
