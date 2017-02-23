@@ -1,5 +1,5 @@
 Reboot自动化班课表
-## 第一天:Django入门
+#### 第一天:Django入门
 * 搭建开发环境
 * 第一个django应用: hello world
 * Django如何处理一个请求
@@ -11,7 +11,7 @@ Reboot自动化班课表
   * User 对象
 * 实战：用户登陆与退出
 
-## 第二天:Django进阶（一）
+#### 第二天:Django进阶（一）
 * Django url配置
 * 基于类的视图
 * 用户管理：用户状态, 修改个人信息
@@ -21,7 +21,7 @@ Reboot自动化班课表
 * ListView
 * 实战：用户分页管理、用户信息修改
 
-## 第三天: django进阶（二）
+#### 第三天: django进阶（二）
 * 模型基础：字段，元选项
 * 模型关系：一对一，多对一，多对多
 * 模型操作：增、删、改、查
@@ -30,7 +30,7 @@ Reboot自动化班课表
   * 扩展User模型（一对一关系）
   * 用户搜索分页
 
-第四天：django实战
+#### 第四天：django实战
 * Django日志
 * 权限管理
   * Django 权限机制
@@ -45,26 +45,26 @@ Reboot自动化班课表
   * 模板按需展示
 
 
-## 第五天/第六天：django开发cmdb(实战)
+#### 第五天/第六天：django开发cmdb(实战)
 * django 表单验证
 * 服务器管理：服务器信息收集与自动上报
 * IDC管理：（多对一）
 * 状态管理：服务器的生命周期
 * 业务线管理
 
-## 第七天：zabbix(实战)
+#### 第七天：zabbix(实战)
 * zabbix 基础
 * zabbix API 介绍
 * CMDB同步主机到zabbix
 * zabbix模板批量操作
 
-## 第八天：graphite(实战)
+#### 第八天：graphite(实战)
 * graphite基础
 * graphite基本组件介绍
 * graphite API 介绍
 * 运维平台通过API调用，整合graphite实现多维度的性能展示
 
-## 第九天：Ansible实战
+#### 第九天：Ansible实战
 * Ansible 介绍
 * Ansible 常用模块介绍（shell、copy、file、cron...）
 * Playbook 介绍及应用
@@ -73,7 +73,7 @@ Reboot自动化班课表
 * 实战：通过ansible API实现web端对服务器的批量操作
 * 实战：结合git+ansible实现对线上配置文件的迭代管理
 
-## 第十/十一天：git工作流
+#### 第十/十一天：git工作流
 * 基于Git的代码管理系统
   * 实现通过web端对项目的添加，更新
   * 实现对项目人员的权限管理
@@ -83,7 +83,7 @@ Reboot自动化班课表
   * 基于用户权限实现不同角色用户对项目发布的功能区分
   * 发布系统的实现（测试->灰度->正式）
 
-## 第十二天：ELK实战
+#### 第十二天：ELK实战
 * ELK基本概念部署安装，常?用插件实战，ELK使?用场景介绍
 * RESTful API简介，利用RESTful API实现对ElasticSearch初始化及增删改查
 * 常用ElasticSearch的基本查询，filter查询，组合查询实战
