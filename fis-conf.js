@@ -28,9 +28,6 @@ fis.match('*.md', {
     }),
     release: false // handlebars 源文件不需要编译
 });
-fis.match('blogimg/**',{
-    release:false
-})
 
 fis.match('**.bat',{
     release:false
