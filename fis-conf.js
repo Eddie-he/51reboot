@@ -47,7 +47,8 @@ fis.match('**.html',{
     		// 开班时间
     		actual_time:'02-19',
             actual_week:'日',
-    		ops_time:'09-11',
+    		ops_time:'03-05',
+            ops_week:'日',
     		arch_time:'08-27',
 
     		// 课程价格,网络价格减1000
