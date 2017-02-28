@@ -44,7 +44,7 @@ fis.match('**.html',{
     		// 开班时间
     		actual_time:'02-19',
             actual_week:'日',
-    		ops_time:'03-05',
+    		ops_time:'03-12',
             ops_week:'日',
     		arch_time:'08-27',
 
