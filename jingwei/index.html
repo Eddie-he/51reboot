@@ -1,0 +1,2610 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://www.toolz4you.com/sales/order/view/order_id/44262/ -->
+<html class="js touch cssanimations csstransitions"><style type="text/css" id="953970691629"></style><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bestellung # 10042151</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="INDEX,FOLLOW">
+<link rel="icon" href="https://www.toolz4you.com/skin/frontend/toolz4you/default/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="https://www.toolz4you.com/skin/frontend/toolz4you/default/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="./static/485d0672b9bfac689f40dade6c857cd1-1-SSL-1487176845.css" media="all">
+<script type="text/javascript" charset="utf-8" async="" src="./static/X588674D2E2EF0F0CF686C56C24EA0FEB.js"></script><script type="text/javascript" async="" src="./static/analytics.js"></script><script type="text/javascript" async="" src="./static/ec.js"></script><script async="" src="./static/gtm.js"></script><script async="" src="./static/analytics.js"></script><script type="text/javascript" src="./static/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="./static/jquery-ui-1.10.3.min.js"></script>
+<script type="text/javascript" src="./static/prototype.js"></script>
+<script type="text/javascript" src="./static/ccard.js"></script>
+<script type="text/javascript" src="./static/validation.js"></script>
+<script type="text/javascript" src="./static/builder.js"></script>
+<script type="text/javascript" src="./static/effects.js"></script>
+<script type="text/javascript" src="./static/dragdrop.js"></script>
+<script type="text/javascript" src="./static/controls.js"></script>
+<script type="text/javascript" src="./static/slider.js"></script>
+<script type="text/javascript" src="./static/js.js"></script>
+<script type="text/javascript" src="./static/form.js"></script>
+<script type="text/javascript" src="./static/translate.js"></script>
+<script type="text/javascript" src="./static/cookies.js"></script>
+<script type="text/javascript" src="./static/jquery.pjax.js"></script>
+<script type="text/javascript" src="./static/jquery.cookie.js"></script>
+<script type="text/javascript" src="./static/jquery.varnishreloader.js"></script>
+<script type="text/javascript" src="./static/weee.js"></script>
+<script type="text/javascript" src="./static/modernizr-2.6.2.min.js"></script>
+<script type="text/javascript" src="./static/jquery.fancybox.js"></script>
+<script type="text/javascript" src="./static/plugins.js"></script>
+<script type="text/javascript" src="./static/main.js"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.toolz4you.com';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["IE","PA","HK","MO"];
+//]]>
+</script>
+<script type="text/javascript">
+
+	/** 
+	* Magento Enhanced Ecommerce Event Tracking for Google Tag Manager
+	*
+	* @author Anowave
+	* @see http://www.anowave.com/marketplace/magento-extensions/magento-google-tag-manager-enhanced-ecommerce-ua-tracking/
+	* @copyright 2016 Anowave
+	*/
+
+	window.dataLayer = window.dataLayer || [], collection = [], AEC = {};
+
+	/**
+	 * Timing contats
+	 */
+	AEC.Const = 
+	{
+		TIMING_CATEGORY_ADD_TO_CART:		'Add To Cart Time',
+		TIMING_CATEGORY_REMOVE_FROM_CART:	'Remove From Cart Time',
+		TIMING_CATEGORY_PRODUCT_CLICK:		'Product Detail Click Time',
+		TIMING_CATEGORY_CHECKOUT:			'Checkout Time',
+		TIMING_CATEGORY_CHECKOUT_STEP:		'Checkout Step Time',
+		URL:								'https://www.toolz4you.com/'
+	};
+
+	AEC.textarea = null;
+
+	/**
+	 * Convert HTML entities to applicable characters
+	 */
+	AEC.convert = function(content)
+	{
+		if (-1 !== content.toString().indexOf('&'))
+		{
+			if (null == this.textarea)
+			{
+				this.textarea = jQuery('<textarea/>');
+			}
+			
+			return this.textarea.html(content).text();
+		}
+
+		return content;
+	}
+
+	/**
+	 * Track "Add to cart" from detail page
+	 * 
+	 * @param (domelement) context
+	 * @param (object) dataLayer
+	 * @return boolean
+	 */
+	AEC.ajax = function(context,dataLayer)
+	{
+		var element = jQuery(context), qty = jQuery(':radio[name=qty]:checked, :text[name=qty], select[name=qty]').eq(0).val(), variant = [];
+
+		if (0)
+		{
+			jQuery.each(['id','name','category','brand','price','quantity'], function(index, attribute)
+			{
+				element.data(attribute, element.attr('data-' + attribute));
+			});
+		}
+
+		if (!AEC.gtm())
+		{
+			/**
+			 * Invoke original click event(s)
+			 */
+			if (element.data('click'))
+			{
+				/**
+				 * Track time 
+				 */
+				AEC.Time.track(dataLayer, AEC.Const.TIMING_CATEGORY_ADD_TO_CART, element.data('name'), element.data('category'));
+				
+				eval(element.data('click'));
+			}
+			
+			return true;
+		}
+		
+		if(element.data('configurable'))
+		{
+			var attributes = jQuery('[name^="super_attribute"]'), variants = [];
+
+			/**
+			 * Load super attsibutes
+			 */
+
+			 var SUPER = [];
+
+			 
+			jQuery.each(attributes, function(index, attribute)
+			{
+				if (jQuery(attribute).is('select'))
+				{
+					var name = jQuery(attribute).attr('name'), id = name.substring(name.indexOf('[') + 1, name.lastIndexOf(']'));
+
+					var option = jQuery(attribute).find('option:selected');
+
+					if (0 < parseInt(option.val()))
+					{
+						variants.push(
+						{
+							id: 	id,
+							text: 	option.text()
+						});
+					}
+				}
+			});
+
+			if (attributes.length == variants.length)
+			{
+				for (i = 0, l = variants.length; i < l; i++)
+				{
+					for (a = 0, b = SUPER.length; a < b; a++)
+					{
+						if (SUPER[a].id == variants[i].id)
+						{
+							variant.push(
+							[
+								SUPER[a].label,
+								variants[i].text
+							].join(':'));
+						}
+					}
+				}
+			}
+
+			if (!variant.length)
+			{
+				/**
+				 * Invoke original click event(s)
+				 */
+				if (element.data('click'))
+				{
+					/**
+					 * Track time 
+					 */
+					AEC.Time.track(dataLayer, AEC.Const.TIMING_CATEGORY_ADD_TO_CART, element.data('name'), element.data('category'));
+					
+					eval(element.data('click'));
+				}
+				
+				return false;
+			}
+		}
+
+		if (element.data('grouped'))
+		{
+			for (u = 0, y = window.G.length; u < y; u++)
+			{
+				var qty = Math.abs(jQuery('[name="super_group[' + window.G[u].id + ']"]').val());
+
+				if (qty)
+				{
+					collection.push(
+					{
+						'name': 		window.G[u].name,
+						'id': 		    window.G[u].sku,
+						'price': 		window.G[u].price,
+						'category': 	window.G[u].category,
+						'brand':		window.G[u].brand,
+						'quantity': 	qty
+					});
+				}
+			}
+		}
+		else
+		{
+			collection.push(
+			{
+				'name': 		AEC.convert(element.data('name')),
+				'id': 		    AEC.convert(element.data('id')),
+				'price': 		AEC.convert(element.data('price')),
+				'category': 	AEC.convert(element.data('category')),
+				'brand':		AEC.convert(element.data('brand')),
+				'variant':		variant.join('-'),
+				'quantity': 	qty
+			});
+		}
+
+
+
+		var data = 
+		{
+			'event': 'addToCart',
+			'eventLabel': element.data('name'),
+			'ecommerce': 
+			{
+				'currencyCode': 'EUR',
+				'add': 
+				{
+					'products': collection
+				}
+			},
+			'eventCallback': function() 
+			{
+				if (element.data('click'))
+				{
+					eval(element.data('click'));
+				}
+				else if (element.is('a'))
+				{
+					document.location = element.attr('href');
+				}
+				else if (element.is('img') && element.parent().is('a'))
+				{
+					document.location = element.parent().attr('href');
+				}
+				else 
+				{
+					return true;
+				}
+	     	}
+		};
+
+		/**
+		 * Track event
+		 */
+		dataLayer.push(data);
+
+		/**
+		 * Track time 
+		 */
+		AEC.Time.track(dataLayer, AEC.Const.TIMING_CATEGORY_ADD_TO_CART, element.data('name'), element.data('category'));
+
+		/**
+		 * Facebook Pixel Tracking
+		 */
+				
+		return false;
+	}
+
+	/**
+	 * Track direct "Add to cart" from category listing
+	 * 
+	 * @param (domelement) context
+	 * @param (object) dataLayer
+	 * @return boolean
+	 */
+	AEC.ajaxList = function(context,dataLayer)
+	{
+		var element = jQuery(context);
+
+		if (0)
+		{
+			jQuery.each(['id','name','category','brand','price','quantity'], function(index, attribute)
+			{
+				element.data(attribute, element.attr('data-' + attribute));
+			});
+		}
+
+		if (!AEC.gtm())
+		{
+			/**
+			 * Invoke original click event(s)
+			 */
+			if (element.data('click'))
+			{
+				/**
+				 * Track time 
+				 */
+				AEC.Time.track(dataLayer, AEC.Const.TIMING_CATEGORY_ADD_TO_CART, element.data('name'), element.data('category'));
+				
+				eval(element.data('click'));
+			}
+			
+			return true;
+		}
+
+		collection.push(
+		{
+			'name': 		AEC.convert(element.data('name')),
+			'id': 		    AEC.convert(element.data('id')),
+			'price': 		AEC.convert(element.data('price')),
+			'category': 	AEC.convert(element.data('category')),
+			'brand':		AEC.convert(element.data('brand')),
+			'quantity': 	1
+		});
+
+		var data = 
+		{
+			'event': 'addToCart',
+			'eventLabel': element.data('name'),
+			'ecommerce': 
+			{
+				'currencyCode': 'EUR',
+				'add': 
+				{
+					'products': collection
+				}
+			}
+		};
+
+		/**
+		 * Track event
+		 */
+		dataLayer.push(data);
+
+		/**
+		 * Track time 
+		 */
+		AEC.Time.track(dataLayer, AEC.Const.TIMING_CATEGORY_ADD_TO_CART, element.data('name'), element.data('category'));
+		
+		/**
+		 * Invoke original click event(s)
+		 */
+		if (element.data('click'))
+		{
+			eval(element.data('click'));
+		}
+
+
+		/**
+		 * Facebook Pixel Tracking
+		 */
+				
+		return true;
+	}
+
+	/**
+	 * Track "Remove From Cart" event
+	 *
+	 * @param (domelement) context
+	 * @param (object) dataLayer
+	 * @return boolean
+	 */
+	AEC.remove = function(context, dataLayer)
+	{
+		var element = jQuery(context);
+
+		if (0)
+		{
+			jQuery.each(['id','name','category','brand','price','quantity'], function(index, attribute)
+			{
+				element.data(attribute, element.attr('data-' + attribute));
+			});
+		}
+		
+		if (!AEC.gtm())
+		{
+			/**
+			 * Track time 
+			 */
+			AEC.Time.track(dataLayer, AEC.Const.TIMING_CATEGORY_REMOVE_FROM_CART, element.data('name'), element.data('category'));
+			
+			return true;
+		}
+
+		var data = 
+		{
+			'event': 'removeFromCart',
+			'eventLabel': AEC.convert(element.data('name')),
+			'ecommerce': 
+			{
+				'remove': 
+				{   
+					'products': 
+					[
+						{ 
+							'name': 		AEC.convert(element.data('name')),
+							'id': 			AEC.convert(element.data('id')),
+							'price': 		AEC.convert(element.data('price')),
+							'category': 	AEC.convert(element.data('category')),
+							'brand':		AEC.convert(element.data('brand')),
+							'quantity': 	AEC.convert(element.data('quantity')),
+							'variant':		AEC.convert(element.data('variant'))
+						}
+					]
+				}
+			},
+			'eventCallback': function() 
+			{
+				if (element.data('click'))
+				{
+					eval(element.data('click'));
+				}
+				else if (element.is('a'))
+				{
+					document.location = element.attr('href');
+				}
+				else if (element.is('img') && element.parent().is('a'))
+				{
+					document.location = element.parent().attr('href');
+				}
+				else 
+				{
+					return true;
+				}
+	     	}
+		};
+
+		
+		if (confirm('Soll dieser Artikel wirklich aus Ihrem Warenkorb entfernt werden?'))
+		{
+			/**
+			 * Track event
+			 */
+			dataLayer.push(data);
+
+			/**
+			 * Track time 
+			 */
+			AEC.Time.track(dataLayer, AEC.Const.TIMING_CATEGORY_REMOVE_FROM_CART, element.data('name'));	
+		}
+		
+		return false;
+	}
+
+	/**
+	 * Track "Product click" event
+	 *
+	 * @param (domelement) context
+	 * @param (object) dataLayer
+	 * @return boolean
+	 */
+	AEC.click = function(context,dataLayer)
+	{
+		var element = jQuery(context);
+
+		if (0)
+		{
+			jQuery.each(['id','name','category','brand','price','quantity'], function(index, attribute)
+			{
+				element.data(attribute, element.attr('data-' + attribute));
+			});
+		}
+
+		if (!AEC.gtm())
+		{
+			/**
+			 * Track time 
+			 */
+			AEC.Time.track(dataLayer, AEC.Const.TIMING_CATEGORY_PRODUCT_CLICK, element.data('name'), element.data('category'));
+			
+			return true;
+		}
+
+		var data = 
+		{
+			'event': 'productClick',
+			'eventLabel': AEC.convert(element.data('name')),
+			'ecommerce': 
+			{
+				'click': 
+				{
+					'actionField': 
+					{
+						'list': AEC.convert(element.data('list'))
+					},
+					'products': 
+					[
+						{
+							'name': 		AEC.convert(element.data('name')),
+							'id': 			AEC.convert(element.data('id')),
+							'price': 		AEC.convert(element.data('price')),
+							'category': 	AEC.convert(element.data('category')),
+							'brand':		AEC.convert(element.data('brand')),
+							'quantity': 	AEC.convert(element.data('quantity'))
+						}
+					]
+				}
+			},
+			'eventCallback': function() 
+			{
+				if (element.data('click'))
+				{
+					eval(element.data('click'));
+				}
+				else if (element.is('a'))
+				{
+					document.location = element.attr('href');
+				}
+				else if (element.is('img') && element.parent().is('a'))
+				{
+					document.location = element.parent().attr('href');
+				}
+				else 
+				{
+					return true;
+				}
+	     	}		
+		};
+
+		/**
+		 * Push data
+		 */
+		dataLayer.push(data);
+
+		/**
+		 * Track time 
+		 */
+		AEC.Time.track(dataLayer, AEC.Const.TIMING_CATEGORY_PRODUCT_CLICK, element.data('name'), element.data('category'));
+
+		return false;
+	}
+
+	/**
+	 * Check if GTM snippet is available on page.
+	 *
+	 * @param void
+	 * @return boolean
+	 */
+	AEC.gtm = function()
+	{
+		if ("undefined" === typeof google_tag_manager)
+		{
+			/**
+			 * Log error to console
+			 */
+			log('Unable to detect Google Tag Manager. Please verify if GTM install snippet is available.');
+			
+			return false;
+		}
+
+		return true;
+	}
+
+
+	/**
+	 * User timing
+	 */
+
+	AEC.Time = (function()
+	{
+		var T = 
+		{
+			event: 			'trackTime',
+			timingCategory:	'',
+			timingVar:		'',
+			timingValue:	-1,
+			timingLabel:	''
+		};
+
+		var time = new Date().getTime();
+		
+		return {
+			track: function(dataLayer, category, variable, label)
+			{
+				T.timingValue = (new Date().getTime()) - time;
+				
+				if (category)
+				{
+					T.timingCategory = category;
+				}
+
+				if (variable)
+				{
+					T.timingVar = variable;
+				}
+
+				if (label)
+				{
+					T.timingLabel = label;
+				}
+				
+				/**
+				 * Track time
+				 */
+				dataLayer.push(T);
+			},
+			trackContinue: function(dataLayer, category, variable, label)
+			{
+				this.track(dataLayer, category, variable, label);
+
+				/**
+				 * Reset time
+				 */
+				time = new Date().getTime();
+			}
+		}
+	})();
+
+	/**
+	 * Log error messages to console
+	 *
+	 * @param (string) message
+	 * @return null
+	 */
+	var log = function (message) 
+	{
+	   	window.console && console.log ? console.log(message) : null;
+	};
+
+		
+</script><script type="text/javascript">
+
+	/**
+ 	 * Define dataLayer[] object
+	 */
+	window.dataLayer = window.dataLayer || [];
+
+	/**
+	 * Define transport layer to use as fallback in case of Ad-Blockers
+	 * 
+	 * @copyright Anowave
+	 */
+	var dataLayerTransport = (function()
+	{
+		var data = [];
+		
+		return {
+			data:[],
+			push: function(data)
+			{
+				this.data.push(data);
+				
+				return this;
+			},
+			serialize: function()
+			{
+				return this.data;
+			}
+		}	
+	})();
+	
+</script><script type="text/javascript">
+
+	var visitor = 
+	{
+		visitorLoginState: 		'Logged in',
+		visitorType:			'General',
+		visitorLifetimeValue:	 596.27,
+		visitorExistingCustomer:'Yes'
+	};
+
+	
+		visitor['visitorId'] = '20432';
+	
+	
+	dataLayer.push(visitor);
+
+	
+</script><script type="text/javascript">
+
+	/**
+	 * Custom dimensions
+	 */
+	var dimensions = {"pageType":"other","pageName":"Bestellung # 10042151","avgTransVal":596.27};
+	
+	if (dimensions && dimensions.hasOwnProperty('pageType'))
+	{
+		dataLayer.push(dimensions);
+	}
+
+</script><script type="text/javascript">
+
+	/**
+	 * A/B Split Testing Experiments
+	 * 
+	 * @copyright Anowave
+ 	 * @release Requires PHP 5.4 or higher.
+	 */
+
+	 if ('undefined' === typeof AB)
+	 {
+		var AB = (function($, dataLayer)
+		{
+			var cookies = {}, experiment_cookie = 'ab', percent = 50;
+
+			/**
+			 * Get experiment(s)
+			 */
+			var experiments = {};
+
+			
+			return {
+				experiments: experiments,
+				experiments_data:[],
+				run: function()
+				{
+					$.each(this.experiments, function(index, experiment)
+					{
+						if (experiment.triggered)
+						{
+							experiment.callback.apply(experiment,[dataLayer]);
+						}
+					});
+
+					return this;
+				},
+				experiment: function(experiment)
+				{
+					/**
+					 * Get experiment content
+					 */
+					var content = $('[id=' + experiment + ']').html();
+
+					/**
+					 * Replace experimented content
+					 */
+					$('span[data-experiment=' + experiment + ']').html(content);
+				}
+			}
+		})(jQuery, dataLayer).run();
+	 }
+
+</script><script type="text/javascript">
+
+	if ('undefined' !== typeof jQuery && 'undefined' !== typeof dataLayer)
+	{
+		jQuery(document).ready(function()
+		{
+		    var PromotionTrack = (function($, dataLayer)
+		    {
+		        return {
+		            apply: function()
+		            {
+		                var promotions = [], position = 0;
+		
+		                $('[data-promotion]').each(function()
+		                {
+		                    promotions.push(
+	                        {
+	                            id:      	$(this).data('promo-id'),
+	                            name:    	$(this).data('promo-name'),
+	                            creative:	$(this).data('promo-creative'),
+	                            position:	++position
+	                        });
+	
+		                    $(this).on(
+	                        {
+	                            click: function()
+	                            {
+	                                dataLayer.push(
+                                    {
+                                        'event': 'promotionClick',
+                                        'ecommerce': 
+                                        {
+                                            'promoClick': 
+                                            {
+                                                'promotions':
+                                                [
+	                                                {
+		                                                'id':       $(this).data('promo-id'),
+		                                                'name':     $(this).data('promo-name'),
+		                                                'creative': $(this).data('promo-creative'),
+		                                                'position': $(this).data('promo-position')
+	                                                }
+                                                ]
+                                            }
+                                        }
+                                    });
+	                            }
+	                        });
+		                });
+		
+		                if (promotions.length)
+		                {
+		                    dataLayer.push(
+	                        {
+	                            'ecommerce':
+	                            {
+	                                'promoView':
+	                                {
+	                                    'promotions': promotions
+	                                }
+	                            }
+	                        });
+		                }
+		
+		                return this;
+		            }
+		        }
+		    })(jQuery, dataLayer).apply();
+		});
+	}
+	else 
+	{
+		console.log('Promotion tracking requires jQuery and dataLayer[] object defined.');
+	}
+	
+</script><script>
+
+	var EC = [], Purchase = [], FacebookProducts = [];
+
+	/* Dynamic remarketing */
+	window.google_tag_params = window.google_tag_params || {};
+
+	/* Default pagetype */
+	window.google_tag_params.ecomm_pagetype = 'other';
+
+	/* Grouped products collection */
+	window.G = [];
+
+	/**
+	 * Global revenue 
+	 */
+	window.revenue = 0;
+
+	/**
+	 * DoubleClick
+	 */
+	window.DoubleClick = 
+	{
+		DoubleClickRevenue:	 	0,
+		DoubleClickTransaction: 0,
+		DoubleClickQuantity: 	0
+	}
+
+	/**
+	* EC Purchase
+	*
+	*/
+	
+	if (Purchase.length)
+	{
+		for (i = 0, l = Purchase.length; i < l; i++)
+		{
+			dataLayer.push(Purchase[i]);
+		}
+
+		/**
+		 * Facebook Pixel Tracking
+		 */
+			}
+	
+</script>
+<script type="text/javascript">
+
+	/**
+ 	 * Push tracking 
+	 */
+	</script><script type="text/javascript">
+		
+</script><script>
+	</script>
+<script>
+	</script>
+<!-- Google Tag Manager -->
+<!-- End Google Tag Manager -->    <!--Aromicon Google Universal Analytics Section start -->
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-34465330-1', 'www.toolz4you.com');
+        ga('set', 'anonymizeIp', true);
+                ga('require', 'displayfeatures');
+                                                        ga('send', 'pageview');
+                    </script>
+        <!--Aromicon Google Universal Analytics Section end -->
+
+<script type="text/javascript">
+//<![CDATA[
+var MRG_REGION_ALLOWED = false;
+//]]>
+</script>
+
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"HTML tags are not allowed":"HTML-Tags sind nicht erlaubt","Please select an option.":"Bitte w\u00e4hlen Sie eine Option.","This is a required field.":"Dies ist ein Pflichtfeld.","Please enter a valid number in this field.":"Bitte geben Sie eine g\u00fcltige Nummer in dieses Feld ein.","The value is not within the specified range.":"Der Wert ist nicht innerhalb des erlaubten Bereichs.","Please use numbers only in this field. Please avoid spaces or other characters such as dots or commas.":"Bitte nur Ziffern in diesem Feld verwenden. Vermeiden Sie Leerzeichen oder andere Zeichen (z. B. Punkt oder Komma).","Please use letters only (a-z or A-Z) in this field.":"Bitte nur Buchstaben (a-z oder A-Z) in diesem Feld verwenden.","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Bitte nur Buchstaben (a-z), Ziffern (0-9) oder Unterstriche (_) in diesem Feld verwenden, das erste Zeichen muss ein Buchstabe sein.","Please use only letters (a-z or A-Z) or numbers (0-9) only in this field. No spaces or other characters are allowed.":"Bitte nur Buchstaben (a-z oder A-Z) oder Ziffern (0-9) in diesem Feld verwenden. Leerzeichen oder andere Zeichen sind nicht erlaubt.","Please use only letters (a-z or A-Z) or numbers (0-9) or spaces and # only in this field.":"Bitte nur Buchstaben (a-z oder A-Z), Ziffern (0-9), Leerzeichen oder # f\u00fcr dieses Feld verwenden.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"Bitte geben Sie eine g\u00fcltige Telefonnummer ein. Zum Beispiel (123) 456-7890 oder 123-456-7890.","Please enter a valid fax number. For example (123) 456-7890 or 123-456-7890.":"Bitte tragen Sie eine g\u00fcltige Faxnummer ein. Zum Beispiel (123) 456-7890 oder 123-456-7890.","Please enter a valid date.":"Bitte geben Sie ein g\u00fcltiges Datum ein.","The From Date value should be less than or equal to the To Date value.":"Das Startdatum sollte vor dem oder am Enddatum liegen.","Please enter a valid email address. For example johndoe@domain.com.":"Bitte geben Sie eine g\u00fcltige E-Mail-Adresse ein. Zum Beispiel johndoe@domain.de.","Please use only visible characters and spaces.":"Bitte nur sichtbare Zeichen verwenden.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"Bitte geben Sie 6 oder mehr Zeichen ein. Leerzeichen am Anfang oder Ende der Zeichenkette werden entfernt.","Please enter 7 or more characters. Password should contain both numeric and alphabetic characters.":"Bitte geben Sie 7 oder mehr Zeichen ein. Ein Passwort sollte sowohl aus Ziffern wie aus Buchstaben bestehen.","Please make sure your passwords match.":"Bitte stellen Sie sicher, dass die beiden Passworte identisch sind.","Please enter a valid URL. Protocol is required (http:\/\/, https:\/\/ or ftp:\/\/)":"Bitte geben Sie eine g\u00fcltige URL ein. M\u00f6gliche Protokolle (http:\/\/, https:\/\/ or ftp:\/\/)","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"Bitte geben Sie eine g\u00fcltige URL ein. Zum Beispiel http:\/\/www.beispiel.de oder www.beispiel.de","Please enter a valid URL Key. For example \"example-page\", \"example-page.html\" or \"anotherlevel\/example-page\".":"Bitte geben Sie einen g\u00fcltigen URL-Bezeichner ein. Zum Beispiel \"beispiel-seite\", \"beispiel-seite.html\" or \"unterverzeichnis\/beispiel-seite\".","Please enter a valid XML-identifier. For example something_1, block5, id-4.":"Bitte geben Sie einen g\u00fcltigen XML-Identifizierer an. Zum Beispiel irgendetwas_1, block5, id-4.","Please enter a valid social security number. For example 123-45-6789.":"Bitte geben Sie eine g\u00fcltige Sozialversicherungsnummer ein. Zum Beispiel 123-45-6789.","Please enter a valid zip code. For example 90602 or 90602-1234.":"Bitte geben Sie eine g\u00fcltige Postleitzahl ein. Zum Beispiel 21335.","Please enter a valid zip code.":"Bitte geben Sie eine g\u00fcltige Postleitzahl ein.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"Bitte verwenden Sie dieses Datumsformat: tt\/mm\/jjjj. Zum Beispiel 17\/03\/2006 f\u00fcr den 17. M\u00e4rz 2006.","Please enter a valid $ amount. For example $100.00.":"Bitte geben Sie einen g\u00fcltigen Betrag ein. Zum Beispiel 100,00 \u20ac.","Please select one of the above options.":"Bitte w\u00e4hlen Sie eine der oberen Optionen.","Please select one of the options.":"Bitte w\u00e4hlen Sie eine der Optionen.","Please select State\/Province.":"Bitte Land\/Bundesland w\u00e4hlen.","Please enter a number greater than 0 in this field.":"Bitte geben Sie eine Zahl gr\u00f6\u00dfer 0 in dieses Feld ein.","Please enter a number 0 or greater in this field.":"Bitte tragen Sie eine Zahl gr\u00f6\u00dfer\/gleich 0 in dieses Feld ein.","Please enter a valid credit card number.":"Bitte geben Sie eine g\u00fcltige Kreditkartennummer ein.","Credit card number does not match credit card type.":"Kreditkartennummer entspricht nicht Kreditkartentyp.","Card type does not match credit card number.":"Kreditkartenart entspricht nicht der angegeben Kreditkartennummer.","Incorrect credit card expiration date.":"Falsches Kreditkarten Ablaufdatum.","Please enter a valid credit card verification number.":"Bitte tragen Sie eine g\u00fcltige Kreditkarten-Pr\u00fcfnummer ein.","Please use only letters (a-z or A-Z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Bitte nur Buchstaben (a-z oder A-Z), Ziffern (0-9) oder Unterstriche (_) in diesem Feld verwenden, das erste Zeichen muss ein Buchstabe sein.","Please input a valid CSS-length. For example 100px or 77pt or 20em or .5ex or 50%.":"Bitte geben Sie eine g\u00fcltige CSS-L\u00e4nge an. Beispielsweise 100px, 77pt, 20em, .5ex oder 50%.","Text length does not satisfy specified text range.":"Textl\u00e4nge ist nicht korrekt.","Please enter a number lower than 100.":"Bitte tragen Sie keine Zahl gr\u00f6\u00dfer\/gleich 100 in dieses Feld ein.","Please select a file":"Bitte w\u00e4hlen Sie eine Datei","Please enter issue number or start date for switch\/solo card type.":"Bitte geben Sie eine Vorgangsnummer oder ein Startdatum switch\/solo Karten an.","Please wait, loading...":"Bitte warten, wird geladen \u2026","This date is a required value.":"Das Datum ist eine ben\u00f6tigte Angabe.","Please enter a valid day (1-%d).":"Bitte geben Sie einen g\u00fcltigen Tag (1-%d) an.","Please enter a valid month (1-12).":"Bitte geben Sie einen g\u00fcltigen Monat (1-12) an.","Please enter a valid year (1900-%d).":"Bitte geben Sie ein g\u00fcltiges Jahr (1900-%d) an.","Please enter a valid full date":"Bitte geben Sie eine vollst\u00e4ndiges, g\u00fcltiges Datum an","Please enter a valid date between %s and %s":"Bitte geben Sie ein g\u00fcltiges Datum zwischen dem %s und %s an","Please enter a valid date equal to or greater than %s":"Bitte geben Sie ein g\u00fcltiges Datum am oder nach dem %s an","Please enter a valid date less than or equal to %s":"Bitte geben Sie ein g\u00fcltiges Datum am oder vor dem %s an","Complete":"Vollst\u00e4ndig","Add Products":"Artikel hinzuf\u00fcgen","Please choose to register or to checkout as a guest":"Bitte registrieren Sie sich, oder gehen Sie als Gast zur Kasse","Your order cannot be completed at this time as there is no shipping methods available for it. Please make necessary changes in your shipping address.":"Ihre Bestellung kann momentan nicht abgeschlossen werden, da keine Versandarten daf\u00fcr verf\u00fcgbar sind.","Please specify shipping method.":"Bitte bestimmen Sie die Versandart.","Your order cannot be completed at this time as there is no payment methods available for it.":"Ihre Bestellung kann momentan nicht abgeschlossen werden, da keine Bezahlmethoden daf\u00fcr verf\u00fcgbar sind.","Please specify payment method.":"Bitte bestimmen Sie die Bezahlmethode.","Add to Cart":"In den Warenkorb","In Stock":"Auf Lager","Out of Stock":"Nicht auf Lager","Please enter a valid international bank account number.":"Bitte geben Sie eine g\u00fcltige IBAN an.","Please enter a valid swift code.":"Bitte geben Sie einen g\u00fcltigen BIC an."});
+        //]]></script>
+    <style type="text/css">.fancybox-margin{margin-right:17px;}</style><link type="text/css" rel="stylesheet" href="./static/style.css" id="trustbadgeStyleSheet"></head>
+    <body class=" sales-order-view"><div id="tsbadgeResponsiveTop_db8d3657bdbe440c985ae127463eaad4" class="" style="display: none;"><div class="responsiveBadge_db8d3657bdbe440c985ae127463eaad4"><div class="responsiveBadgeBlockLogo_db8d3657bdbe440c985ae127463eaad4"><span>&nbsp;</span></div><div class="responsiveBadgeReviewsBlock_db8d3657bdbe440c985ae127463eaad4"><div class="responsiveBadgeBlockStars_db8d3657bdbe440c985ae127463eaad4"><div class="responsiveBadgeBlockStarsStars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:96.4%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div><div class="responsiveBadgeBlockStarsReviewCount_db8d3657bdbe440c985ae127463eaad4"> Sehr gut <div class="responsiveBadgeAverageRating_db8d3657bdbe440c985ae127463eaad4">4.82/5.00</div></div></div></div><div class="responsiveBadgeBlockClose_db8d3657bdbe440c985ae127463eaad4">×</div><span class="trustCardC_db8d3657bdbe440c985ae127463eaad4"></span></div><div id="BottomSlantResponsiveBadge_db8d3657bdbe440c985ae127463eaad4"><svg width="100%" height="20" viewBox="0 0 10 5" preserveAspectRatio="none"><polygon fill="#ffffff" stroke-width="0" points="0,1.8 0,0 10,0 16,0"></polygon></svg></div><div id="TriangleResponsiveBadge_db8d3657bdbe440c985ae127463eaad4"></div></div><div id="MobileCoveringLayer_db8d3657bdbe440c985ae127463eaad4" style="display: none;"></div>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7T9K7');</script>
+<!-- End Google Tag Manager --><script type="text/javascript">
+//<![CDATA[
+if (typeof(Varien.searchForm) !== 'undefined') {
+    Varien.searchForm.prototype._selectAutocompleteItem = function(element) {
+        var link = element.down();
+        if (link && link.tagName == 'A') {
+            setLocation(link.href);
+        } else {
+            if (element.title){
+                this.field.value = element.title;
+            }
+            this.form.submit();
+        }
+    };
+    Varien.searchForm.prototype.initAutocomplete = function(url, destinationElement) {
+        new Ajax.Autocompleter(
+            this.field,
+            destinationElement,
+            url,
+            {
+                paramName: this.field.name,
+                method: 'get',
+                minChars: 2,
+                frequency: .1,
+                updateElement: this._selectAutocompleteItem.bind(this),
+                onShow : function(element, update) {
+                    if(!update.style.position || update.style.position=='absolute') {
+                        update.style.position = 'absolute';
+                        Position.clone(element, update, {
+                            setHeight: false,
+                            offsetTop: element.offsetHeight
+                        });
+                    }
+                    Effect.Appear(update,{duration:0});
+                }
+
+            }
+        );
+    };
+    Autocompleter.Base.prototype.markPrevious = function() {
+        if (this.index > 0) {
+            this.index--;
+        } else {
+            this.index = this.entryCount - 1;
+        }
+        var entry = this.getEntry(this.index);
+        if (entry.select('a').length === 0) {
+            this.markPrevious(); // Ignore items that don't have link
+        }
+    };
+    Autocompleter.Base.prototype.markNext = function() {
+        if (this.index < this.entryCount - 1) {
+            this.index++;
+        } else {
+            this.index = 0;
+        }
+        var entry = this.getEntry(this.index);
+        if (entry.select('a').length === 0) {
+            this.markNext(); // Ignore items that don't have link
+        } else {
+            entry.scrollIntoView(false);
+        }
+    };
+}
+//]]>
+</script>
+    <div class="wrapper has-sidebar" id="wrapper">
+        <header class="header scrolled">
+    <button type="button" id="sidebar-toggle" class="inactive">
+        <span>Sidebar</span>
+    </button>
+    <a href="http://www.toolz4you.com/" title="toolz4you" class="logo">
+        <strong>toolz4you</strong>
+        <img src="./static/logo.png" alt="toolz4you">
+    </a>    
+    <button type="button" id="navbar-toggle" class="inactive">
+        <span>Menü</span>
+    </button>
+    <a href="https://www.toolz4you.com/customer/account/" class="account">
+        <span>Mein Benutzerkonto</span>
+    </a>
+    <div class="header-email">
+    <a href="mailto:info@toolz4you.com">
+        info@toolz4you.com
+    </a>
+    <p>
+        Versandkostenfrei ab <span class="free-shipping-amount"><span class="price">100,00&nbsp;€</span></span> Bestellwert (innerhalb DE)    </p>
+    <p>
+        - 30 Tage Rückgaberecht! -    </p>
+</div>
+    <div class="quick-access">
+        <ul class="links">
+                <li class="first"><a href="http://www.toolz4you.com/contacts/" title="Kontakt"><span>Kontakt</span></a></li>
+                        <li><a href="https://www.toolz4you.com/customer/account/" title="Benutzerkonto"><span>Benutzerkonto</span></a></li>
+                        <li class=" last"><a href="https://www.toolz4you.com/customer/account/logout/" title="Abmelden" class="logout"><span>Abmelden</span></a></li>
+            </ul>
+
+<div class="cart-header">
+    <div class="cart-info">        
+        <a href="http://www.toolz4you.com/checkout/cart/">
+            <span>Zum Warenkorb</span>
+        </a>
+        <span class="amount">
+                    <span class="badge">5</span>
+                            <a href="http://www.toolz4you.com/checkout/cart/">5 Artikel</a>                </span>
+        <span class="subtotal">
+            <span class="price">242,13&nbsp;€</span>        </span>
+    </div>
+    <a href="http://www.toolz4you.com/checkout/cart/" class="button cart filled">
+        <span>Warenkorb</span>
+    </a>
+</div>
+    </div>
+    <div class="nav">
+    <h4 class="products-button inactive">Produkte</h4>
+    <aside class="main-nav closed">    
+        <nav id="nav">        
+            <ul class="catalog-nav">
+                <li class="level0 nav-1 first parent" data-image="http://www.toolz4you.com/media/catalog/category/test1.jpg"><a href="http://www.toolz4you.com/turtechnik.html"><span>Türtechnik</span></a><ul class="level0" data-name="Türtechnik"><li><span class="nav-cat-headline">Türtechnik</span></li><li class="level1 nav-1-1 first" data-image="http://www.toolz4you.com/media/catalog/category/rosettengarnitur_2.jpg"><a href="http://www.toolz4you.com/turtechnik/rosettengarnituren.html"><span>Rosettengarnituren</span></a></li><li class="level1 nav-1-2" data-image="http://www.toolz4you.com/media/catalog/category/langschild_2.jpg"><a href="http://www.toolz4you.com/turtechnik/langschildgarnituren.html"><span>Langschildgarnituren</span></a></li><li class="level1 nav-1-3 parent" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_10.jpg"><a href="http://www.toolz4you.com/turtechnik/rahmenturbeschlage.html"><span>Rahmentürbeschläge</span></a><ul class="level1" data-name="Rahmentürbeschläge"><li class="level2 nav-1-3-1 first" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_11.jpg"><a href="http://www.toolz4you.com/turtechnik/rahmenturbeschlage/rahmenturgarnituren.html"><span>Rahmentürgarnituren</span></a></li><li class="level2 nav-1-3-2" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_12.jpg"><a href="http://www.toolz4you.com/turtechnik/rahmenturbeschlage/rahmenturdrucker.html"><span>Rahmentürdrücker</span></a></li><li class="level2 nav-1-3-3" data-image="http://www.toolz4you.com/media/catalog/category/kategorie_rahmentuerknoepfe.jpg"><a href="http://www.toolz4you.com/turtechnik/rahmenturbeschlage/turknopfe-fur-rahmenturen.html"><span>Türknöpfe für Rahmentüren</span></a></li><li class="level2 nav-1-3-4 last" data-image="http://www.toolz4you.com/media/catalog/category/kategorie_rahmentuerrosetten.jpg"><a href="http://www.toolz4you.com/turtechnik/rahmenturbeschlage/rosetten-fur-rahmenturen.html"><span>Rosetten für Rahmentüren</span></a></li></ul></li><li class="level1 nav-1-4 parent" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_13.jpg"><a href="http://www.toolz4you.com/turtechnik/objekt-feuerschutz-panikbeschlage.html"><span>Objekt/Feuer/Panik-beschläge</span></a><ul class="level1" data-name="Objekt/Feuer/Panik-beschläge"><li class="level2 nav-1-4-1 first" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_14.jpg"><a href="http://www.toolz4you.com/turtechnik/objekt-feuerschutz-panikbeschlage/objektbeschlage.html"><span>Objektbeschläge</span></a></li><li class="level2 nav-1-4-2" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_15.jpg"><a href="http://www.toolz4you.com/turtechnik/objekt-feuerschutz-panikbeschlage/feuerschutz-garnituren.html"><span>Feuerschutz-Garnituren</span></a></li><li class="level2 nav-1-4-3 last" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt.jpg"><a href="http://www.toolz4you.com/turtechnik/objekt-feuerschutz-panikbeschlage/panikbeschlage.html"><span>Panikbeschläge</span></a></li></ul></li><li class="level1 nav-1-5 parent" data-image="http://www.toolz4you.com/media/catalog/category/zubehoer.jpg"><a href="http://www.toolz4you.com/turtechnik/turdrucker-rosetten-zubehor.html"><span>Türdrücker, Rosetten, Zubehör</span></a><ul class="level1" data-name="Türdrücker, Rosetten, Zubehör"><li class="level2 nav-1-5-1 first" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_tuerdrueckerpaare_1.jpg"><a href="http://www.toolz4you.com/turtechnik/turdrucker-rosetten-zubehor/turdruckerpaare.html"><span>Türdrückerpaare</span></a></li><li class="level2 nav-1-5-2" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_rosettenpaare_1.jpg"><a href="http://www.toolz4you.com/turtechnik/turdrucker-rosetten-zubehor/rosettenpaare.html"><span>Rosettenpaare</span></a></li><li class="level2 nav-1-5-3" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_tuerdrucker_einzelteile_langschilder_1.jpg"><a href="http://www.toolz4you.com/turtechnik/turdrucker-rosetten-zubehor/langschilder.html"><span>Langschilder</span></a></li><li class="level2 nav-1-5-4" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_knopfteile_1.jpg"><a href="http://www.toolz4you.com/turtechnik/turdrucker-rosetten-zubehor/knopfteile.html"><span>Knopfteile</span></a></li><li class="level2 nav-1-5-5" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_schutzrosetten.jpg"><a href="http://www.toolz4you.com/turtechnik/turdrucker-rosetten-zubehor/schutzrosetten.html"><span>Schutzrosetten</span></a></li><li class="level2 nav-1-5-6" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_drueckerstifte.jpg"><a href="http://www.toolz4you.com/turtechnik/turdrucker-rosetten-zubehor/druckerstifte.html"><span>Drückerstifte</span></a></li><li class="level2 nav-1-5-7 last" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_montagezubehoer.jpg"><a href="http://www.toolz4you.com/turtechnik/turdrucker-rosetten-zubehor/montagezubehor.html"><span>Montagezubehör</span></a></li></ul></li><li class="level1 nav-1-6" data-image="http://www.toolz4you.com/media/catalog/category/schutzgarnituren.jpg"><a href="http://www.toolz4you.com/turtechnik/schutzgarnituren.html"><span>Schutzgarnituren</span></a></li><li class="level1 nav-1-7 parent" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_tuerschloesser_schleissbleche.jpg"><a href="http://www.toolz4you.com/turtechnik/turschlosser-und-schliessbleche.html"><span>Türschlösser und Schließbleche</span></a><ul class="level1" data-name="Türschlösser und Schließbleche"><li class="level2 nav-1-7-1 first" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_tuerschloesser_1.jpg"><a href="http://www.toolz4you.com/turtechnik/turschlosser-und-schliessbleche/zimmertuerschloesser.html"><span>Zimmertürschlösser</span></a></li><li class="level2 nav-1-7-2" data-image="http://www.toolz4you.com/media/catalog/category/mehrfachverriegeluingen_1.jpg"><a href="http://www.toolz4you.com/turtechnik/turschlosser-und-schliessbleche/mehrfachverriegelungen.html"><span>Mehrfachverriegelungen</span></a></li><li class="level2 nav-1-7-3" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_zubehoer_fuer_mehrfachverriegelungen.jpg"><a href="http://www.toolz4you.com/turtechnik/turschlosser-und-schliessbleche/zubehor-fur-mehrfachverriegelungen.html"><span>Zubehör für Mehrfachverriegelungen</span></a></li><li class="level2 nav-1-7-4" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_rohrrahmenschloesser_1.jpg"><a href="http://www.toolz4you.com/turtechnik/turschlosser-und-schliessbleche/rohrrahmenschlosser.html"><span>Rohrrahmenschlösser</span></a></li><li class="level2 nav-1-7-5" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_tuerschloesse_panik.jpg"><a href="http://www.toolz4you.com/turtechnik/turschlosser-und-schliessbleche/panikschlosser.html"><span>Panikschlösser</span></a></li><li class="level2 nav-1-7-6" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebildbild_tuerschloesser_glastuerschloesser_1.jpg"><a href="http://www.toolz4you.com/turtechnik/turschlosser-und-schliessbleche/turschlosser-fur-glasausschnitte.html"><span>Türschlösser für Glasausschnitte</span></a></li><li class="level2 nav-1-7-7" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebildbild_kastenschloesser.jpg"><a href="http://www.toolz4you.com/turtechnik/turschlosser-und-schliessbleche/kastenschlosser.html"><span>Kastenschlösser</span></a></li><li class="level2 nav-1-7-8" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_tuerschloesse_schiebetuerschloesser.jpg"><a href="http://www.toolz4you.com/turtechnik/turschlosser-und-schliessbleche/schiebeturschlosser.html"><span>Schiebetürschlösser</span></a></li><li class="level2 nav-1-7-9" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_tuerschloesser_pendeltuerschloss.jpg"><a href="http://www.toolz4you.com/turtechnik/turschlosser-und-schliessbleche/pendelturschlosser.html"><span>Pendeltürschlösser</span></a></li><li class="level2 nav-1-7-10" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_tuerschloesser_zubehoer.jpg"><a href="http://www.toolz4you.com/turtechnik/turschlosser-und-schliessbleche/zubehor-fur-turschlosser.html"><span>Zubehör für Türschlösser</span></a></li><li class="level2 nav-1-7-11 last" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_16.jpg"><a href="http://www.toolz4you.com/turtechnik/turschlosser-und-schliessbleche/schliessbleche.html"><span>Schließbleche</span></a></li></ul></li><li class="level1 nav-1-8 parent" data-image="http://www.toolz4you.com/media/catalog/category/stossgriff2.jpg"><a href="http://www.toolz4you.com/turtechnik/stossgriffe-und-montagesets.html"><span>Stoßgriffe</span></a><ul class="level1" data-name="Stoßgriffe"><li class="level2 nav-1-8-1 first" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_17.jpg"><a href="http://www.toolz4you.com/turtechnik/stossgriffe-und-montagesets/stossgriffe.html"><span>Stoßgriffe</span></a></li><li class="level2 nav-1-8-2 last" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_montagesets.jpg"><a href="http://www.toolz4you.com/turtechnik/stossgriffe-und-montagesets/montagesets.html"><span>Montagesets</span></a></li></ul></li><li class="level1 nav-1-9 parent" data-image="http://www.toolz4you.com/media/catalog/category/schlie_.jpg"><a href="http://www.toolz4you.com/turtechnik/schliesstechnik.html"><span>Schließtechnik</span></a><ul class="level1" data-name="Schließtechnik"><li class="level2 nav-1-9-1 first" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_tueroeffner.jpg"><a href="http://www.toolz4you.com/turtechnik/schliesstechnik/turoffner.html"><span>Türöffner</span></a></li><li class="level2 nav-1-9-2" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_19.jpg"><a href="http://www.toolz4you.com/turtechnik/schliesstechnik/turwachter.html"><span>Türwächter</span></a></li><li class="level2 nav-1-9-3" data-image="http://www.toolz4you.com/media/catalog/category/profilzylinder_5.jpg"><a href="http://www.toolz4you.com/turtechnik/schliesstechnik/profilzylinder.html"><span>Profilzylinder</span></a></li><li class="level2 nav-1-9-4" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_18.jpg"><a href="http://www.toolz4you.com/turtechnik/schliesstechnik/zubehor-fur-zylinder.html"><span>Zubehör für Zylinder</span></a></li><li class="level2 nav-1-9-5" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_20.jpg"><a href="http://www.toolz4you.com/turtechnik/schliesstechnik/funk-turschlosser.html"><span>Funk-Türschlösser</span></a></li><li class="level2 nav-1-9-6" data-image=""><a href="http://www.toolz4you.com/turtechnik/schliesstechnik/universalzylinder-hebelzylinder.html"><span>Universalzylinder/ Hebelzylinder</span></a></li><li class="level2 nav-1-9-7 last" data-image=""><a href="http://www.toolz4you.com/turtechnik/schliesstechnik/schlusselzubehor.html"><span>Schlüsselzubehör</span></a></li></ul></li><li class="level1 nav-1-10 parent" data-image="http://www.toolz4you.com/media/catalog/category/dichtung.jpg"><a href="http://www.toolz4you.com/turtechnik/turdichtungen.html"><span>Türdichtungen</span></a><ul class="level1" data-name="Türdichtungen"><li class="level2 nav-1-10-1 first" data-image="http://www.toolz4you.com/media/catalog/category/bodendichtung.jpg"><a href="http://www.toolz4you.com/turtechnik/turdichtungen/bodenturdichtungen.html"><span>Bodentürdichtungen</span></a></li><li class="level2 nav-1-10-2" data-image="http://www.toolz4you.com/media/catalog/category/dichtungen_1.jpg"><a href="http://www.toolz4you.com/turtechnik/turdichtungen/dichtungen.html"><span>Dichtungen</span></a></li><li class="level2 nav-1-10-3 last" data-image="http://www.toolz4you.com/media/catalog/category/fingerschutz.jpg"><a href="http://www.toolz4you.com/turtechnik/turdichtungen/fingerschutz.html"><span>Fingerschutz</span></a></li></ul></li><li class="level1 nav-1-11 parent" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_21.jpg"><a href="http://www.toolz4you.com/turtechnik/turschliesser.html"><span>Türschließer</span></a><ul class="level1" data-name="Türschließer"><li class="level2 nav-1-11-1 first" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_22.jpg"><a href="http://www.toolz4you.com/turtechnik/turschliesser/obenturschliesser.html"><span>Obentürschließer</span></a></li><li class="level2 nav-1-11-2" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_23.jpg"><a href="http://www.toolz4you.com/turtechnik/turschliesser/bodenturschliesser.html"><span>Bodentürschließer</span></a></li><li class="level2 nav-1-11-3 last" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_24.jpg"><a href="http://www.toolz4you.com/turtechnik/turschliesser/zubehor-und-einzelteile.html"><span>Zubehör und Einzelteile</span></a></li></ul></li><li class="level1 nav-1-12 parent" data-image="http://www.toolz4you.com/media/catalog/category/baender.jpg"><a href="http://www.toolz4you.com/turtechnik/turbander.html"><span>Türbänder</span></a><ul class="level1" data-name="Türbänder"><li class="level2 nav-1-12-1 first" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_zimmertuerbaender_2.jpg"><a href="http://www.toolz4you.com/turtechnik/turbander/zimmerturen.html"><span>Zimmertüren</span></a></li><li class="level2 nav-1-12-2" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_haustuerbaender.jpg"><a href="http://www.toolz4you.com/turtechnik/turbander/hausturen.html"><span>Haustüren</span></a></li><li class="level2 nav-1-12-3" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_objektbaender.jpg"><a href="http://www.toolz4you.com/turtechnik/turbander/objektturen.html"><span>Objekttüren</span></a></li><li class="level2 nav-1-12-4" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_pendeltuerbaender.jpg"><a href="http://www.toolz4you.com/turtechnik/turbander/pendelturen.html"><span>Pendeltüren</span></a></li><li class="level2 nav-1-12-5 last" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_zubehoer_tuerbaender.jpg"><a href="http://www.toolz4you.com/turtechnik/turbander/turbander-zubehor.html"><span>Türbänder - Zubehör</span></a></li></ul></li><li class="level1 nav-1-13 parent" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_32.jpg"><a href="http://www.toolz4you.com/turtechnik/turausstattung.html"><span>Türausstattung</span></a><ul class="level1" data-name="Türausstattung"><li class="level2 nav-1-13-1 first" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_31.jpg"><a href="http://www.toolz4you.com/turtechnik/turausstattung/turstopper.html"><span>Türstopper</span></a></li><li class="level2 nav-1-13-2" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_30.jpg"><a href="http://www.toolz4you.com/turtechnik/turausstattung/turspione.html"><span>Türspione</span></a></li><li class="level2 nav-1-13-3" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_29.jpg"><a href="http://www.toolz4you.com/turtechnik/turausstattung/luftungen.html"><span>Lüftungen</span></a></li><li class="level2 nav-1-13-4" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_28.jpg"><a href="http://www.toolz4you.com/turtechnik/turausstattung/feststeller.html"><span>Feststeller</span></a></li><li class="level2 nav-1-13-5" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_27.jpg"><a href="http://www.toolz4you.com/turtechnik/turausstattung/hinweiszeichen.html"><span>Hinweiszeichen</span></a></li><li class="level2 nav-1-13-6" data-image="http://www.toolz4you.com/media/catalog/category/hausnummern.jpg"><a href="http://www.toolz4you.com/turtechnik/turausstattung/hausnummern-und-buchstaben.html"><span>Hausnummern und Buchstaben</span></a></li><li class="level2 nav-1-13-7 last parent" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_25.jpg"><a href="http://www.toolz4you.com/turtechnik/turausstattung/zubehor-fur-turbander.html"><span>Zubehör für Türbänder</span></a><ul class="level2" data-name="Zubehör für Türbänder"><li class="level3 nav-1-13-7-1 first last" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_26.jpg"><a href="http://www.toolz4you.com/turtechnik/turausstattung/zubehor-fur-turbander/fitschenringe.html"><span>Fitschenringe</span></a></li></ul></li></ul></li><li class="level1 nav-1-14 last" data-image="http://www.toolz4you.com/media/catalog/category/schiebetuerbeschlag.jpg"><a href="http://www.toolz4you.com/turtechnik/schiebeturbeschlage.html"><span>Schiebetürbeschläge</span></a></li></ul></li><li class="level0 nav-2 parent" data-image="http://www.toolz4you.com/media/catalog/category/sicherheit.jpg"><a href="http://www.toolz4you.com/sicherheitstechnik.html"><span>Sicherheitstechnik</span></a><ul class="level0" data-name="Sicherheitstechnik"><li><span class="nav-cat-headline">Sicherheitstechnik</span></li><li class="level1 nav-2-1 first" data-image="http://www.toolz4you.com/media/catalog/category/fenstersicherungen.jpg"><a href="http://www.toolz4you.com/sicherheitstechnik/fenstersicherung.html"><span>Fenstersicherung</span></a></li><li class="level1 nav-2-2" data-image="http://www.toolz4you.com/media/catalog/category/tuersicherung.jpg"><a href="http://www.toolz4you.com/sicherheitstechnik/tursicherung.html"><span>Türsicherung</span></a></li><li class="level1 nav-2-3" data-image="http://www.toolz4you.com/media/catalog/category/hangschloss_2.jpg"><a href="http://www.toolz4you.com/sicherheitstechnik/hangschlosser.html"><span>Hangschlösser</span></a></li><li class="level1 nav-2-4" data-image="http://www.toolz4you.com/media/catalog/category/rauchmelder_2.jpg"><a href="http://www.toolz4you.com/sicherheitstechnik/rauchmelder.html"><span>Rauchmelder</span></a></li><li class="level1 nav-2-5 last" data-image=""><a href="http://www.toolz4you.com/sicherheitstechnik/abus-bohrschablonen.html"><span>Abus Bohrschablonen</span></a></li></ul></li><li class="level0 nav-3 parent" data-image="http://www.toolz4you.com/media/catalog/category/moebelkat.jpg"><a href="http://www.toolz4you.com/mobelbeschlage.html"><span>Möbelbeschläge</span></a><ul class="level0" data-name="Möbelbeschläge"><li><span class="nav-cat-headline">Möbelbeschläge</span></li><li class="level1 nav-3-1 first parent" data-image="http://www.toolz4you.com/media/catalog/category/m_belkategorie1_6.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten.html"><span>Auszugslösungen für Schubkästen</span></a><ul class="level1" data-name="Auszugslösungen für Schubkästen"><li class="level2 nav-3-1-1 first" data-image="http://www.toolz4you.com/media/catalog/category/unterluftfuehrungen.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/unterflurfuhrungen.html"><span>Unterflurführungen</span></a></li><li class="level2 nav-3-1-2" data-image="http://www.toolz4you.com/media/catalog/category/kugelauszuge.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/kugelauszuge.html"><span>Kugelauszüge</span></a></li><li class="level2 nav-3-1-3 parent" data-image="http://www.toolz4you.com/media/catalog/category/zargenfuehrungssysteme_4.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme.html"><span>Zargenführungssysteme</span></a><ul class="level2" data-name="Zargenführungssysteme"><li class="level3 nav-3-1-3-1 first" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/tandembox-antaro.html"><span>Tandembox Antaro</span></a></li><li class="level3 nav-3-1-3-2" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/legrabox.html"><span>Legrabox</span></a></li><li class="level3 nav-3-1-3-3" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/zubehor-fur-antaro.html"><span>Zubehör für Antaro</span></a></li><li class="level3 nav-3-1-3-4" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/zubehor-fur-legrabox.html"><span>Zubehör für Legrabox</span></a></li><li class="level3 nav-3-1-3-5 parent" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/ambia-line-fur-legrabox.html"><span>Ambia-Line für Legrabox</span></a><ul class="level3" data-name="Ambia-Line für Legrabox"><li class="level4 nav-3-1-3-5-1 first" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/ambia-line-fur-legrabox/querreling.html"><span>Querreling</span></a></li><li class="level4 nav-3-1-3-5-2" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/ambia-line-fur-legrabox/kuchenhelfer.html"><span>Küchenhelfer</span></a></li><li class="level4 nav-3-1-3-5-3" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/ambia-line-fur-legrabox/stahldesign.html"><span>Stahldesign</span></a></li><li class="level4 nav-3-1-3-5-4" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/ambia-line-fur-legrabox/holzdesign.html"><span>Holzdesign</span></a></li><li class="level4 nav-3-1-3-5-5" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/ambia-line-fur-legrabox/blum-ambia-line-kuchenhelfer.html"><span>Blum AMBIA-LINE Küchenhelfer</span></a></li><li class="level4 nav-3-1-3-5-6" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/ambia-line-fur-legrabox/blum-ambia-line-stahldesign.html"><span>Blum AMBIA-LINE Stahldesign</span></a></li><li class="level4 nav-3-1-3-5-7" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/ambia-line-fur-legrabox/blum-ambia-line-holzdesign.html"><span>Blum AMBIA-LINE Holzdesign</span></a></li><li class="level4 nav-3-1-3-5-8 last" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/ambia-line-fur-legrabox/blum-ambia-line-querreling.html"><span>Blum AMBIA-LINE Querreling</span></a></li></ul></li><li class="level3 nav-3-1-3-6 parent" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/tandembox-antaro-einzelteile.html"><span>TANDEMBOX Antaro Einzelteile</span></a><ul class="level3" data-name="TANDEMBOX Antaro Einzelteile"><li class="level4 nav-3-1-3-6-1 first" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/tandembox-antaro-einzelteile/blum-tandembox-zargen.html"><span>Blum TANDEMBOX Zargen</span></a></li><li class="level4 nav-3-1-3-6-2" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/tandembox-antaro-einzelteile/blum-tandembox-korpusschienen.html"><span>Blum TANDEMBOX Korpusschienen</span></a></li><li class="level4 nav-3-1-3-6-3" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/tandembox-antaro-einzelteile/blum-tandembox-ruckwandhalter.html"><span>Blum TANDEMBOX Rückwandhalter</span></a></li><li class="level4 nav-3-1-3-6-4" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/tandembox-antaro-einzelteile/blum-tandembox-griffe-und-mitnehmer-fur-innenschubkasten.html"><span>Blum TANDEMBOX Griffe und Mitnehmer für Innenschubkästen</span></a></li><li class="level4 nav-3-1-3-6-5 last" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/tandembox-antaro-einzelteile/blum-tandembox-langsreling-antaro.html"><span>Blum TANDEMBOX Längsreling antaro</span></a></li></ul></li><li class="level3 nav-3-1-3-7 last" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/zargenfuhrungssysteme/legrabox-einzelteile.html"><span>Legrabox Einzelteile</span></a></li></ul></li><li class="level2 nav-3-1-4" data-image="http://www.toolz4you.com/media/catalog/category/rollschubfuehrungen_1.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/rollschubfuhrungen.html"><span>Rollschubführungen</span></a></li><li class="level2 nav-3-1-5 last parent" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/elektrische-offnungsunterstutzung.html"><span>Elektrische Öffnungsunterstützung</span></a><ul class="level2" data-name="Elektrische Öffnungsunterstützung"><li class="level3 nav-3-1-5-1 first" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/elektrische-offnungsunterstutzung/blum-servo-drive-fur-schubkasten-und-auszuge.html"><span>Blum SERVO-DRIVE für Schubkästen und Auszüge</span></a></li><li class="level3 nav-3-1-5-2 last" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/auszugslosungen-fur-schubkasten/elektrische-offnungsunterstutzung/blum-servo-drive-fur-stehende-mulllosungen.html"><span>Blum SERVO-DRIVE für stehende Mülllösungen</span></a></li></ul></li></ul></li><li class="level1 nav-3-2 parent" data-image="http://www.toolz4you.com/media/catalog/category/kattopfband.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/topfbander.html"><span>Topfbänder</span></a><ul class="level1" data-name="Topfbänder"><li class="level2 nav-3-2-1 first parent" data-image="http://www.toolz4you.com/media/catalog/category/blum_scharniere.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/topfbander/blum.html"><span>Blum</span></a><ul class="level2" data-name="Blum"><li class="level3 nav-3-2-1-1 first" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/topfbander/blum/zubehor.html"><span>Zubehör</span></a></li><li class="level3 nav-3-2-1-2" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/topfbander/blum/topfscharniere.html"><span>Topfscharniere</span></a></li><li class="level3 nav-3-2-1-3" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/topfbander/blum/montageplatten.html"><span>Montageplatten</span></a></li><li class="level3 nav-3-2-1-4 last" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/topfbander/blum/tip-on-und-blumotion-fur-turen.html"><span>Tip On und Blumotion für Türen</span></a></li></ul></li><li class="level2 nav-3-2-2 parent" data-image="http://www.toolz4you.com/media/catalog/category/hettich_topfband.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/topfbander/hettich.html"><span>Hettich</span></a><ul class="level2" data-name="Hettich"><li class="level3 nav-3-2-2-1 first" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/topfbander/hettich/montageplatten.html"><span>Montageplatten</span></a></li><li class="level3 nav-3-2-2-2 last" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/topfbander/hettich/topfscharniere.html"><span>Topfscharniere</span></a></li></ul></li><li class="level2 nav-3-2-3 last" data-image="http://www.toolz4you.com/media/catalog/category/topfscharniere_zubeh_r.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/topfbander/zubehor.html"><span>Zubehör</span></a></li></ul></li><li class="level1 nav-3-3 parent" data-image="http://www.toolz4you.com/media/catalog/category/klappenkat_3.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/klappenbeschlage.html"><span>Klappenbeschläge</span></a><ul class="level1" data-name="Klappenbeschläge"><li class="level2 nav-3-3-1 first" data-image="http://www.toolz4you.com/media/catalog/category/klappenkat_5.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/klappenbeschlage/blum-aventos-hf.html"><span>Blum Aventos HF</span></a></li><li class="level2 nav-3-3-2" data-image="http://www.toolz4you.com/media/catalog/category/aventos_hs_3.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/klappenbeschlage/blum-aventos-hs.html"><span>Blum Aventos HS</span></a></li><li class="level2 nav-3-3-3" data-image="http://www.toolz4you.com/media/catalog/category/aventos_hlklein_1.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/klappenbeschlage/blum-aventos-hl.html"><span>Blum Aventos HL</span></a></li><li class="level2 nav-3-3-4" data-image="http://www.toolz4you.com/media/catalog/category/aventos_hk_1.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/klappenbeschlage/blum-aventos-hk.html"><span>Blum Aventos HK</span></a></li><li class="level2 nav-3-3-5 last" data-image="http://www.toolz4you.com/media/catalog/category/klappenkat_8.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/klappenbeschlage/blum-aventos-zubehor.html"><span>Blum Aventos Zubehör</span></a></li></ul></li><li class="level1 nav-3-4 parent" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_38.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/verbinder-bodentrager.html"><span>Verbinder, Bodenträger</span></a><ul class="level1" data-name="Verbinder, Bodenträger"><li class="level2 nav-3-4-1 first parent" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_41.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/verbinder-bodentrager/verbindungsbeschlage.html"><span>Verbindungsbeschläge</span></a><ul class="level2" data-name="Verbindungsbeschläge"><li class="level3 nav-3-4-1-1 first parent" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/verbinder-bodentrager/verbindungsbeschlage/exzenter-verbindungbeschlage.html"><span>Exzenter Verbindungbeschläge</span></a><ul class="level3" data-name="Exzenter Verbindungbeschläge"><li class="level4 nav-3-4-1-1-1 first" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/verbinder-bodentrager/verbindungsbeschlage/exzenter-verbindungbeschlage/hettich-exzenter-verbindungsbeschlag-rastex-15.html"><span>Hettich Exzenter-Verbindungsbeschlag Rastex 15</span></a></li><li class="level4 nav-3-4-1-1-2" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/verbinder-bodentrager/verbindungsbeschlage/exzenter-verbindungbeschlage/hettich-exzenter-verbindungsbeschlag-rastex-25.html"><span>Hettich Exzenter-Verbindungsbeschlag Rastex 25</span></a></li><li class="level4 nav-3-4-1-1-3" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/verbinder-bodentrager/verbindungsbeschlage/exzenter-verbindungbeschlage/hettich-exzenter-verbindungsbeschlag-vb-20-21.html"><span>Hettich Exzenter-Verbindungsbeschlag VB 20 / 21</span></a></li><li class="level4 nav-3-4-1-1-4" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/verbinder-bodentrager/verbindungsbeschlage/exzenter-verbindungbeschlage/hettich-exzenter-verbindungsbeschlag-vb-35-35m-36-36m.html"><span>Hettich Exzenter-Verbindungsbeschlag VB 35 / 35M / 36 / 36M</span></a></li><li class="level4 nav-3-4-1-1-5 last" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/verbinder-bodentrager/verbindungsbeschlage/exzenter-verbindungbeschlage/hettich-exzenter-verbindungsbeschlag-solid-s.html"><span>Hettich Exzenter-Verbindungsbeschlag Solid S</span></a></li></ul></li><li class="level3 nav-3-4-1-2" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/verbinder-bodentrager/verbindungsbeschlage/tablarverbinder.html"><span>Tablarverbinder</span></a></li><li class="level3 nav-3-4-1-3" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/verbinder-bodentrager/verbindungsbeschlage/trapez-verbindungsbeschlage.html"><span>Trapez-Verbindungsbeschläge</span></a></li><li class="level3 nav-3-4-1-4" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/verbinder-bodentrager/verbindungsbeschlage/gehrungsverbinder.html"><span>Gehrungsverbinder</span></a></li><li class="level3 nav-3-4-1-5 last parent" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/verbinder-bodentrager/verbindungsbeschlage/arbeitsplattenverbinder.html"><span>Arbeitsplattenverbinder</span></a><ul class="level3" data-name="Arbeitsplattenverbinder"><li class="level4 nav-3-4-1-5-1 first" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/verbinder-bodentrager/verbindungsbeschlage/arbeitsplattenverbinder/hettich-arbeitplattenverbinder-avb-4-4-slim-5.html"><span>Hettich Arbeitplattenverbinder AVB 4 / 4 Slim / 5</span></a></li><li class="level4 nav-3-4-1-5-2 last" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/verbinder-bodentrager/verbindungsbeschlage/arbeitsplattenverbinder/bmb-arbeitsplattenverbinder.html"><span>BMB Arbeitsplattenverbinder</span></a></li></ul></li></ul></li><li class="level2 nav-3-4-2 last" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_42.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/verbinder-bodentrager/bodentrager.html"><span>Bodenträger</span></a></li></ul></li><li class="level1 nav-3-5 parent" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_39.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/kleiderlifte-schrankrohr.html"><span>Kleiderlifte, Schrankrohr</span></a><ul class="level1" data-name="Kleiderlifte, Schrankrohr"><li class="level2 nav-3-5-1 first last" data-image="http://www.toolz4you.com/media/catalog/category/kleiderlift_2_1.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/kleiderlifte-schrankrohr/kleiderlifte.html"><span>Kleiderlifte</span></a></li></ul></li><li class="level1 nav-3-6 parent" data-image="http://www.toolz4you.com/media/catalog/category/testknopfklein.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/mobelgriffe-und-mobelknopfe.html"><span>Möbelgriffe und Möbelknöpfe</span></a><ul class="level1" data-name="Möbelgriffe und Möbelknöpfe"><li class="level2 nav-3-6-1 first" data-image="http://www.toolz4you.com/media/catalog/category/testknopfklein_1.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/mobelgriffe-und-mobelknopfe/mobelgriffe.html"><span>Möbelgriffe</span></a></li><li class="level2 nav-3-6-2" data-image="http://www.toolz4you.com/media/catalog/category/testknopfklein_2.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/mobelgriffe-und-mobelknopfe/mobelknopfe.html"><span>Möbelknöpfe</span></a></li><li class="level2 nav-3-6-3 last" data-image="http://www.toolz4you.com/media/catalog/category/muschelgriffe.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/mobelgriffe-und-mobelknopfe/muschelgriffe.html"><span>Muschelgriffe</span></a></li></ul></li><li class="level1 nav-3-7 parent" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_40.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/tischbeine-mobelfusse-rollen.html"><span>Tischbeine, Möbelfüße, Rollen</span></a><ul class="level1" data-name="Tischbeine, Möbelfüße, Rollen"><li class="level2 nav-3-7-1 first" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/tischbeine-mobelfusse-rollen/tischbeine.html"><span>Tischbeine</span></a></li><li class="level2 nav-3-7-2" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/tischbeine-mobelfusse-rollen/sockelversteller.html"><span>Sockelversteller</span></a></li><li class="level2 nav-3-7-3 last parent" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/tischbeine-mobelfusse-rollen/rollen-und-rader.html"><span>Rollen und Räder</span></a><ul class="level2" data-name="Rollen und Räder"><li class="level3 nav-3-7-3-1 first" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/tischbeine-mobelfusse-rollen/rollen-und-rader/mobelrollen.html"><span>Möbelrollen</span></a></li><li class="level3 nav-3-7-3-2" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/tischbeine-mobelfusse-rollen/rollen-und-rader/apparaterollen.html"><span>Apparaterollen</span></a></li><li class="level3 nav-3-7-3-3" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/tischbeine-mobelfusse-rollen/rollen-und-rader/zubehor-zu-rollen.html"><span>Zubehör zu Rollen</span></a></li><li class="level3 nav-3-7-3-4 last" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/tischbeine-mobelfusse-rollen/rollen-und-rader/transportgeraterollen.html"><span>Transportgeräterollen</span></a></li></ul></li></ul></li><li class="level1 nav-3-8" data-image="http://www.toolz4you.com/media/catalog/category/haken_1.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/garderoben-und-garderobenhaken.html"><span>Garderoben und Garderobenhaken</span></a></li><li class="level1 nav-3-9" data-image="http://www.toolz4you.com/media/catalog/category/handlaufstuetzen.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/handlaufstutzen.html"><span>Handlaufstützen</span></a></li><li class="level1 nav-3-10 parent" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_2.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/beleuchtung.html"><span>Beleuchtung</span></a><ul class="level1" data-name="Beleuchtung"><li class="level2 nav-3-10-1 first" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_3.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/beleuchtung/spot-leuchten.html"><span>Spot Leuchten</span></a></li><li class="level2 nav-3-10-2" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_4.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/beleuchtung/led-bander.html"><span>LED Bänder</span></a></li><li class="level2 nav-3-10-3" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_5.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/beleuchtung/led-aluminium-profil-sets.html"><span>LED Aluminium Profil-Sets</span></a></li><li class="level2 nav-3-10-4" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_6.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/beleuchtung/receiver-und-repeater-duo-rgb.html"><span>Receiver und Repeater DUO/RGB</span></a></li><li class="level2 nav-3-10-5" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_7.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/beleuchtung/led-netzteile-und-schukostecker.html"><span>LED Netzteile und Schukostecker</span></a></li><li class="level2 nav-3-10-6" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_8.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/beleuchtung/led-zubehor-duo-rgb.html"><span>LED Zubehör DUO/RGB</span></a></li><li class="level2 nav-3-10-7 last" data-image="http://www.toolz4you.com/media/catalog/category/grundnackt_9.jpg"><a href="http://www.toolz4you.com/mobelbeschlage/beleuchtung/easy-controller-duo-rgb.html"><span>Easy-Controller DUO/RGB</span></a></li></ul></li><li class="level1 nav-3-11 last" data-image=""><a href="http://www.toolz4you.com/mobelbeschlage/montagehilfen.html"><span>Montagehilfen</span></a></li></ul></li><li class="level0 nav-4 parent" data-image="http://www.toolz4you.com/media/catalog/category/glast_rbeschl_ge1_2.jpg"><a href="http://www.toolz4you.com/glasturbeschlage.html"><span>Glastürbeschläge</span></a><ul class="level0" data-name="Glastürbeschläge"><li><span class="nav-cat-headline">Glastürbeschläge</span></li><li class="level1 nav-4-1 first" data-image="http://www.toolz4you.com/media/catalog/category/glastuerschloss_1.jpg"><a href="http://www.toolz4you.com/glasturbeschlage/glasturschlosser.html"><span>Glastürschlösser</span></a></li><li class="level1 nav-4-2" data-image="http://www.toolz4you.com/media/catalog/category/glastuerbaender.jpg"><a href="http://www.toolz4you.com/glasturbeschlage/glasturbander.html"><span>Glastürbänder</span></a></li><li class="level1 nav-4-3" data-image="http://www.toolz4you.com/media/catalog/category/kategorie_glastuerbeschlag_sets.jpg"><a href="http://www.toolz4you.com/glasturbeschlage/glasturbeschlag-sets.html"><span>Glastürbeschlag-Sets</span></a></li><li class="level1 nav-4-4" data-image="http://www.toolz4you.com/media/catalog/category/glassgriffe.jpg"><a href="http://www.toolz4you.com/glasturbeschlage/griffe-fur-glasturen.html"><span>Griffe für Glastüren</span></a></li><li class="level1 nav-4-5" data-image="http://www.toolz4you.com/media/catalog/category/glasschiebe_2.jpg"><a href="http://www.toolz4you.com/glasturbeschlage/glas-schiebeturbeschlage.html"><span>Glas-Schiebetürbeschläge</span></a></li><li class="level1 nav-4-6" data-image="http://www.toolz4you.com/media/catalog/category/schliess_2.jpg"><a href="http://www.toolz4you.com/glasturbeschlage/glasturzylinder.html"><span>Glastürzylinder</span></a></li><li class="level1 nav-4-7" data-image="http://www.toolz4you.com/media/catalog/category/griffe.jpg"><a href="http://www.toolz4you.com/glasturbeschlage/glas-turdrucker-und-knopfe.html"><span>Glas-Türdrücker und Knöpfe</span></a></li><li class="level1 nav-4-8 last" data-image="http://www.toolz4you.com/media/catalog/category/zubehoergriff.jpg"><a href="http://www.toolz4you.com/glasturbeschlage/zubehor-fur-glasturen.html"><span>Zubehör für Glastüren</span></a></li></ul></li><li class="level0 nav-5 parent" data-image="http://www.toolz4you.com/media/catalog/category/fenstergriff_3.jpg"><a href="http://www.toolz4you.com/fenstertechnik.html"><span>Fenstertechnik</span></a><ul class="level0" data-name="Fenstertechnik"><li><span class="nav-cat-headline">Fenstertechnik</span></li><li class="level1 nav-5-1 first" data-image="http://www.toolz4you.com/media/catalog/category/fenstergriff_2.jpg"><a href="http://www.toolz4you.com/fenstertechnik/fenstergriffe.html"><span>Fenstergriffe</span></a></li><li class="level1 nav-5-2" data-image="http://www.toolz4you.com/media/catalog/category/rollladen_1.jpg"><a href="http://www.toolz4you.com/fenstertechnik/rolladenmotoren.html"><span>Rolladenmotoren</span></a></li><li class="level1 nav-5-3" data-image="http://www.toolz4you.com/media/catalog/category/zubehoerroll_1.jpg"><a href="http://www.toolz4you.com/fenstertechnik/rolladenzubehor.html"><span>Rolladenzubehör</span></a></li><li class="level1 nav-5-4 last" data-image="http://www.toolz4you.com/media/catalog/category/baenderfenster.jpg"><a href="http://www.toolz4you.com/fenstertechnik/fensterbander.html"><span>Fensterbänder</span></a></li></ul></li><li class="level0 nav-6 parent" data-image="http://www.toolz4you.com/media/catalog/category/chemie.jpg"><a href="http://www.toolz4you.com/chemische-produkte.html"><span>Chemische Produkte</span></a><ul class="level0" data-name="Chemische Produkte"><li><span class="nav-cat-headline">Chemische Produkte</span></li><li class="level1 nav-6-1 first" data-image="http://www.toolz4you.com/media/catalog/category/silikon.jpg"><a href="http://www.toolz4you.com/chemische-produkte/silikone-und-acryle.html"><span>Silikone und Acryle</span></a></li><li class="level1 nav-6-2" data-image="http://www.toolz4you.com/media/catalog/category/kraftklerber.jpg"><a href="http://www.toolz4you.com/chemische-produkte/kleber.html"><span>Kleber</span></a></li><li class="level1 nav-6-3" data-image="http://www.toolz4you.com/media/catalog/category/leime_1.jpg"><a href="http://www.toolz4you.com/chemische-produkte/leime.html"><span>Leime</span></a></li><li class="level1 nav-6-4 parent" data-image="http://www.toolz4you.com/media/catalog/category/retuschierprodukte.jpg"><a href="http://www.toolz4you.com/chemische-produkte/retuschierprodukte.html"><span>Retuschierprodukte</span></a><ul class="level1" data-name="Retuschierprodukte"><li class="level2 nav-6-4-1 first" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_wachse.jpg"><a href="http://www.toolz4you.com/chemische-produkte/retuschierprodukte/fullstoffe-und-spachteln.html"><span>Füllstoffe und Spachteln</span></a></li><li class="level2 nav-6-4-2" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_retouschierprodukte_1.jpg"><a href="http://www.toolz4you.com/chemische-produkte/retuschierprodukte/retuschierstifte.html"><span>Retuschierstifte</span></a></li><li class="level2 nav-6-4-3 last" data-image="http://www.toolz4you.com/media/catalog/category/ausbesserungslacke.jpg"><a href="http://www.toolz4you.com/chemische-produkte/retuschierprodukte/ausbesserungslacke.html"><span>Ausbesserungslacke</span></a></li></ul></li><li class="level1 nav-6-5" data-image="http://www.toolz4you.com/media/catalog/category/montageschaum.jpg"><a href="http://www.toolz4you.com/chemische-produkte/montageschaume.html"><span>Montageschäume</span></a></li><li class="level1 nav-6-6" data-image="http://www.toolz4you.com/media/catalog/category/moebelpflege.jpg"><a href="http://www.toolz4you.com/chemische-produkte/reiniger-und-pflege.html"><span>Reiniger und Pflege</span></a></li><li class="level1 nav-6-7" data-image="http://www.toolz4you.com/media/catalog/category/technische_sprays.jpg"><a href="http://www.toolz4you.com/chemische-produkte/technische-sprays.html"><span>Technische Sprays</span></a></li><li class="level1 nav-6-8 last" data-image="http://www.toolz4you.com/media/catalog/category/hilfe.jpg"><a href="http://www.toolz4you.com/chemische-produkte/verarbeitungshilfen.html"><span>Verarbeitungshilfen</span></a></li></ul></li><li class="level0 nav-7 parent" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_befestigungstechnik_1.jpg"><a href="http://www.toolz4you.com/befestigungstechnik.html"><span>Befestigungstechnik</span></a><ul class="level0" data-name="Befestigungstechnik"><li><span class="nav-cat-headline">Befestigungstechnik</span></li><li class="level1 nav-7-1 first parent" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_schrauben.jpg"><a href="http://www.toolz4you.com/befestigungstechnik/schrauben-holzbearbeitung.html"><span>Schrauben Holzbearbeitung</span></a><ul class="level1" data-name="Schrauben Holzbearbeitung"><li class="level2 nav-7-1-1 first last" data-image=""><a href="http://www.toolz4you.com/befestigungstechnik/schrauben-holzbearbeitung/spanplattenschrauben.html"><span>Spanplattenschrauben</span></a></li></ul></li><li class="level1 nav-7-2 parent" data-image="http://www.toolz4you.com/media/catalog/category/duebel.jpg"><a href="http://www.toolz4you.com/befestigungstechnik/dubel.html"><span>Dübel</span></a><ul class="level1" data-name="Dübel"><li class="level2 nav-7-2-1 first" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_duebel_3.jpg"><a href="http://www.toolz4you.com/befestigungstechnik/dubel/allgemeine-befestigungen.html"><span>Allgemeine Befestigungen</span></a></li><li class="level2 nav-7-2-2" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_schwerlastbefestigung.jpg"><a href="http://www.toolz4you.com/befestigungstechnik/dubel/schwerlastbefestigungen.html"><span>Schwerlastbefestigungen</span></a></li><li class="level2 nav-7-2-3 last" data-image="http://www.toolz4you.com/media/catalog/category/kategoriebild_holzduebel.jpg"><a href="http://www.toolz4you.com/befestigungstechnik/dubel/holzdubel.html"><span>Holzdübel</span></a></li></ul></li><li class="level1 nav-7-3" data-image="http://www.toolz4you.com/media/catalog/category/schraube.jpg"><a href="http://www.toolz4you.com/befestigungstechnik/fensterrahmenschrauben.html"><span>Fensterrahmenschrauben</span></a></li><li class="level1 nav-7-4" data-image="http://www.toolz4you.com/media/catalog/category/unterlegschrauben.jpg"><a href="http://www.toolz4you.com/befestigungstechnik/unterlegscheiben-und-muttern.html"><span>Unterlegscheiben und Muttern</span></a></li><li class="level1 nav-7-5" data-image=""><a href="http://www.toolz4you.com/befestigungstechnik/gewindestangen.html"><span>Gewindestangen</span></a></li><li class="level1 nav-7-6 last" data-image=""><a href="http://www.toolz4you.com/befestigungstechnik/sonstige-schrauben.html"><span>Sonstige Schrauben</span></a></li></ul></li><li class="level0 nav-8 parent" data-image="http://www.toolz4you.com/media/catalog/category/heim_2.jpg"><a href="http://www.toolz4you.com/heim-und-garten.html"><span>Heim und Garten</span></a><ul class="level0" data-name="Heim und Garten"><li><span class="nav-cat-headline">Heim und Garten</span></li><li class="level1 nav-8-1 first" data-image="http://www.toolz4you.com/media/catalog/category/hausauto_1.jpg"><a href="http://www.toolz4you.com/heim-und-garten/haus-automatisierung.html"><span>Haus Automatisierung</span></a></li><li class="level1 nav-8-2 parent" data-image="http://www.toolz4you.com/media/catalog/category/leucht2.jpg"><a href="http://www.toolz4you.com/heim-und-garten/leuchtmittel.html"><span>Leuchtmittel</span></a><ul class="level1" data-name="Leuchtmittel"><li class="level2 nav-8-2-1 first" data-image="http://www.toolz4you.com/media/catalog/category/leucht_1.jpg"><a href="http://www.toolz4you.com/heim-und-garten/leuchtmittel/halogen.html"><span>Halogen</span></a></li><li class="level2 nav-8-2-2 last" data-image="http://www.toolz4you.com/media/catalog/category/led.jpg"><a href="http://www.toolz4you.com/heim-und-garten/leuchtmittel/led.html"><span>LED</span></a></li></ul></li><li class="level1 nav-8-3 last parent" data-image="http://www.toolz4you.com/media/catalog/category/messer_3.jpg"><a href="http://www.toolz4you.com/heim-und-garten/messer-und-outdoor.html"><span>Messer und Outdoor</span></a><ul class="level1" data-name="Messer und Outdoor"><li class="level2 nav-8-3-1 first" data-image="http://www.toolz4you.com/media/catalog/category/outdoor.jpg"><a href="http://www.toolz4you.com/heim-und-garten/messer-und-outdoor/vakuum-flaschen-und-boxen.html"><span>Vakuum Flaschen und Boxen</span></a></li><li class="level2 nav-8-3-2 last" data-image="http://www.toolz4you.com/media/catalog/category/messer_5.jpg"><a href="http://www.toolz4you.com/heim-und-garten/messer-und-outdoor/messer.html"><span>Messer</span></a></li></ul></li></ul></li><li class="level0 nav-9 last parent" data-image=""><a href="http://www.toolz4you.com/werkzeuge.html"><span>Werkzeuge</span></a><ul class="level0" data-name="Werkzeuge"><li><span class="nav-cat-headline">Werkzeuge</span></li><li class="level1 nav-9-1 first parent" data-image=""><a href="http://www.toolz4you.com/werkzeuge/elektrowerkzeuge.html"><span>Elektrowerkzeuge</span></a><ul class="level1" data-name="Elektrowerkzeuge"><li class="level2 nav-9-1-1 first" data-image=""><a href="http://www.toolz4you.com/werkzeuge/elektrowerkzeuge/multifunktionsgerate.html"><span>Multifunktionsgeräte</span></a></li><li class="level2 nav-9-1-2" data-image=""><a href="http://www.toolz4you.com/werkzeuge/elektrowerkzeuge/akku-bohrschrauber.html"><span>Akku Bohrschrauber</span></a></li><li class="level2 nav-9-1-3" data-image=""><a href="http://www.toolz4you.com/werkzeuge/elektrowerkzeuge/schlagbohrmaschinen.html"><span>Schlagbohrmaschinen</span></a></li><li class="level2 nav-9-1-4" data-image=""><a href="http://www.toolz4you.com/werkzeuge/elektrowerkzeuge/bohrhammer.html"><span>Bohrhämmer</span></a></li><li class="level2 nav-9-1-5" data-image=""><a href="http://www.toolz4you.com/werkzeuge/elektrowerkzeuge/winkelschleifer.html"><span>Winkelschleifer</span></a></li><li class="level2 nav-9-1-6" data-image=""><a href="http://www.toolz4you.com/werkzeuge/elektrowerkzeuge/stichsagen.html"><span>Stichsägen</span></a></li><li class="level2 nav-9-1-7 last" data-image=""><a href="http://www.toolz4you.com/werkzeuge/elektrowerkzeuge/tauchsagen.html"><span>Tauchsägen</span></a></li></ul></li><li class="level1 nav-9-2 parent" data-image=""><a href="http://www.toolz4you.com/werkzeuge/messwerkzeuge.html"><span>Messwerkzeuge</span></a><ul class="level1" data-name="Messwerkzeuge"><li class="level2 nav-9-2-1 first" data-image=""><a href="http://www.toolz4you.com/werkzeuge/messwerkzeuge/bandmasse.html"><span>Bandmaße</span></a></li><li class="level2 nav-9-2-2" data-image=""><a href="http://www.toolz4you.com/werkzeuge/messwerkzeuge/schlagschnur.html"><span>Schlagschnur</span></a></li><li class="level2 nav-9-2-3" data-image=""><a href="http://www.toolz4you.com/werkzeuge/messwerkzeuge/wasserwaagen.html"><span>Wasserwaagen</span></a></li><li class="level2 nav-9-2-4" data-image=""><a href="http://www.toolz4you.com/werkzeuge/messwerkzeuge/winkel-und-gehrmasse.html"><span>Winkel und Gehrmaße</span></a></li><li class="level2 nav-9-2-5 last" data-image=""><a href="http://www.toolz4you.com/werkzeuge/messwerkzeuge/laser-und-entfernungsmesser.html"><span>Laser- und Entfernungsmesser</span></a></li></ul></li><li class="level1 nav-9-3 parent" data-image=""><a href="http://www.toolz4you.com/werkzeuge/handwerkzeuge.html"><span>Handwerkzeuge</span></a><ul class="level1" data-name="Handwerkzeuge"><li class="level2 nav-9-3-1 first" data-image=""><a href="http://www.toolz4you.com/werkzeuge/handwerkzeuge/messer-und-klingen.html"><span>Messer und Klingen</span></a></li><li class="level2 nav-9-3-2" data-image=""><a href="http://www.toolz4you.com/werkzeuge/handwerkzeuge/hammer.html"><span>Hämmer</span></a></li><li class="level2 nav-9-3-3" data-image=""><a href="http://www.toolz4you.com/werkzeuge/handwerkzeuge/zangen.html"><span>Zangen</span></a></li><li class="level2 nav-9-3-4 parent" data-image=""><a href="http://www.toolz4you.com/werkzeuge/handwerkzeuge/sagen.html"><span>Sägen</span></a><ul class="level2" data-name="Sägen"><li class="level3 nav-9-3-4-1 first" data-image=""><a href="http://www.toolz4you.com/werkzeuge/handwerkzeuge/sagen/japan-sagen.html"><span>Japan-Sägen</span></a></li><li class="level3 nav-9-3-4-2" data-image=""><a href="http://www.toolz4you.com/werkzeuge/handwerkzeuge/sagen/eisensagen.html"><span>Eisensägen</span></a></li><li class="level3 nav-9-3-4-3 last" data-image=""><a href="http://www.toolz4you.com/werkzeuge/handwerkzeuge/sagen/universalsagen.html"><span>Universalsägen</span></a></li></ul></li><li class="level2 nav-9-3-5" data-image=""><a href="http://www.toolz4you.com/werkzeuge/handwerkzeuge/stechbeitel.html"><span>Stechbeitel</span></a></li><li class="level2 nav-9-3-6" data-image=""><a href="http://www.toolz4you.com/werkzeuge/handwerkzeuge/schraubendreher.html"><span>Schraubendreher</span></a></li><li class="level2 nav-9-3-7" data-image=""><a href="http://www.toolz4you.com/werkzeuge/handwerkzeuge/ring-maulschlussel.html"><span>Ring-/Maulschlüssel</span></a></li><li class="level2 nav-9-3-8" data-image=""><a href="http://www.toolz4you.com/werkzeuge/handwerkzeuge/scheren-handhefter.html"><span>Scheren &amp; Handhefter</span></a></li><li class="level2 nav-9-3-9" data-image=""><a href="http://www.toolz4you.com/werkzeuge/handwerkzeuge/ratschen-steckschlussel-bit-sets.html"><span>Ratschen, Steckschlüssel &amp; Bit-Sets</span></a></li><li class="level2 nav-9-3-10" data-image=""><a href="http://www.toolz4you.com/werkzeuge/handwerkzeuge/vorstecher-korner-durchtreiber.html"><span>Vorstecher, Körner &amp; Durchtreiber</span></a></li><li class="level2 nav-9-3-11" data-image=""><a href="http://www.toolz4you.com/werkzeuge/handwerkzeuge/meissel.html"><span>Meißel</span></a></li><li class="level2 nav-9-3-12 last" data-image=""><a href="http://www.toolz4you.com/werkzeuge/handwerkzeuge/farbschaber.html"><span>Farbschaber</span></a></li></ul></li><li class="level1 nav-9-4 parent" data-image=""><a href="http://www.toolz4you.com/werkzeuge/sageblatter.html"><span>Sägeblätter</span></a><ul class="level1" data-name="Sägeblätter"><li class="level2 nav-9-4-1 first last" data-image=""><a href="http://www.toolz4you.com/werkzeuge/sageblatter/stichsageblatter.html"><span>Stichsägeblätter</span></a></li></ul></li><li class="level1 nav-9-5" data-image=""><a href="http://www.toolz4you.com/werkzeuge/bohren.html"><span>Bohren</span></a></li><li class="level1 nav-9-6 parent" data-image=""><a href="http://www.toolz4you.com/werkzeuge/arbeitsschutz.html"><span>Arbeitsschutz</span></a><ul class="level1" data-name="Arbeitsschutz"><li class="level2 nav-9-6-1 first" data-image=""><a href="http://www.toolz4you.com/werkzeuge/arbeitsschutz/schutzmasken.html"><span>Schutzmasken</span></a></li><li class="level2 nav-9-6-2" data-image=""><a href="http://www.toolz4you.com/werkzeuge/arbeitsschutz/gehorschutz.html"><span>Gehörschutz</span></a></li><li class="level2 nav-9-6-3" data-image=""><a href="http://www.toolz4you.com/werkzeuge/arbeitsschutz/sicherheitsschuhe.html"><span>Sicherheitsschuhe</span></a></li><li class="level2 nav-9-6-4 last" data-image=""><a href="http://www.toolz4you.com/werkzeuge/arbeitsschutz/handschuhe.html"><span>Handschuhe</span></a></li></ul></li><li class="level1 nav-9-7" data-image=""><a href="http://www.toolz4you.com/werkzeuge/nageleisen.html"><span>Nageleisen</span></a></li><li class="level1 nav-9-8 last parent" data-image=""><a href="http://www.toolz4you.com/werkzeuge/schleifen.html"><span>Schleifen</span></a><ul class="level1" data-name="Schleifen"><li class="level2 nav-9-8-1 first last" data-image=""><a href="http://www.toolz4you.com/werkzeuge/schleifen/schleifscheiben.html"><span>Schleifscheiben</span></a></li></ul></li></ul></li>            </ul>
+        </nav>
+    </aside>    
+</div>
+</header>
+        <div class="page">            
+                <noscript>
+        &lt;div class="global-site-notice noscript"&gt;
+            &lt;div class="notice-inner"&gt;
+                &lt;p&gt;
+                    &lt;strong&gt;JavaScript scheint in Ihrem Browser deaktiviert zu sein.&lt;/strong&gt;&lt;br /&gt;
+                    Sie müssen JavaScript in Ihrem Browser aktivieren, um alle Funktionen in diesem Shop nutzen zu können.                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </noscript>
+            
+            <div class="main col2-left-layout">
+                                
+                <section class="sidebar left">
+                    <aside class="account">
+    <h3>
+        Mein Benutzerkonto    </h3>
+    <ul class="account-nav">
+                                                                        <li><a href="https://www.toolz4you.com/customer/account/">Benutzerkonto Übersicht</a></li>
+                                                            <li><a href="https://www.toolz4you.com/customer/account/edit/">Benutzerkonto Information</a></li>
+                                                            <li class="current"><strong>Meine Bestellungen</strong></li>
+                                                            <li class="last"><a href="https://www.toolz4you.com/newsletter/manage/">Newsletter Abonnements</a></li>
+                        </ul>
+    <ul>
+<li><a href="http://www.toolz4you.com/agb/">AGB</a></li>
+<li><a href="http://www.toolz4you.com/widerruf/">Widerruf</a></li>
+<li><a href="http://www.toolz4you.com/lieferung/">Lieferung</a></li>
+<li><a href="http://www.toolz4you.com/zahlung/">Zahlungsarten</a></li>
+</ul>
+<ul>
+<li><a href="http://www.toolz4you.com/datenschutz/">Datenschutz</a></li>
+<li><a href="http://www.toolz4you.com/bestellung/">Bestellvorgang</a></li>
+<li><a href="http://www.toolz4you.com/impressum/">Impressum</a></li>
+<li><a href="http://www.toolz4you.com/contacts/">Kontakt</a></li>
+</ul></aside>
+<div class="sidebar-group payments">
+        <h4>Zahlungsmethoden</h4>
+    <a href="http://www.toolz4you.com/zahlung/">
+        <img src="./static/payments.png" alt="payments">
+    </a>
+</div>
+<div class="sidebar-group tool-of-the-week">
+    <h4>Tool der Woche</h4>
+    <a href="http://www.toolz4you.com/hettich-actro-5d-vollauszug-mit-silent-system-inkl-kupplungen-376204-k.html" title="Hettich Actro 5D Vollauszug mit Silent System inkl. Kupplungen">
+        <img src="./static/hettich_actro_5d_vollauszug_image.jpg" alt="Hettich Actro 5D Vollauszug mit Silent System inkl. Kupplungen">
+        <div data-mc="product-name-price" class="product-name-price">
+            <h4 class="product-name">
+                Hettich Actro 5D Vollauszug mit Silent System inkl. Kupplungen            </h4>
+            
+
+                        
+    <div class="price-box"><span class="label" id="configurable-price-from-20631"><span class="configurable-price-from-label">Preis ab:</span></span>
+                                                                <span class="regular-price" id="product-price-20631">
+                                            <span class="price">23,22&nbsp;€</span>                                    </span>
+                        
+        </div>
+
+        </div>
+    </a>
+</div>
+<div class="sidebar-group manufacturer">
+    <h4>Hersteller Informationen</h4>
+    <select>
+                <option value="http://www.toolz4you.com/hersteller/abus.html">
+            ABUS        </option>
+                <option value="http://www.toolz4you.com/hersteller/athmer.html">
+            Athmer        </option>
+                <option value="http://www.toolz4you.com/hersteller/blum.html">
+            Blum        </option>
+                <option value="http://www.toolz4you.com/hersteller/bks.html">
+            BKS        </option>
+                <option value="http://www.toolz4you.com/hersteller/bosch-robert-gmbh.html">
+            BOSCH        </option>
+                <option value="http://www.toolz4you.com/hersteller/beko.html">
+            BEKO         </option>
+                <option value="http://www.toolz4you.com/hersteller/clouth-alfred-gmbh-co.html">
+            CLOU        </option>
+                <option value="http://www.toolz4you.com/hersteller/cleho-tec-gmbh.html">
+            CLEHO        </option>
+                <option value="http://www.toolz4you.com/hersteller/chemal-katschmareck.html">
+            CHEMAL         </option>
+                <option value="http://www.toolz4you.com/hersteller/dorma.html">
+            DORMA        </option>
+                <option value="http://www.toolz4you.com/hersteller/dictum-gmbh.html">
+            DICTUM         </option>
+                <option value="http://www.toolz4you.com/hersteller/niederhoff.html">
+            Deni        </option>
+                <option value="http://www.toolz4you.com/hersteller/fischer-deutschland-vertriebs.html">
+            Fischer        </option>
+                <option value="http://www.toolz4you.com/hersteller/facett-gmbh.html">
+            Facett        </option>
+                <option value="http://www.toolz4you.com/hersteller/festool-group-gmbh-co-kg.html">
+            FESTOOL        </option>
+                <option value="http://www.toolz4you.com/hersteller/fsb.html">
+            FSB         </option>
+                <option value="http://www.toolz4you.com/hersteller/gfs-gesellschaft-fuer.html">
+            GFS         </option>
+                <option value="http://www.toolz4you.com/hersteller/geze.html">
+            GEZE        </option>
+                <option value="http://www.toolz4you.com/hersteller/hettich-furntech.html">
+            Hettich        </option>
+                <option value="http://www.toolz4you.com/hersteller/hoppe.html">
+            HOPPE        </option>
+                <option value="http://www.toolz4you.com/hersteller/heco-schrauben-gmbh-co-kg.html">
+            HECO        </option>
+                <option value="http://www.toolz4you.com/hersteller/hewi.html">
+            HEWI        </option>
+                <option value="http://www.toolz4you.com/hersteller/knipex-werk.html">
+            Knipex        </option>
+                <option value="http://www.toolz4you.com/hersteller/kirschen.html">
+            Kirschen        </option>
+                <option value="http://www.toolz4you.com/hersteller/kontex-bausysteme-gmbh.html">
+            KONTEX         </option>
+                <option value="http://www.toolz4you.com/hersteller/lamello.html">
+            Lamello        </option>
+                <option value="http://www.toolz4you.com/hersteller/rathgeber-h-r.html">
+            Rathgeber        </option>
+                <option value="http://www.toolz4you.com/hersteller/rademacher.html">
+            Rademacher        </option>
+                <option value="http://www.toolz4you.com/hersteller/simonswerk.html">
+            Simonswerk        </option>
+                <option value="http://www.toolz4you.com/hersteller/soudal-n-v-werk-leverkusen.html">
+            SOUDAL         </option>
+                <option value="http://www.toolz4you.com/hersteller/spax.html">
+            SPAX        </option>
+                <option value="http://www.toolz4you.com/hersteller/stanley-black-decker-gmbh.html">
+            Stanley        </option>
+                <option value="http://www.toolz4you.com/hersteller/stabila.html">
+            Stabila        </option>
+                <option value="http://www.toolz4you.com/hersteller/wera-werk.html">
+            WERA        </option>
+                <option value="http://www.toolz4you.com/hersteller/weicon-gmbh-co-kg.html">
+            WEICON         </option>
+                <option value="http://www.toolz4you.com/hersteller/weiss-chemie-technik.html">
+            Weiss-Chemie        </option>
+                <option value="http://www.toolz4you.com/hersteller/atk.html">
+            ATK        </option>
+                <option value="http://www.toolz4you.com/hersteller/puma-tec.html">
+            PUMA TEC        </option>
+                <option value="http://www.toolz4you.com/hersteller/opinel.html">
+            OPINEL        </option>
+                <option value="http://www.toolz4you.com/hersteller/dipro.html">
+            Dipro        </option>
+                <option value="http://www.toolz4you.com/hersteller/eurobat.html">
+            Eurobat        </option>
+                <option value="http://www.toolz4you.com/hersteller/scheitter.html">
+            Scheitter        </option>
+                <option value="http://www.toolz4you.com/hersteller/eff-eff.html">
+            eff eff        </option>
+                <option value="http://www.toolz4you.com/hersteller/fuhr.html">
+            Fuhr        </option>
+                <option value="http://www.toolz4you.com/hersteller/kfv.html">
+            KFV        </option>
+                <option value="http://www.toolz4you.com/hersteller/bmh.html">
+            BMH        </option>
+                <option value="http://www.toolz4you.com/hersteller/amf.html">
+            AMF        </option>
+                <option value="http://www.toolz4you.com/hersteller/bever.html">
+            Bever        </option>
+                <option value="http://www.toolz4you.com/hersteller/wilka.html">
+            Wilka        </option>
+                <option value="http://www.toolz4you.com/hersteller/henkel.html">
+            Henkel        </option>
+                <option value="http://www.toolz4you.com/hersteller/diverser-lieferant.html">
+            Diverser Lieferant        </option>
+                <option value="http://www.toolz4you.com/hersteller/fein.html">
+            Fein        </option>
+                <option value="http://www.toolz4you.com/hersteller/kleiberit.html">
+            Kleiberit        </option>
+                <option value="http://www.toolz4you.com/hersteller/e-c-e.html">
+            E.C.E.        </option>
+                <option value="http://www.toolz4you.com/hersteller/bahco.html">
+            Bahco        </option>
+                <option value="http://www.toolz4you.com/hersteller/herbertz.html">
+            Herbertz        </option>
+                <option value="http://www.toolz4you.com/hersteller/behle.html">
+            Behle        </option>
+                <option value="http://www.toolz4you.com/hersteller/makita.html">
+            Makita        </option>
+                <option value="http://www.toolz4you.com/hersteller/siro.html">
+            Siro        </option>
+                <option value="http://www.toolz4you.com/hersteller/winkhaus.html">
+            Winkhaus        </option>
+                <option value="http://www.toolz4you.com/hersteller/g-u.html">
+            G-U        </option>
+                <option value="http://www.toolz4you.com/hersteller/roto.html">
+            Roto        </option>
+                <option value="http://www.toolz4you.com/hersteller/bmb.html">
+            BMB        </option>
+                <option value="http://www.toolz4you.com/hersteller/kws.html">
+            KWS        </option>
+                <option value="http://www.toolz4you.com/hersteller/hoju.html">
+            HOJU        </option>
+                <option value="http://www.toolz4you.com/hersteller/backer.html">
+            Bäcker        </option>
+                <option value="http://www.toolz4you.com/hersteller/schnegel.html">
+            Schnegel        </option>
+                <option value="http://www.toolz4you.com/hersteller/ambos.html">
+            Ambos        </option>
+                <option value="http://www.toolz4you.com/hersteller/ellen.html">
+            Ellen        </option>
+                <option value="http://www.toolz4you.com/hersteller/deventer.html">
+            Deventer        </option>
+                <option value="http://www.toolz4you.com/hersteller/sia.html">
+            SIA        </option>
+                <option value="http://www.toolz4you.com/hersteller/hermes.html">
+            Hermes        </option>
+                <option value="http://www.toolz4you.com/hersteller/sag.html">
+            SAG        </option>
+                <option value="http://www.toolz4you.com/hersteller/stanley-pim.html">
+            STANLEY PIM        </option>
+                <option value="http://www.toolz4you.com/hersteller/puma.html">
+            PUMA        </option>
+                <option value="http://www.toolz4you.com/hersteller/texxor.html">
+            Texxor        </option>
+                <option value="http://www.toolz4you.com/hersteller/difac.html">
+            DIFAC        </option>
+                <option value="http://www.toolz4you.com/hersteller/toolz4you.html">
+            toolz4you        </option>
+                <option value="http://www.toolz4you.com/hersteller/hase.html">
+            HASE        </option>
+                <option value="http://www.toolz4you.com/hersteller/big.html">
+            BIG        </option>
+                <option value="http://www.toolz4you.com/hersteller/ede.html">
+            EDE        </option>
+                <option value="http://www.toolz4you.com/hersteller/3m.html">
+            3M        </option>
+                <option value="http://www.toolz4you.com/hersteller/tector.html">
+            Tector        </option>
+                <option value="http://www.toolz4you.com/hersteller/strong-hand.html">
+            STRONG-HAND        </option>
+                <option value="http://www.toolz4you.com/hersteller/marttiini.html">
+            Marttiini        </option>
+                <option value="http://www.toolz4you.com/hersteller/laguiole-tradition.html">
+            Laguiole Tradition        </option>
+                <option value="http://www.toolz4you.com/hersteller/fontenille-pataud.html">
+            Fontenille Pataud        </option>
+                <option value="http://www.toolz4you.com/hersteller/renson.html">
+            Renson        </option>
+                <option value="http://www.toolz4you.com/hersteller/mafell.html">
+            Mafell        </option>
+                <option value="http://www.toolz4you.com/hersteller/e-a-r.html">
+            E-A-R        </option>
+                <option value="http://www.toolz4you.com/hersteller/trelleborg.html">
+            Trelleborg        </option>
+                <option value="http://www.toolz4you.com/hersteller/superrollo.html">
+            Superrollo        </option>
+                <option value="http://www.toolz4you.com/hersteller/famag.html">
+            FAMAG        </option>
+                <option value="http://www.toolz4you.com/hersteller/hebro.html">
+            Hebro        </option>
+                <option value="http://www.toolz4you.com/hersteller/hsi.html">
+            HSI        </option>
+                <option value="http://www.toolz4you.com/hersteller/bs-rollen.html">
+            BS-Rollen        </option>
+                <option value="http://www.toolz4you.com/hersteller/rennsteig.html">
+            Rennsteig        </option>
+                <option value="http://www.toolz4you.com/hersteller/puma-ip.html">
+            PUMA IP        </option>
+                <option value="http://www.toolz4you.com/hersteller/gerber.html">
+            Gerber        </option>
+                <option value="http://www.toolz4you.com/hersteller/fotenille-pataud.html">
+            Fotenille Pataud        </option>
+                <option value="http://www.toolz4you.com/hersteller/kiwami.html">
+            Kawami        </option>
+                <option value="http://www.toolz4you.com/hersteller/taylor-s.html">
+            Taylor´s        </option>
+                <option value="http://www.toolz4you.com/hersteller/lansky.html">
+            Lansky        </option>
+                <option value="http://www.toolz4you.com/hersteller/kiwami-13.html">
+            Kiwami        </option>
+                <option value="http://www.toolz4you.com/hersteller/burg-wachter.html">
+            Burg-Wächter        </option>
+                <option value="http://www.toolz4you.com/hersteller/schafer-peters.html">
+            Schäfer+Peters        </option>
+                <option value="http://www.toolz4you.com/hersteller/ikon.html">
+            IKON        </option>
+                <option value="http://www.toolz4you.com/hersteller/reiher.html">
+            Reiher        </option>
+                <option value="http://www.toolz4you.com/hersteller/prebena.html">
+            Prebena        </option>
+                
+    </select>
+</div>
+                </section><section class="content" id="content">
+                                                                                <div data-pjax-block="content"><div class="my-account"><div class="page-title title-buttons">
+    <h1>Bestellung #10042151 - Erledigt</h1>
+    
+<a href="https://www.toolz4you.com/sales/order/print/order_id/44262/" class="link-print" onclick="this.target=&#39;_blank&#39;;">Bestellung drucken</a>
+    <span class="separator">|</span>
+    <a href="http://www.toolz4you.com/dhlonlineretoure/address/confirm/order_id/44262/" class="link-print">Bestellung retournieren</a>
+</div>
+<dl class="order-info">
+    <dt>Über diese Bestellung:</dt>
+    <dd>
+                <ul id="order-info-tabs">
+                                    <li class="current first">Bestellinformationen</li>
+                                                <li><a href="https://www.toolz4you.com/sales/order/invoice/order_id/44262/">Rechnungen</a></li>
+                                                <li class="last"><a href="https://www.toolz4you.com/sales/order/shipment/order_id/44262/">Lieferscheine</a></li>
+                            </ul>
+        <script type="text/javascript">decorateGeneric($('order-info-tabs').select('LI'),['first','last']);</script>
+    </dd>
+</dl>
+<p class="order-date">Bestelldatum: 15. März 2017</p>
+<div class="col2-set order-info-box">
+    <div class="col-1">
+        <div class="box">
+            <div class="box-title">
+                <h2>Versandadresse</h2>
+            </div>
+            <div class="box-content">
+                <address>
+Herr SX wzljwei<br>
+
+Pinienstr.24<br>
+
+
+
+40233 Duesseldorf <br>
+Deutschland<br>
+Tel: 021154411565
+
+</address>
+            </div>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="box">
+            <div class="box-title">
+                <h2>Versandart</h2>
+            </div>
+            <div class="box-content">
+                                    DHL                            </div>
+        </div>
+    </div>
+</div>
+<div class="col2-set order-info-box">
+    <div class="col-1">
+        <div class="box">
+            <div class="box-title">
+                <h2>Rechnungsadresse</h2>
+            </div>
+            <div class="box-content">
+                <address>
+Herr DJY  GmbH wz ljwei<br>
+
+Flügelstr.58<br>
+
+
+
+40227  Duesseldorf  <br>
+Deutschland<br>
+Tel: 0176 64774940
+
+</address>
+            </div>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="box box-payment">
+            <div class="box-title">
+                <h2>Zahlungsart</h2>
+            </div>
+            <div class="box-content">
+                Kreditkarte<br>
+Name on Card: LI JINGWEI<br>
+Kreditkartentyp: MasterCard<br>
+Kreditkartennummer: 524206XXXXXX2342<br>
+Verfallsdatum: 6/2020<br>
+	Payone Vorgangsnummer: 218519843<br>            </div>
+        </div>
+    </div>
+</div>
+<div class="order-items order-details">
+            <h2 class="table-caption">Bestellte Artikel                    <span class="separator">|</span> <a href="https://www.toolz4you.com/sales/order/view/order_id/44262/#" onclick="popWin(&#39;http://www.toolz4you.com/shipping/tracking/popup/hash/b3JkZXJfaWQ6NDQyNjI6NTI4Y2U2/&#39;,&#39;trackorder&#39;,&#39;top=0,left=0,width=800,height=600,resizable=yes,scrollbars=yes&#39;); return false;" title="Ihre Bestellung verfolgen">Ihre Bestellung verfolgen</a>
+            </h2>
+
+    <table class="data-table" id="my-orders-table" summary="Bestellte Artikel">
+    <colgroup><col>
+    <col width="1">
+    <col width="1">
+    <col width="1">
+    <col width="1">
+    </colgroup><thead>
+        <tr class="first last">
+            <th>Artikelname</th>
+            <th>Artikelnummer</th>
+            <th class="a-right">Preis</th>
+            <th class="a-center">Menge</th>
+            <th class="a-right">Zwischensumme</th>
+        </tr>
+    </thead>
+    <tfoot>
+                <tr class="subtotal first">
+        <td colspan="4" class="a-right">
+                        Zwischensumme                    </td>
+        <td class="last a-right">
+                        <span class="price">596,27&nbsp;€</span>                    </td>
+    </tr>
+            <tr class="shipping">
+        <td colspan="4" class="a-right">
+                        Versand &amp; Bearbeitung                    </td>
+        <td class="last a-right">
+                        <span class="price">0,00&nbsp;€</span>                    </td>
+    </tr>
+                
+                                    <tr class="summary-details-1 summary-details summary-details-first" style="display:none;">
+            <td colspan="4" class="a-right">
+                MwSt.                                    (19%)
+                                <br>
+            </td>
+                            <td class="last a-right" rowspan="1">
+                    <span class="price">95,21&nbsp;€</span>                </td>
+                    </tr>
+                                    
+    
+
+<tr class="summary-total" onclick="expandDetails(this, &#39;.summary-details-1&#39;)">
+    <td colspan="4" class="a-right">
+                    <div class="summary-collapse">MwSt.</div>
+            </td>
+    <td class="last a-right"><span class="price">95,21&nbsp;€</span></td>
+</tr>
+            <tr class="grand_total last">
+        <td colspan="4" class="a-right">
+                        <strong>Gesamtsumme</strong>
+                    </td>
+        <td class="last a-right">
+                        <strong><span class="price">596,27&nbsp;€</span></strong>
+                    </td>
+    </tr>
+        </tfoot>
+                                                    <tbody class="odd">
+            <tr class="border first" id="order-item-row-68543">
+    <td><h3 class="product-name">Blum Aventos HL Hochliftklappe, Kraftspeicherset 20L2300.05</h3>
+                                                                </td>
+    <td>297143</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">35,66&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>2</strong><br>
+                            Versandt: <strong>2</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">71,32&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">71,32 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="even">
+            <tr class="border" id="order-item-row-68544">
+    <td><h3 class="product-name">Blum Aventos HL Hebelpaket-Set Standard KH 350-399mm 20L3500.06</h3>
+                                                                </td>
+    <td>316902</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">26,28&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>2</strong><br>
+                            Versandt: <strong>2</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">52,56&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">52,56 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="odd">
+            <tr class="border" id="order-item-row-68545">
+    <td><h3 class="product-name">Blum Aventos HL Abdeckkappen-Set Li+Re Standard 20L8000.01 Seidenweiß</h3>
+                                                                </td>
+    <td>297147</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">5,44&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>2</strong><br>
+                            Versandt: <strong>2</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">10,88&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">10,88 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="even">
+            <tr class="border" id="order-item-row-68546">
+    <td><h3 class="product-name">Blum Aventos Frontbefestigungsset für HS/HK/HL Holz/Breite Alurahmen</h3>
+                                                                </td>
+    <td>248522</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">2,11&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>2</strong><br>
+                            Versandt: <strong>2</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">4,22&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">4,22 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="odd">
+            <tr class="border" id="order-item-row-68547">
+    <td><h3 class="product-name">Blum Aventos HL Verbindungsstück-Set für Querstabilisierung</h3>
+                                                                </td>
+    <td>316905</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">7,25&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>2</strong><br>
+                            Versandt: <strong>2</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">14,50&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">14,50 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="even">
+            <tr class="border" id="order-item-row-68548">
+    <td><h3 class="product-name">Blum LEGRABOX Korpusschiene mit TIP-ON BLUMOTION Vollauszug 40 kg NL=550mm </h3>
+                                                                </td>
+    <td>330410</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">22,69&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>1</strong><br>
+                            Versandt: <strong>1</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">22,69&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">22,69 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="odd">
+            <tr class="border" id="order-item-row-68549">
+    <td><h3 class="product-name">Blum TIP-ON BLUMOTION Einheit MOVENTO/LEGRABOX Typ L3 NL=350-750mm</h3>
+                                                                </td>
+    <td>330419</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">12,13&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>2</strong><br>
+                            Versandt: <strong>2</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">24,26&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">24,26 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="even">
+            <tr class="border" id="order-item-row-68550">
+    <td><h3 class="product-name">Blum TIP-ON BLUMOTION Einheit MOVENTO/LEGRABOX Typ L1 NL=350-600mm</h3>
+                                                                </td>
+    <td>330418</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">12,13&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>1</strong><br>
+                            Versandt: <strong>1</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">12,13&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">12,13 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="odd">
+            <tr class="border" id="order-item-row-68551">
+    <td><h3 class="product-name">Blum Set LEGRABOX pure C TIP-ON BLUMOTION NL=550mm 70kg Terraschwarz matt</h3>
+                                                                </td>
+    <td>348426</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">51,22&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>1</strong><br>
+                            Versandt: <strong>1</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">51,22&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">51,22 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="even">
+            <tr class="border" id="order-item-row-68552">
+    <td><h3 class="product-name">Blum Set LEGRABOX pure F TIP-ON BLUMOTION NL=550mm 70kg Terraschwarz matt</h3>
+                                                                </td>
+    <td>348494</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">68,66&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>1</strong><br>
+                            Versandt: <strong>1</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">68,66&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">68,66 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="odd">
+            <tr class="border" id="order-item-row-68553">
+    <td><h3 class="product-name">Blum TIP-ON BLUMOTION Synchronisierungsadapter T60.000D</h3>
+                                                                </td>
+    <td>330421</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">0,18&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>6</strong><br>
+                            Versandt: <strong>6</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">1,08&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">1,08 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="even">
+            <tr class="border" id="order-item-row-68554">
+    <td><h3 class="product-name">Blum TIP-ON BLUMOTION Synchronisierungswelle Länge=1125 mm T60.1125W</h3>
+                                                                </td>
+    <td>330422</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">2,87&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>3</strong><br>
+                            Versandt: <strong>3</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">8,61&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">8,61 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="odd">
+            <tr class="border" id="order-item-row-68555">
+    <td><h3 class="product-name">Blum LEGRABOX Zarge Höhe M (90,3mm) NL=550mm l/r pure Terraschwarz matt</h3>
+                                                                </td>
+    <td>317625</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">16,73&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>1</strong><br>
+                            Versandt: <strong>1</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">16,73&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">16,73 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="even">
+            <tr class="border" id="order-item-row-68556">
+    <td><h3 class="product-name">Blum LEGRABOX Holzrückwandhalter Höhe M (102mm) Terraschwarz matt</h3>
+                                                                </td>
+    <td>317705</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">0,90&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>1</strong><br>
+                            Versandt: <strong>1</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">0,90&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">0,90 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="odd">
+            <tr class="border" id="order-item-row-68557">
+    <td><h3 class="product-name">LEGRABOX Frontbefestigung, Höhe M, Schrauben, Symetrisch</h3>
+                                                                </td>
+    <td>317721</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">0,20&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>2</strong><br>
+                            Versandt: <strong>2</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">0,40&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">0,40 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="even">
+            <tr class="border" id="order-item-row-68558">
+    <td><h3 class="product-name">Blum LEGRABOX Frontbefestigung F Set Schrauben 1xZF7C7002 + 1xZF7M7002</h3>
+                                                                </td>
+    <td>318744</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">0,68&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>2</strong><br>
+                            Versandt: <strong>2</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">1,36&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">1,36 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="odd">
+            <tr class="border" id="order-item-row-68559">
+    <td><h3 class="product-name">LEGRABOX Frontbefestigung, C, Schrauben, Symetrisch</h3>
+                                                                </td>
+    <td>317725</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">0,48&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>2</strong><br>
+                            Versandt: <strong>2</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">0,96&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">0,96 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="even">
+            <tr class="border" id="order-item-row-68560">
+    <td><h3 class="product-name">Blum Movento BLUMOTION inkl. Kupplungen NL=520mm 40kg</h3>
+                                                                </td>
+    <td>305456</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">23,69&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>4</strong><br>
+                            Versandt: <strong>4</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">94,76&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">94,76 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="odd">
+            <tr class="border" id="order-item-row-68561">
+    <td><h3 class="product-name">Blum Movento BLUMOTION inkl. Kupplungen NL=420mm 40kg</h3>
+                                                                </td>
+    <td>305452</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">22,42&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>2</strong><br>
+                            Versandt: <strong>2</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">44,84&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">44,84 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="even">
+            <tr class="border" id="order-item-row-68562">
+    <td><h3 class="product-name">Blum Movento Tiefenverstellung (LS+RS) 298.7600</h3>
+                                                                </td>
+    <td>306524</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">3,09&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>6</strong><br>
+                            Versandt: <strong>6</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">18,54&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">18,54 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="odd">
+            <tr class="border" id="order-item-row-68563">
+    <td><h3 class="product-name">Blum Movento Seitenstabilisierung bis NL=600mm bis KB=1400mm ZS7M600MU</h3>
+                                                                </td>
+    <td>348976</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">14,53&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>2</strong><br>
+                            Versandt: <strong>2</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">29,06&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">29,06 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="even">
+            <tr class="border" id="order-item-row-68564">
+    <td><h3 class="product-name">Blum LEGRABOX Seitenstabilisierung bis NL=650mm bis KB=1400mm ZS7M650LU</h3>
+                                                                </td>
+    <td>348974</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">14,64&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>3</strong><br>
+                            Versandt: <strong>3</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">43,92&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">43,92 €</span></th>
+        -->
+</tr>
+                    </tbody>
+                        <tbody class="odd">
+            <tr class="border last" id="order-item-row-68565">
+    <td><h3 class="product-name">Blum Frontstabilisierung EXPANDO-Version Z96.10E1</h3>
+                                                                </td>
+    <td>290178</td>
+    <td class="a-right">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                
+                                            <span class="price">0,89&nbsp;€</span>                    
+                </span>
+
+
+                            </span>
+            </td>
+    <td class="a-right">
+        <span class="nobr">
+                            Bestellt: <strong>3</strong><br>
+                            Versandt: <strong>3</strong><br>
+                                </span>
+    </td>
+    <td class="a-right last">
+                            <span class="price-incl-tax">
+                                                                    <span class="cart-price">
+                                                            <span class="price">2,67&nbsp;€</span>                    
+                </span>
+
+
+                
+
+
+            </span>
+            </td>
+    <!--
+            <th class="a-right"><span class="price">2,67 €</span></th>
+        -->
+</tr>
+                    </tbody>
+        </table>
+<script type="text/javascript">decorateTable('my-orders-table', {'tbody' : ['odd', 'even'], 'tbody tr' : ['first', 'last']})</script>
+
+                <div class="buttons-set">
+        <p class="back-link"><a href="https://www.toolz4you.com/sales/order/history/"><small>« </small>Zurück zu meinen Bestellungen</a></p>
+    </div>
+</div></div></div>                </section>
+                            </div>
+            <footer class="footer-container footer">
+    <p class="info-tax-shipping">
+        * Alle Preisangaben inkl. MwSt., <a href="http://www.toolz4you.com/lieferung/">zzgl. Versandkosten</a>    </p>
+    <div class="info">
+        <div class="footer-links">
+            <ul>
+<li><a href="http://www.toolz4you.com/agb/">AGB</a></li>
+<li><a href="http://www.toolz4you.com/widerruf/">Widerruf</a></li>
+<li><a href="http://www.toolz4you.com/lieferung/">Lieferung</a></li>
+<li><a href="http://www.toolz4you.com/zahlung/">Zahlungsarten</a></li>
+</ul>
+<ul>
+<li><a href="http://www.toolz4you.com/datenschutz/">Datenschutz</a></li>
+<li><a href="http://www.toolz4you.com/bestellung/">Bestellvorgang</a></li>
+<li><a href="http://www.toolz4you.com/impressum/">Impressum</a></li>
+<li><a href="http://www.toolz4you.com/contacts/">Kontakt</a></li>
+</ul>        </div>
+        <div class="service">
+            <div class="question">Fragen?</div>
+<p>Wir beraten Sie gerne!</p>
+<div class="times">Montag-Donnerstag von 9-12 &amp; 14-16 Uhr</div>
+<div class="times">Freitag von 9-12 Uhr</div>
+<div class="phone">+49 (0) 261 - 98 164 - 50</div>
+<div class="email"><a href="mailto:info@toolz4you.com">info@toolz4you.com</a></div>        </div>
+    </div>
+    <div class="payment-shipping">
+        <div class="payments">
+            <h6>Sicher einkaufen &amp; bezahlen</h6>
+            <a href="http://www.toolz4you.com/zahlung/">
+                <img src="./static/visa_60x43.png" alt="Visa">
+                <img src="./static/mastercard_60x43.png" alt="MasterCard">
+                <img src="./static/amex.png" alt="American Express">
+                <img src="./static/sofortueberweisung.png" alt="Sofortüberweisung">
+                <img src="./static/giro.png" alt="giro pay">
+                <img src="./static/paypal.png" alt="PayPal">
+            </a>
+        </div>
+        <div class="benefits">
+            <h6>Geprüfte Leistung</h6>
+            <a href="https://www.trustedshops.de/shop/certificate.php?shop_id=X588674D2E2EF0F0CF686C56C24EA0FEB&tb" target="_blank">
+                <img src="./static/ts.png" alt="Trusted Shops">
+            </a>
+            <img src="./static/ssl.png" alt="SSL">
+        </div>
+        <div class="carriers">
+            <h6>Wir versenden mit DHL und DPD</h6>
+            <a href="http://www.toolz4you.com/lieferung/">
+                <img src="./static/dhl.png" alt="DHL Go Green">
+                <img src="./static/dpd.png" alt="DPD">
+            </a>
+        </div>
+    </div>
+    <div class="rating">
+        <h6>Das sagen unsere Kunden</h6>
+        <a target="_blank" href="https://www.trustedshops.de/bewertung/info_X588674D2E2EF0F0CF686C56C24EA0FEB.html">
+            <img class="ts-rating" src="./static/X588674D2E2EF0F0CF686C56C24EA0FEB.gif" alt="Trusted Shops Kundenbewertungen">
+        </a>
+    </div>
+</footer>
+<script type="text/javascript">
+
+	if (typeof dataLayer !== "undefined")
+	{
+		for (a = 0, b = EC.length; a < b; a++)
+		{
+			EC[a].apply(this,[dataLayer]);
+			EC[a].apply(this,[dataLayerTransport]);
+		}
+
+		/**
+		 * Check if GTM is not blocked by Ad-Blocker
+		 */
+		if ('undefined' !== typeof jQuery)
+		{
+			jQuery(window).load(function()
+			{
+				if (!AEC.gtm())
+				{
+										
+					console.log('Google Tag Manager may be blocked by Ad-Blocker or not included in page');
+				}
+			});
+		}
+
+		/* AdWords Remarketing */
+		if (window.google_tag_params)
+		{
+			dataLayer.push(
+			{  
+				'event':				'fireRemarketingTag',
+				'google_tag_params': 	window.google_tag_params
+			});
+		}
+
+		if (typeof FB !== 'undefined') 
+		{
+			FB.Event.subscribe('edge.create',function(href) 
+		 	{
+				dataLayer.push(
+				{
+					'event': 			'socialInt',
+					'socialNetwork': 	'Facebook',
+					'socialAction': 	'Like',
+					'socialTarget': 	href
+				});
+			});
+		}
+
+		window.sendPlus = function(g)
+		{
+		    dataLayer.push(
+			{
+		        'event': 			'socialInt',
+		        'socialNetwork': 	'Google',
+		        'socialAction': 	'+1',
+		        'socialTarget': 	g.href
+		    });
+		};
+
+		if (typeof twttr !== 'undefined') 
+		{
+			twttr.ready(function (twttr) 
+			{
+				twttr.events.bind('click', function()
+				{
+					dataLayer.push(
+					{
+						'event': 			'socialInt',
+						'socialNetwork': 	'Twitter',
+						'socialAction': 	'tweet',
+						'socialTarget': 	window.location.href
+					});
+				}); 
+			});
+		}
+	}
+	else
+	{
+		console.log('dataLayer[] is not intialized. Check if GTM is installed properly');
+	}
+	
+</script>                    </div>
+    </div>
+        
+
+<script>
+	/**
+ 	 * Enhanced Ecommerce Event(s) Tracking
+ 	 * 
+ 	 * @copyright Anowave 2016
+	 */
+	if ('undefined' !== typeof jQuery)
+	{
+		(function($, dataLayer)
+		{
+			var events = 
+			{
+				addToCart: function()
+				{
+									},
+				removeFromCart: function()
+				{
+									},
+				productClick: function()
+				{
+						
+				}
+			};
+
+			$.each(events, function(event, callback)
+			{
+				var elements = $('[data-event]').filter(function()
+				{
+					return $(this).data('event') == event;
+				});
+
+				elements.each(function()
+				{
+					$(this).off('click.ec').on('click.ec', callback);
+				});
+			});
+			
+		})(jQuery, dataLayer);
+	}
+</script><script>
+    (function($) {
+        $(document).pjax(
+            'a[data-pjax]', 
+            '#pjax-content', 
+            {"timeout":2000,"push":true,"replace":false,"maxCacheLength":20,"scrollTo":0,"type":"GET","dataType":"html","fragment":"body"}        );
+    })(jQuery);
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+    Mage.Cookies.set(
+        'PAGECACHE_ENV',
+            'd91e64f7f50ed61082244d238cef0fea',
+        new Date(new Date().getTime() + 3000000 * 1000)
+        );
+    //]]>
+</script>
+<script type="text/javascript">
+    if (document.cookie.length && (document.cookie.indexOf('PAGECACHE_FORMKEY=') == -1)) {
+        Mage.Cookies.set(
+            'PAGECACHE_FORMKEY',
+            '<esi:include src="http://www.toolz4you.com/varnishcache/getformkey/" />',
+            new Date(new Date().getTime() + 3000000000)
+        );
+    }
+</script>
+<script>
+(function($) {
+    $(document).varnishReloader({"debug":true,"cookieDomain":".www.toolz4you.com","cookiePath":"\/","handles":{"0":"default","1":"STORE_default","2":"THEME_frontend_toolz4you_default","3":"sales_order_view","5":"dhlonlineretoure_button_return_16","6":"customer_account"},"currentStore":"default","currentLayout":"2columns-left","ajaxUrl":"https:\/\/www.toolz4you.com\/varnish\/call\/ajax\/","msgSelector":"#content","msgInsertHandler":"prepend","loadLayerDelay":1000,"returnUrl":"https:\/\/www.toolz4you.com\/sales\/order\/view\/order_id\/44262\/","uenc":"aHR0cHM6Ly93d3cudG9vbHo0eW91LmNvbS9zYWxlcy9vcmRlci92aWV3L29yZGVyX2lkLzQ0MjYyLw,,"});    
+})(jQuery); 
+</script>
+<script type="text/javascript">
+(function () {
+var _tsid = 'X588674D2E2EF0F0CF686C56C24EA0FEB';
+_tsConfig = {
+'yOffset': '0', /* offset from page bottom */
+'variant': 'reviews', /* text, default, small, reviews, custom, custom_reviews */
+'customElementId': '', /* required for variants custom and custom_reviews */
+'trustcardDirection': '', /* for custom variants: topRight, topLeft, bottomRight, bottomLeft */
+'customBadgeWidth': '', /* for custom variants: 40 - 90 (in pixels) */
+'customBadgeHeight': '', /* for custom variants: 40 - 90 (in pixels) */
+'disableResponsive': 'false', /* deactivate responsive behaviour */
+'disableTrustbadge': 'false', /* deactivate trustbadge */
+'trustCardTrigger': 'mouseenter' /* set to 'click' if you want the trustcard to be opened on click instead */
+};
+var _ts = document.createElement('script');
+_ts.type = 'text/javascript';
+_ts.charset = 'utf-8';
+_ts.async = true;
+_ts.src = '//widgets.trustedshops.com/js/' + _tsid + '.js';
+var __ts = document.getElementsByTagName('script')[0];
+__ts.parentNode.insertBefore(_ts, __ts);
+})();
+</script>
+<!-- Anaraky GDRT v.1.0.9 script begin -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_tag_params = {
+	ecomm_pagetype: "siteview"
+};
+var google_conversion_id = 1005171023;
+var google_conversion_label = "Vs5hCIKU81cQz-Km3wM";
+var google_custom_params = google_tag_params;
+var google_remarketing_only = true;
+var google_conversion_format = "3";
+/* ]]> */
+</script>
+<script type="text/javascript" src="./static/conversion.js">
+</script>
+<noscript>
+&lt;div style="display:inline;"&gt;
+&lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1005171023/?value=0&amp;amp;label=Vs5hCIKU81cQz-Km3wM&amp;amp;guid=ON&amp;amp;script=0&amp;amp;data=ecomm_pagetype%3Dsiteview"/&gt;
+&lt;/div&gt;
+</noscript>
+<!-- Anaraky GDRT script end -->
+    
+
+<div style="position: static; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;"><div id="trans-tooltip"><div id="tip-left-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-top.png);"></div><div id="tip-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-top.png) repeat-x;"></div><div id="tip-right-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-top.png);"></div><div id="tip-right" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right.png) repeat-y;"></div><div id="tip-right-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-bottom.png);"></div><div id="tip-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-bottom.png) repeat-x;"></div><div id="tip-left-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-bottom.png);"></div><div id="tip-left" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left.png);"></div><div id="trans-content"></div></div><div id="tip-arrow-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-bottom.png);"></div><div id="tip-arrow-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-top.png);"></div></div><div id="tsbadge4_db8d3657bdbe440c985ae127463eaad4" data-shopname="toolz4you.com" style="display: block; cursor: pointer; bottom: 0px;"><div id="BadgeContainer_db8d3657bdbe440c985ae127463eaad4" class=" " data-tb-element="trustbadge_minimised_container"><div id="MenuDotsBadge_db8d3657bdbe440c985ae127463eaad4" class="menu-button_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4--badge " data-menu="MenuWrapperBadge_db8d3657bdbe440c985ae127463eaad4"><a href="javascript:void(null);" class="menu-button_db8d3657bdbe440c985ae127463eaad4__link"><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div></a></div><div class="menu_db8d3657bdbe440c985ae127463eaad4" id="MenuWrapperBadge_db8d3657bdbe440c985ae127463eaad4" style="visibility: hidden"><div class="menu_db8d3657bdbe440c985ae127463eaad4__container "><a href="https://www.trustedshops.de/bewertung/info_X588674D2E2EF0F0CF686C56C24EA0FEB.html&utm_source=shop&utm_medium=link&utm_content=trustcard&utm_campaign=trustbadge" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Zertifikat prüfen</a><a href="http://www.trustedshops.de/tsdocument/CONSUMER_MEMBERSHIP_TERMS_de.pdf" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Käuferschutzbedingungen</a><a href="https://www.trustedshops.de/bewertung/info_X588674D2E2EF0F0CF686C56C24EA0FEB.html&utm_source=shop&utm_medium=link&utm_content=trustcard&utm_campaign=trustbadge" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Alle Bewertungen</a><a href="https://www.trustedshops.de/impressum" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"> Impressum</a><a href="https://www.trustedshops.de/impressum" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"> Datenschutz</a><div class="menu_db8d3657bdbe440c985ae127463eaad4__dash"></div><a href="javascript:void(null);" id="MaximizeBadgeLink_db8d3657bdbe440c985ae127463eaad4" class="menu_db8d3657bdbe440c985ae127463eaad4__link menu_db8d3657bdbe440c985ae127463eaad4__link--icon" data-tb-element="trustbadge_minimised_menu_maximise"><span>+</span>Maximieren</a><a href="javascript:void(null);" id="RemoveTrustbadgeLink_db8d3657bdbe440c985ae127463eaad4" class="menu_db8d3657bdbe440c985ae127463eaad4__link menu_db8d3657bdbe440c985ae127463eaad4__link--icon" data-tb-element="trustbadge_minimised_menu_remove"><span>×</span>Schließen</a></div><div class="menu_db8d3657bdbe440c985ae127463eaad4__triangle"></div></div><div id="BadgeContent_db8d3657bdbe440c985ae127463eaad4" class="badge-content_db8d3657bdbe440c985ae127463eaad4"><div id="TrustmarkBadge_db8d3657bdbe440c985ae127463eaad4" data-tb-element="trustbadge_minimised_trustmark"></div><div class="dash_db8d3657bdbe440c985ae127463eaad4" id="dash-review-separator_db8d3657bdbe440c985ae127463eaad4"></div><div id="ReviewsContainerBadge_db8d3657bdbe440c985ae127463eaad4" data-tb-element="trustbadge_minimised_reviews"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:96.4%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div><div id="MarkInWordsBadge_db8d3657bdbe440c985ae127463eaad4">Sehr gut</div><div id="MarkBadge_db8d3657bdbe440c985ae127463eaad4">4.82/5.00</div></div></div><div id="BadgeFooter_db8d3657bdbe440c985ae127463eaad4"><div id="TriangleBadge_db8d3657bdbe440c985ae127463eaad4"></div><div id="BottomSlantBadge_db8d3657bdbe440c985ae127463eaad4"><svg width="100%" height="20" viewBox="0 0 10 5" preserveAspectRatio="none" style="margin-top: -2px"><polygon fill="#ffffff" stroke-width="0" points="0,1.5 0,0 10,0 16,0 "></polygon></svg></div></div></div></div><div id="tscard4_db8d3657bdbe440c985ae127463eaad4" style="display: none; bottom: 0px;"><div id="Container_db8d3657bdbe440c985ae127463eaad4"><div id="TopSlant_db8d3657bdbe440c985ae127463eaad4"><svg id="svgTop_db8d3657bdbe440c985ae127463eaad4" width="100%" height="20" viewBox="0 0 10 5" preserveAspectRatio="none"><polygon fill="#fff" stroke-width="0" points="0,10 0,5 0,5 25,0"></polygon></svg></div><div id="MenuDotsCard_db8d3657bdbe440c985ae127463eaad4" class="menu-button_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4--card " data-menu="MenuContainerMain_db8d3657bdbe440c985ae127463eaad4"><a href="javascript:void(null);" class="menu-button_db8d3657bdbe440c985ae127463eaad4__link"><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div></a></div><div class="menu_db8d3657bdbe440c985ae127463eaad4" id="MenuContainerMain_db8d3657bdbe440c985ae127463eaad4" style="visibility: hidden"><div class="menu_db8d3657bdbe440c985ae127463eaad4__container "><a href="https://www.trustedshops.de/bewertung/info_X588674D2E2EF0F0CF686C56C24EA0FEB.html&utm_source=shop&utm_medium=link&utm_content=trustcard&utm_campaign=trustbadge" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Zertifikat prüfen</a><a href="http://www.trustedshops.de/tsdocument/PROTECTION_TERMS_COMPLETE_de.pdf" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Käuferschutzbedingungen</a><a href="https://www.trustedshops.de/bewertung/info_X588674D2E2EF0F0CF686C56C24EA0FEB.html&utm_source=shop&utm_medium=link&utm_content=trustcard&utm_campaign=trustbadge" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Alle Bewertungen</a><a href="https://www.trustedshops.de/impressum" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"> Impressum</a><a href="https://www.trustedshops.de/impressum" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"> Datenschutz</a><div class="menu_db8d3657bdbe440c985ae127463eaad4__dash"></div><a href="javascript:void(null);" id="MinimizeCardLink_db8d3657bdbe440c985ae127463eaad4" class="menu_db8d3657bdbe440c985ae127463eaad4__link menu_db8d3657bdbe440c985ae127463eaad4__link--icon"><span>–</span>Minimieren</a></div><div class="menu_db8d3657bdbe440c985ae127463eaad4__triangle"></div></div><div id="Content_db8d3657bdbe440c985ae127463eaad4" class="content_db8d3657bdbe440c985ae127463eaad4 content_db8d3657bdbe440c985ae127463eaad4--trustbadge"><div id="ShopName_db8d3657bdbe440c985ae127463eaad4" title="toolz4you.com">toolz4you.com</div><div id="TrustmarkProtectionInfoLayer_db8d3657bdbe440c985ae127463eaad4" style="display:none;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-shield"></i><div id="CloseTrustmarkInfoLayerButton_db8d3657bdbe440c985ae127463eaad4" class="closeIcon_db8d3657bdbe440c985ae127463eaad4">×</div><div class="headline_db8d3657bdbe440c985ae127463eaad4">Käuferschutz</div><p>Sie können sich nach dem Einkauf für die kostenlose Trusted Shops Mitgliedschaft Basic anmelden, inkl. Käuferschutz bis je 100 EUR für den aktuellen Einkauf sowie für Ihre weiteren Einkäufe in deutschen Shops mit dem Trusted Shops Gütesiegel.</p><br><p>Mit <b>Trusted Shops</b><i style="color:#0DBEDC;font-weight:bold;">  PLUS</i> (inkl. Garantie) werden Ihre Einkäufe sogar bis je 20.000 EUR durch den Käuferschutz (inkl. Garantie) abgesichert, für 9,90 EUR pro Jahr inkl. MwSt. bei einer Mindestvertragslaufzeit von 1 Jahr. Die Absicherungsdauer des Käuferschutzes pro Einkauf beträgt in beiden Fällen 30 Tage.</p><br><p>Es gelten die <a href="http://www.trustedshops.de/tsdocument/CONSUMER_MEMBERSHIP_TERMS_de.pdf" target="_blank"> Mitgliedschafts- und Käuferschutzbedingungen</a>.</p></div><div class="table_db8d3657bdbe440c985ae127463eaad4"><div id="TrustmarkRow_db8d3657bdbe440c985ae127463eaad4" class="tableRow_db8d3657bdbe440c985ae127463eaad4"><div id="TrustmarkCellNo1_db8d3657bdbe440c985ae127463eaad4" class="tableCell_db8d3657bdbe440c985ae127463eaad4 width50_db8d3657bdbe440c985ae127463eaad4 borderRight_db8d3657bdbe440c985ae127463eaad4"><a href="https://www.trustedshops.de/bewertung/info_X588674D2E2EF0F0CF686C56C24EA0FEB.html&utm_source=shop&utm_medium=link&utm_content=trustcard&utm_campaign=trustbadge" class="blockLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"><div id="TrustmarkImage_db8d3657bdbe440c985ae127463eaad4"></div><div class="headline_db8d3657bdbe440c985ae127463eaad4 largeFontSize_db8d3657bdbe440c985ae127463eaad4">Zertifiziert</div><div class="center_db8d3657bdbe440c985ae127463eaad4">seit 02.05.2013</div></a></div><div id="TrustmarkCellNo2_db8d3657bdbe440c985ae127463eaad4" class="tableCell_db8d3657bdbe440c985ae127463eaad4 width50_db8d3657bdbe440c985ae127463eaad4 hover_db8d3657bdbe440c985ae127463eaad4"><a href="javascript:void(null);" id="TrustmarkLayerLink_db8d3657bdbe440c985ae127463eaad4" class="blockLink_db8d3657bdbe440c985ae127463eaad4"><div id="ProtectionImage_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4-shield"></i></div><div class="headline_db8d3657bdbe440c985ae127463eaad4 largeFontSize_db8d3657bdbe440c985ae127463eaad4">Käuferschutz</div><div id="ProtectionLimit_db8d3657bdbe440c985ae127463eaad4">bis zu 20.000&nbsp;EUR</div></a></div></div><div style="display:none;" id="ReviewsInfoLayer_db8d3657bdbe440c985ae127463eaad4" class="tableRow_db8d3657bdbe440c985ae127463eaad4 reviews-info-layer_db8d3657bdbe440c985ae127463eaad4 "><div id="CloseReviewsInfoLayerButton_db8d3657bdbe440c985ae127463eaad4" class="closeIcon_db8d3657bdbe440c985ae127463eaad4">×</div><div class="tableCell_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4-comments-o"></i><p class="headline_db8d3657bdbe440c985ae127463eaad4">Bewertungen</p><p>Die Note „Sehr gut“ berechnet sich aus den 656 Trusted Shops Bewertungen der letzten 12 Monate, die im <a href="https://www.trustedshops.de/bewertung/info_X588674D2E2EF0F0CF686C56C24EA0FEB.html&utm_source=shop&utm_medium=link&utm_content=trustcard&utm_campaign=trustbadge" target="_blank">Bewertungsprofil</a> eingesehen werden können.</p></div></div><div id="ReviewsRow_db8d3657bdbe440c985ae127463eaad4" class="tableRow_db8d3657bdbe440c985ae127463eaad4"><div id="ReviewsCellNo1_db8d3657bdbe440c985ae127463eaad4" class=" tableCell_db8d3657bdbe440c985ae127463eaad4 width50_db8d3657bdbe440c985ae127463eaad4   borderRight_db8d3657bdbe440c985ae127463eaad4 hover_db8d3657bdbe440c985ae127463eaad4 "><a href="javascript:void(null);" id="ReviewsLayerLink_db8d3657bdbe440c985ae127463eaad4" class="blockLink_db8d3657bdbe440c985ae127463eaad4"><div id="ReviewsBubbleImage_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4-comments-o"></i></div><div id="ReviewsRatingCount_db8d3657bdbe440c985ae127463eaad4"><span class="counter_db8d3657bdbe440c985ae127463eaad4">1.360</span><span id="commentText_db8d3657bdbe440c985ae127463eaad4">Bewertungen</span></div></a></div><div id="ReviewsCellNo2_db8d3657bdbe440c985ae127463eaad4" class="tableCell_db8d3657bdbe440c985ae127463eaad4 width50_db8d3657bdbe440c985ae127463eaad4 "><a href="https://www.trustedshops.de/bewertung/info_X588674D2E2EF0F0CF686C56C24EA0FEB.html&utm_source=shop&utm_medium=link&utm_content=trustcard&utm_campaign=trustbadge" id="" class="blockLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"><div id="Stars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:96.4%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div><div id="MarkInWords_db8d3657bdbe440c985ae127463eaad4" class="largeFontSize_db8d3657bdbe440c985ae127463eaad4">Sehr gut</div><div id="Mark_db8d3657bdbe440c985ae127463eaad4">4.82/5.00</div></a></div></div></div><div id="ReviewComments_db8d3657bdbe440c985ae127463eaad4"><div class="reviewContainer_db8d3657bdbe440c985ae127463eaad4"><div class="avatar_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4 icon-ts-avatar_db8d3657bdbe440c985ae127463eaad4"></i></div><div class="reviewContent_db8d3657bdbe440c985ae127463eaad4"><div class="header_db8d3657bdbe440c985ae127463eaad4"><div class="left_db8d3657bdbe440c985ae127463eaad4"><div class="name_db8d3657bdbe440c985ae127463eaad4">Michael R</div><div class="stars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div></div><div class="right_db8d3657bdbe440c985ae127463eaad4"><div class="date_db8d3657bdbe440c985ae127463eaad4">10.11.2016</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewText_db8d3657bdbe440c985ae127463eaad4">Ich war sehr zufrieden. Der von mir bestellte Henkel PU Schaum wurde nach 3 Tagen bei mir angeliefert. Perfekt.</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewContainer_db8d3657bdbe440c985ae127463eaad4"><div class="avatar_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4 icon-ts-avatar_db8d3657bdbe440c985ae127463eaad4"></i></div><div class="reviewContent_db8d3657bdbe440c985ae127463eaad4"><div class="header_db8d3657bdbe440c985ae127463eaad4"><div class="left_db8d3657bdbe440c985ae127463eaad4"><div class="stars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:93.4%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div></div><div class="right_db8d3657bdbe440c985ae127463eaad4"><div class="date_db8d3657bdbe440c985ae127463eaad4">22.01.2017</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewText_db8d3657bdbe440c985ae127463eaad4">Ich hätte mir eine etwas schnellere Lieferung gewünscht Aber ansonsten ist alles o.k..</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewContainer_db8d3657bdbe440c985ae127463eaad4"><div class="avatar_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4 icon-ts-avatar_db8d3657bdbe440c985ae127463eaad4"></i></div><div class="reviewContent_db8d3657bdbe440c985ae127463eaad4"><div class="header_db8d3657bdbe440c985ae127463eaad4"><div class="left_db8d3657bdbe440c985ae127463eaad4"><div class="stars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div></div><div class="right_db8d3657bdbe440c985ae127463eaad4"><div class="date_db8d3657bdbe440c985ae127463eaad4">29.04.2016</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewText_db8d3657bdbe440c985ae127463eaad4">Alles Bestens</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div id="ReviewSlideControls_db8d3657bdbe440c985ae127463eaad4" style="display:none;"><div><a class="control_db8d3657bdbe440c985ae127463eaad4" href="javascript:void(null);"></a><a class="control_db8d3657bdbe440c985ae127463eaad4" href="javascript:void(null);"></a><a class="control_db8d3657bdbe440c985ae127463eaad4" href="javascript:void(null);"></a></div></div></div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div><svg id="svgBottom_db8d3657bdbe440c985ae127463eaad4" width="100%" height="10" viewBox="0 0 9.9 5" preserveAspectRatio="none"><polygon fill="#FFDC0F" stroke-width="0" points="0,5 10,10 10,0 10,0"></polygon></svg><div id="Triangle_db8d3657bdbe440c985ae127463eaad4"></div><div id="TrustedShopsLogo_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4-e-trustedshops"></i></div><div id="Footer_db8d3657bdbe440c985ae127463eaad4"></div><div class="rotate-screen_db8d3657bdbe440c985ae127463eaad4 rotate-screen_db8d3657bdbe440c985ae127463eaad4--full "></div></div></div><div><object id="ClCache" click="sendMsg" host="" width="0" height="0"></object></div></body></html>
