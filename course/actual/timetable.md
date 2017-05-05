@@ -77,14 +77,14 @@
 * 作业1：统计最大的两个值
 * 作业2：统计字符出现次数
 
-###（第二天）元祖与列表
+###（第二天）元组与列表
 * 列表的定义
 * 列表的遍历
 * 列表的切片
 * 常用内置函数（max、min、range、len）
 * list 方法（append、pop、count ...）
 * 列表表达式
-* 元祖的定义
+* 元组的定义
 * tuple 方法（count、index）
 * 元组与列表的关系与区别
 * 字符串处理（find、join、split、strip、format、replace、index、count ...）
