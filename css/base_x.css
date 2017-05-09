@@ -771,6 +771,7 @@ html .page_index article#feature .row div .text {
 html .page_index article#feature .row .golang .img {
 	background: url(../images/go.png?ver=6712aa) no-repeat;
 	background-position: 0 0;
+	background-size:144px;
 	width: 144px;
 	height: 120px;
 	max-width: 100%;
