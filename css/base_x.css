@@ -768,6 +768,15 @@ html .page_index article#feature .row div .text {
 	font-family: "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
 	line-height: 24px
 }
+html .page_index article#feature .row .golang .img {
+	background: url(../images/plane.png?ver=6712aa) no-repeat;
+	background-position: 0 0;
+	width: 144px;
+	height: 120px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto
+}
 html .page_index article#feature .row .shizhanban .img {
 	background: url(../images/web.png?ver=6712aa) no-repeat;
 	background-position: 0 0;

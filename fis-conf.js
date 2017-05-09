@@ -42,6 +42,9 @@ fis.match('**.html',{
 
     	return nunjucks.renderString(content,{
     		// 开班时间
+            go_time:'06-03',
+            go_week:'六',
+
     		actual_time:'05-06',
             actual_week:'六',
     		ops_time:'03-12',
@@ -52,13 +55,15 @@ fis.match('**.html',{
     		price:{
     			actual:4800,
     			ops:6800,
-    			arch:6800
+    			arch:6800,
+                // go:6000
     		},
 
     		// 课程介绍
     		actual_intr:'想往开发或者运维开发方向发展，Python基础为零或薄弱，但能读懂shell 或者其它任何一门语言的同学。',
     		ops_intr:'专门为热衷钻研运维自动化技术、想要掌握如何从0构建企业级运维自动化平台、想要转型为运维开发的同学而量身打造。',
-    		arch_intr:'具有Python或者其它语言的开发能力，想往系统架构师、运维开发架构师 方向发展的同学。BAT架构师带你一起飞。',
+            arch_intr:'具有Python或者其它语言的开发能力，想往系统架构师、运维开发架构师 方向发展的同学。BAT架构师带你一起飞。',
+            go_intr:'有Linux基础，有志于使用Go语言做分布式系统编程的人员,想往系统架构师方向发展的同学。BAT架构师带你一起飞。',
             video_list:[
                 {
                     id:'o0138uz5h5g',
