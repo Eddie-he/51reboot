@@ -1,4 +1,4 @@
-Reboot自动化班课表
+51Reboot.com自动化班课表
 ### 第一天:Django入门
 * 搭建开发环境
 * 第一个django应用: hello world
