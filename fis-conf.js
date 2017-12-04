@@ -47,7 +47,7 @@ fis.match('**.html',{
 
     		actual_time:'11-25',
             actual_week:'六',
-    		ops_time:'12-10',
+    		ops_time:'12-24',
             ops_week:'日',
     		arch_time:'08-27',
 
