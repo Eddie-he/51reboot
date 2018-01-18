@@ -123,11 +123,12 @@
     -   CGroups和LXC隔离技术
     -   namespace技术解析
     -   分层文件系统AUFS和DeviceMapper
+
 ### 课后作业
 -   以面向对象的方式组织*学生管理系统*
 
 
-#七、Golang的接口
+# 七、Golang的接口
 ### 课上基础
 
 -   接口是合约
@@ -147,12 +148,11 @@
 -   类型分支
 -   **Golang编码实战: 基于标记的XML解码**
 
-
 ### 课后作业
-在`https://tour.go-zh.org/methods/16`里完成如下图案
-1. 红十字
-2. 米字旗
-3. 小日本国旗
+-   在`https://tour.go-zh.org/methods/16`里完成如下图案
+  -   1. 红十字
+  -   2. 米字旗
+  -   3. 小日本国旗
 
 #八、Golang的协程和Channel
 ### 课上基础
