@@ -47,8 +47,8 @@ fis.match('**.html',{
 
     		actual_time:'2018-03-18',
             actual_week:'日',
-    		ops_time:'2018-03-11',
-            ops_week:'日',
+    		ops_time:'2018-04-21',
+            ops_week:'六',
     		arch_time:'2018-04-07',
             arch_weej:'六',
     		// 课程价格,网络价格减1000
