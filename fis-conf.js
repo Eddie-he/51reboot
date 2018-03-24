@@ -42,7 +42,7 @@ fis.match('**.html',{
 
     	return nunjucks.renderString(content,{
     		// 开班时间
-            go_time:'2018-03-24',
+            go_time:'2018-04-14',
             go_week:'六',
 
     		actual_time:'2018-03-18',
